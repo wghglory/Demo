@@ -1,0 +1,20 @@
+c:\users\temptation\documents\visual studio 2010\Projects\KnockoutDemo\KnockoutDemo\bin\KnockoutDemo.dll
+c:\users\temptation\documents\visual studio 2010\Projects\KnockoutDemo\KnockoutDemo\bin\KnockoutDemo.pdb
+c:\users\temptation\documents\visual studio 2010\Projects\KnockoutDemo\KnockoutDemo\bin\EntityFramework.dll
+c:\users\temptation\documents\visual studio 2010\Projects\KnockoutDemo\KnockoutDemo\bin\EntityFramework.xml
+c:\users\temptation\documents\visual studio 2010\Projects\KnockoutDemo\KnockoutDemo\obj\Debug\ResolveAssemblyReference.cache
+c:\users\temptation\documents\visual studio 2010\Projects\KnockoutDemo\KnockoutDemo\obj\Debug\KnockoutDemo.dll
+c:\users\temptation\documents\visual studio 2010\Projects\KnockoutDemo\KnockoutDemo\obj\Debug\KnockoutDemo.pdb
+c:\users\temptation\documents\visual studio 2010\Projects\KnockoutDemo\KnockoutDemo\bin\KnockoutDemo.DbUtility.dll
+c:\users\temptation\documents\visual studio 2010\Projects\KnockoutDemo\KnockoutDemo\bin\KnockoutDemo.DbUtility.pdb
+D:\Projects\KnockoutDemo\KnockoutDemo\bin\KnockoutDemo.dll
+D:\Projects\KnockoutDemo\KnockoutDemo\bin\KnockoutDemo.pdb
+D:\Projects\KnockoutDemo\KnockoutDemo\bin\KnockoutDemo.DbUtility.dll
+D:\Projects\KnockoutDemo\KnockoutDemo\bin\KnockoutDemo.Domain.dll
+D:\Projects\KnockoutDemo\KnockoutDemo\bin\KnockoutDemo.Service.dll
+D:\Projects\KnockoutDemo\KnockoutDemo\bin\KnockoutDemo.DbUtility.pdb
+D:\Projects\KnockoutDemo\KnockoutDemo\bin\KnockoutDemo.Domain.pdb
+D:\Projects\KnockoutDemo\KnockoutDemo\bin\KnockoutDemo.Service.pdb
+D:\Projects\KnockoutDemo\KnockoutDemo\obj\Debug\KnockoutDemo.dll
+D:\Projects\KnockoutDemo\KnockoutDemo\obj\Debug\KnockoutDemo.pdb
+D:\Projects\KnockoutDemo\KnockoutDemo\obj\Debug\KnockoutDemo.csprojResolveAssemblyReference.cache

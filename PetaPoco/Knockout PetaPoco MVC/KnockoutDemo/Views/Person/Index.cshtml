@@ -1,0 +1,46 @@
+﻿@{
+    ViewBag.Title = "人员管理";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@section Header{
+<script type="text/javascript">
+    var data = @Html.Raw(@ViewBag.Data);
+    var totalPage = @ViewBag.TotalPage;
+    var currentPage = @ViewBag.CurrentPage;
+</script>
+<script type="text/javascript" src="../../Scripts/biz/person_index.js"></script>
+}
+<div class='span9 main'>
+    <ul class="breadcrumb">
+      <li><a href="/Person/Index/">人员管理</a><span class="divider">/</span></li>
+      <li class="active">人员列表</li>
+    </ul>
+    <table class="table table-bordered">
+        <tr class="error">
+            <td>
+                姓名
+            </td>
+            <td>
+                年龄
+            </td>
+            <td>
+                操作
+            </td>
+        </tr>
+        <tbody data-bind="foreach:persons">
+            <tr>
+                <td data-bind="text:PersonName">
+                </td>
+                <td data-bind="text:PersonAge">
+                </td>
+                <td>
+                    <a href="javascript:" data-bind="click:$root.edit">修改</a>
+                    <a href="javascript:" data-bind="click:$root.remove">删除</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <div>
+        <ul class="pagination" id="personPagination"></ul>
+    </div>
+</div>

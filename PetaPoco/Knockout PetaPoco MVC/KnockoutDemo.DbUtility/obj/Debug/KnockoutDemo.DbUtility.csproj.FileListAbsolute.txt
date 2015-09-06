@@ -1,0 +1,9 @@
+c:\users\temptation\documents\visual studio 2010\Projects\KnockoutDemo\KnockoutDemo.DbUtility\obj\Debug\ResolveAssemblyReference.cache
+c:\users\temptation\documents\visual studio 2010\Projects\KnockoutDemo\KnockoutDemo.DbUtility\bin\Debug\KnockoutDemo.DbUtility.dll
+c:\users\temptation\documents\visual studio 2010\Projects\KnockoutDemo\KnockoutDemo.DbUtility\bin\Debug\KnockoutDemo.DbUtility.pdb
+c:\users\temptation\documents\visual studio 2010\Projects\KnockoutDemo\KnockoutDemo.DbUtility\obj\Debug\KnockoutDemo.DbUtility.dll
+c:\users\temptation\documents\visual studio 2010\Projects\KnockoutDemo\KnockoutDemo.DbUtility\obj\Debug\KnockoutDemo.DbUtility.pdb
+D:\Projects\KnockoutDemo\KnockoutDemo.DbUtility\bin\Debug\KnockoutDemo.DbUtility.dll
+D:\Projects\KnockoutDemo\KnockoutDemo.DbUtility\bin\Debug\KnockoutDemo.DbUtility.pdb
+D:\Projects\KnockoutDemo\KnockoutDemo.DbUtility\obj\Debug\KnockoutDemo.DbUtility.dll
+D:\Projects\KnockoutDemo\KnockoutDemo.DbUtility\obj\Debug\KnockoutDemo.DbUtility.pdb

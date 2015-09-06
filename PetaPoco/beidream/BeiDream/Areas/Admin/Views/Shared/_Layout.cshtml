@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+<!-- BEGIN HEAD -->
+<head>
+	<meta charset="utf-8" />
+	<title>权限管理</title>
+	<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+	<meta content="" name="description" />
+	<meta content="" name="author" />
+    <link href="@Url.Content("~/Scripts/ext-4.21/resources/css/ext-all.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Scripts/ext-4.21/resources/css/icon.css")" rel="stylesheet" type="text/css" />
+    <script src="@Url.Content("~/Scripts/jquery-1.7.1.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/ext-4.21/ext-all.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/ext-4.21/locale/ext-lang-zh_CN.js")" type="text/javascript"></script>
+
+    @RenderSection("Content", required: false)
+</head>
+<!-- END HEAD -->
+<!-- BEGIN BODY -->
+<body>
+				
+    @RenderBody()
+    <script type="text/javascript">
+        Ext.onReady(function () {
+            //开启悬浮提示功能
+            Ext.QuickTips.init();
+            //开启动态加载
+            Ext.Loader.setConfig({
+                enabled: true
+            });
+//        var appFolder = '@Url.Content("~/Scripts/app")';
+//            //创建应用程序的实例
+//            Ext.application({
+//                //设定命名空间
+//                name: 'BDream',
+//                //指定配置选项，设置相应的路径//mvc文件的路径,必须正确
+//                appFolder: appFolder,
+//                //自动加载和实例化Viewport文件
+//                autoCreateViewport: true,
+//                launch: function () {
+////                    //开启悬浮提示功能
+////                    Ext.QuickTips.init();
+////                    //开启动态加载
+////                    Ext.Loader.setConfig({
+////                        enabled: true
+////                    });
+//                },
+//                controllers: ['Index']
+//            });
+        })
+    </script>
+    @RenderSection("Scripts", required: false)
+</body>
+<!-- END BODY -->
+</html>

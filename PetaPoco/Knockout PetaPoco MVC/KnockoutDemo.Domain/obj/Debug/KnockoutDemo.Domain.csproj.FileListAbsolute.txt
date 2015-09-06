@@ -1,0 +1,7 @@
+D:\Projects\KnockoutDemo\KnockoutDemo.Domain\bin\Debug\KnockoutDemo.Domain.dll
+D:\Projects\KnockoutDemo\KnockoutDemo.Domain\bin\Debug\KnockoutDemo.Domain.pdb
+D:\Projects\KnockoutDemo\KnockoutDemo.Domain\obj\Debug\KnockoutDemo.Domain.dll
+D:\Projects\KnockoutDemo\KnockoutDemo.Domain\obj\Debug\KnockoutDemo.Domain.pdb
+D:\Projects\KnockoutDemo\KnockoutDemo.Domain\bin\Debug\KnockoutDemo.DbUtility.dll
+D:\Projects\KnockoutDemo\KnockoutDemo.Domain\bin\Debug\KnockoutDemo.DbUtility.pdb
+D:\Projects\KnockoutDemo\KnockoutDemo.Domain\obj\Debug\KnockoutDemo.Domain.csprojResolveAssemblyReference.cache
