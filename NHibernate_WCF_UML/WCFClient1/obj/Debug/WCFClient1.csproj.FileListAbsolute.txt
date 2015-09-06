@@ -1,0 +1,11 @@
+F:\NetClass\黑马7期\2013年9月2日高级技术  工作流结束\代码\NhDemo\WCFClient1\bin\Debug\WCFClient1.exe.config
+F:\NetClass\黑马7期\2013年9月2日高级技术  工作流结束\代码\NhDemo\WCFClient1\bin\Debug\WCFClient1.exe
+F:\NetClass\黑马7期\2013年9月2日高级技术  工作流结束\代码\NhDemo\WCFClient1\bin\Debug\WCFClient1.pdb
+F:\NetClass\黑马7期\2013年9月2日高级技术  工作流结束\代码\NhDemo\WCFClient1\obj\Debug\WCFClient1.csprojResolveAssemblyReference.cache
+F:\NetClass\黑马7期\2013年9月2日高级技术  工作流结束\代码\NhDemo\WCFClient1\obj\Debug\WCFClient1.Properties.Resources.resources
+F:\NetClass\黑马7期\2013年9月2日高级技术  工作流结束\代码\NhDemo\WCFClient1\obj\Debug\WCFClient1.csproj.GenerateResource.Cache
+F:\NetClass\黑马7期\2013年9月2日高级技术  工作流结束\代码\NhDemo\WCFClient1\obj\Debug\WCFClient1.exe
+F:\NetClass\黑马7期\2013年9月2日高级技术  工作流结束\代码\NhDemo\WCFClient1\obj\Debug\WCFClient1.pdb
+F:\NetClass\黑马7期\2013年9月2日高级技术  工作流结束\代码\NhDemo\WCFClient1\bin\Debug\IBLL.dll
+F:\NetClass\黑马7期\2013年9月2日高级技术  工作流结束\代码\NhDemo\WCFClient1\bin\Debug\IBLL.pdb
+F:\NetClass\黑马7期\2013年9月2日高级技术  工作流结束\代码\NhDemo\WCFClient1\obj\Debug\WCFClient1.Form1.resources

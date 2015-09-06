@@ -1,0 +1,4 @@
+F:\NetClass\黑马7期\2013年9月2日高级技术  工作流结束\代码\NhDemo\IBLL\bin\Debug\IBLL.dll
+F:\NetClass\黑马7期\2013年9月2日高级技术  工作流结束\代码\NhDemo\IBLL\bin\Debug\IBLL.pdb
+F:\NetClass\黑马7期\2013年9月2日高级技术  工作流结束\代码\NhDemo\IBLL\obj\Debug\IBLL.dll
+F:\NetClass\黑马7期\2013年9月2日高级技术  工作流结束\代码\NhDemo\IBLL\obj\Debug\IBLL.pdb

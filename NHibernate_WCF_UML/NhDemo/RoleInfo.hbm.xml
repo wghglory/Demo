@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+    namespace="NhDemo" assembly="NhDemo">
+  <class name="RoleInfo" table="RoleInfo">
+    <id name="ID">
+      <column name="ID" sql-type="int" not-null="true"/>
+      <!--代表怎么的这个列是自动增长的-->
+      <generator class="identity" />
+    </id>
+
+    <!-- A cat has to have a name, but it shouldn' be too long. -->
+    <property name="RoleName">
+      <column name="RoleName" length="32" not-null="true" />
+    </property>
+    <property name="SubTime" />
+    <property name="ModifiedOn" />
+    <property name="DelFlag" />
+  </class>
+
+</hibernate-mapping>

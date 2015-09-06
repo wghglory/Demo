@@ -1,0 +1,5 @@
+F:\NetClass\黑马7期\2013年9月2日高级技术  工作流结束\代码\NhDemo\WebApplication1\bin\WebApplication1.dll
+F:\NetClass\黑马7期\2013年9月2日高级技术  工作流结束\代码\NhDemo\WebApplication1\bin\WebApplication1.pdb
+F:\NetClass\黑马7期\2013年9月2日高级技术  工作流结束\代码\NhDemo\WebApplication1\obj\Debug\WebApplication1.csprojResolveAssemblyReference.cache
+F:\NetClass\黑马7期\2013年9月2日高级技术  工作流结束\代码\NhDemo\WebApplication1\obj\Debug\WebApplication1.dll
+F:\NetClass\黑马7期\2013年9月2日高级技术  工作流结束\代码\NhDemo\WebApplication1\obj\Debug\WebApplication1.pdb

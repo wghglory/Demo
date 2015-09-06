@@ -1,0 +1,10 @@
+F:\NetClass\黑马7期\2013年9月2日高级技术  工作流结束\代码\NhDemo\WCFHost1\bin\Debug\WCFHost1.exe.config
+F:\NetClass\黑马7期\2013年9月2日高级技术  工作流结束\代码\NhDemo\WCFHost1\bin\Debug\WCFHost1.exe
+F:\NetClass\黑马7期\2013年9月2日高级技术  工作流结束\代码\NhDemo\WCFHost1\bin\Debug\WCFHost1.pdb
+F:\NetClass\黑马7期\2013年9月2日高级技术  工作流结束\代码\NhDemo\WCFHost1\bin\Debug\BLL.dll
+F:\NetClass\黑马7期\2013年9月2日高级技术  工作流结束\代码\NhDemo\WCFHost1\bin\Debug\IBLL.dll
+F:\NetClass\黑马7期\2013年9月2日高级技术  工作流结束\代码\NhDemo\WCFHost1\bin\Debug\BLL.pdb
+F:\NetClass\黑马7期\2013年9月2日高级技术  工作流结束\代码\NhDemo\WCFHost1\bin\Debug\IBLL.pdb
+F:\NetClass\黑马7期\2013年9月2日高级技术  工作流结束\代码\NhDemo\WCFHost1\obj\Debug\WCFHost1.csprojResolveAssemblyReference.cache
+F:\NetClass\黑马7期\2013年9月2日高级技术  工作流结束\代码\NhDemo\WCFHost1\obj\Debug\WCFHost1.exe
+F:\NetClass\黑马7期\2013年9月2日高级技术  工作流结束\代码\NhDemo\WCFHost1\obj\Debug\WCFHost1.pdb

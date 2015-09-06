@@ -1,0 +1,9 @@
+F:\NetClass\黑马7期\2013年9月2日高级技术  工作流结束\代码\NhDemo\WebServiceClient\bin\Debug\WebServiceClient.exe.config
+F:\NetClass\黑马7期\2013年9月2日高级技术  工作流结束\代码\NhDemo\WebServiceClient\bin\Debug\WebServiceClient.exe
+F:\NetClass\黑马7期\2013年9月2日高级技术  工作流结束\代码\NhDemo\WebServiceClient\bin\Debug\WebServiceClient.pdb
+F:\NetClass\黑马7期\2013年9月2日高级技术  工作流结束\代码\NhDemo\WebServiceClient\obj\Debug\WebServiceClient.csprojResolveAssemblyReference.cache
+F:\NetClass\黑马7期\2013年9月2日高级技术  工作流结束\代码\NhDemo\WebServiceClient\obj\Debug\WebServiceClient.Form1.resources
+F:\NetClass\黑马7期\2013年9月2日高级技术  工作流结束\代码\NhDemo\WebServiceClient\obj\Debug\WebServiceClient.Properties.Resources.resources
+F:\NetClass\黑马7期\2013年9月2日高级技术  工作流结束\代码\NhDemo\WebServiceClient\obj\Debug\WebServiceClient.csproj.GenerateResource.Cache
+F:\NetClass\黑马7期\2013年9月2日高级技术  工作流结束\代码\NhDemo\WebServiceClient\obj\Debug\WebServiceClient.exe
+F:\NetClass\黑马7期\2013年9月2日高级技术  工作流结束\代码\NhDemo\WebServiceClient\obj\Debug\WebServiceClient.pdb

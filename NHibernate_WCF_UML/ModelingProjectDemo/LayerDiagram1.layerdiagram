@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<layerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="d5916fa7-9865-4221-967e-e41e51470f61" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/LayerDesigner">
+  <layers>
+    <layer Id="e7b31a1a-abe4-49a0-b847-079aef32e91c" name="UI">
+      <childLayers>
+        <layer Id="4949cab2-3783-4d60-becf-e646b0c0883c" name="AspNet[Mvc ,WebForm]" />
+        <layer Id="f93e97c2-9288-4674-9eb5-ff4bde7ea582" name="Mobile" />
+        <layer Id="96510390-6220-4fce-a275-b04b3e52f844" name="WPF\Winf" />
+      </childLayers>
+    </layer>
+    <layer Id="86e1c7b4-afbc-4c85-895b-569ab343f2d8" name="服务层">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="ab3293d8-b0d5-49f0-b452-efb189b8f143" direction="Bidirectional">
+          <layerMoniker Id="e7b31a1a-abe4-49a0-b847-079aef32e91c" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+    </layer>
+  </layers>
+</layerModel>

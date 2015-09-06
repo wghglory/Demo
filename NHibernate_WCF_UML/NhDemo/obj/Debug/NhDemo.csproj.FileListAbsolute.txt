@@ -1,0 +1,26 @@
+F:\NetClass\黑马7期\2013年9月2日高级技术  工作流结束\代码\NhDemo\NhDemo\bin\Debug\NhDemo.exe.config
+F:\NetClass\黑马7期\2013年9月2日高级技术  工作流结束\代码\NhDemo\NhDemo\bin\Debug\NhDemo.exe
+F:\NetClass\黑马7期\2013年9月2日高级技术  工作流结束\代码\NhDemo\NhDemo\bin\Debug\NhDemo.pdb
+F:\NetClass\黑马7期\2013年9月2日高级技术  工作流结束\代码\NhDemo\NhDemo\obj\Debug\NhDemo.csprojResolveAssemblyReference.cache
+F:\NetClass\黑马7期\2013年9月2日高级技术  工作流结束\代码\NhDemo\NhDemo\obj\Debug\NhDemo.exe
+F:\NetClass\黑马7期\2013年9月2日高级技术  工作流结束\代码\NhDemo\NhDemo\obj\Debug\NhDemo.pdb
+F:\NetClass\黑马7期\2013年9月2日高级技术  工作流结束\代码\NhDemo\NhDemo\bin\Debug\RoleInfo.hbm.xml
+F:\NetClass\黑马7期\2013年9月2日高级技术  工作流结束\代码\NhDemo\NhDemo\bin\Debug\Common.Logging.dll
+F:\NetClass\黑马7期\2013年9月2日高级技术  工作流结束\代码\NhDemo\NhDemo\bin\Debug\LinFu.DynamicProxy.dll
+F:\NetClass\黑马7期\2013年9月2日高级技术  工作流结束\代码\NhDemo\NhDemo\bin\Debug\log4net.dll
+F:\NetClass\黑马7期\2013年9月2日高级技术  工作流结束\代码\NhDemo\NhDemo\bin\Debug\NHibernate.dll
+F:\NetClass\黑马7期\2013年9月2日高级技术  工作流结束\代码\NhDemo\NhDemo\bin\Debug\System.Linq.Dynamic.dll
+F:\NetClass\黑马7期\2013年9月2日高级技术  工作流结束\代码\NhDemo\NhDemo\bin\Debug\Iesi.Collections.dll
+F:\NetClass\黑马7期\2013年9月2日高级技术  工作流结束\代码\NhDemo\NhDemo\bin\Debug\Antlr3.Runtime.dll
+F:\NetClass\黑马7期\2013年9月2日高级技术  工作流结束\代码\NhDemo\NhDemo\bin\Debug\Remotion.Data.Linq.dll
+F:\NetClass\黑马7期\2013年9月2日高级技术  工作流结束\代码\NhDemo\NhDemo\bin\Debug\log4net.xml
+F:\NetClass\黑马7期\2013年9月2日高级技术  工作流结束\代码\NhDemo\NhDemo\bin\Debug\Iesi.Collections.xml
+F:\NetClass\黑马7期\2013年9月2日高级技术  工作流结束\代码\NhDemo\NhDemo\bin\Debug\NHibernate.ByteCode.LinFu.dll
+F:\NetClass\黑马7期\2013年9月2日高级技术  工作流结束\代码\NhDemo\NhDemo\bin\Debug\NHibernate.ByteCode.LinFu.pdb
+F:\NetClass\黑马7期\2013年9月2日高级技术  工作流结束\代码\NhDemo\NhDemo\bin\Debug\NHibernate.ByteCode.LinFu.xml
+H:\Alian-------------------HeiMa .NET Seven\70----2013.09.02---工作流结尾,时序图,NHdemo,Nhibernate,Html5,WCF\This Teacher\代码\NhDemo\NhDemo\bin\Debug\NhDemo.exe.config
+H:\Alian-------------------HeiMa .NET Seven\70----2013.09.02---工作流结尾,时序图,NHdemo,Nhibernate,Html5,WCF\This Teacher\代码\NhDemo\NhDemo\obj\Debug\NhDemo.exe
+H:\Alian-------------------HeiMa .NET Seven\70----2013.09.02---工作流结尾,时序图,NHdemo,Nhibernate,Html5,WCF\This Teacher\代码\NhDemo\NhDemo\obj\Debug\NhDemo.pdb
+D:\GitHub\Demo\NHibernate_WCF_UML\NhDemo\bin\Debug\NhDemo.exe.config
+D:\GitHub\Demo\NHibernate_WCF_UML\NhDemo\obj\Debug\NhDemo.exe
+D:\GitHub\Demo\NHibernate_WCF_UML\NhDemo\obj\Debug\NhDemo.pdb
