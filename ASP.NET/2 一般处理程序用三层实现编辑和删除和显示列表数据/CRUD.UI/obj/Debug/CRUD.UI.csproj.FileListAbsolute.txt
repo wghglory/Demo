@@ -1,0 +1,23 @@
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130726\CRUD.UI\bin\CRUD.UI.dll
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130726\CRUD.UI\bin\CRUD.UI.pdb
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130726\CRUD.UI\obj\Debug\CRUD.UI.dll
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130726\CRUD.UI\obj\Debug\CRUD.UI.pdb
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130726\CRUD.UI\bin\CRUD.BLL.dll
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130726\CRUD.UI\bin\CRUD.Model.dll
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130726\CRUD.UI\bin\CRUD.DAL.dll
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130726\CRUD.UI\bin\CRUD.BLL.pdb
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130726\CRUD.UI\bin\CRUD.Model.pdb
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130726\CRUD.UI\bin\CRUD.DAL.pdb
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130726\CRUD.UI\obj\Debug\CRUD.UI.csprojResolveAssemblyReference.cache
+\\psf\Home\Documents\工作\MyCode\ASP.NET\2 一般处理程序用三层实现编辑和删除和显示列表数据\CRUD.UI\bin\CRUD.UI.dll.config
+\\psf\Home\Documents\工作\MyCode\ASP.NET\2 一般处理程序用三层实现编辑和删除和显示列表数据\CRUD.UI\bin\CRUD.UI.dll
+\\psf\Home\Documents\工作\MyCode\ASP.NET\2 一般处理程序用三层实现编辑和删除和显示列表数据\CRUD.UI\bin\CRUD.UI.pdb
+\\psf\Home\Documents\工作\MyCode\ASP.NET\2 一般处理程序用三层实现编辑和删除和显示列表数据\CRUD.UI\bin\CRUD.BLL.dll
+\\psf\Home\Documents\工作\MyCode\ASP.NET\2 一般处理程序用三层实现编辑和删除和显示列表数据\CRUD.UI\bin\CRUD.Model.dll
+\\psf\Home\Documents\工作\MyCode\ASP.NET\2 一般处理程序用三层实现编辑和删除和显示列表数据\CRUD.UI\bin\CRUD.DAL.dll
+\\psf\Home\Documents\工作\MyCode\ASP.NET\2 一般处理程序用三层实现编辑和删除和显示列表数据\CRUD.UI\bin\CRUD.BLL.pdb
+\\psf\Home\Documents\工作\MyCode\ASP.NET\2 一般处理程序用三层实现编辑和删除和显示列表数据\CRUD.UI\bin\CRUD.Model.pdb
+\\psf\Home\Documents\工作\MyCode\ASP.NET\2 一般处理程序用三层实现编辑和删除和显示列表数据\CRUD.UI\bin\CRUD.DAL.pdb
+\\psf\Home\Documents\工作\MyCode\ASP.NET\2 一般处理程序用三层实现编辑和删除和显示列表数据\CRUD.UI\obj\Debug\CRUD.UI.csprojResolveAssemblyReference.cache
+\\psf\Home\Documents\工作\MyCode\ASP.NET\2 一般处理程序用三层实现编辑和删除和显示列表数据\CRUD.UI\obj\Debug\CRUD.UI.dll
+\\psf\Home\Documents\工作\MyCode\ASP.NET\2 一般处理程序用三层实现编辑和删除和显示列表数据\CRUD.UI\obj\Debug\CRUD.UI.pdb

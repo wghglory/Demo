@@ -1,0 +1,233 @@
+
+一、ListView控件基本使用、ListView分页。
+1>演示ObjectDataSource+ListView绑定的增删改查效果、说明ListView中模板的含义、一些事件。
+---删除时需要制定ListView的DataKeyNames属性为表中的主键列才能删除。
+---LayoutTemplate模板中有一个tr标签的Id为itemPlaceholder，对应的是ListView控件的ItemPlaceholderID。
+2>演示ListView + DataPager的分页。
+---配置ObjectDataSource，为ObjectDataSource选择对应的增删改查方法
+---确保ObjectDataSource控件的属性：MaximumRowsParameterName与StartRowIndexParameterName的值与业务逻辑层的分页查询的方法的参数名称相同。（startRowNumber、pageRows）
+---删除以下代码----------------------------------------------------------------------
+            <SelectParameters>
+                <asp:Parameter Name="startRowNumber" Type="Int32" />
+                <asp:Parameter Name="pageRows" Type="Int32" />
+            </SelectParameters>
+----------------------------------------------------------------------
+---启用ObjectDataSource的EnablePaging属性。
+---设置ObjectDataSource的SelectCountMethod属性为一个查询表中总记录条数的方法。
+---添加ListView，设置ListView与ObjectDataSource关联。--此时运行报错。
+---添加分页控件DataPager，设置PagedControlID、PageSize属性。
+
+
+二、母版页介绍。
+1>新建一个母版页，介绍母版页的结构。
+2>新建一个使用指定母版页的WebForm,说明在WebForm中如何使用母版页。
+3>在子页面中获取母版页中的控件的this.Master.FindControl("TextBox1");
+4>在子页面中国设置Page的Title属性，改变每个不同子页面的Title
+5>~/路径。
+6>母版页中使用客户端控件时的路径问题。比如使用img标签。 <img src='<%=ResolveUrl("../imgs/bg.png")%>' />
+
+
+
+三、缓存Cache：
+1>直接使用Cache["content"],缓存与Session不同，所有用户都可以共享。永不过期，由服务器自己维护，当内存不够时，会将老的缓存释放掉。
+2>设置绝对过期日期。Cache.Insert("nowTime", DateTime.Now, null, DateTime.Now.AddSeconds(7), TimeSpan.Zero);
+3>设置滑动过期日期： Cache.Insert("nowTime", DateTime.Now, null, DateTime.MaxValue, TimeSpan.FromSeconds(5));
+---------------------------------------------------------------------------
+if (Cache["nowTime"] == null)
+            {
+                Cache.Insert("nowTime", DateTime.Now, null, DateTime.MaxValue, TimeSpan.FromSeconds(5));
+
+            }
+            else
+            {
+                Response.Write("缓存中的时间：" + Cache["nowTime"]);
+            }
+---------------------------------------------------------------------------
+
+
+四、页面缓存.当一个请求过来的时候，如果已经有该页面的缓存则不再继续创建该页面的对象了。在asp.net应用程序的生命周期中第6-7个事件的时候查找获取缓存对象。
+<%@ OutputCache Duration="10" VaryByParam="*" %>
+过期时间10秒，当请求的参数不同的时候，缓存立刻失效。
+
+
+五、数据源缓存：
+---手动获取数据到集合，把集合放到Cache缓存中。每次访问页面的时候先检查Cache中是否有缓存，如果有就直接获取缓存中的数据。为Cache设置绝对过期时间.
+
+---服务器端控件缓存,数据源控件缓存。---------------------------------------
+设置控件的:EnableCaching="true"、CacheDuration="10"、CacheExpirationPolicy="Absolute"
+
+
+ <asp:ObjectDataSource CacheExpirationPolicy="Absolute" EnableCaching="true" CacheDuration="10" ID="ObjectDataSource1"
+            runat="server" SelectMethod="GetAllComments" TypeName="Ajax.CRUD.BLL.TblCommentsBll">
+        </asp:ObjectDataSource>
+--------------------------------------------------------------------
+-------------------（*）配置IIS输出缓存对静态文件缓存===============================
+选择IIS→网站→输出缓存→添加
+================================================================================
+
+六、缓存依赖。
+---依赖文件，只要文件发生变化，则缓存失效。
+Cache.Insert("Time", DateTime.Now.ToString(), new System.Web.Caching.CacheDependency(Request.MapPath("test.txt")));
+
+---依赖数据库改变-----------------------
+=======================================================================================
+数据库缓存依赖
+1、数据库缓存依赖
+-S服务器名称  -E集成身份验证  -ed启动 -d数据库名称  -et指定缓冲依赖的表名 -t表名
+在vs2010的命令提示符中运行（切换到aspnet_regsql.exe所在的目录）
+aspnet_regsql -S steve-pc -E -ed -d apsxDb -et -t TblComments
+
+缓存依赖禁用该数据库
+aspnet_regsql -S steve-pc -E -dd -d apsxDb
+
+2、依赖于数据库的web.config配置
+<system.web>
+  <caching>
+      <sqlCacheDependency enabled="true">
+        <databases>
+          <add name="apsxDbEntityName" connectionStringName="connStr" pollTime="500"/>
+        </databases>
+      </sqlCacheDependency>
+    </caching>
+  </system.web>
+
+3、 System.Web.Caching.SqlCacheDependency dep = new System.Web.Caching.SqlCacheDependency("apsxDbEntityName", "Aspx_Students");
+                Cache.Insert("list", list, dep, System.Web.Caching.Cache.NoAbsoluteExpiration, System.Web.Caching.Cache.NoSlidingExpiration);
+
+缓存使用场景第一个：访问量大，变化比较少   典型场景：京东菜单项变化比较少，访问又特别大 
+=========================================================================================
+
+
+七、配置进程外Session。
+------------------------------------------------------
+<!--配置禁用cookie，使用url来保持Session-->
+    <sessionState cookieless="true">
+    </sessionState>
+-------------------------------------------------------
+<!--配置自己的SessionID的键-->
+    <sessionState cookieless="false"  cookieName="MyAsp_NetSessionID">
+    </sessionState>
+----------------------------------------------------------------
+<!--配置Session存储的位置
+    InProc 模式，此模式将会话状态存储在 Web 服务器上的内存中。 这是默认值。
+    StateServer 模式，此模式将会话状态存储在一个名为 ASP.NET 状态服务的单独进程中。 这确保了在重新启动 Web 应用程序时会保留会话状态，并让会话状态可用于网络场中的多个 Web 服务器。
+    SQLServer 模式将会话状态存储到一个 SQL Server 数据库中。 这确保了在重新启动 Web 应用程序时会保留会话状态，并让会话状态可用于网络场中的多个 Web 服务器。
+    Custom 模式，此模式允许您指定自定义存储提供程序。 
+    Off 模式，此模式禁用会话状态。
+    -->
+    <sessionState mode="InProc">
+    </sessionState>
+
+============================配置进程外Session=======================================
+进程外session:多个网站部署在多个不同的服务器上，可以共享Session，比如登录。
+---------------------------------------------------------------------------------
+	        StateServer  注意：存储在Session中的对象必须可序列化。
+		1.开始 ASP.NET 状态服务：cmd里面命令：services.msc
+		2.配置webconfig
+<!--<sessionState mode="StateServer" stateConnectionString="tcpip=localhost:42424">
+    </sessionState>-->
+		3.如果是远程的stateserver配置注册表,启动对应服务器的“允许远程连接功能”
+		命令：cmd → regedit.exe	HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\aspnet_state\Parameters\AllowRemoteConnection
+			设置成1
+---------------------------------------------------------------------------------
+	SQLServer
+		aspnet_regsql.exe -S steve-pc -U sa -P 1234 -ssadd -sstype c -d SessionTestDb
+		1. <sessionState mode="SQLServer" allowCustomSqlDatabase="true" sqlConnectionString="Data Source=steve-pc;Initial Catalog=SessionTestDb;User ID=sa;Password=1234"></sessionState>
+		2.对象必须可序列化
+============================配置进程外Session=======================================
+
+八、配置错误页：
+    <customErrors mode="On" defaultRedirect="~/test2/404.htm">
+      <error statusCode="403" redirect="NoAccess.htm" />
+      <error statusCode="404" redirect="FileNotFound.htm" />
+    </customErrors>
+---------------------------在Application_Error中发生错误时转向另外一个页面--------------------------------------------
+protected void Application_Error(object sender, EventArgs e)
+        {
+            string errorMsg = Context.Error.Message + Environment.NewLine + Context.Error.StackTrace + "【" + DateTime.Now.ToString() + "】" + Environment.NewLine + "====================================================" + Environment.NewLine;
+            File.AppendAllText(Server.MapPath("~/log.txt"), errorMsg);
+            Response.Redirect("~/test2/404.htm");
+        }
+---------------------------在Application_Error中发生错误时转向另外一个页面--------------------------------------------
+
+
+
+--------------------------屏蔽某个IP地址--------------------------------------------
+1>在哪里写代码来屏蔽？在Page_Load中？那样只能在某个页面屏蔽。在Application_BeginRequest中。
+protected void Application_BeginRequest(object sender, EventArgs e)
+        {
+            string ip = Request.UserHostAddress;
+            if (ip == "192.168.1.101")//可以从数据库中查询是否需要屏蔽某个Ip
+            {
+                Response.Redirect("no.html");
+            }
+        }
+
+
+--------------------------屏蔽某个IP地址--------------------------------------------
+
+
+
+
+九、使用微软内置ajax解决方案：点击按钮显示当前时间、ListView异步增删改查。
+---拽一个ScriptMananger，帮生成异步脚本。
+---拽一个UpdatePandel组件。
+
+
+
+十、发布网站、设置某些目录下不允许有执行权限。
+IIS→选择具体的虚拟目录→处理程序映射→编辑功能权限→只选择“读取”。
+
+
+
+
+
+十一、.HttpApplication、HttpModule增加过滤模块。通过类似插件的方式注册asp.net应用程序生命周期的事件。
+
+
+---创建一个实现了IHttpModule接口的类。
+---在Init方法中为HttpAplication参数注册事件。
+---在web.config中配置使用具体的HttpModule
+<httpModules>
+      <add name="m1" type="Ajax.CRUD.UI.test2.TestModule,应用程序集的名称"/>
+    </httpModules>
+
+---内部过程：
+--自己模拟：1.IHttpHander
+	    2.HttpContext
+	    3.HttpApplication
+            4.定义HttpApplication中的19个事件
+	    5.定义InitInternal方法。在该方法中创建HttpModule,并调用Init(this)方法。
+	   
+
+
+反编译：
+	找到HttpApplicationFactory.GetApplicationInstance(context)方法。
+	找到GetNormalApplicatoinInstance方法
+	找到InitInternal()
+	找到InitIntegratedModules()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

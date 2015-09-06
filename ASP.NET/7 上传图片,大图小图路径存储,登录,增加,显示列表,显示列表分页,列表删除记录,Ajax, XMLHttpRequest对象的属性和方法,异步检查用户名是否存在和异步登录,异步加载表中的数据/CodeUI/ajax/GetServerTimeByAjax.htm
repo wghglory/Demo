@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style type="text/css">
+        div
+        {
+            border: 1px solid blue;
+            width: 300px;
+            height: 300px;
+            font: 30px 宋体;
+        }
+    </style>
+    <script type="text/javascript">
+        window.onload = function () {
+
+            document.getElementById('btnGetTime').onclick = function () {
+                //向服务器发起异步请求
+                //编写Ajax代码
+                var xhr = null;
+                //一、创建异步对象
+                if (XMLHttpRequest) {
+                    xhr = new XMLHttpRequest();
+                } else {
+                    xhr = new ActiveXObject("Microsoft.XMLHttp");
+                }
+                //二、设置该异步对象要请求的url，和提交方式get/post
+                xhr.open("get", "ProvideTime.ashx", true);
+
+                //三、设置回调函数（服务器向客户端发送过来响应数据后触发执行的一个js方法）
+                xhr.onreadystatechange = function () {
+                    //状态码等于4，表示只是接受了服务器给你的所有响应
+                    //但是服务器给你的到底是什么响应
+                    if (xhr.readyState == 4) {
+                        if (xhr.status == 200) {
+                            document.getElementById('dvTime').innerHTML = xhr.responseText;
+                        }
+                    }
+                };
+
+                //四、发送请求
+                xhr.send();
+            };
+        };
+    </script>
+</head>
+<body>
+    <input type="button" id="btnGetTime" value="Get Server Time" />
+    <div id="dvTime">
+        dd
+    </div>
+</body>
+</html>

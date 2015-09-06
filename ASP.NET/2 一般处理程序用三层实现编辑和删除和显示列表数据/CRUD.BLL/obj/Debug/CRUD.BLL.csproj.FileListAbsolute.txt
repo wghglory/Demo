@@ -1,0 +1,18 @@
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130726\CRUD.BLL\bin\Debug\CRUD.BLL.dll
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130726\CRUD.BLL\bin\Debug\CRUD.BLL.pdb
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130726\CRUD.BLL\bin\Debug\CRUD.DAL.dll
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130726\CRUD.BLL\bin\Debug\CRUD.Model.dll
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130726\CRUD.BLL\bin\Debug\CRUD.DAL.pdb
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130726\CRUD.BLL\bin\Debug\CRUD.Model.pdb
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130726\CRUD.BLL\obj\Debug\CRUD.BLL.csprojResolveAssemblyReference.cache
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130726\CRUD.BLL\obj\Debug\CRUD.BLL.dll
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130726\CRUD.BLL\obj\Debug\CRUD.BLL.pdb
+\\psf\Home\Documents\工作\MyCode\ASP.NET\2 一般处理程序用三层实现编辑和删除和显示列表数据\CRUD.BLL\bin\Debug\CRUD.BLL.dll
+\\psf\Home\Documents\工作\MyCode\ASP.NET\2 一般处理程序用三层实现编辑和删除和显示列表数据\CRUD.BLL\bin\Debug\CRUD.BLL.pdb
+\\psf\Home\Documents\工作\MyCode\ASP.NET\2 一般处理程序用三层实现编辑和删除和显示列表数据\CRUD.BLL\bin\Debug\CRUD.DAL.dll
+\\psf\Home\Documents\工作\MyCode\ASP.NET\2 一般处理程序用三层实现编辑和删除和显示列表数据\CRUD.BLL\bin\Debug\CRUD.Model.dll
+\\psf\Home\Documents\工作\MyCode\ASP.NET\2 一般处理程序用三层实现编辑和删除和显示列表数据\CRUD.BLL\bin\Debug\CRUD.DAL.pdb
+\\psf\Home\Documents\工作\MyCode\ASP.NET\2 一般处理程序用三层实现编辑和删除和显示列表数据\CRUD.BLL\bin\Debug\CRUD.Model.pdb
+\\psf\Home\Documents\工作\MyCode\ASP.NET\2 一般处理程序用三层实现编辑和删除和显示列表数据\CRUD.BLL\obj\Debug\CRUD.BLL.csprojResolveAssemblyReference.cache
+\\psf\Home\Documents\工作\MyCode\ASP.NET\2 一般处理程序用三层实现编辑和删除和显示列表数据\CRUD.BLL\obj\Debug\CRUD.BLL.dll
+\\psf\Home\Documents\工作\MyCode\ASP.NET\2 一般处理程序用三层实现编辑和删除和显示列表数据\CRUD.BLL\obj\Debug\CRUD.BLL.pdb

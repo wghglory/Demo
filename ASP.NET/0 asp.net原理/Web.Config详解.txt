@@ -1,0 +1,151 @@
+Web.config配置详解
+Posted on 2007-12-17 20:56 nyflying 阅读(14754) 评论(10)  编辑 收藏  
+一、认识Web.config文件 
+Web.config   文件是一个XML文本文件，它用来储存   ASP.NET   Web   应用程序的配置信息（如最常用的设置ASP.NET   Web   应用程序的身份验证方式），它可以出现在应用程序的每一个目录中。当你通过.NET新建一个Web应用程序后，默认情况下会在根目录自动创建一个默认的   Web.config文件，包括默认的配置设置，所有的子目录都继承它的配置设置。如果你想修改子目录的配置设置，你可以在该子目录下新建一个   Web.config文件。它可以提供除从父目录继承的配置信息以外的配置信息，也可以重写或修改父目录中定义的设置。 
+(一).Web.Config是以XML文件规范存储,配置文件分为以下格式 
+1.配置节处理程序声明 
+特点：   位于配置文件的顶部，包含在 <configSections> 标志中。 
+2.特定应用程序配置 
+特点:   位于 <appSetting> 中。   可以定义应用程序的全局常量设置等信息. 
+3.配置节设置 
+特点:   位于 <system.Web> 节中，控制Asp.net运行时的行为. 
+4.配置节组 
+特点:   用 <sectionGroup> 标记，可以自定义分组，可以放到 <configSections> 内部或其它 <sectionGroup> 标记的内部. 
+(二).配置节的每一节 
+1. <configuration> 节 
+根元素，其它节都是在它的内部. 
+2. <appSetting> 节 
+此节用于定义应用程序设置项。对一些不确定设置，还可以让用户根据自己实际情况自己设置 
+用法: 
+I. 
+<appSettings> 
+<add   key= "Conntction "   value= "server=192.168.85.66;userid=sa;password=;database=Info; "/> 
+<appSettings> 
+定义了一个连接字符串常量，并且在实际应用时可以修改连接字符串，不用修改程式代码. 
+II. <appSettings> 
+<add   key= "ErrPage "   value= "Error.aspx "/> 
+<appSettings> 
+定义了一个错误重定向页面. 
+3. <compilation> 节 
+格式: 
+<compilation 
+defaultLanguage= "c# " 
+debug= "true " 
+/> 
+I.default   language:   定义后台代码语言,可以选择C#和VB.net两种语言. 
+IIdebug   :   为true时，启动aspx调试；   为false不启动aspx调试，因而可以提高应用程序运行 
+时的性能。   一般程序员在开发时设置为true,交给客户时设置为false. 
+4. <customErrors> 节 
+格式: 
+<customErrors 
+mode= "RemoteOnly " 
+defaultRedirect= "error.aspx " 
+<error   statusCode= "440 "   redirect= "err440page.aspx "/> 
+<error   statusCode= "500 "   redirect= "err500Page.aspx "/> 
+/> 
+I.mode   :   具有On,Off,RemoteOnly   3种状态。On表示始终显示自定义的信息;   Off表示始终显示详细的asp.net错误信息;   RemoteOnly表示只对不在本地Web服务器上运行的用户显示自定义信息. 
+II.defaultRedirect:   用于出现错误时重定向的URL地址.   是可选的 
+III.statusCode:   指明错误状态码，表明一种特定的出错状态. 
+IV.   redirect:错误重定向的URL. 
+5. <globalization> 节 
+格式: 
+<globalization 
+requestEncoding= "utf-8 " 
+responseEncoding= "utf-8 " 
+fileEncoding= "utf-8 " 
+/> 
+I.requestEncoding:   它用来检查每一个发来请求的编码. 
+II.responseEncoding:   用于检查发回的响应内容编码. 
+III.fileEncoding:   用于检查aspx,asax等文件解析的默认编码. 
+6. <sessionState> 节 
+格式: 
+<sessionState 
+mode= "InProc " 
+stateConnectionString= "tcpip=127.0.0.1:42424 " 
+sqlConnectionString= "data   source=127.0.0.1;Trusted_Connection=yes " 
+cookieless= "false " 
+timeout= "20 " 
+/> 
+I.mode:   分为off,Inproc,StateServer,SqlServer几种状态 
+这里有详细介绍此属性:   http://blog.csdn.net/chengking/archive/2005/10/27/518079.aspx 
+II.   stateConnectionString   :指定Asp.net应用程序存储远程会话状态的服务器名，默认为本机 
+III.sqlConnectionString:   当用会话状态数据库时，在这里设置连接字符串 
+IV.   Cookieless:   设置为true时，表示不使用cookie会话状态来标识客户；   否则，相反. 
+V.   TimeOut:   用来定义会话状态存储的时间，超过期限，将自动终止会话. 
+7. <authentication> 节 
+格式: 
+<authentication   mode= "Forms "> 
+<forms   name= ".ASPXUSERDEMO "   loginUrl= "Login.aspx "   protection= "All "   timeout= "30 "/> 
+</authentication> 
+<authorization> 
+<deny   users= "? "/> 
+</authorization> 
+I.Windows:   使用IIS验证方式 
+II.Forms:   使用基于窗体的验证方式 
+III.Passport:   采用Passport   cookie验证模式 
+IV.None:   不采用任何验证方式 
+里面内嵌Forms节点的属性涵义: 
+I.Name:   指定完成身份验证的Http   cookie的名称. 
+II.LoginUrl:   如果未通过验证或超时后重定向的页面URL，一般为登录页面，让用户重新登录 
+III.Protection:   指定   cookie数据的保护方式. 
+可设置为:   All   None   Encryption   Validation四种保护方式 
+a.   All表示加密数据，并进行有效性验证两种方式 
+b.   None表示不保护Cookie. 
+c.   Encryption表示对Cookie内容进行加密 
+d.   validation表示对Cookie内容进行有效性验证 
+IV.   TimeOut:   指定Cookie的失效时间.   超时后要重新登录. 
+
+在运行时对Web.config文件的修改不需要重启服务就可以生效（注： <processModel>   节例外）。当然Web.config文件是可以扩展的。你可以自定义新配置参数并编写配置节处理程序以对它们进行处理。 
+
+web.config配置文件（默认的配置设置）以下所有的代码都应该位于 
+<configuration> 
+<system.web> 
+和 
+</system.web> 
+</configuration> 
+之间，出于学习的目的下面的示例都省略了这段XML标记。 
+
+
+1、 <authentication>   节 
+作用：配置   ASP.NET   身份验证支持（为Windows、Forms、PassPort、None四种）。该元素只能在计算机、站点或应用程序级别声明。 <   authentication>   元素必需与 <authorization>   节配合使用。 
+
+
+示例： 
+
+以下示例为基于窗体（Forms）的身份验证配置站点，当没有登陆的用户访问需要身份验证的网页，网页自动跳转到登陆网页。 
+<authentication   mode= "Forms "   > 
+<forms   loginUrl= "logon.aspx "   name= ".FormsAuthCookie "/> 
+</authentication> 
+其中元素loginUrl表示登陆网页的名称，name表示Cookie名称。 
+
+2、 <authorization>   节 
+作用：控制对   URL   资源的客户端访问（如允许匿名用户访问）。此元素可以在任何级别（计算机、站点、应用程序、子目录或页）上声明。必需与 <authentication>   节配合使用。 
+
+
+示例：以下示例禁止匿名用户的访问 
+<authorization> 
+      <deny   users= "? "/> 
+</authorization> 
+注：你可以使用user.identity.name来获取已经过验证的当前的用户名；可以使用web.Security.FormsAuthentication.RedirectFromLoginPage方法将已验证的用户重定向到用户刚才请求的页面.具体的 
+
+3、 <compilation> 节 
+作用：配置   ASP.NET   使用的所有编译设置。默认的debug属性为“True”.在程序编译完成交付使用之后应将其设为False（Web.config文件中有详细说明，此处省略示例） 
+
+
+4、 <customErrors> 
+作用：为   ASP.NET   应用程序提供有关自定义错误信息的信息。它不适用于   XML   Web   services   中发生的错误。 
+
+示例：当发生错误时，将网页跳转到自定义的错误页面。 
+<customErrors   defaultRedirect= "ErrorPage.aspx "   mode= "RemoteOnly "> 
+</customErrors> 
+其中元素defaultRedirect表示自定义的错误网页的名称。mode元素表示：对不在本地   Web   服务器上运行的用户显示自定义(友好的)信息。 
+
+
+5、 <httpRuntime> 节 
+作用：配置   ASP.NET   HTTP   运行库设置。该节可以在计算机、站点、应用程序和子目录级别声明。 
+
+
+示例：控制用户上传文件最大为4M，最长时间为60秒，最多请求数为100 
+<httpRuntime   maxRequestLength= "4096 "   executionTimeout= "60 "   appRequestQueueLimit= "100 "/> 
+
+ConfigurationSettings.AppSettings[ "scon "]

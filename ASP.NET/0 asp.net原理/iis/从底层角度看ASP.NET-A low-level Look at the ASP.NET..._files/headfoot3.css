@@ -1,0 +1,269 @@
+﻿body{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	background-color: #ffffff;
+	text-align:center;
+	padding:0px;
+	margin:0px;
+	background-position: 40px;
+}
+img {
+	border:0px;
+}
+
+ul{ list-style-type:none; padding:0px; margin:0px;}
+li{ padding:0px; margin:0px;}
+.bluewz{color:#1e386b;}
+	.header{height:29px;margin:0px auto;width:882px;}
+.day{color: #9d9d9d;line-height:29px;  float:left; font-size:12px;}
+.help{
+	float:right;
+	width:395px;
+	color:#424242;
+	line-height:29px;
+	background-image: url(http://pubimage.360doc.com/newsite/bj_12.gif);
+	background-repeat: no-repeat;
+	background-position: left 7px;
+}
+.help1{ padding-left:27px; color:#1e386b;font-weight:normal;}
+.help img{ vertical-align:middle;}
+.logo{ clear:both; padding-top:21px; height:66px;margin:0px auto;width:882px;}
+.searc{
+	width:420px;
+	height:35px;
+	background-image: url(http://pubimage.360doc.com/newsite/bgd.gif);
+	background-repeat: no-repeat;
+}
+.searcinput{padding-top:9px; padding-left:5px; width:320px; float:left; padding-right:19px;_padding-right:17px;}
+.noneinputa{text-align:left; width:320px;height:99%;border: none;background-color: #ffffff;font-size:14px;color:#b2b2b2;line-height:14px;} 
+.d1 {background:#ffffff;width: 315px;_width: 304px;}
+.bannerwz{ font-size:16px; color:#5e5e5e; }
+.mainnav{height:34px;background-color:#f1f1f1;}
+.mainnav1{margin:0px auto;width:882px; text-align:left;}
+.navbj1{
+	background-image: url(http://pubimage.360doc.com/newsite/bj_2.gif);
+	background-repeat: no-repeat;
+	width:88px;
+	height:34px;
+	background-position: center top ;
+}
+.navbj2{
+	background-image: url(http://pubimage.360doc.com/newsite/bj_10.gif);
+	background-repeat: no-repeat; width:100px;height:34px;background-position: center top;
+}
+.navbj3{
+	background-image: url(http://pubimage.360doc.com/newsite/bj_11.gif);
+	background-repeat: no-repeat; width:132px; height:34px;background-position: center top;
+}
+.navxt{
+	text-align: left;
+	border: none;
+	background-image: url(http://pubimage.360doc.com/newsite/bj_3.gif);
+	background-repeat: repeat-x;
+	height:22px; _margin-top:-4px;
+}
+.navxt1{
+	text-align: left;
+	border: none;
+	background-image: url(http://pubimage.360doc.com/newsite/bj_3.gif);
+	background-repeat: repeat-x;
+	 _margin-top:-4px; padding-top:18px;
+}
+.navwz{ font-size:16px; font-weight:bold; color:#fff; text-align:center; padding-top:4px;}
+.navwz1{ font-size:16px; font-weight:bold; color:#5f5f5f; text-align:center; padding-top:4px;}
+.footerbottom{height:100px;color:#7d7d7d; background-color:#fff; line-height:24px;}
+.footerbottomwz{ width:650px; margin:0px auto; text-align:center; padding-top:14px; font-size:12px;}
+
+.left{ float:left;}
+/******* 服务条款链接 *******/
+.julink A:link {
+	COLOR: #1e386b; TEXT-DECORATION: none
+}
+.julink A:visited {
+	COLOR: #1e386b; TEXT-DECORATION: none
+}
+.julink A:hover {
+	COLOR: #fd8401; TEXT-DECORATION: none
+}
+/******* 设为主页链接 *******/
+.julinka A:link {
+	COLOR: #414141; TEXT-DECORATION: none
+}
+.julinka A:visited {
+	COLOR: #414141; TEXT-DECORATION: none
+}
+.julinka A:hover {
+	COLOR: #fd8401; TEXT-DECORATION: none
+}
+.navwz A:link {
+	COLOR: #fff; TEXT-DECORATION: none
+}
+.navwz A:visited {
+	COLOR: #fff; TEXT-DECORATION: none
+}
+.navwz A:hover {
+	COLOR: #fff; TEXT-DECORATION: none
+}
+.navwz1 A:link {
+	COLOR: #5f5f5f; TEXT-DECORATION: none
+}
+.navwz1 A:visited {
+	COLOR: #5f5f5f; TEXT-DECORATION: none
+}
+.navwz1 A:hover {
+	COLOR: #5f5f5f; TEXT-DECORATION: none
+}
+.footer{height:24px;color:#f1f1f1; background-color:#f1f1f1;text-align:center; margin-top:15px;}
+
+/*******名字链接 *******/
+.namelink{}
+.namelink A:link {
+	COLOR: #5b8402; TEXT-DECORATION: none
+}
+.namelink A:visited {
+	COLOR: #5b8402; TEXT-DECORATION: none
+}
+.namelink A:hover {
+	COLOR: #5b8402; TEXT-DECORATION: underline
+}
+
+/*******转藏人名链接 *******/
+.namelink1 A:link {
+	COLOR: #95b369; TEXT-DECORATION: none
+}
+.namelink1 A:visited {
+	COLOR: #95b369; TEXT-DECORATION: none
+}
+.namelink1 A:hover {
+	COLOR: #95b369; TEXT-DECORATION: underline
+}
+/******* 文章标题的链接 *******/
+.wzbtlist A:link {
+	COLOR: #34659d; TEXT-DECORATION: none
+}
+.wzbtlist A:visited {
+	COLOR: #666699; TEXT-DECORATION: none
+}
+.wzbtlist A:hover {
+	COLOR:#34659d; TEXT-DECORATION: underline
+}
+/******* 小头样式 *******/
+.containera{text-align: left;border: none; background-image: url(http://pubimage.360doc.com/newsite/bj_13.gif); 
+	background-repeat: repeat-x; height:87px;}
+.headersmall{height:20px;margin:0px auto;width:882px;}
+.daysmall{color: #9d9d9d;line-height:20px;  float:left; font-size:12px;}
+.helpsmall{
+	float:right;
+	width:395px;
+	color:#424242;
+	line-height:20px;
+	background-image: url(http://pubimage.360doc.com/newsite/bj_12.gif);
+	background-repeat: no-repeat;
+	background-position: left 3px;
+}
+.logosmall{ clear:both; padding-top:14px; height:53px;margin:0px auto;width:882px;}
+.searcsmall{
+	width:420px;
+	height:35px;
+	background-image: url(http://pubimage.360doc.com/newsite/bgdb.gif);
+	background-repeat: no-repeat;
+}
+.searcinputsmall{padding-top:7px; padding-left:5px; width:302px; float:left; padding-right:19px;_padding-right:17px;}
+.noneinputsmall{text-align:left; width:300px;height:99%;border: none;background-color: #ffffff;font-size:14px;color:#b2b2b2; padding-left:5px;_padding-left:4px;} 
+.mainnavsmall{height:32px;_height:36px;background-color:#f1f1f1; padding-top:2px;}.navwzsmall{ font-size:16px; font-weight:bold; color:#5f5f5f; text-align:center;}
+.navwzsmall A:link {
+	COLOR: #5f5f5f; TEXT-DECORATION: none
+}
+.navwzsmall A:visited {
+	COLOR: #5f5f5f; TEXT-DECORATION: none
+}
+.navwzsmall A:hover {
+	COLOR: #77b709; TEXT-DECORATION: none
+}
+#container{margin:0px auto;width:960px;text-align: left;border: none;background-color: #FFF;}
+.input01 {
+ border: 1px solid #7e9db9;
+ background-color: #fff; 
+ height: 14px;
+ width: 34px;
+ padding-top: 4px;
+ font-family: Arial, Helvetica, sans-serif; 
+ font-size: 12px; line-height:12px; 
+ 
+}
+
+/******* 我的图书馆蓝色链接下划线样式 *******/
+.ym { color:#000; text-decoration:none;}
+.ym a:link {color:#2763ad; text-decoration:underline; }
+.ym a:visited {color:#2763ad;text-decoration:underline; }
+.ym a:hover {text-decoration:none;color:#2763ad;}
+
+.hiddenbar
+{
+    display: none; 
+    position: absolute;
+    left: 200px;
+    top: 200px;
+}
+
+.serchboxx{ border:1px solid #cacaca; border-top:none; width:227px; height:100px; background-color:#fff;}
+.paixucssright{padding-top:8px;padding-left:4px;float:left;}
+.bjyellow2{background-color:#fef9d1; line-height:26px; padding-left:6px; cursor:pointer;}
+.bjwhite2{background-color:#fffff7;line-height:26px;padding-left:6px;cursor:pointer;}
+.footerwz{ width:445px; margin:0px auto; }
+.footerwz1{ width:500px; margin:0px auto; }
+.readtishidiv 
+{
+    display:none;
+	position:absolute;
+	text-align:left;
+	color:#4b4b4b;
+	margin-left:-10px;*margin-left: -93px !important; margin-top:-103px;*margin-top: -85px !important;
+	background-image:url(http://pubimage.360doc.com/newsite/readbj.png)!important;_background-image:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://pubimage.360doc.com/newsite/readbj.png',sizingMethod='crop') !important;
+	background-repeat: no-repeat; width:359px; height:81px;
+}
+.readtishidiva 
+{
+    display:none;
+	position:absolute;
+	text-align:left;
+	color:#4b4b4b;
+	margin-left:2px;*margin-left: -93px !important; margin-top:-103px;*margin-top: -85px !important;
+	background-image:url(http://pubimage.360doc.com/newsite/readbj.png)!important;_background-image:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://pubimage.360doc.com/newsite/readbj.png',sizingMethod='crop') !important;
+	background-repeat: no-repeat; width:359px; height:81px;
+}
+
+.redchacss{float:right; padding-right:15px; padding-top:10px;}
+.readtishilink{clear:both; font-size:14px; font-weight:bold; color:#2763ac;padding-top:20px; padding-left:26px;}
+.readtishilink A:link {
+	COLOR: #2763ac; text-decoration:underline;
+}
+.readtishilink A:visited {
+	COLOR: #2763ac; TEXT-DECORATION: underline
+}
+.readtishilink A:hover {
+	COLOR: #2763ac; TEXT-DECORATION: none; 
+}
+.loginnew{ width:210px; float:left; text-align:left; padding-left:40px; padding-top:15px;}
+
+.logininputanew{BORDER: #d6d6d6 1px solid; padding:5px; WIDTH:190px; HEIGHT: 18px; FONT-SIZE: 12px; color:#b2b2b2; line-height:21px;}
+
+
+.juselike A:link {
+	COLOR: #5c8302; TEXT-DECORATION: none
+}
+.juselike A:visited {
+	COLOR: #5c8302; TEXT-DECORATION: none
+}
+.juselike A:hover {
+	COLOR: #5c8302; TEXT-DECORATION: underline
+}
+
+.logininputbnew{BORDER: #d6d6d6 1px solid; padding:5px; WIDTH:128px; HEIGHT: 18px; FONT-SIZE: 12px; color:#b2b2b2; line-height:21px;}
+
+.xuxian{
+	background-image: url(http://pubimage.360doc.com/read/xitiao2.gif);
+	background-repeat: repeat-x;
+	background-position: top; width:206px; height:65px; color:#a1a1a1;
+}
+.loginnew{ width:210px; float:left; text-align:left; padding-left:40px; padding-top:15px;}

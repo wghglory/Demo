@@ -1,0 +1,464 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0061)http://www.cnblogs.com/BoKeRen/archive/2006/04/10/371313.html -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>C#生成缩略图 (通用模式) - 博客人 - 博客园</title>
+<link type="text/css" rel="stylesheet" href="./C#生成缩略图 (通用模式) - 博客人 - 博客园_files/common.css">
+<link id="MainCss" type="text/css" rel="stylesheet" href="./C#生成缩略图 (通用模式) - 博客人 - 博客园_files/style.css">
+<link type="text/css" rel="stylesheet" href="./C#生成缩略图 (通用模式) - 博客人 - 博客园_files/common2.css">
+<link type="text/css" rel="stylesheet" href="./C#生成缩略图 (通用模式) - 博客人 - 博客园_files/shStyle.css">
+<link title="RSS" type="application/rss+xml" rel="alternate" href="http://www.cnblogs.com/BoKeRen/rss">
+<link title="RSD" type="application/rsd+xml" rel="EditURI" href="http://www.cnblogs.com/BoKeRen/rsd.xml">
+<link type="application/wlwmanifest+xml" rel="wlwmanifest" href="http://www.cnblogs.com/BoKeRen/wlwmanifest.xml">
+<script async="" type="text/javascript" src="./C#生成缩略图 (通用模式) - 博客人 - 博客园_files/gpt.js"></script><script type="text/javascript" async="" src="./C#生成缩略图 (通用模式) - 博客人 - 博客园_files/ga.js"></script><script src="./C#生成缩略图 (通用模式) - 博客人 - 博客园_files/jquery.js" type="text/javascript"></script>  
+<script type="text/javascript">
+var currentBlogApp = 'BoKeRen';
+</script>
+<script src="./C#生成缩略图 (通用模式) - 博客人 - 博客园_files/common.js" type="text/javascript"></script> 
+<script src="./C#生成缩略图 (通用模式) - 博客人 - 博客园_files/json2.js" type="text/javascript"></script>
+<script type="text/javascript" src="./C#生成缩略图 (通用模式) - 博客人 - 博客园_files/syntaxHighlighter.js"></script>
+<script async="" type="text/javascript" src="./C#生成缩略图 (通用模式) - 博客人 - 博客园_files/google_ads_gpt.js"></script><script type="text/javascript" src="./C#生成缩略图 (通用模式) - 博客人 - 博客园_files/osd.js"></script></head>
+<body>
+<a name="top"></a>
+
+<!--done-->
+<table cellpadding="0" cellspacing="0" border="0" align="center" width="100%">
+<tbody><tr>
+	<td width="299" background="./C#生成缩略图 (通用模式) - 博客人 - 博客园_files/banner1.jpg"></td>
+	<td background="./C#生成缩略图 (通用模式) - 博客人 - 博客园_files/banner.jpg">
+<!--done-->
+<div class="header">
+	<div class="headerText">
+		<a id="Header1_HeaderTitle" class="headermaintitle" href="http://www.cnblogs.com/BoKeRen/">专注于.NET技术</a><br>
+		坚持每天都要到博客圆里逛一逛. 哈哈！！！JodyJin
+	</div>
+</div>
+</td>
+	<td width="296" background="./C#生成缩略图 (通用模式) - 博客人 - 博客园_files/banner2.jpg"></td>
+</tr>
+</tbody></table>
+<div id="mylinks"><a id="MyLinks1_HomeLink" class="menu" href="http://www.cnblogs.com/">博客园</a>&nbsp; &nbsp;
+<a id="MyLinks1_MyHomeLink" class="menu" href="http://www.cnblogs.com/BoKeRen/">首页</a>&nbsp; &nbsp;
+<a href="http://q.cnblogs.com/" class="menu" target="_blank">博问</a>&nbsp; &nbsp;
+<a href="http://home.cnblogs.com/ing/" class="menu" target="_blank">闪存</a>&nbsp; &nbsp;
+<a id="MyLinks1_NewPostLink" class="menu" rel="nofollow" href="http://www.cnblogs.com/BoKeRen/admin/EditPosts.aspx?opt=1">新随笔</a>&nbsp; &nbsp;
+<a id="MyLinks1_Syndication" class="menu" href="http://www.cnblogs.com/BoKeRen/rss">订阅</a>
+<a id="MyLinks1_XMLLink" href="http://www.cnblogs.com/BoKeRen/rss"><img src="./C#生成缩略图 (通用模式) - 博客人 - 博客园_files/xml.gif" alt="订阅"></a>&nbsp; &nbsp;
+<a id="MyLinks1_Admin" class="menu" rel="nofollow" href="http://www.cnblogs.com/BoKeRen/admin/EditPosts.aspx">管理</a>
+<!-- <a id="MyLinks1_ContactLink" accesskey="9" class="menu" rel="nofollow" href="http://space.cnblogs.com/msg/send/%e5%8d%9a%e5%ae%a2%e4%ba%ba">联系</a>&nbsp;&nbsp;&nbsp; -->
+</div>
+<div id="mytopmenu">
+	
+		<div id="mystats">
+			
+<!--done-->
+<div class="blogStats">
+posts - 121,&nbsp;
+comments - 38,&nbsp;
+trackbacks - 7
+
+</div></div>
+	
+</div>
+<div id="centercontent">
+	
+	
+<!--done-->
+<div class="post">
+	<div class="postTitle">
+		<a id="cb_post_title_url" class="postTitle2" href="./C#生成缩略图 (通用模式) - 博客人 - 博客园_files/C#生成缩略图 (通用模式) - 博客人 - 博客园.htm">C#生成缩略图 (通用模式)</a>
+	</div>
+	<div id="cnblogs_post_body"><p>用数据库保存图片的路径和文件名称，把文件保存在文件夹中.<br>//保存在数据库中的文件路径<br>ArrayList arrFilePath=new ArrayList();<br>arrFilePath=myCommonMethod.UploadPic(Files,"/UpLoads/UpPicture/");<br>//获取文件名称<br>string fileName=arrFilePath[0].SubString(arrFilePath[0].LastIndexOf("/")+1);<br>//源图路径（物理路径）<br>originalImagePath=Request.PhysicalApplicationPath+"/UpLoads/UpPicture/"+fileName;<br>//缩略图路径（物理路径）<br>thumbnailPath&nbsp;&nbsp;&nbsp;&nbsp; =Request.PhysicalApplicationPath+"/UpLoads/UpPicture/"+"thumb_"+fileName;<br>//调用生成缩略图方法<br>this.MakeThumbnail(originalImagePath,thumbnailPath,120,150, strMode out outthumbnailPath);<br><br>#region&nbsp; 生成缩略图 <br>&nbsp;&nbsp;///&lt;summary&gt; <br>&nbsp;&nbsp;/// 生成缩略图 <br>&nbsp;&nbsp;/// &lt;/summary&gt; <br>&nbsp;&nbsp;/// &lt;param name="originalImagePath"&gt;源图路径（物理路径）&lt;/param&gt; <br>&nbsp;&nbsp;/// &lt;param name="thumbnailPath"&gt;缩略图路径（物理路径）&lt;/param&gt; <br>&nbsp;&nbsp;/// &lt;param name="width"&gt;缩略图宽度&lt;/param&gt; <br>&nbsp;&nbsp;/// &lt;param name="height"&gt;缩略图高度&lt;/param&gt; <br>&nbsp;&nbsp;/// &lt;param name="mode"&gt;生成缩略图的方式&lt;/param&gt;&nbsp;&nbsp;&nbsp;&nbsp; <br>&nbsp;&nbsp;public&nbsp; void MakeThumbnail(string originalImagePath,&nbsp; string thumbnailPath, int width, int height, string mode out string outthumbnailPath) <br>&nbsp;&nbsp;{ <br>&nbsp;&nbsp;&nbsp;System.Drawing.Image originalImage =System.Drawing.Image.FromFile(originalImagePath); <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>&nbsp;&nbsp;&nbsp;int towidth = width; <br>&nbsp;&nbsp;&nbsp;int toheight = height; <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>&nbsp;&nbsp;&nbsp;int x = 0; <br>&nbsp;&nbsp;&nbsp;int y = 0; <br>&nbsp;&nbsp;&nbsp;int ow = originalImage.Width; <br>&nbsp;&nbsp;&nbsp;int oh = originalImage.Height;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p>
+<p>&nbsp;&nbsp;&nbsp;switch (mode) <br>&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>&nbsp;&nbsp;&nbsp;&nbsp;case "HW"://指定高宽缩放（可能变形）&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break; <br>&nbsp;&nbsp;&nbsp;&nbsp;case "W"://指定宽，高按比例&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;toheight = originalImage.Height * width/originalImage.Width; <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break; <br>&nbsp;&nbsp;&nbsp;&nbsp;case "H"://指定高，宽按比例 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;towidth = originalImage.Width * height/originalImage.Height;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>&nbsp;&nbsp;&nbsp;&nbsp;case "Cut"://指定高宽裁减（不变形）&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if((double)originalImage.Width/(double)originalImage.Height &gt; (double)towidth/(double)toheight) <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{ <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;oh = originalImage.Height; <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ow = originalImage.Height*towidth/toheight; <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;y = 0; <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x = (originalImage.Width - ow)/2; <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{ <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ow = originalImage.Width; <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;oh = originalImage.Width*height/towidth; <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x = 0; <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;y = (originalImage.Height - oh)/2; <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>&nbsp;&nbsp;&nbsp;&nbsp;default : <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break; <br>&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;&nbsp;&nbsp; <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>&nbsp;&nbsp;&nbsp;//新建一个bmp图片 <br>&nbsp;&nbsp;&nbsp;System.Drawing.Image bitmap = new System.Drawing.Bitmap(towidth,toheight); </p>
+<p>&nbsp;&nbsp;&nbsp;//新建一个画板 <br>&nbsp;&nbsp;&nbsp;Graphics g = System.Drawing.Graphics.FromImage(bitmap); </p>
+<p>&nbsp;&nbsp;&nbsp;//设置高质量插值法 <br>&nbsp;&nbsp;&nbsp;g.InterpolationMode = System.Drawing.Drawing2D.InterpolationMode.High; </p>
+<p>&nbsp;&nbsp;&nbsp;//设置高质量,低速度呈现平滑程度 <br>&nbsp;&nbsp;&nbsp;g.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality; </p>
+<p>&nbsp;&nbsp;&nbsp;//清空画布并以透明背景色填充 <br>&nbsp;&nbsp;&nbsp;g.Clear(Color.Transparent);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p>
+<p>&nbsp;&nbsp;&nbsp;//在指定位置并且按指定大小绘制原图片的指定部分 <br>&nbsp;&nbsp;&nbsp;g.DrawImage(originalImage, new Rectangle(0, 0, towidth, toheight), <br>&nbsp;&nbsp;&nbsp;&nbsp;new Rectangle(x, y, ow,oh), <br>&nbsp;&nbsp;&nbsp;&nbsp;GraphicsUnit.Pixel); </p>
+<p>&nbsp;&nbsp;&nbsp;try <br>&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>&nbsp;&nbsp;&nbsp;&nbsp;//以jpg格式保存缩略图 <br>&nbsp;&nbsp;&nbsp;&nbsp;bitmap.Save(thumbnailPath, System.Drawing.Imaging.ImageFormat.Jpeg);&nbsp;<br>&nbsp;&nbsp;&nbsp; outthumbnailPath=thumbnailPath;<br>&nbsp;&nbsp;&nbsp;} <br>&nbsp;&nbsp;&nbsp;catch(System.Exception e) <br>&nbsp;&nbsp;&nbsp;{ <br>&nbsp;&nbsp;&nbsp;&nbsp;throw e; <br>&nbsp;&nbsp;&nbsp;} <br>&nbsp;&nbsp;&nbsp;finally <br>&nbsp;&nbsp;&nbsp;{ <br>&nbsp;&nbsp;&nbsp;&nbsp;originalImage.Dispose(); <br>&nbsp;&nbsp;&nbsp;&nbsp;bitmap.Dispose();&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>&nbsp;&nbsp;&nbsp;&nbsp;g.Dispose(); <br>&nbsp;&nbsp;&nbsp;} <br>&nbsp;&nbsp;} </p>
+</div><div id="MySignature"></div>
+<script type="text/javascript">
+var isLogined = true;
+var cb_blogId = 16890;
+var cb_entryId = 371313;
+var cb_blogApp = currentBlogApp;
+var cb_blogUserGuid = "644e360b-63cf-dd11-9e4d-001cf0cd104b";
+var cb_entryCreatedDate = '2006/4/10 14:30:00';
+var enableGoogleAd = true;
+var googletag = googletag || {};
+googletag.cmd = googletag.cmd || [];
+</script>
+<div id="blog_post_info_block">
+<div id="blog_post_info"><div id="BlogPostCategory"></div>
+<div id="EntryTag"></div>
+<div id="green_channel">
+绿色通道：
+<a href="javascript:void(0);" id="green_channel_digg" onclick="DiggIt(cb_entryId,cb_blogId,1);green_channel_success(this,&#39;谢谢推荐！&#39;);">好文要顶</a>
+<a id="green_channel_follow" onclick="c_follow();" href="javascript:void(0);">关注我</a>
+<a id="green_channel_favorite" onclick="AddToWz(cb_entryId);return false;" href="javascript:void(0);">收藏该文</a><a id="green_channel_contact" href="http://space.cnblogs.com/msg/send/%e5%8d%9a%e5%ae%a2%e4%ba%ba" target="_blank">与我联系</a>
+<a id="green_channel_weibo" href="javascript:void(0);" title="分享至新浪微博" onclick="ShareToTsina()"><img src="./C#生成缩略图 (通用模式) - 博客人 - 博客园_files/icon_weibo_24.png" alt=""></a>
+</div>
+<div id="digg_block">
+<div id="author_profile">
+<div id="author_profile_info" class="author_profile_info">
+<div id="author_profile_detail" class="author_profile_info">
+<a href="http://home.cnblogs.com/u/BoKeRen/">博客人</a><br>
+<a href="http://home.cnblogs.com/u/BoKeRen/followees">关注 - 0</a><br>
+<a href="http://home.cnblogs.com/u/BoKeRen/followers">粉丝 - 1</a>
+</div>
+</div>
+<div class="clear"></div>
+<div id="author_profile_honor"></div>
+<div id="author_profile_follow">
+<a href="javascript:void(0);" onclick="c_follow();return false;">+加关注</a>
+</div>
+</div>
+<div id="div_digg">										
+	<div class="diggit" onclick="votePost(cb_entryId,&#39;Digg&#39;)"> 
+		<span class="diggnum" id="digg_count">1</span>
+	</div>
+	<div class="buryit" onclick="votePost(cb_entryId,&#39;Bury&#39;)"> 
+		<span class="burynum" id="bury_count">0</span>
+	</div>
+	<div class="clear"></div>	
+	<div class="diggword" id="digg_tips">
+    (请您对文章做出评价)
+    </div>	
+</div>
+</div></div>
+<div class="clear"></div>
+<div id="post_next_prev"><a href="http://www.cnblogs.com/BoKeRen/archive/2006/04/09/370534.html" class="p_n_p_prefix">« </a> 博主前一篇：<a href="http://www.cnblogs.com/BoKeRen/archive/2006/04/09/370534.html" title="发布于2006-04-09 12:26">asp.net生成高质量缩略图通用函数(c#代码</a><br><a href="http://www.cnblogs.com/BoKeRen/archive/2006/04/12/373690.html" class="p_n_p_prefix">» </a> 博主后一篇：<a href="http://www.cnblogs.com/BoKeRen/archive/2006/04/12/373690.html" title="发布于2006-04-12 22:03">vs.Net2003无法打开或创建Web应用程序若干解决办法.</a><br></div>
+</div>
+<script type="text/javascript">
+    //SyntaxHighlighter.config.strings.expandSource = '<span><img src="http://static.cnblogs.com/images/expand-code.gif" alt="" class="expand-code-icon"/>View Code</span>';
+    $(function () {             
+        fixPostBodyFormat();
+        loadAdUnderPost();
+        loadBlogSignature();
+        LoadPostInfoBlock(cb_blogId, cb_entryId, cb_blogApp, cb_blogUserGuid);
+        GetPrevNextPost(cb_entryId, cb_blogId, cb_entryCreatedDate);        
+        GetHistoryToday(cb_blogId, cb_blogApp, cb_entryCreatedDate);        
+    });
+</script>
+	<div class="postDesc">posted on <span id="post-date">2006-04-10 14:30</span> <a href="http://www.cnblogs.com/BoKeRen/">博客人</a> 阅读(2738) 评论(<span id="post-comment-count">1</span>)  <a href="http://www.cnblogs.com/BoKeRen/admin/EditPosts.aspx?postid=371313" rel="nofollow">编辑</a> <a href="http://www.cnblogs.com/BoKeRen/archive/2006/04/10/371313.html#" onclick="AddToWz(371313);return false;">收藏</a></div>
+</div>
+<img src="./C#生成缩略图 (通用模式) - 博客人 - 博客园_files/371313.html" width="1" height="1" alt="">
+
+<div id="blog-comments-placeholder"><div id="comments_pager_top"></div>
+<!--done-->
+<br>
+<b>FeedBack:</b>
+<div class="feedbackNoItems"></div>
+	
+
+		<div class="feedbackItem">
+			<div class="feedbackListTitle"><a href="http://www.cnblogs.com/BoKeRen/archive/2006/04/10/371313.html#1069070" class="layer">#1楼</a><a name="1069070" id="comment_anchor_1069070"></a><span id="comment-maxId" style="display:none;">1069070</span><span id="comment-maxDate" style="display:none;">2008/2/14 20:27:00</span></div>
+			<div class="feedbackListSubtitle">
+				 <span class="comment_date">2008-02-14 20:27</span> | <a id="a_comment_author_1069070" href="http://home.cnblogs.com/u/23298/" target="_blank">森林鸟</a> <a href="http://space.cnblogs.com/msg/send/%e6%a3%ae%e6%9e%97%e9%b8%9f" title="发送站内短消息" class="sendMsg2This">&nbsp;</a><br>
+				<div align="left"><div id="comment_body_1069070" class="blog_comment_body">参数  string mode out string outthumbnailPath
+<br>是什么意思呀</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(1069070,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(1069070,&#39;Bury&#39;,this)">反对(0)</a></div>&nbsp;&nbsp;<span class="comment_actions"><a href="javascript:void(0);" onclick="return ReplyComment(1069070,&#39;nCx8dfhLIytfVhTFhOE7Mziu0gJ97jwTU0MVDkwoasHHnTVgXi+G4Q==&#39;)">回复</a><a href="javascript:void(0);" onclick="return QuoteComment(1069070,&#39;nCx8dfhLIytfVhTFhOE7Mziu0gJ97jwTU0MVDkwoasHHnTVgXi+G4Q==&#39;)">引用</a></span></div>
+			</div>
+			
+			
+		</div>
+	
+
+
+
+<div id="comments_pager_bottom"></div></div><script type="text/javascript">var commentManager = new blogCommentManager();commentManager.loadComments();</script>
+<div id="comment_form" class="commentform">
+<div id="divCommentShow"></div>
+<div id="comment_nav"><span id="span_refresh_tips"></span><a href="javascript:void(0);" id="lnk_RefreshComments" onclick="return RefreshCommentList();">刷新评论</a><a href="http://www.cnblogs.com/BoKeRen/archive/2006/04/10/371313.html#" onclick="return RefreshPage();">刷新页面</a><a href="http://www.cnblogs.com/BoKeRen/archive/2006/04/10/371313.html#top">返回顶部</a></div>
+<div id="comment_form_container"><div id="commentform_title">发表评论</div>
+<span id="tip_comment" style="color:Red"></span>
+<p>
+昵称：<input type="text" id="tbCommentAuthor" class="author" disabled="disabled" value="FlyDragon">
+</p>
+<div class="commentbox_main">
+<div class="commentbox_title">
+<div class="commentbox_title_left">评论内容：</div>
+<div class="commentbox_title_right">
+<img id="ubb_quote" class="comment_icon" src="./C#生成缩略图 (通用模式) - 博客人 - 博客园_files/quote.gif" alt="引用" title="添加引用" onclick="insertUBB(&#39;tbCommentBody&#39;,&#39;quote&#39;)">
+<img id="ubb_bold" class="comment_icon" src="./C#生成缩略图 (通用模式) - 博客人 - 博客园_files/b.png" alt="粗体" title="添加粗体" onclick="insertUBB(&#39;tbCommentBody&#39;,&#39;b&#39;)">
+<img id="ubb_url" class="comment_icon" src="./C#生成缩略图 (通用模式) - 博客人 - 博客园_files/lk.png" alt="链接" title="添加链接" onclick="insertUbbUrl(&#39;tbCommentBody&#39;)">
+<img id="ubb_indent" class="comment_icon" src="./C#生成缩略图 (通用模式) - 博客人 - 博客园_files/indent.png" alt="缩进" title="添加首行缩进" onclick="insertIndent(&#39;tbCommentBody&#39;)">
+<img id="ubb_code" class="comment_icon" src="./C#生成缩略图 (通用模式) - 博客人 - 博客园_files/InsertCode.gif" alt="代码" title="添加代码" onclick="insertUbbCode()">
+<img id="ubb_img" class="comment_icon" src="./C#生成缩略图 (通用模式) - 博客人 - 博客园_files/img.gif" alt="图片" title="添加图片" onclick="insertUbbImg(&#39;tbCommentBody&#39;)">
+<a href="javascript:OpenImageUploadWindow();" class="comment_uploadimg_a" title="上传图片并插入评论框">上传图片</a>
+</div>
+</div>
+<div class="clear"></div>
+<textarea id="tbCommentBody" class="comment_textarea" rows="10"></textarea>
+</div>
+<p id="commentbox_opt">
+<input id="btn_comment_submit" type="button" class="comment_btn" value="提交评论">
+<span id="span_comment_canceledit" style="display:none"><a href="javascript:void(0);" onclick="return CancelCommentEdit()">不改了</a></span>
+<a href="javascript:void(0);" onclick="return logout();">注销</a>
+        <a id="commentbox_opt_sub" href="javascript:void(0);" title="订阅后有新评论时会邮件通知您" onclick="commentManager.Subscribe()">订阅评论</a>
+</p>
+<p>
+[使用Ctrl+Enter键快速提交]
+</p>
+<div style="display:none">
+<span id="comment_edit_id"></span><span id="span_parentcomment_id"></span>
+<span id="span_parent_id"></span>
+<span id="span_comment_replyto"></span>
+<span id="span_comment_posted"></span>
+</div>
+</div>
+
+<script type="text/javascript">
+    if (typeof commentManager === 'undefined') {
+        commentManager = new blogCommentManager();
+    }
+    commentManager.loadCommentForm();   
+</script>
+
+<div class="ad_text_commentbox"><a href="http://www.headin.cn/Themes/Activity/Details/?activityId=507e685a869d081774a5bdb8&from=cnblogs" target="_blank"><b>开发的云计算盛会：VMware vForum 2012（北京，免费）</b></a></div>
+<div id="site_nav_under"><a href="http://www.cnblogs.com/" target="_blank" title="程序员的网上家园">博客园首页</a><a href="http://q.cnblogs.com/" target="_blank" title="程序员问答社区">博问</a><a href="http://news.cnblogs.com/" target="_blank" title="IT新闻">新闻</a><a href="http://home.cnblogs.com/ing/" target="_blank">闪存</a><a href="http://job.cnblogs.com/" target="_blank">程序员招聘</a><a href="http://kb.cnblogs.com/" target="_blank">知识库</a></div>
+<div id="ad_under_post_holder">
+<div id="google_ad_c1" class="c_ad_block">
+<div id="div-gpt-ad-1320933818841-0" style="width: 300px; height: 250px; ">
+
+<iframe id="google_ads_iframe_/1090369/cnblogs_blogpost_C1_0" name="google_ads_iframe_/1090369/cnblogs_blogpost_C1_0" width="300" height="250" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" style="border: 0px; "></iframe><iframe id="google_ads_iframe_/1090369/cnblogs_blogpost_C1_0__hidden__" name="google_ads_iframe_/1090369/cnblogs_blogpost_C1_0__hidden__" width="0" height="0" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" style="border: 0px; visibility: hidden; display: none; "></iframe></div>
+</div>
+<div id="blog_news_kb"><div class="itnews c_ad_block"><b>最新IT新闻</b>:<br> ·  <a href="http://news.cnblogs.com/n/161758/" target="_blank">曾与乔布斯创业 沃兹苹果传奇之后淡出江湖</a><br> ·  <a href="http://news.cnblogs.com/n/161757/" target="_blank">飓风版世界地图：涵盖161年飓风状况</a><br> ·  <a href="http://news.cnblogs.com/n/161756/" target="_blank">亚马逊前高管加盟谷歌遭老东家起诉</a><br> ·  <a href="http://news.cnblogs.com/n/161755/" target="_blank">微软软件授权模式已过时，Win 8要按用户授权</a><br> ·  <a href="http://news.cnblogs.com/n/161754/" target="_blank">外媒称未来搜素趋简单化 雅虎比谷歌更有机会</a><br>» <a href="http://news.cnblogs.com/" title="IT新闻" target="_blank">更多新闻...</a></div><div class="itnews c_ad_block" id="kb_block"><b>最新知识库文章</b>:<br><div id="kb_recent"> ·  <a href="http://kb.cnblogs.com/page/161182/" target="_blank">程序江湖</a><br> ·  <a href="http://kb.cnblogs.com/page/161553/" target="_blank">使用阿里云云服务器一年多的感受</a><br> ·  <a href="http://kb.cnblogs.com/page/161551/" target="_blank">分布式系统测试在阿里云的实践</a><br> ·  <a href="http://kb.cnblogs.com/page/160480/" target="_blank">一个阿里巴巴码农的六年回眸</a><br> ·  <a href="http://kb.cnblogs.com/page/161000/" target="_blank">十八年开发经历小结</a><br></div>» <a href="http://kb.cnblogs.com/" target="_blank">更多知识库文章...</a></div></div>
+<div id="google_ad_c2" class="c_ad_block">
+<div id="div-gpt-ad-1320933818841-1" style="width: 468px; height: 60px; ">
+
+<iframe id="google_ads_iframe_/1090369/cnblogs_blogpost_C2_0" name="google_ads_iframe_/1090369/cnblogs_blogpost_C2_0" width="468" height="60" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" style="border: 0px; "></iframe></div>
+</div>
+<div id="ad_under_google" class="c_ad_block">
+<a href="http://www.china-pub.com/static07/1206/12znq_dyb_20120618/12znq_dyb_20120618.asp" target="_blank" rel="nofollow"><img src="./C#生成缩略图 (通用模式) - 博客人 - 博客园_files/china-pub-0620.jpg" alt="" style="border:0px;"></a><br>
+<a href="http://www.china-pub.com/sale/usedbook.aspx" target="_blank" rel="nofollow">China-Pub 低价书精选</a><br>
+<a href="http://www.china-pub.com/static07/0901/zh_jueba_090121.asp" target="_blank" rel="nofollow">China-Pub 计算机绝版图书按需印刷服务</a>
+</div></div>
+<div id="HistoryToday" class="c_ad_block"></div>
+</div>
+
+
+
+
+
+</div>
+<div id="leftcontent">
+	
+		<div id="leftcontentcontainer">
+			
+<!--done-->
+<div class="newsItem">
+	<div id="blog-news" style="">专注于技术，切不可沉湎于技术 
+网名：飞扬(JodyJin)
+本名：钟传金 
+职业：软件工程师 
+位置：中国 福州
+联系方式：
+<embed src="http://www.clocklink.com/Clocks/0001P-Orange.swf?Place=Beijing China&amp;TimeZone=GMT0800" width="200" height="200" type="application/x-shockwave-flash" wmode="transparent">
+
+<div id="profile_block">昵称：<a href="http://home.cnblogs.com/u/BoKeRen/">博客人</a><br>园龄：<a href="http://home.cnblogs.com/u/BoKeRen/" title="入园时间：2006-02-20">6年8个月</a><br>粉丝：<a href="http://home.cnblogs.com/u/BoKeRen/followers/">1</a><br>关注：<a href="http://home.cnblogs.com/u/BoKeRen/followees/">0</a><div id="p_b_follow"><a href="javascript:void(0);" onclick="cnblogs.UserManager.FollowBlogger(&#39;644e360b-63cf-dd11-9e4d-001cf0cd104b&#39;)">+加关注</a></div></div></div>
+</div>
+<br>			
+			<div id="blog-calendar-block" style=""><div id="blog-calendar"><table id="blogCalendar" class="Cal" cellspacing="0" cellpadding="0" title="Calendar">
+	<tbody><tr><td colspan="7"><table class="CalTitle" cellspacing="0">
+		<tbody><tr><td class="CalNextPrev"><a href="javascript:void(0);" onclick="loadBlogCalendar(&#39;2006/03/01&#39;);return false;">&lt;</a></td><td align="center">2006年4月</td><td class="CalNextPrev" align="right"><a href="javascript:void(0);" onclick="loadBlogCalendar(&#39;2006/05/01&#39;);return false;">&gt;</a></td></tr>
+	</tbody></table></td></tr><tr><th class="CalDayHeader" align="center" abbr="日" scope="col">日</th><th class="CalDayHeader" align="center" abbr="一" scope="col">一</th><th class="CalDayHeader" align="center" abbr="二" scope="col">二</th><th class="CalDayHeader" align="center" abbr="三" scope="col">三</th><th class="CalDayHeader" align="center" abbr="四" scope="col">四</th><th class="CalDayHeader" align="center" abbr="五" scope="col">五</th><th class="CalDayHeader" align="center" abbr="六" scope="col">六</th></tr><tr><td class="CalOtherMonthDay" align="center">26</td><td class="CalOtherMonthDay" align="center">27</td><td class="CalOtherMonthDay" align="center">28</td><td class="CalOtherMonthDay" align="center">29</td><td class="CalOtherMonthDay" align="center">30</td><td class="CalOtherMonthDay" align="center">31</td><td class="CalWeekendDay" align="center">1</td></tr><tr><td class="CalWeekendDay" align="center">2</td><td align="center">3</td><td align="center">4</td><td align="center">5</td><td align="center">6</td><td align="center">7</td><td class="CalWeekendDay" align="center"><a href="http://www.cnblogs.com/BoKeRen/archive/2006/04/08.html"><u>8</u></a></td></tr><tr><td class="CalWeekendDay" align="center"><a href="http://www.cnblogs.com/BoKeRen/archive/2006/04/09.html"><u>9</u></a></td><td align="center"><a href="http://www.cnblogs.com/BoKeRen/archive/2006/04/10.html"><u>10</u></a></td><td align="center">11</td><td align="center"><a href="http://www.cnblogs.com/BoKeRen/archive/2006/04/12.html"><u>12</u></a></td><td align="center">13</td><td align="center">14</td><td class="CalWeekendDay" align="center">15</td></tr><tr><td class="CalWeekendDay" align="center"><a href="http://www.cnblogs.com/BoKeRen/archive/2006/04/16.html"><u>16</u></a></td><td align="center">17</td><td align="center">18</td><td align="center">19</td><td align="center">20</td><td align="center">21</td><td class="CalWeekendDay" align="center">22</td></tr><tr><td class="CalWeekendDay" align="center">23</td><td align="center">24</td><td align="center"><a href="http://www.cnblogs.com/BoKeRen/archive/2006/04/25.html"><u>25</u></a></td><td align="center"><a href="http://www.cnblogs.com/BoKeRen/archive/2006/04/26.html"><u>26</u></a></td><td align="center">27</td><td align="center">28</td><td class="CalWeekendDay" align="center">29</td></tr><tr><td class="CalWeekendDay" align="center">30</td><td class="CalOtherMonthDay" align="center">1</td><td class="CalOtherMonthDay" align="center">2</td><td class="CalOtherMonthDay" align="center">3</td><td class="CalOtherMonthDay" align="center">4</td><td class="CalOtherMonthDay" align="center">5</td><td class="CalOtherMonthDay" align="center">6</td></tr>
+</tbody></table></div>
+</div>
+			<div id="blog-sidecolumn">
+
+<div class="mySearch">
+<h3 class="catListTitle">搜索</h3>
+<div id="widget_my_zzk" class="div_my_zzk"><input type="text" id="q" onkeydown="return zzk_go_enter(event);" class="input_my_zzk">&nbsp;<input onclick="zzk_go()" type="button" value="找找看" id="btnZzk" class="btn_my_zzk"></div>
+<div id="widget_my_google" class="div_my_zzk"><input type="text" name="google_q" id="google_q" onkeydown="return google_go_enter(event)" class="input_my_zzk">&nbsp;<input onclick="google_go()" type="button" value="谷歌搜索" class="btn_my_zzk"></div>
+</div>
+
+
+<h3 class="catListTitle">常用链接</h3>
+<ul>
+
+		<li><a id="ctl01_rptMainLinks_lnkLinkItem_0" href="http://www.cnblogs.com/BoKeRen/MyPosts.html">我的随笔</a></li>
+	
+		<li><a id="ctl01_rptMainLinks_lnkLinkItem_1" href="http://www.cnblogs.com/BoKeRen/MyComments.html">我的评论</a></li>
+	
+		<li><a id="ctl01_rptMainLinks_lnkLinkItem_2" title="我发表过评论的随笔" href="http://www.cnblogs.com/BoKeRen/OtherPosts.html">我的参与</a></li>
+	
+		<li><a id="ctl01_rptMainLinks_lnkLinkItem_3" href="http://www.cnblogs.com/BoKeRen/RecentComments.html">最新评论</a></li>
+	
+		<li><a id="ctl01_rptMainLinks_lnkLinkItem_4" href="http://www.cnblogs.com/BoKeRen/tag/">我的标签</a></li>
+	
+</ul>
+<div id="itemListLin_con" style="display:none;">
+
+</div>
+<h3 class="catListTitle">最新随笔</h3>
+<div class="RecentComment" id="RecentPosts">
+<ul style="word-break:break-all">
+<li><a href="http://www.cnblogs.com/BoKeRen/archive/2008/01/30/1058844.html">1.  Asp.net2.0页面的生命周期     </a></li><li><a href="http://www.cnblogs.com/BoKeRen/archive/2008/01/22/1048357.html">2. 写有效率的SQL查询（V） </a></li><li><a href="http://www.cnblogs.com/BoKeRen/archive/2008/01/21/1047440.html">3. aspx页面事件执行顺序 </a></li><li><a href="http://www.cnblogs.com/BoKeRen/archive/2008/01/21/1047409.html">4. 如何从优化SQL入手提高数据仓库的ETL效率(转载) </a></li><li><a href="http://www.cnblogs.com/BoKeRen/archive/2008/01/21/1047050.html">5. 简单的3个SQL视图搞定所有SqlServer数据库字典 (转载） </a></li><li><a href="http://www.cnblogs.com/BoKeRen/archive/2007/11/20/965959.html">6. IIS的各种身份验证详细测试 </a></li><li><a href="http://www.cnblogs.com/BoKeRen/archive/2007/09/28/909007.html">7. .Net专题(C# 中的委托和事件) - Part.1 </a></li><li><a href="http://www.cnblogs.com/BoKeRen/archive/2007/07/12/814904.html">8. 创建X509证书，并获取证书密钥的一点研究 </a></li><li><a href="http://www.cnblogs.com/BoKeRen/archive/2007/07/04/805809.html">9.  Url重写</a></li><li><a href="http://www.cnblogs.com/BoKeRen/archive/2007/06/28/798399.html">10. asp.net中数据校验部分的封装与应用 </a></li>
+</ul>
+</div>
+
+<!--done-->
+
+		<h1 class="catListTitle">随笔分类<span style="font-size:11px;font-weight:normal">(124)</span></h1>
+		
+				<ul class="catList">
+			
+				<li class="catListItem"> <a id="ctl04_CatList_LinkList_0_Link_0" class="listitem" href="http://www.cnblogs.com/BoKeRen/category/48894.html">ADO.NET技术(1)</a></li>
+			
+				<li class="catListItem"> <a id="ctl04_CatList_LinkList_0_Link_1" class="listitem" href="http://www.cnblogs.com/BoKeRen/category/64215.html">Ajax技术(1)</a></li>
+			
+				<li class="catListItem"> <a id="ctl04_CatList_LinkList_0_Link_2" class="listitem" href="http://www.cnblogs.com/BoKeRen/category/48892.html">ASP.NET(C#)Web开发(24)</a></li>
+			
+				<li class="catListItem"> <a id="ctl04_CatList_LinkList_0_Link_3" class="listitem" href="http://www.cnblogs.com/BoKeRen/category/48893.html">C#WinForm开发(7)</a></li>
+			
+				<li class="catListItem"> <a id="ctl04_CatList_LinkList_0_Link_4" class="listitem" href="http://www.cnblogs.com/BoKeRen/category/49974.html">CSS技术(6)</a></li>
+			
+				<li class="catListItem"> <a id="ctl04_CatList_LinkList_0_Link_5" class="listitem" href="http://www.cnblogs.com/BoKeRen/category/48895.html">DataGrid技术(9)</a></li>
+			
+				<li class="catListItem"> <a id="ctl04_CatList_LinkList_0_Link_6" class="listitem" href="http://www.cnblogs.com/BoKeRen/category/48897.html">JavaScript应用技术(25)</a></li>
+			
+				<li class="catListItem"> <a id="ctl04_CatList_LinkList_0_Link_7" class="listitem" href="http://www.cnblogs.com/BoKeRen/category/94575.html">WebServices技术(3)</a></li>
+			
+				<li class="catListItem"> <a id="ctl04_CatList_LinkList_0_Link_8" class="listitem" href="http://www.cnblogs.com/BoKeRen/category/51143.html">软件测试(1)</a></li>
+			
+				<li class="catListItem"> <a id="ctl04_CatList_LinkList_0_Link_9" class="listitem" href="http://www.cnblogs.com/BoKeRen/category/48896.html">数据库开发技术(19)</a></li>
+			
+				<li class="catListItem"> <a id="ctl04_CatList_LinkList_0_Link_10" class="listitem" href="http://www.cnblogs.com/BoKeRen/category/49834.html">学习ASP.NET笔记(28)</a></li>
+			
+				</ul>
+			
+	
+		<h1 class="catListTitle">随笔档案<span style="font-size:11px;font-weight:normal">(127)</span></h1>
+		
+				<ul class="catList">
+			
+				<li class="catListItem"> <a id="ctl04_CatList_LinkList_1_Link_0" class="listitem" href="http://www.cnblogs.com/BoKeRen/archive/2008/01.html">2008年1月 (5)</a></li>
+			
+				<li class="catListItem"> <a id="ctl04_CatList_LinkList_1_Link_1" class="listitem" href="http://www.cnblogs.com/BoKeRen/archive/2007/11.html">2007年11月 (1)</a></li>
+			
+				<li class="catListItem"> <a id="ctl04_CatList_LinkList_1_Link_2" class="listitem" href="http://www.cnblogs.com/BoKeRen/archive/2007/09.html">2007年9月 (1)</a></li>
+			
+				<li class="catListItem"> <a id="ctl04_CatList_LinkList_1_Link_3" class="listitem" href="http://www.cnblogs.com/BoKeRen/archive/2007/07.html">2007年7月 (2)</a></li>
+			
+				<li class="catListItem"> <a id="ctl04_CatList_LinkList_1_Link_4" class="listitem" href="http://www.cnblogs.com/BoKeRen/archive/2007/06.html">2007年6月 (2)</a></li>
+			
+				<li class="catListItem"> <a id="ctl04_CatList_LinkList_1_Link_5" class="listitem" href="http://www.cnblogs.com/BoKeRen/archive/2007/05.html">2007年5月 (6)</a></li>
+			
+				<li class="catListItem"> <a id="ctl04_CatList_LinkList_1_Link_6" class="listitem" href="http://www.cnblogs.com/BoKeRen/archive/2007/04.html">2007年4月 (7)</a></li>
+			
+				<li class="catListItem"> <a id="ctl04_CatList_LinkList_1_Link_7" class="listitem" href="http://www.cnblogs.com/BoKeRen/archive/2007/03.html">2007年3月 (3)</a></li>
+			
+				<li class="catListItem"> <a id="ctl04_CatList_LinkList_1_Link_8" class="listitem" href="http://www.cnblogs.com/BoKeRen/archive/2007/01.html">2007年1月 (2)</a></li>
+			
+				<li class="catListItem"> <a id="ctl04_CatList_LinkList_1_Link_9" class="listitem" href="http://www.cnblogs.com/BoKeRen/archive/2006/12.html">2006年12月 (7)</a></li>
+			
+				<li class="catListItem"> <a id="ctl04_CatList_LinkList_1_Link_10" class="listitem" href="http://www.cnblogs.com/BoKeRen/archive/2006/11.html">2006年11月 (4)</a></li>
+			
+				<li class="catListItem"> <a id="ctl04_CatList_LinkList_1_Link_11" class="listitem" href="http://www.cnblogs.com/BoKeRen/archive/2006/10.html">2006年10月 (6)</a></li>
+			
+				<li class="catListItem"> <a id="ctl04_CatList_LinkList_1_Link_12" class="listitem" href="http://www.cnblogs.com/BoKeRen/archive/2006/09.html">2006年9月 (7)</a></li>
+			
+				<li class="catListItem"> <a id="ctl04_CatList_LinkList_1_Link_13" class="listitem" href="http://www.cnblogs.com/BoKeRen/archive/2006/08.html">2006年8月 (1)</a></li>
+			
+				<li class="catListItem"> <a id="ctl04_CatList_LinkList_1_Link_14" class="listitem" href="http://www.cnblogs.com/BoKeRen/archive/2006/07.html">2006年7月 (3)</a></li>
+			
+				<li class="catListItem"> <a id="ctl04_CatList_LinkList_1_Link_15" class="listitem" href="http://www.cnblogs.com/BoKeRen/archive/2006/06.html">2006年6月 (1)</a></li>
+			
+				<li class="catListItem"> <a id="ctl04_CatList_LinkList_1_Link_16" class="listitem" href="http://www.cnblogs.com/BoKeRen/archive/2006/05.html">2006年5月 (1)</a></li>
+			
+				<li class="catListItem"> <a id="ctl04_CatList_LinkList_1_Link_17" class="listitem" href="http://www.cnblogs.com/BoKeRen/archive/2006/04.html">2006年4月 (8)</a></li>
+			
+				<li class="catListItem"> <a id="ctl04_CatList_LinkList_1_Link_18" class="listitem" href="http://www.cnblogs.com/BoKeRen/archive/2006/03.html">2006年3月 (36)</a></li>
+			
+				<li class="catListItem"> <a id="ctl04_CatList_LinkList_1_Link_19" class="listitem" href="http://www.cnblogs.com/BoKeRen/archive/2006/02.html">2006年2月 (24)</a></li>
+			
+				</ul>
+			
+	
+		<h1 class="catListTitle">文章分类</h1>
+		
+				<ul class="catList">
+			
+				<li class="catListItem"> <a id="ctl04_CatList_LinkList_2_Link_0" class="listitem" href="http://www.cnblogs.com/BoKeRen/category/48901.html">开发的部分项目</a></li>
+			
+				<li class="catListItem"> <a id="ctl04_CatList_LinkList_2_Link_1" class="listitem" href="http://www.cnblogs.com/BoKeRen/category/48900.html">使用过的开发工具</a></li>
+			
+				</ul>
+			
+	
+		<h1 class="catListTitle">我的连接</h1>
+		
+				<ul class="catList">
+			
+				<li class="catListItem"> <a id="ctl04_CatList_LinkList_3_Link_0" class="listitem" rel="nofollow" href="http://www.sawin.cn/">Sawin软件研发之窗</a></li>
+			
+				<li class="catListItem"> <a id="ctl04_CatList_LinkList_3_Link_1" class="listitem" rel="nofollow" href="http://www.uml.org.cn/">UML软件工程组织</a></li>
+			
+				<li class="catListItem"> <a id="ctl04_CatList_LinkList_3_Link_2" class="listitem" href="http://www.cnblogs.com/babyt/archive/2005/04/21/142309.aspx">阿泰的软件实用主义</a></li>
+			
+				<li class="catListItem"> <a id="ctl04_CatList_LinkList_3_Link_3" class="listitem" rel="nofollow" href="http://www.bjcan.com/hengxing/more.asp">编程技巧</a></li>
+			
+				<li class="catListItem"> <a id="ctl04_CatList_LinkList_3_Link_4" class="listitem" rel="nofollow" href="http://tintown.cnblogs.com/">基于.NET的持久层SmartPersistenceLayer</a></li>
+			
+				<li class="catListItem"> <a id="ctl04_CatList_LinkList_3_Link_5" class="listitem" rel="nofollow" href="http://www.mikecat.net/default.asp?CateID=1&page=6">老猫的理想论坛[New] </a></li>
+			
+				<li class="catListItem"> <a id="ctl04_CatList_LinkList_3_Link_6" class="listitem" rel="nofollow" href="http://zhenyulu.cnblogs.com/">吕老师</a></li>
+			
+				<li class="catListItem"> <a id="ctl04_CatList_LinkList_3_Link_7" class="listitem" href="http://www.cnblogs.com/cowbird/archive/2005/03/02/111409.html">数据同步解决方案</a></li>
+			
+				<li class="catListItem"> <a id="ctl04_CatList_LinkList_3_Link_8" class="listitem" rel="nofollow" href="http://singlepine.cnblogs.com/">小山博客</a></li>
+			
+				<li class="catListItem"> <a id="ctl04_CatList_LinkList_3_Link_9" class="listitem" rel="nofollow" href="http://esshs.cnblogs.com/">学习DotNetNuke（DNN）</a></li>
+			
+				<li class="catListItem"> <a id="ctl04_CatList_LinkList_3_Link_10" class="listitem" rel="nofollow" href="http://www.pconcool.com/article.asp?id=2680">用背景定位处理的漂亮的按钮</a></li>
+			
+				<li class="catListItem"> <a id="ctl04_CatList_LinkList_3_Link_11" class="listitem" rel="nofollow" href="http://www.chinaarchitect.net/">中国软件架构师网</a></li>
+			
+				</ul>
+			
+	
+
+<h3>积分与排名</h3>
+<ul>
+	<li>
+		积分 -
+		51019
+	</li><li>
+		排名 -
+		2255
+	</li>
+</ul>
+
+<h3 class="catListTitle">最新评论</h3>
+<div class="RecentComment" id="RecentComments">
+	<div id="RecentCommentsBlock"><ul>
+</ul>
+</div>
+</div>
+
+<h3 class="catListTitle">阅读排行榜</h3>
+<div class="RecentComment" id="TopViewPosts"> 
+	<div id="TopViewPostsBlock"><ul><li><a href="http://www.cnblogs.com/BoKeRen/archive/2006/03/01/340286.html">1. 全国各地城市天气预报代码(8241)</a></li><li><a href="http://www.cnblogs.com/BoKeRen/archive/2006/06/20/430324.html">2. Oracle安装的一些问题收集[转] (2907)</a></li><li><a href="./C#生成缩略图 (通用模式) - 博客人 - 博客园_files/C#生成缩略图 (通用模式) - 博客人 - 博客园.htm">3. C#生成缩略图 (通用模式)(2738)</a></li><li><a href="http://www.cnblogs.com/BoKeRen/archive/2007/07/12/814904.html">4. 创建X509证书，并获取证书密钥的一点研究 (2734)</a></li><li><a href="http://www.cnblogs.com/BoKeRen/archive/2006/03/01/340291.html">5. JavaScript文件上传验证 (2176)</a></li><li><a href="http://www.cnblogs.com/BoKeRen/archive/2008/01/30/1058844.html">6.  Asp.net2.0页面的生命周期     (1693)</a></li><li><a href="http://www.cnblogs.com/BoKeRen/archive/2006/03/08/345755.html">7. 如何用SQL语句实现精确搜索以及模糊搜索(1645)</a></li><li><a href="http://www.cnblogs.com/BoKeRen/archive/2007/04/16/715241.html">8. 通用异常处理框架(1343)</a></li><li><a href="http://www.cnblogs.com/BoKeRen/archive/2006/12/15/592880.html">9. CuteEditor5.0破解版 (1174)</a></li><li><a href="http://www.cnblogs.com/BoKeRen/archive/2006/08/08/471231.html">10. [转]一些SQL日期时间技巧 (1171)</a></li></ul></div>
+</div>
+
+<h3 class="catListTitle">评论排行榜</h3>
+<div class="RecentComment" id="TopCommentsPosts">
+	<div id="TopFeedbackPostsBlock"><ul><li><a href="http://www.cnblogs.com/BoKeRen/archive/2007/04/16/715241.html">1. 通用异常处理框架(6)</a></li><li><a href="http://www.cnblogs.com/BoKeRen/archive/2008/01/30/1058844.html">2.  Asp.net2.0页面的生命周期     (4)</a></li><li><a href="http://www.cnblogs.com/BoKeRen/archive/2006/03/02/341233.html">3. 一个不错的日期选择框 (4)</a></li><li><a href="http://www.cnblogs.com/BoKeRen/archive/2007/04/03/697685.html">4. ASP.NET2.0文件图片上传处理(2)</a></li><li><a href="http://www.cnblogs.com/BoKeRen/archive/2006/04/12/373690.html">5. vs.Net2003无法打开或创建Web应用程序若干解决办法.(2)</a></li><li><a href="http://www.cnblogs.com/BoKeRen/archive/2007/05/24/758429.html">6. WebService中使用自定义类的解决方法（5种） (2)</a></li><li><a href="http://www.cnblogs.com/BoKeRen/archive/2006/03/29/362165.html">7. 多个页面向同一目标页面PostBack的问题 (2)</a></li><li><a href="http://www.cnblogs.com/BoKeRen/archive/2006/03/01/340286.html">8. 全国各地城市天气预报代码(2)</a></li><li><a href="http://www.cnblogs.com/BoKeRen/archive/2006/03/08/345755.html">9. 如何用SQL语句实现精确搜索以及模糊搜索(1)</a></li><li><a href="http://www.cnblogs.com/BoKeRen/archive/2006/02/22/335260.html">10. ASP.NET中常用功能代码总结----文件操作篇(1)</a></li></ul></div>
+</div>
+<h3 class="catListTitle">推荐排行榜</h3>
+<div class="RecentComment">
+	<div id="TopDiggPostsBlock"><ul><li><a href="http://www.cnblogs.com/BoKeRen/archive/2008/01/30/1058844.html">1.  Asp.net2.0页面的生命周期     (1)</a></li><li><a href="http://www.cnblogs.com/BoKeRen/archive/2007/07/12/814904.html">2. 创建X509证书，并获取证书密钥的一点研究 (1)</a></li><li><a href="http://www.cnblogs.com/BoKeRen/archive/2007/04/03/697685.html">3. ASP.NET2.0文件图片上传处理(1)</a></li><li><a href="./C#生成缩略图 (通用模式) - 博客人 - 博客园_files/C#生成缩略图 (通用模式) - 博客人 - 博客园.htm">4. C#生成缩略图 (通用模式)(1)</a></li><li><a href="http://www.cnblogs.com/BoKeRen/archive/2006/03/09/346200.html">5. 委托和事件浅解(1)</a></li></ul></div>
+</div></div></div>
+	
+</div>
+
+
+<!--done-->
+<div class="footer">
+	
+	Copyright ©2012 博客人 Powered By<a href="http://www.cnblogs.com/">博客园</a> 模板提供：<a href="http://blog.hjenglish.com/">沪江博客</a>
+</div>
+<script type="text/javascript" src="./C#生成缩略图 (通用模式) - 博客人 - 博客园_files/google-analytics.js"></script>
+
+
+</body></html>

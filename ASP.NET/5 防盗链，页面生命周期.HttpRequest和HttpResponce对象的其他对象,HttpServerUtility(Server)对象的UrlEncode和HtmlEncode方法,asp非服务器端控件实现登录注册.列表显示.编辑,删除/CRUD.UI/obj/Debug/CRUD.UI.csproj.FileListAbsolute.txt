@@ -1,0 +1,46 @@
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130726\CRUD.UI\bin\CRUD.UI.dll
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130726\CRUD.UI\bin\CRUD.UI.pdb
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130726\CRUD.UI\obj\Debug\CRUD.UI.dll
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130726\CRUD.UI\obj\Debug\CRUD.UI.pdb
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130726\CRUD.UI\bin\CRUD.BLL.dll
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130726\CRUD.UI\bin\CRUD.Model.dll
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130726\CRUD.UI\bin\CRUD.DAL.dll
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130726\CRUD.UI\bin\CRUD.BLL.pdb
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130726\CRUD.UI\bin\CRUD.Model.pdb
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130726\CRUD.UI\bin\CRUD.DAL.pdb
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130726\CRUD.UI\obj\Debug\CRUD.UI.csprojResolveAssemblyReference.cache
+C:\Users\Steve\Desktop\Sln20130726（全）\CRUD.UI\bin\CRUD.UI.dll
+C:\Users\Steve\Desktop\Sln20130726（全）\CRUD.UI\bin\CRUD.UI.pdb
+C:\Users\Steve\Desktop\Sln20130726（全）\CRUD.UI\bin\CRUD.BLL.dll
+C:\Users\Steve\Desktop\Sln20130726（全）\CRUD.UI\bin\CRUD.Model.dll
+C:\Users\Steve\Desktop\Sln20130726（全）\CRUD.UI\bin\CRUD.DAL.dll
+C:\Users\Steve\Desktop\Sln20130726（全）\CRUD.UI\bin\CRUD.BLL.pdb
+C:\Users\Steve\Desktop\Sln20130726（全）\CRUD.UI\bin\CRUD.Model.pdb
+C:\Users\Steve\Desktop\Sln20130726（全）\CRUD.UI\bin\CRUD.DAL.pdb
+C:\Users\Steve\Desktop\Sln20130726（全）\CRUD.UI\obj\Debug\CRUD.UI.csprojResolveAssemblyReference.cache
+C:\Users\Steve\Desktop\Sln20130726（全）\CRUD.UI\obj\Debug\CRUD.UI.dll
+C:\Users\Steve\Desktop\Sln20130726（全）\CRUD.UI\obj\Debug\CRUD.UI.pdb
+\\psf\Home\Documents\工作\MyCode\ASP.NET\5 页面生命周期.HttpRequest和HttpResponce对象的其他对象,HttpServerUtility(Server)对象的UrlEncode和HtmlEncode方法,asp非服务器端控件实现登录注册.列表显示.编辑,删除\CRUD.UI\bin\CRUD.UI.dll.config
+\\psf\Home\Documents\工作\MyCode\ASP.NET\5 页面生命周期.HttpRequest和HttpResponce对象的其他对象,HttpServerUtility(Server)对象的UrlEncode和HtmlEncode方法,asp非服务器端控件实现登录注册.列表显示.编辑,删除\CRUD.UI\bin\CRUD.UI.dll
+\\psf\Home\Documents\工作\MyCode\ASP.NET\5 页面生命周期.HttpRequest和HttpResponce对象的其他对象,HttpServerUtility(Server)对象的UrlEncode和HtmlEncode方法,asp非服务器端控件实现登录注册.列表显示.编辑,删除\CRUD.UI\bin\CRUD.UI.pdb
+\\psf\Home\Documents\工作\MyCode\ASP.NET\5 页面生命周期.HttpRequest和HttpResponce对象的其他对象,HttpServerUtility(Server)对象的UrlEncode和HtmlEncode方法,asp非服务器端控件实现登录注册.列表显示.编辑,删除\CRUD.UI\bin\CRUD.BLL.dll
+\\psf\Home\Documents\工作\MyCode\ASP.NET\5 页面生命周期.HttpRequest和HttpResponce对象的其他对象,HttpServerUtility(Server)对象的UrlEncode和HtmlEncode方法,asp非服务器端控件实现登录注册.列表显示.编辑,删除\CRUD.UI\bin\CRUD.Model.dll
+\\psf\Home\Documents\工作\MyCode\ASP.NET\5 页面生命周期.HttpRequest和HttpResponce对象的其他对象,HttpServerUtility(Server)对象的UrlEncode和HtmlEncode方法,asp非服务器端控件实现登录注册.列表显示.编辑,删除\CRUD.UI\bin\CRUD.DAL.dll
+\\psf\Home\Documents\工作\MyCode\ASP.NET\5 页面生命周期.HttpRequest和HttpResponce对象的其他对象,HttpServerUtility(Server)对象的UrlEncode和HtmlEncode方法,asp非服务器端控件实现登录注册.列表显示.编辑,删除\CRUD.UI\bin\CRUD.BLL.pdb
+\\psf\Home\Documents\工作\MyCode\ASP.NET\5 页面生命周期.HttpRequest和HttpResponce对象的其他对象,HttpServerUtility(Server)对象的UrlEncode和HtmlEncode方法,asp非服务器端控件实现登录注册.列表显示.编辑,删除\CRUD.UI\bin\CRUD.Model.pdb
+\\psf\Home\Documents\工作\MyCode\ASP.NET\5 页面生命周期.HttpRequest和HttpResponce对象的其他对象,HttpServerUtility(Server)对象的UrlEncode和HtmlEncode方法,asp非服务器端控件实现登录注册.列表显示.编辑,删除\CRUD.UI\bin\CRUD.DAL.pdb
+\\psf\Home\Documents\工作\MyCode\ASP.NET\5 页面生命周期.HttpRequest和HttpResponce对象的其他对象,HttpServerUtility(Server)对象的UrlEncode和HtmlEncode方法,asp非服务器端控件实现登录注册.列表显示.编辑,删除\CRUD.UI\obj\Debug\CRUD.UI.csprojResolveAssemblyReference.cache
+\\psf\Home\Documents\工作\MyCode\ASP.NET\5 页面生命周期.HttpRequest和HttpResponce对象的其他对象,HttpServerUtility(Server)对象的UrlEncode和HtmlEncode方法,asp非服务器端控件实现登录注册.列表显示.编辑,删除\CRUD.UI\obj\Debug\CRUD.UI.dll
+\\psf\Home\Documents\工作\MyCode\ASP.NET\5 页面生命周期.HttpRequest和HttpResponce对象的其他对象,HttpServerUtility(Server)对象的UrlEncode和HtmlEncode方法,asp非服务器端控件实现登录注册.列表显示.编辑,删除\CRUD.UI\obj\Debug\CRUD.UI.pdb
+\\psf\Home\Documents\工作\MyCode\ASP.NET\5 防盗链，页面生命周期.HttpRequest和HttpResponce对象的其他对象,HttpServerUtility(Server)对象的UrlEncode和HtmlEncode方法,asp非服务器端控件实现登录注册.列表显示.编辑,删除\CRUD.UI\bin\CRUD.UI.dll.config
+\\psf\Home\Documents\工作\MyCode\ASP.NET\5 防盗链，页面生命周期.HttpRequest和HttpResponce对象的其他对象,HttpServerUtility(Server)对象的UrlEncode和HtmlEncode方法,asp非服务器端控件实现登录注册.列表显示.编辑,删除\CRUD.UI\bin\CRUD.UI.dll
+\\psf\Home\Documents\工作\MyCode\ASP.NET\5 防盗链，页面生命周期.HttpRequest和HttpResponce对象的其他对象,HttpServerUtility(Server)对象的UrlEncode和HtmlEncode方法,asp非服务器端控件实现登录注册.列表显示.编辑,删除\CRUD.UI\bin\CRUD.UI.pdb
+\\psf\Home\Documents\工作\MyCode\ASP.NET\5 防盗链，页面生命周期.HttpRequest和HttpResponce对象的其他对象,HttpServerUtility(Server)对象的UrlEncode和HtmlEncode方法,asp非服务器端控件实现登录注册.列表显示.编辑,删除\CRUD.UI\bin\CRUD.BLL.dll
+\\psf\Home\Documents\工作\MyCode\ASP.NET\5 防盗链，页面生命周期.HttpRequest和HttpResponce对象的其他对象,HttpServerUtility(Server)对象的UrlEncode和HtmlEncode方法,asp非服务器端控件实现登录注册.列表显示.编辑,删除\CRUD.UI\bin\CRUD.Model.dll
+\\psf\Home\Documents\工作\MyCode\ASP.NET\5 防盗链，页面生命周期.HttpRequest和HttpResponce对象的其他对象,HttpServerUtility(Server)对象的UrlEncode和HtmlEncode方法,asp非服务器端控件实现登录注册.列表显示.编辑,删除\CRUD.UI\bin\CRUD.DAL.dll
+\\psf\Home\Documents\工作\MyCode\ASP.NET\5 防盗链，页面生命周期.HttpRequest和HttpResponce对象的其他对象,HttpServerUtility(Server)对象的UrlEncode和HtmlEncode方法,asp非服务器端控件实现登录注册.列表显示.编辑,删除\CRUD.UI\bin\CRUD.BLL.pdb
+\\psf\Home\Documents\工作\MyCode\ASP.NET\5 防盗链，页面生命周期.HttpRequest和HttpResponce对象的其他对象,HttpServerUtility(Server)对象的UrlEncode和HtmlEncode方法,asp非服务器端控件实现登录注册.列表显示.编辑,删除\CRUD.UI\bin\CRUD.Model.pdb
+\\psf\Home\Documents\工作\MyCode\ASP.NET\5 防盗链，页面生命周期.HttpRequest和HttpResponce对象的其他对象,HttpServerUtility(Server)对象的UrlEncode和HtmlEncode方法,asp非服务器端控件实现登录注册.列表显示.编辑,删除\CRUD.UI\bin\CRUD.DAL.pdb
+\\psf\Home\Documents\工作\MyCode\ASP.NET\5 防盗链，页面生命周期.HttpRequest和HttpResponce对象的其他对象,HttpServerUtility(Server)对象的UrlEncode和HtmlEncode方法,asp非服务器端控件实现登录注册.列表显示.编辑,删除\CRUD.UI\obj\Debug\CRUD.UI.csprojResolveAssemblyReference.cache
+\\psf\Home\Documents\工作\MyCode\ASP.NET\5 防盗链，页面生命周期.HttpRequest和HttpResponce对象的其他对象,HttpServerUtility(Server)对象的UrlEncode和HtmlEncode方法,asp非服务器端控件实现登录注册.列表显示.编辑,删除\CRUD.UI\obj\Debug\CRUD.UI.dll
+\\psf\Home\Documents\工作\MyCode\ASP.NET\5 防盗链，页面生命周期.HttpRequest和HttpResponce对象的其他对象,HttpServerUtility(Server)对象的UrlEncode和HtmlEncode方法,asp非服务器端控件实现登录注册.列表显示.编辑,删除\CRUD.UI\obj\Debug\CRUD.UI.pdb

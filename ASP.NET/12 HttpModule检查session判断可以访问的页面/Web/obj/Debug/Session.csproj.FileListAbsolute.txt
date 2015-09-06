@@ -1,0 +1,6 @@
+\\psf\Home\Desktop\52\DATA\第一天内容\Web\Web\bin\Web.dll.config
+\\psf\Home\Desktop\52\DATA\第一天内容\Web\Web\bin\Web.dll
+\\psf\Home\Desktop\52\DATA\第一天内容\Web\Web\bin\Web.pdb
+\\psf\Home\Desktop\52\DATA\第一天内容\Web\Web\obj\Debug\Session.csprojResolveAssemblyReference.cache
+\\psf\Home\Desktop\52\DATA\第一天内容\Web\Web\obj\Debug\Web.dll
+\\psf\Home\Desktop\52\DATA\第一天内容\Web\Web\obj\Debug\Web.pdb

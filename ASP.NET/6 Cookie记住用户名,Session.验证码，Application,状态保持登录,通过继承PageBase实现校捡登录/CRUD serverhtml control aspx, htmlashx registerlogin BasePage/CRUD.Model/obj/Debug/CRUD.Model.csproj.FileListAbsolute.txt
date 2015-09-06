@@ -1,0 +1,8 @@
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130726\CRUD.Model\bin\Debug\CRUD.Model.dll
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130726\CRUD.Model\bin\Debug\CRUD.Model.pdb
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130726\CRUD.Model\obj\Debug\CRUD.Model.dll
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130726\CRUD.Model\obj\Debug\CRUD.Model.pdb
+C:\Users\Steve\Desktop\Sln20130726（全）\CRUD.Model\bin\Debug\CRUD.Model.dll
+C:\Users\Steve\Desktop\Sln20130726（全）\CRUD.Model\bin\Debug\CRUD.Model.pdb
+C:\Users\Steve\Desktop\Sln20130726（全）\CRUD.Model\obj\Debug\CRUD.Model.dll
+C:\Users\Steve\Desktop\Sln20130726（全）\CRUD.Model\obj\Debug\CRUD.Model.pdb

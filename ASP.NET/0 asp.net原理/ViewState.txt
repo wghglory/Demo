@@ -1,0 +1,5 @@
+1.ViewState通过隐藏域来实现。
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJODcwNjAxNTI1ZGTufnJfEo1sLgYMY3lPKRptx+ebENdvpDgck5vqKvVLvg==" />
+2.ViewState是服务器端为了保持用户的状态信息而创建的一种机制，所以ViewState只会应用于服务器端控件。（只有使用了服务器端表单或服务器端控件时才会自动产生ViewState。）一般用来保存服务器端控件的状态。
+3.不是所有的元素都会记录ViewState信息，也不是所有的服务器端控件都会记录ViewState信息，asp.net会根据需求来选择记录某些控件的ViewState信息。
+

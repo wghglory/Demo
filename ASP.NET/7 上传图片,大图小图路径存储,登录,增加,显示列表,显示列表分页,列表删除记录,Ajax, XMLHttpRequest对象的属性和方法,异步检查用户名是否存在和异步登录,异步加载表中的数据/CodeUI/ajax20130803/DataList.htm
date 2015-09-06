@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script type="text/javascript">
+        window.onload = function () {
+
+            //点击按钮向服务器发出异步请求
+            document.getElementById('btnLoad').onclick = function () {
+                var xhr = null;
+                if (XMLHttpRequest) {
+                    xhr = new XMLHttpRequest();
+                } else {
+                    xhr = new ActiveXObject("Microsoft.XMLHttp");
+                }
+
+                //设置回调
+                xhr.onreadystatechange = function () {
+                    //...json
+                    if (xhr.readyState == 4 && xhr.status == 200) {
+                        //alert(xhr.responseText);
+
+                        //把从服务器响应过来的json字符串转换为json对象(js数组对象)
+                        var _dataList = eval("(" + xhr.responseText + ")");  //不要这样。用JSON.parse
+
+                        //现在_dataList就是一个json格式对象（数组）,只需要循环遍历该数组中的每个元素，把每个元素都动态为其创建一个表格行就可以了。
+                        var tbodyObj = document.getElementById('tbodyContent');
+                        for (var i = 0; i < _dataList.length; i++) {
+                            //向表格中创建行
+                            var trObj = document.createElement('tr');
+
+                            //                            "NewsId":107,
+                            //		"NewsTitle":"ddddd",
+                            //		"NewsContent":null,
+                            //		"NewsIssueDate":"\/Date(1375415389927)\/",
+                            //		"NewsAuthor":"zxh",
+                            //		"NewsImage":null,
+                            //		"NewsSmallImage":"Upload/SmallPic/9/5/f638ee13-582e-40f4-8709-18930fae78be_小图IIS 5.0 和 6.0 的 ASP.NET 应用程序生命周期概述.png",
+                            //		"NewsTypeId":0,
+                            //		"Aspx_TypeObject":{"TypeId":0,"TypeName":"国内新闻"}
+                            //_dataList[i].NewsId
+
+                            for (var propertyName in _dataList[i]) {
+                                if (propertyName == "NewsContent" || propertyName == "NewsImage" || propertyName == "NewsTypeId") {
+                                    continue;
+                                } else {
+                                    if (propertyName == "Aspx_TypeObject") {
+                                        var tdObj = document.createElement('td');
+                                        tdObj.innerHTML = _dataList[i][propertyName].TypeName;
+                                        trObj.appendChild(tdObj);
+                                    } else {
+                                        var tdObj = document.createElement('td');
+                                        tdObj.innerHTML = _dataList[i][propertyName];
+                                        trObj.appendChild(tdObj);
+                                    }
+                                }
+                            }
+
+                            var tdDetails = document.createElement('td');
+                            tdDetails.innerHTML = '<a href="#">详细</a>';
+                            trObj.appendChild(tdDetails);
+
+                            var tdDelete = document.createElement('td');
+                            tdDelete.innerHTML = '<a href="#">删除</a>';
+                            trObj.appendChild(tdDelete);
+
+                            //把行加到tbody中。
+                            tbodyObj.appendChild(trObj);
+
+                        }
+                    }
+
+                };
+
+                //初始化
+                xhr.open('get', 'GetNews.ashx', true);
+
+                //发送
+                xhr.send(null);
+            };
+        };
+    </script>
+</head>
+<body>
+    <input type="button" name="name" value="加载数据" id="btnLoad" />
+    <table id="tblDataList" border="1" cellpadding="2" cellspacing="2">
+        <thead>
+            <tr>
+                <th>
+                    编号
+                </th>
+                <th>
+                    标题
+                </th>
+                <th>
+                    时间
+                </th>
+                <th>
+                    作者
+                </th>
+                <th>
+                    图片
+                </th>
+                <th>
+                    所属类别
+                </th>
+                <th>
+                    详细
+                </th>
+                <th>
+                    删除
+                </th>
+            </tr>
+        </thead>
+        <tbody id="tbodyContent">
+        </tbody>
+    </table>
+</body>
+</html>

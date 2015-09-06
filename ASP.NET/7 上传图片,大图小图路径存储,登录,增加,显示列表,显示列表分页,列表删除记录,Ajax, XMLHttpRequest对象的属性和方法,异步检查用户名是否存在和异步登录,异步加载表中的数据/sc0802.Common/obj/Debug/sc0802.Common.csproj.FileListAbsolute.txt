@@ -1,0 +1,9 @@
+C:\Users\Steve\Documents\Visual Studio 2010\Projects\WebSite30\sc0802.Common\bin\Debug\sc0802.Common.dll
+C:\Users\Steve\Documents\Visual Studio 2010\Projects\WebSite30\sc0802.Common\bin\Debug\sc0802.Common.pdb
+C:\Users\Steve\Documents\Visual Studio 2010\Projects\WebSite30\sc0802.Common\obj\Debug\sc0802.Common.dll
+C:\Users\Steve\Documents\Visual Studio 2010\Projects\WebSite30\sc0802.Common\obj\Debug\sc0802.Common.pdb
+\\psf\Home\Documents\工作\MyCode\ASP.NET\7 登录,增加,显示列表,显示列表分页,列表删除记录,Ajax, XMLHttpRequest对象的属性和方法,异步检查用户名是否存在和异步登录,异步加载表中的数据\sc0802.Common\bin\Debug\sc0802.Common.dll
+\\psf\Home\Documents\工作\MyCode\ASP.NET\7 登录,增加,显示列表,显示列表分页,列表删除记录,Ajax, XMLHttpRequest对象的属性和方法,异步检查用户名是否存在和异步登录,异步加载表中的数据\sc0802.Common\bin\Debug\sc0802.Common.pdb
+\\psf\Home\Documents\工作\MyCode\ASP.NET\7 登录,增加,显示列表,显示列表分页,列表删除记录,Ajax, XMLHttpRequest对象的属性和方法,异步检查用户名是否存在和异步登录,异步加载表中的数据\sc0802.Common\obj\Debug\sc0802.Common.csprojResolveAssemblyReference.cache
+\\psf\Home\Documents\工作\MyCode\ASP.NET\7 登录,增加,显示列表,显示列表分页,列表删除记录,Ajax, XMLHttpRequest对象的属性和方法,异步检查用户名是否存在和异步登录,异步加载表中的数据\sc0802.Common\obj\Debug\sc0802.Common.dll
+\\psf\Home\Documents\工作\MyCode\ASP.NET\7 登录,增加,显示列表,显示列表分页,列表删除记录,Ajax, XMLHttpRequest对象的属性和方法,异步检查用户名是否存在和异步登录,异步加载表中的数据\sc0802.Common\obj\Debug\sc0802.Common.pdb

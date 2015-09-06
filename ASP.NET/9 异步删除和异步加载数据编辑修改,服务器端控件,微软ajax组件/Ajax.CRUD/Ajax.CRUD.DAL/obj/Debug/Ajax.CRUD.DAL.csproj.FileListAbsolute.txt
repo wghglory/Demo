@@ -1,0 +1,14 @@
+c:\users\steve\documents\visual studio 2010\Projects\Ajax.CRUD\Ajax.CRUD.DAL\bin\Debug\Ajax.CRUD.DAL.dll
+c:\users\steve\documents\visual studio 2010\Projects\Ajax.CRUD\Ajax.CRUD.DAL\bin\Debug\Ajax.CRUD.DAL.pdb
+c:\users\steve\documents\visual studio 2010\Projects\Ajax.CRUD\Ajax.CRUD.DAL\obj\Debug\Ajax.CRUD.DAL.dll
+c:\users\steve\documents\visual studio 2010\Projects\Ajax.CRUD\Ajax.CRUD.DAL\obj\Debug\Ajax.CRUD.DAL.pdb
+c:\users\steve\documents\visual studio 2010\Projects\Ajax.CRUD\Ajax.CRUD.DAL\bin\Debug\Ajax.CRUD.Model.dll
+c:\users\steve\documents\visual studio 2010\Projects\Ajax.CRUD\Ajax.CRUD.DAL\bin\Debug\Ajax.CRUD.Model.pdb
+c:\users\steve\documents\visual studio 2010\Projects\Ajax.CRUD\Ajax.CRUD.DAL\obj\Debug\Ajax.CRUD.DAL.csprojResolveAssemblyReference.cache
+\\psf\Home\Documents\工作\MyCode\ASP.NET\9 异步删除和异步加载数据编辑修改,服务器端控件\Ajax.CRUD\Ajax.CRUD.DAL\bin\Debug\Ajax.CRUD.DAL.dll
+\\psf\Home\Documents\工作\MyCode\ASP.NET\9 异步删除和异步加载数据编辑修改,服务器端控件\Ajax.CRUD\Ajax.CRUD.DAL\bin\Debug\Ajax.CRUD.DAL.pdb
+\\psf\Home\Documents\工作\MyCode\ASP.NET\9 异步删除和异步加载数据编辑修改,服务器端控件\Ajax.CRUD\Ajax.CRUD.DAL\bin\Debug\Ajax.CRUD.Model.dll
+\\psf\Home\Documents\工作\MyCode\ASP.NET\9 异步删除和异步加载数据编辑修改,服务器端控件\Ajax.CRUD\Ajax.CRUD.DAL\bin\Debug\Ajax.CRUD.Model.pdb
+\\psf\Home\Documents\工作\MyCode\ASP.NET\9 异步删除和异步加载数据编辑修改,服务器端控件\Ajax.CRUD\Ajax.CRUD.DAL\obj\Debug\Ajax.CRUD.DAL.csprojResolveAssemblyReference.cache
+\\psf\Home\Documents\工作\MyCode\ASP.NET\9 异步删除和异步加载数据编辑修改,服务器端控件\Ajax.CRUD\Ajax.CRUD.DAL\obj\Debug\Ajax.CRUD.DAL.dll
+\\psf\Home\Documents\工作\MyCode\ASP.NET\9 异步删除和异步加载数据编辑修改,服务器端控件\Ajax.CRUD\Ajax.CRUD.DAL\obj\Debug\Ajax.CRUD.DAL.pdb

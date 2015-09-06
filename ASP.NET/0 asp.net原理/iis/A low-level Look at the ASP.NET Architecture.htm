@@ -1,0 +1,2556 @@
+
+<!-- saved from url=(0072)http://www.west-wind.com/presentations/howaspnetworks/howaspnetworks.asp -->
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns="http://www.w3.org/TR/REC-html40"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+
+<meta name="Description" content="Take a close look at how the internals of ASP.NET connect with IIS and how requests flow from the Web Server through ISAPI, into the ASP.NET runtime through modules and handlers into your application code.">
+<meta name="Keyword" content=".Net,ASP.Net,C#,IIS,ISAPI,HttpModule,HttpHandler,HttpRuntime,IHTTPRuntime,ISAPIRuntime,Rick Strahl,West Wind Technologies,How ASP.NET works">
+
+<title>A low-level Look at the ASP.NET Architecture</title>
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Helvetica;
+	panose-1:2 11 6 4 2 2 2 2 2 4;}
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+	{font-family:Verdana;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:Verdana;}
+h1
+	{margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	page-break-after:avoid;
+	font-size:18.0pt;
+	font-family:Verdana;
+	color:maroon;}
+h2
+	{margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:Verdana;
+	color:navy;}
+h3
+	{margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:Verdana;
+	color:navy;}
+p.MsoDate, li.MsoDate, div.MsoDate
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:Verdana;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:8.0pt;
+	font-family:Tahoma;}
+p.Intro, li.Intro, div.Intro
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:Verdana;
+	color:#993300;
+	font-weight:bold;}
+p.FigureCaption, li.FigureCaption, div.FigureCaption
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:Verdana;
+	font-style:italic;}
+span.FigureCaptionChar
+	{font-family:Verdana;
+	font-style:italic;}
+p.CodeListing, li.CodeListing, div.CodeListing
+	{margin:0in;
+	margin-bottom:.0001pt;
+	background:#DBDBFF;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	color:navy;}
+p.CodeListingHeader, li.CodeListingHeader, div.CodeListingHeader
+	{margin-top:5.0pt;
+	margin-right:0in;
+	margin-bottom:1.0pt;
+	margin-left:0in;
+	background:#003366;
+	font-size:10.0pt;
+	font-family:Tahoma;
+	color:white;
+	font-weight:bold;}
+span.CodeListingChar
+	{font-family:"Courier New";
+	color:navy;}
+p.CodeSnippet, li.CodeSnippet, div.CodeSnippet
+	{margin-top:0in;
+	margin-right:.25in;
+	margin-bottom:0in;
+	margin-left:.25in;
+	margin-bottom:.0001pt;
+	background:#D9D9D9;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	color:navy;}
+p.PullQuote, li.PullQuote, div.PullQuote
+	{margin-top:0in;
+	margin-right:0.0in;
+	margin-bottom:0in;
+	margin-left:.1in;
+	margin-bottom:.0001pt;
+	text-align:center;
+	background:#FFFFCB;
+	border:none;
+	padding:0in;
+	font-size:12.0pt;
+	font-family:Helvetica;
+	color:#333399;
+	font-weight:bold;}
+p.SidebarCaption, li.SidebarCaption, div.SidebarCaption
+	{margin-top:0in;
+	margin-right:4.0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	border:none;
+	padding:0in;
+	font-size:12.0pt;
+	font-family:Verdana;
+	color:#993300;
+	font-weight:bold;}
+span.SidebarCaptionChar
+	{font-family:Verdana;
+	color:#993300;
+	font-weight:bold;}
+p.SideBar, li.SideBar, div.SideBar
+	{margin-top:0in;
+	margin-right:4.0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	border:none;
+	padding:0in;
+	font-size:10.0pt;
+	font-family:Verdana;
+	color:#993300;}
+span.SideBarChar
+	{font-family:Verdana;
+	color:#993300;}
+p.AuthorName, li.AuthorName, div.AuthorName
+	{margin-top:0in;
+	margin-right:4.0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	border:none;
+	padding:0in;
+	font-size:12.0pt;
+	font-family:Verdana;
+	color:blue;
+	font-weight:bold;}
+p.Bio, li.Bio, div.Bio
+	{margin:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:8.0pt;
+	font-family:Verdana;
+	font-style:italic;}
+p.FastFacts, li.FastFacts, div.FastFacts
+	{margin-top:0in;
+	margin-right:.75in;
+	margin-bottom:0in;
+	margin-left:.75in;
+	margin-bottom:.0001pt;
+	background:#C9C9FF;
+	font-size:10.0pt;
+	font-family:Verdana;
+	color:navy;}
+p.FastFactsHeader, li.FastFactsHeader, div.FastFactsHeader
+	{margin-top:10.0pt;
+	margin-right:.75in;
+	margin-bottom:0in;
+	margin-left:.75in;
+	margin-bottom:.0001pt;
+	text-align:center;
+	background:navy;
+	font-size:12.0pt;
+	font-family:Helvetica;
+	color:white;
+	font-weight:bold;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:.35in .35in .55in .35in;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+span.SpellE
+	{}
+span.GramE
+	{}
+span.MsoCommentReference
+	{}
+.style1 {
+	font-size: 8pt;
+}
+-->
+</style>
+</head>
+
+<body lang="EN-US" link="blue" vlink="#AA00AA" topmargin="0" leftmargin="0">
+
+<table cellspacing="0" cellpadding="0" width="100%" bgcolor="#000000" border="0">
+  <tbody><tr>
+    <td valign="center" nowrap="" align="left" width="100%" bgcolor="#ffffff">
+    <img src="./A low-level Look at the ASP.NET Architecture_files/wwtoollogo.jpg" border="0" width="208" height="38"></td>
+  </tr>
+  <tr>
+    <td valign="center" nowrap="" align="left" width="100%" bgcolor="navy" height="20">
+    <font face="verdana,arial" color="#ffcc00" size="2"><b>&nbsp;&nbsp;White Papers&nbsp;&nbsp;&nbsp;&nbsp;</b></font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <b><font face="verdana,arial" color="#ffffff" size="2">
+    <a style="color: #ffffff; text-decoration: none; text-underline: single" href="http://www.west-wind.com/">Home</a>&nbsp;|&nbsp;
+    <a style="color: #ffffff; text-decoration: none; text-underline: single" href="http://www.west-wind.com/articles.asp">
+    White Papers</a>&nbsp; |&nbsp;
+    <a style="color: #ffffff; text-decoration: none; text-underline: single" href="http://www.west-wind.com/wwthreads/">
+    Message Board</a>&nbsp;|&nbsp;
+    <a style="color: #ffffff; text-decoration: none; text-underline: single" href="http://www.west-wind.com/search_simple.asp">
+    Search</a>&nbsp;|&nbsp;
+    <a style="color: #ffffff; text-decoration: none; text-underline: single" href="http://www.west-wind.com/webconnection/wcpricing.htm">
+    Products</a>&nbsp;|&nbsp;
+    <a style="color: #ffffff; text-decoration: none; text-underline: single" href="http://www.west-wind.com/wwstore/">
+    Purchase</a>&nbsp;|&nbsp;<a style="color: #ffffff; text-decoration: none; text-underline: single" href="http://www.west-wind.com/news.htm">News</a>&nbsp;| 
+    &nbsp;<a href="http://www.west-wind.com/weblog"><span style="color: #FFFFFF; text-decoration: none">Web Log</span></a>&nbsp;|</font></b></td>
+  </tr>
+</tbody></table>
+
+&nbsp;<table border="0" cellpadding="8" width="100%" id="table1">
+	<tbody><tr>
+		<td width="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+		<td width="809" valign="top">
+
+<center>
+<script type="text/javascript"> 
+<!-- 
+lqm_channel=1;
+lqm_publisher=110;
+lqm_zone=1;
+lqm_format=8;
+//-->
+</script>
+<script type="text/javascript" src="./A low-level Look at the ASP.NET Architecture_files/s.js"></script><script language="JavaScript" src="./A low-level Look at the ASP.NET Architecture_files/ron;sz=728x90;tile=1" type="text/javascript"></script> 
+</center>
+<br>
+<br>
+
+<h1>A low-level Look at the ASP.NET Architecture</h1>
+<p class="FastFactsHeader">Getting Low Level</p>
+<p class="FastFacts">This article looks at how Web requests flow through the 
+ASP.NET framework from a very low level perspective, from Web Server, through 
+ISAPI all the way up the request handler and your code. See what happens behind 
+the scenes and stop thinking of ASP.NET as a black box.</p>
+<p class="Intro">&nbsp;</p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal">By Rick Strahl<br>
+<a href="http://www.west-wind.com/" style="color: blue; text-decoration: underline">www.west-wind.com</a><br>
+<a href="mailto:rstrahl@west-wind.com" style="color: blue; text-decoration: underline">rstrahl@west-wind.com</a></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><b>Last Update:</b></p>
+<p class="MsoNormal">
+August 24, 2008</p>
+<p class="MsoNormal">
+&nbsp;</p>
+<p class="MsoNormal">
+<b>Other Links:</b></p>
+<p class="MsoNormal">
+<a href="http://www.west-wind.com/presentations/howaspnetworks/howaspnetworks.zip">Download Examples for this article</a><br>
+<a href="http://west-wind.com/weblog/posts/2595.aspx">Leave a Comment or 
+Question</a></p>
+<p class="Intro">&nbsp;</p>
+<p class="Intro">&nbsp;</p>
+<p class="Intro">ASP.NET is a powerful platform for building Web <span class="GramE">applications, that</span> provides a tremendous amount of
+flexibility and power for building just about any kind of Web application. Most
+people are familiar only with the high level frameworks like <span class="SpellE">WebForms</span> and <span class="SpellE">WebServices</span> which
+sit at the very top level of the ASP.NET hierarchy. In this article I’ll
+describe the lower level aspects of ASP.NET and explain how requests move from
+Web Server to the ASP.NET runtime and then through the ASP.NET Http Pipeline to
+process requests. </p>
+
+<p class="MsoNormal">&nbsp;</p>
+
+<p class="MsoNormal">To me understanding the innards of a platform always provides 
+certain satisfaction and level of comfort, as well as insight that helps to 
+write better applications. Knowing what tools are available and how they fit 
+together as part of the whole complex framework makes it easier to find the best 
+solution to a problem and more importantly helps in troubleshooting and 
+debugging of problems when they occur. The goal of this article is to look at 
+ASP.NET from the System level and help understand how requests flow into the 
+ASP.NET processing pipeline. As such we’ll look at the core engine and how Web 
+requests end up there. Much of this information is not something that you need 
+to know in your daily work, but it’s good to understand how the ASP.NET 
+architecture routes request into your application code that usually sits at a 
+much higher level. </p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">Most people using ASP.NET are familiar with <span class="SpellE">WebForms</span> and <span class="SpellE">WebServices</span>. These
+high level implementations are abstractions that make it easy to build Web
+based application logic and ASP.NET is the driving engine that provides the
+underlying interface to the Web Server and routing mechanics to provide the
+base for these high level front end services typically used for your
+applications. <span class="SpellE">WebForms</span> and <span class="SpellE">WebServices</span>
+are merely two very sophisticated implementations of HTTP Handlers built on top
+of the core ASP.NET framework.</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">However, ASP.NET provides much more flexibility from a lower
+level. The HTTP Runtime and the request pipeline provide all the same power
+that went into building the <span class="SpellE">WebForms</span> and <span class="SpellE">WebService</span> implementations – these implementations were
+actually built with .NET managed code. And all of that same functionality is
+available to you, should you decide you need to build a custom platform that
+sits at a level a little lower than <span class="SpellE">WebForms</span>.</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal"><span class="SpellE">WebForms</span> are definitely the
+easiest way to build most Web interfaces, but if you’re building custom content
+handlers, or have special needs for processing the incoming or outgoing
+content, or you need to build a custom application server interface to another
+application, using these lower level handlers or modules can provide better
+performance and more control over the actual request process. With all the
+power that the high level implementations of <span class="SpellE">WebForms</span>
+and <span class="SpellE">WebServices</span> provide they also add quite a bit of
+overhead to requests that you can bypass by working at a lower level.</p>
+
+<h2>What is ASP.NET</h2>
+
+<p class="MsoNormal">Let’s start with a simple definition: What is ASP.NET? I
+like to define ASP.NET as follows:</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal" style="margin-left:1.0in"><b style="mso-bidi-font-weight:
+normal">ASP.NET is a sophisticated engine using Managed Code for front to back
+processing of Web Requests.<o:p></o:p></b></p>
+
+<p class="MsoNormal" style="margin-left:1.0in"><b style="mso-bidi-font-weight:
+normal"><o:p>&nbsp;</o:p></b></p>
+
+<p class="MsoNormal" style="margin-left:1.0in"><b style="mso-bidi-font-weight:
+normal">It's much more than just <span class="SpellE">WebForms</span> and Web
+Services…<o:p></o:p></b></p>
+
+<p class="MsoNormal" style="margin-left:1.0in"><b style="mso-bidi-font-weight:
+normal"><o:p>&nbsp;</o:p></b></p>
+
+<p class="MsoNormal">ASP.NET is a request processing engine. It takes an incoming
+request and passes it through its internal pipeline to an end point where you
+as a developer can attach code to process that request. This engine is actually
+completely separated from HTTP or the Web Server. In fact, the HTTP Runtime is
+a component that you can host in your own applications outside of IIS or any
+server side application altogether. For example, you can host the ASP.NET
+runtime in a Windows form (check <span class="GramE">out<span style="mso-spacerun:yes">&nbsp; </span></span>
+<a href="http://www.west-wind.com/presentations/aspnetruntime/aspnetruntime.asp" style="color: blue; text-decoration: underline; text-underline: single">http://www.west-wind.com/presentations/aspnetruntime/aspnetruntime.asp</a>
+for more detailed information on runtime hosting in Windows Forms apps).</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">The runtime provides a complex yet very elegant mechanism
+for routing requests through this pipeline. There are a number of interrelated
+objects, most of which are extensible either via subclassing or through event
+interfaces at almost every level of the process, so the framework is highly
+extensible. Through this mechanism it’s possible to hook into very low level
+interfaces such as the caching, authentication and authorization. You can even
+filter content by pre or post processing requests or simply route incoming requests
+that match a specific signature directly to your code or another URL. There are
+a lot of different ways to accomplish the same thing, but all of the approaches
+are straightforward to implement, yet provide flexibility in finding the best
+match for performance and ease of development.</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<div style="mso-element:para-border-div;border-top:solid navy 1.5pt;border-left:
+none;border-bottom:solid navy 1.5pt;border-right:none;padding:1.0pt 0in 1.0pt 0in;
+background:#FFFFCB;margin-left:.5in;margin-right:4.0in">
+
+<p class="PullQuote" style="margin:0in;margin-bottom:.0001pt;background:#FFFFCB">
+The entire ASP.NET engine was completely built in managed code and all 
+extensibility is provided via managed code extensions.</p>
+
+</div>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">The entire ASP.NET engine was completely built in managed
+code and all of the extensibility functionality is provided via managed code
+extensions. This is a testament to the power of the .NET framework in its
+ability to build sophisticated and very performance oriented architectures.
+Above all though, the most impressive part of ASP.NET is the thoughtful design
+that makes the architecture easy to work with, yet provides hooks into just
+about any part of the request processing.</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">With ASP.NET you can perform tasks that previously were the
+domain of ISAPI extensions and filters on IIS – with some limitations, but it’s
+a lot closer than say ASP was. ISAPI is a low level Win32 style API that had a
+very meager interface and was very difficult to work for sophisticated
+applications. Since ISAPI is very low level it also is very fast, but fairly unmanageable
+for application level development. So, ISAPI has been mainly relegated for some
+time to providing bridge interfaces to other application or platforms. But
+ISAPI isn’t dead by any means. In fact, ASP.NET on Microsoft platforms
+interfaces with IIS through an ISAPI extension that hosts .NET and through it the
+ASP.NET runtime. ISAPI provides the core interface from the Web Server and
+ASP.NET uses the unmanaged ISAPI code to retrieve input and send output back to
+the client. The content that ISAPI provides is available via common objects
+like <span class="SpellE">HttpRequest</span> and <span class="SpellE">HttpResponse</span>
+that expose the unmanaged data as managed objects with a nice and accessible
+interface.</p>
+
+<h2>From Browser to ASP.NET</h2>
+
+<p class="MsoNormal">Let’s start at the beginning of the lifetime of a typical
+ASP.NET Web Request. A request starts on the browser where the user types in a
+URL, clicks on a hyperlink or submits an HTML form (a POST request). Or a
+client application might make call against an ASP.NET based Web Service, which
+is also serviced by ASP.NET. On the server side the Web Server – Internet
+Information Server 5 or 6 – picks up the request. At the lowest level ASP.NET
+interfaces with IIS through an ISAPI extension. <span class="MsoCommentReference"><span style="font-size:8.0pt">Wi</span></span>th
+ASP.NET this request usually is routed to a page with an <i style="mso-bidi-font-style:
+normal">.<span class="SpellE">aspx</span></i> extension, but how the process works
+depends entirely on the implementation of the HTTP Handler that is set up to
+handle the specified extension. In IIS .<span class="SpellE"><i style="mso-bidi-font-style:
+normal">aspx</i></span> is mapped through an ‘Application Extension’ (<span class="SpellE">aka</span>. as a script map) that is mapped to the ASP.NET ISAPI <span class="SpellE">dll</span> - <i style="mso-bidi-font-style:normal">aspnet_isapi.dll</i>.
+Every request that fires ASP.NET must go through an extension that is
+registered and points at <i style="mso-bidi-font-style:normal">aspnet_isapi.dll</i>.</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">Depending on the extension ASP.NET routes the request to an
+appropriate handler that is responsible for picking up requests. For example,
+the <i style="mso-bidi-font-style:normal">.<span class="SpellE">asmx</span> </i>extension
+for Web Services routes requests not to a page on disk but a specially
+attributed class that identifies it as a Web Service implementation. Many other
+handlers are installed with ASP.NET and you can also define your own. All of
+these <span class="SpellE"><i style="mso-bidi-font-style:normal">HttpHandlers</i></span>
+are mapped to point at the <span class="GramE">ASP.NET <span style="mso-spacerun:yes">&nbsp;</span>ISAPI</span> extension in IIS, and configured
+in web.config to get routed to a specific HTTP Handler implementation. Each <span class="GramE">handler,</span> is a .NET class that handles a specific extension
+which can range from simple Hello World behavior with a couple of lines of
+code, to very complex handlers like the ASP.NET Page or Web Service
+implementations. For now, just understand that an extension is the basic
+mapping mechanism that ASP.NET uses to receive a request from ISAPI and then route
+it to a specific handler that processes the request.</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<div style="mso-element:para-border-div;border-top:solid navy 1.5pt;border-left:
+none;border-bottom:solid navy 1.5pt;border-right:none;padding:1.0pt 0in 1.0pt 0in;
+background:#FFFFCB;margin-left:.5in;margin-right:4.0in">
+
+<p class="PullQuote" style="margin:0in;margin-bottom:.0001pt;background:#FFFFCB">ISAPI
+is the first and highest performance entry point into IIS for custom Web
+Request handling.</p>
+
+</div>
+
+<h3>The ISAPI Connection</h3>
+
+<p class="MsoNormal">ISAPI is a low level unmanged Win32 API. The interfaces
+defined by the ISAPI spec are very simplistic and optimized for performance. They
+are very low level – dealing with raw pointers and function pointer tables for
+callbacks - but they provide he lowest and most performance oriented interface
+that developers and tool vendors can use to hook into IIS. Because ISAPI is
+very low level it’s <i style="mso-bidi-font-style:normal">not</i> well suited
+for building application level <span class="GramE">code,</span> and ISAPI tends
+to be used primarily as a bridge interface to provide Application Server type
+functionality to higher level tools. For example, ASP and ASP.NET both are
+layered on top of ISAPI as is Cold Fusion, most Perl, PHP and JSP
+implementations running on IIS as well as many third party solutions such as my
+own Web Connection framework for Visual FoxPro. ISAPI is an excellent tool to
+provide the high performance plumbing interface to higher level applications,
+which can then abstract the information that ISAPI provides. In ASP and
+ASP.NET, the engines abstract the information provided by the ISAPI interface
+in the form of objects like Request and Response that read their content out of
+the ISAPI request information. Think of ISAPI as the plumbing. For ASP.NET the
+ISAPI <span class="SpellE">dll</span> is very lean and acts merely as a routing
+mechanism to pipe the inbound request into the ASP.NET runtime. All the heavy
+lifting and processing, and even the request thread management <span class="GramE">happens</span> inside of the ASP.NET engine and your code.</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">As a protocol ISAPI supports both ISAPI extensions and ISAPI
+Filters. Extensions are a request handling interface and provide the logic to
+handle input and output with the Web Server – it’s essentially a transaction
+interface. ASP and ASP.NET are implemented as ISAPI extensions. ISAPI filters are
+hook interfaces that allow the ability to look at EVERY request that comes into
+IIS and to modify the content or change the behavior of functionalities like
+Authentication. Incidentally ASP.NET maps ISAPI-like functionality via two
+concepts: Http Handlers (extensions) and Http Modules (filters). We’ll look at
+these later in more detail. </p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">ISAPI is the initial code point that marks the beginning of
+an ASP.NET request. ASP.NET maps various extensions to its ISAPI extension
+which lives in the .NET Framework directory:</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal"><b style="mso-bidi-font-weight:normal">&lt;.NET <span class="SpellE">FrameworkDir</span>&gt;\aspnet_isapi.dll<o:p></o:p></b></p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">You can interactively see these mapping in the IIS Service
+manager as shown in Figure 1. Look at the root of the Web Site and the Home
+Directory tab, then Configuration | Mappings.</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">
+<img border="0" src="./A low-level Look at the ASP.NET Architecture_files/Figure 1.png"></p>
+
+<p class="FigureCaption"><b style="mso-bidi-font-weight:normal">Figure 1</b>: IIS
+maps various extensions like .ASPX to the ASP.NET ISAPI extension. Through this
+mechanism requests are routed into <span class="SpellE">ASP.NET's</span>
+processing pipeline at the Web Server level.</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">You shouldn’t set these extensions manually as .NET requires
+a number of them. Instead use the <b style="mso-bidi-font-weight:normal">aspnet_regiis.exe
+</b>utility to make sure that all the various <span class="SpellE">scriptmaps</span>
+get registered properly:</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal"><span class="SpellE"><span class="GramE"><b style="mso-bidi-font-weight:
+normal">cd</b></span></span><b style="mso-bidi-font-weight:normal"> &lt;.<span class="SpellE">NetFrameworkDirectory</span>&gt;<o:p></o:p></b></p>
+
+<p class="MsoNormal"><span class="SpellE"><b style="mso-bidi-font-weight:normal">aspnet_regiis</b></span><b style="mso-bidi-font-weight:normal"> - <span class="SpellE">i</span><o:p></o:p></b></p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">This will register the particular version of the ASP.NET
+runtime for the entire Web site by registering the <span class="SpellE">scriptmaps</span>
+and setting up the client side scripting libraries used by the various controls
+for <span class="SpellE">uplevel</span> browsers. Note that it registers the
+particular version of the CLR that is installed in the above directory. Options
+on <span class="SpellE">aspnet_regiis</span> let you configure virtual
+directories individually. Each version of the .NET framework has its own
+version of <span class="SpellE">aspnet_regiis</span> and you need to run the
+appropriate one to register a site or virtual directory for a specific version
+of the .NET framework. Starting with ASP.NET 2.0, an IIS ASP.NET configuration
+page lets you pick the .NET version interactively in the IIS management console.
+</p>
+
+<h3>IIS 5 and 6 work differently</h3>
+
+<p class="MsoNormal">When a request comes in, IIS checks for the script map and
+routes the request to the aspnet_isapi.dll. The operation of the DLL and how it
+gets to the ASP.NET runtime varies significantly between IIS 5 and 6. Figure 2
+shows a rough overview of the flow.</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">In IIS 5 hosts aspnet_isapi.dll directly in the inetinfo.exe
+process or one of its isolated worker processes if you have isolation set to
+medium or high for the Web or virtual directory. When the first ASP.NET request
+comes in the DLL will spawn a new process in another EXE – <i style="mso-bidi-font-style:
+normal">aspnet_wp.exe</i> – and route processing to this spawned process. This
+process in turn loads and hosts the .NET runtime. Every request that comes into
+the ISAPI DLL then routes to this worker process via Named Pipe calls.</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">
+<img border="0" src="./A low-level Look at the ASP.NET Architecture_files/Figure 2.png"></p>
+
+<p class="FigureCaption"><b style="mso-bidi-font-weight:normal">Figure 2</b> –
+Request flow from IIS to the ASP.NET Runtime and through the request processing
+pipeline from a high level. IIS 5 and IIS 6 <span class="GramE">interface</span>
+with ASP.NET in different ways but the overall process once it reaches the
+ASP.NET Pipeline is the same.</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<div style="mso-element:para-border-div;border-top:solid navy 1.5pt;border-left:
+none;border-bottom:solid navy 1.5pt;border-right:none;padding:1.0pt 0in 1.0pt 0in;
+background:#FFFFCB;margin-left:.5in;margin-right:4.0in">
+
+<p class="PullQuote" style="margin:0in;margin-bottom:.0001pt;background:#FFFFCB">IIS6,
+unlike previous servers<span class="GramE">, <span style="mso-spacerun:yes">&nbsp;</span>is</span> fully optimized for ASP.NET </p>
+
+</div>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal"><b style="mso-bidi-font-weight:normal">IIS 6 – Viva the
+Application Pool<o:p></o:p></b></p>
+
+<p class="MsoNormal">IIS 6 changes the processing model significantly in that IIS
+no longer hosts any foreign executable code like ISAPI extensions directly.
+Instead IIS 6 <b style="mso-bidi-font-weight:normal">always</b> creates a
+separate worker process – an <i style="mso-bidi-font-style:normal">Application
+Pool</i> – and all processing occurs inside of this process, including
+execution of the ISAPI <span class="SpellE">dll</span>. Application Pools are a
+big improvement for IIS 6, as they allow very granular control over what
+executes in a given process. Application Pools can be configured for every
+virtual directory or the entire Web site, so you can isolate every Web
+application easily into its own process that will be completely isolated from
+any other Web application running on the same machine. If one process dies it
+will not affect any others at least from the Web processing perspective. </p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">In addition, Application Pools are highly configurable. You can
+configure their execution security environment by setting an execution
+impersonation level for the pool which allows you to customize the rights given
+to a Web application in that same granular fashion. One big improvement for
+ASP.NET is that the Application Pool replaces most of the <span class="SpellE">ProcessModel</span>
+entry in <span class="SpellE">machine.config</span>. This entry was difficult to
+manage in IIS 5, because the settings were global and could not be overridden
+in an application specific web.config file. When running IIS 6, the <span class="SpellE">ProcessModel</span> setting is mostly ignored and settings are
+instead read from the Application Pool. I say mostly – some settings, like the
+size of the <span class="SpellE">ThreadPool</span> and IO threads still are
+configured through this key since they have no equivalent in the Application
+Pool settings of the server. </p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">Because Application Pools are external executables these
+executables can also be easily monitored and managed. IIS 6 provides a number
+of health checking, restarting and timeout options that can detect and in many
+cases correct problems with an application. Finally IIS 6’s Application Pools
+don’t rely on COM+ as IIS 5 isolation processes did which has improved performance
+and stability especially for applications that need to use COM objects
+internally. </p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">Although IIS 6 application pools are separate <span class="SpellE">EXEs</span>, they are highly optimized for HTTP operations by directly
+communicating with a kernel mode HTTP.SYS driver. Incoming requests are
+directly routed to the appropriate application pool. <span class="SpellE">InetInfo</span>
+acts merely as an Administration and configuration service – most interaction
+actually occurs directly between HTTP.SYS and the Application Pools, all of
+which translates into a more stable and higher performance environment over IIS
+5. This is especially true for static content and ASP.NET applications.</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">An IIS 6 application pool also has intrinsic knowledge of ASP.NET
+and ASP.NET can communicate with new low level APIs that allow direct access to
+the HTTP Cache APIs which can offload caching from the ASP.NET level directly
+into the Web Server’s cache. </p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">In IIS 6, ISAPI extensions run in the Application Pool worker
+process. The .NET Runtime also runs in this same process, so communication
+between the ISAPI extension and the .NET runtime <span class="GramE">happens</span>
+in-process which is inherently more efficient than the named pipe interface
+that IIS 5 must use. Although the IIS hosting models are very different the
+actual interfaces into managed code are very similar – only the process in
+getting the request routed varies a bit. </p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<div style="mso-element:para-border-div;border-top:solid navy 1.5pt;border-left:
+none;border-bottom:solid navy 1.5pt;border-right:none;padding:1.0pt 0in 1.0pt 0in;
+background:#FFFFCB;margin-left:.5in;margin-right:4.0in">
+
+<p class="PullQuote" style="margin:0in;margin-bottom:.0001pt;background:#FFFFCB">The
+<span class="SpellE"><span class="GramE">ISAPIRuntime.ProcessRequest</span></span><span class="GramE">(</span>) method is the first entry point into ASP.NET</p>
+
+</div>
+
+<h3>Getting into the .NET runtime</h3>
+
+<p class="MsoNormal">The actual entry points into the .NET Runtime occur through
+a number of undocumented classes and interfaces. Little is known about these
+interfaces outside of Microsoft, and Microsoft folks are not eager to talk
+about the details, as they deem this an implementation detail that has little
+effect on developers building applications with ASP.NET. </p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">The worker processes ASPNET_WP.EXE (IIS5) and W3WP.EXE
+(IIS6) host the .NET runtime and the ISAPI DLL calls into small set of unmanged
+interfaces via low level COM that eventually forward calls to an instance
+subclass of the ISAPIRuntime class. The first entry point to the runtime is the
+undocumented ISAPIRuntime class which exposes the <span class="SpellE">IISAPIRuntime</span>
+interface via COM to a caller. These COM interfaces low level <span class="SpellE">IUnknown</span> based interfaces that are meant for internal calls
+from the ISAPI extension into ASP.NET. Figure 3 shows the interface and call
+signatures for the <span class="SpellE"><span class="GramE">IISAPIRuntime</span></span><span class="GramE"><span style="mso-spacerun:yes">&nbsp; </span>interface</span> as shown
+in Lutz Roeder’s excellent 
+<a href="http://www.aisto.com/roeder/dotnet" style="color: blue; text-decoration: underline; text-underline: single">.NET
+Reflector</a> tool (<a href="http://www.aisto.com/roeder/dotnet/" style="color: blue; text-decoration: underline; text-underline: single">http://www.aisto.com/roeder/dotnet/</a>).
+Reflector an assembly viewer and <span class="SpellE">disassembler</span> that <span class="GramE">makes</span> it very easy to look at <span class="SpellE">medadata</span>
+and disassembled code (in IL, C#, VB) as shown in Figure 3. It’s a great way to
+explore the bootstrapping process. </p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">
+<img border="0" src="./A low-level Look at the ASP.NET Architecture_files/Figure 3.png" width="677" height="429"></p>
+
+<p class="FigureCaption"><b style="mso-bidi-font-weight:normal">Figure 3</b> – If
+you want to dig into the low level interfaces open up Reflector, and point at
+the <span class="SpellE">System.Web.Hosting</span> namespace. The entry point to
+ASP.NET occurs through a managed COM Interface called from the ISAPI <span class="SpellE"><span class="GramE">dll</span></span><span class="GramE">, that</span>
+receives an unmanaged pointer to the ISAPI ECB. The ECB contains has access to
+the full ISAPI interface to allow retrieving request data and sending back to
+IIS.</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">The <span class="SpellE">IISAPIRuntime</span> interface acts
+as the interface point between the unmanaged code coming from the ISAPI
+extension (directly in IIS 6 and indirectly via the Named Pipe handler in IIS
+5). If you take a look at this class you’ll find a <span class="SpellE">ProcessRequest</span>
+method with a signature like this:</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal" style="mso-layout-grid-align:none;text-autospace:none"><span style="font-family:&quot;Courier New&quot;">[<span class="GramE"><b><span style="color:
+blue">return</span></b></span>: <span class="SpellE">MarshalAs</span>(UnmanagedType.I4)]<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="mso-layout-grid-align:none;text-autospace:none"><span class="SpellE"><span class="GramE"><b><span style="font-family:&quot;Courier New&quot;;
+color:blue">int</span></b></span></span><span style="font-family:&quot;Courier New&quot;">
+<span class="SpellE">ProcessRequest</span>([In] <span class="SpellE">IntPtr</span> <span class="SpellE">ecb</span>, <o:p></o:p></span></p>
+
+<p class="MsoNormal" style="mso-layout-grid-align:none;text-autospace:none"><span style="font-family:&quot;Courier New&quot;"><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>[In, <span class="SpellE"><span class="GramE">MarshalAs</span></span><span class="GramE">(</span>UnmanagedType.I4)]
+<span class="SpellE"><b><span style="color:blue">int</span></b></span> <span class="SpellE">useProcessModel</span>);<o:p></o:p></span></p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">The <span class="SpellE">ecb</span> parameter is the ISAPI
+Extension Control Block (ECB) which is passed as an unmanaged resource to <span class="SpellE">ProcessRequest</span>. The method then takes the ECB and uses it
+as the base input and output interface used with the Request and Response
+objects. An ISAPI ECB contains all low level request information including server
+variables, an input stream for form variables as well as an output stream that
+is used to write data back to the client. The single <span class="SpellE">ecb</span>
+reference basically provides access to all of the functionality an ISAPI
+request has access to and <span class="SpellE">ProcessRequest</span> is the entry
+and exit point where this resource initially makes contact with managed code.</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">The ISAPI extension runs requests asynchronously. In this
+mode the ISAPI extension immediately returns on the calling worker process or
+IIS thread, but keeps the ECB for the current request alive. The ECB then
+includes a mechanism for letting ISAPI know when the request is complete (via <span class="SpellE">ecb.Server<st1:personname w:st="on">Support</st1:personname>Function</span>)
+which then releases the ECB. This asynchronous processing releases the ISAPI worker
+thread immediately, and offloads processing to a separate thread that is
+managed by ASP.NET. </p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">ASP.NET receives this <span class="SpellE">ecb</span>
+reference and uses it internally to retrieve information about the current
+request such as server variables, POST data as well as returning output back to
+the server. The <span class="SpellE">ecb</span> stays alive until the request
+finishes or times out in IIS and ASP.NET continues to communicate with it until
+the request is done. Output is written into the ISAPI output stream (<span class="SpellE"><span class="GramE">ecb.WriteClient</span></span><span class="GramE">(</span>))
+and when the request is done, the ISAPI extension is notified of request
+completion to let it know that the ECB can be freed. This implementation is very
+efficient as the .NET classes essentially act as a fairly thin wrapper around
+the high performance, unmanaged ISAPI ECB.</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal"><b style="mso-bidi-font-weight:normal">Loading .NET –
+somewhat of a mystery<o:p></o:p></b></p>
+
+<p class="MsoNormal">Let’s back up one step here: I skipped over how the .NET
+runtime gets loaded. Here’s where things get a bit fuzzy. I haven’t found any
+documentation on this process and since we’re talking about native code there’s
+no easy way to disassemble the ISAPI DLL and figure it out. </p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">My best guess is that the worker process bootstraps the .NET
+runtime from within the ISAPI extension on the first hit against an ASP.NET mapped
+extension. Once the runtime exists, the unmanaged code can request an instance
+of an ISAPIRuntime object for a given virtual path if one doesn’t exist yet. Each
+virtual directory gets its own <span class="SpellE">AppDomain</span> and within
+that <span class="SpellE">AppDomain</span> the ISAPIRuntime exists from which the
+bootstrapping process for an individual application starts. Instantiation
+appears to occur over COM as the interface methods are exposed as COM callable
+methods.</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">To create the ISAPIRuntime instance the <span class="SpellE"><span class="GramE">System.Web.Hosting.AppDomainFactory.Create</span></span><span class="GramE">(</span>) method is called when the first request for a specific
+virtual directory is requested. This starts the ‘Application’ bootstrapping
+process. The call receives parameters for type and module name and virtual path
+information for the application which is used by ASP.NET to create an <span class="SpellE">AppDomain</span> and launch the ASP.NET application for the given
+virtual directory. This <span class="SpellE">HttpRuntime</span> derived object is
+created in a new <span class="SpellE">AppDomain</span>. Each virtual directory or
+ASP.NET application is hosted in a separate <span class="SpellE">AppDomain</span>
+and they get loaded only as requests hit the particular ASP.NET Application. The
+ISAPI extension manages these instances of the <span class="SpellE">HttpRuntime</span>
+objects, and routes inbound requests to the right one based on the virtual path
+of the request. </p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">
+<img border="0" src="./A low-level Look at the ASP.NET Architecture_files/Figure 4.png"></p>
+
+<p class="FigureCaption"><b style="mso-bidi-font-weight:normal">Figure 4</b> –
+The transfer of the ISAPI request into the HTTP Pipeline of ASP.NET uses a
+number of undocumented classes and interfaces and requires several factory method
+calls. Each Web Application/Virtual runs in its own <span class="SpellE">AppDomain</span>
+with the caller holding a reference to an <span class="SpellE">IISAPIRuntime</span>
+interface that triggers the ASP.NET request processing.</p>
+
+<p class="MsoNormal"><b style="mso-bidi-font-weight:normal"><o:p>&nbsp;</o:p></b></p>
+
+<p class="MsoNormal"><b style="mso-bidi-font-weight:normal">Back in the runtime<o:p></o:p></b></p>
+
+<p class="MsoNormal">At this point we have an instance of ISAPIRuntime active and
+callable from the ISAPI extension. Once the runtime is up and running the ISAPI
+code calls into the <span class="SpellE"><span class="GramE">ISAPIRuntime.ProcessRequest</span></span><span class="GramE">(</span>) method which is the real entry point into the ASP.NET
+Pipeline. The flow from there is shown in Figure 4.</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">Remember ISAPI is multi-threaded so requests will come in on
+multiple threads through the reference that was returned by <span class="SpellE"><span class="GramE">ApplicationDomainFactory.Create</span></span><span class="GramE">(</span>).
+Listing 1 shows the disassembled code from the <span class="SpellE">IsapiRuntime.ProcessRequest</span>
+method that receives an ISAPI <span class="SpellE">ecb</span> object and server
+type as parameters. The method is <span class="GramE">thread</span> safe, so
+multiple ISAPI threads can safely call this single returned object instance
+simultaneously.</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="CodeListingHeader">Listing 1: The Process request method receives an
+ISAPI Ecb and passes it on to the Worker request</p>
+
+<p class="CodeListing"><b><span style="mso-fareast-font-family:PMingLiU;
+color:blue;mso-fareast-language:ZH-TW">public</span></b><span style="mso-fareast-font-family:
+PMingLiU;mso-fareast-language:ZH-TW"> </span><b><span style="mso-fareast-font-family:
+PMingLiU;color:blue;mso-fareast-language:ZH-TW">int</span></b><span style="mso-fareast-font-family:PMingLiU;mso-fareast-language:ZH-TW">
+ProcessRequest(IntPtr ecb, </span><b><span style="mso-fareast-font-family:PMingLiU;
+color:blue;mso-fareast-language:ZH-TW">int</span></b><span style="mso-fareast-font-family:
+PMingLiU;mso-fareast-language:ZH-TW"> iWRType)<o:p></o:p></span></p>
+
+<p class="CodeListing"><span style="mso-fareast-font-family:PMingLiU;mso-fareast-language:
+ZH-TW">{<o:p></o:p></span></p>
+
+<p class="CodeListing"><span style="mso-fareast-font-family:PMingLiU;mso-fareast-language:
+ZH-TW"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>HttpWorkerRequest request1 =
+ISAPIWorkerRequest.CreateWorkerRequest(ecb, iWRType);<o:p></o:p></span></p>
+
+<p class="CodeListing"><span style="mso-fareast-font-family:PMingLiU;mso-fareast-language:
+ZH-TW"><o:p>&nbsp;</o:p></span></p>
+
+<p class="CodeListing">
+<span style="mso-tab-count:1; mso-fareast-font-family:PMingLiU; mso-fareast-language:ZH-TW">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><b><span style="mso-fareast-font-family:PMingLiU;color:blue;mso-fareast-language:ZH-TW">string</span></b><span style="mso-fareast-font-family:PMingLiU;mso-fareast-language:ZH-TW"> text1 =
+request1.GetAppPathTranslated();<o:p></o:p></span></p>
+
+<p class="CodeListing">
+<span style="mso-tab-count:1; mso-fareast-font-family:PMingLiU; mso-fareast-language:ZH-TW">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><b><span style="mso-fareast-font-family:PMingLiU;color:blue;mso-fareast-language:ZH-TW">string</span></b><span style="mso-fareast-font-family:PMingLiU;mso-fareast-language:ZH-TW"> text2 =
+HttpRuntime.AppDomainAppPathInternal;<o:p></o:p></span></p>
+
+<p class="CodeListing">
+<span style="mso-tab-count:1; mso-fareast-font-family:PMingLiU; mso-fareast-language:ZH-TW">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><b><span style="mso-fareast-font-family:PMingLiU;color:blue;mso-fareast-language:ZH-TW">if</span></b><span style="mso-fareast-font-family:PMingLiU;mso-fareast-language:ZH-TW"> (((text2
+== </span><b><span style="mso-fareast-font-family:PMingLiU;color:blue;
+mso-fareast-language:ZH-TW">null</span></b><span style="mso-fareast-font-family:
+PMingLiU;mso-fareast-language:ZH-TW">) || text1.Equals(<span style="background:
+silver;mso-highlight:silver">"."</span>)) || <o:p></o:p></span></p>
+
+<p class="CodeListing"><span style="mso-fareast-font-family:PMingLiU;mso-fareast-language:
+ZH-TW"><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>(</span><b><span style="mso-fareast-font-family:PMingLiU;color:blue;mso-fareast-language:ZH-TW">string</span></b><span style="mso-fareast-font-family:PMingLiU;mso-fareast-language:ZH-TW">.Compare(text1,
+text2, </span><b><span style="mso-fareast-font-family:PMingLiU;color:blue;
+mso-fareast-language:ZH-TW">true</span></b><span style="mso-fareast-font-family:
+PMingLiU;mso-fareast-language:ZH-TW">, CultureInfo.InvariantCulture) == 0))<o:p></o:p></span></p>
+
+<p class="CodeListing"><span style="mso-fareast-font-family:PMingLiU;mso-fareast-language:
+ZH-TW"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>{<o:p></o:p></span></p>
+
+<p class="CodeListing"><span style="mso-fareast-font-family:PMingLiU;mso-fareast-language:
+ZH-TW"><span style="mso-tab-count:2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><b style="mso-bidi-font-weight:
+normal">HttpRuntime.ProcessRequest(request1);<o:p></o:p></b></span></p>
+
+<p class="CodeListing">
+<span style="mso-tab-count:2; mso-fareast-font-family:PMingLiU; mso-fareast-language:ZH-TW">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><b><span style="mso-fareast-font-family:PMingLiU;color:blue;mso-fareast-language:ZH-TW">return</span></b><span style="mso-fareast-font-family:PMingLiU;mso-fareast-language:ZH-TW"> 0;<o:p></o:p></span></p>
+
+<p class="CodeListing"><span style="mso-fareast-font-family:PMingLiU;mso-fareast-language:
+ZH-TW"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>}<o:p></o:p></span></p>
+
+<p class="CodeListing"><span style="mso-fareast-font-family:PMingLiU;mso-fareast-language:
+ZH-TW"><o:p>&nbsp;</o:p></span></p>
+
+<p class="CodeListing"><span style="mso-fareast-font-family:PMingLiU;mso-fareast-language:
+ZH-TW"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>HttpRuntime.ShutdownAppDomain(<span style="background:silver;mso-highlight:silver">"Physical application path
+changed from "</span> + <o:p></o:p></span></p>
+
+<p class="CodeListing"><span style="mso-fareast-font-family:PMingLiU;mso-fareast-language:
+ZH-TW"><span style="mso-tab-count:2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>text2 + <span style="background:silver;mso-highlight:silver">" to "</span> +
+text1);<o:p></o:p></span></p>
+
+<p class="CodeListing">
+<span style="mso-tab-count:1; mso-fareast-font-family:PMingLiU; mso-fareast-language:ZH-TW">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><b><span style="mso-fareast-font-family:PMingLiU;color:blue;mso-fareast-language:ZH-TW">return</span></b><span style="mso-fareast-font-family:PMingLiU;mso-fareast-language:ZH-TW"> 1;<o:p></o:p></span></p>
+
+<p class="CodeListing"><span style="mso-fareast-font-family:PMingLiU;mso-fareast-language:
+ZH-TW">}</span></p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">The actual code here is not important, and keep in mind that
+this is disassembled internal framework code that you’ll never deal with
+directly and that might change in the future. It’s meant to demonstrate what’s
+happening behind the scenes. <span class="SpellE">ProcessRequest</span> receives
+the unmanaged ECB reference and passes it on to the <span class="SpellE">ISAPIWorkerRequest</span>
+object which is in charge of creating the Request Context for the current
+request as shown in Listing 2. </p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">The <span class="SpellE">System.Web.Hosting.ISAPIWorkerRequest</span>
+class is an abstract subclass of <span class="SpellE">HttpWorkerRequest</span>,
+whose job it is to create an abstracted view of the input and output that
+serves as the input for the Web application. Notice another factory method
+here: <span class="SpellE">CreateWorkerRequest</span>, which as a second parameter
+receives the type of worker request object to create. There are three different
+versions: <span class="SpellE">ISAPIWorkerRequestInProc</span>,
+ISAPIWorkerRequestInProcForIIS6, <span class="SpellE"><span class="GramE">ISAPIWorkerRequestOutOfProc</span></span>.
+This object is created on each incoming hit and serves as the basis for the Request
+and Response objects which will receive their data and streams from the data
+provided by the <span class="SpellE">WorkerRequest</span>.</p>
+
+<p class="MsoNormal"><span style="mso-spacerun:yes">&nbsp;</span></p>
+
+<p class="MsoNormal">The abstract <span class="SpellE">HttpWorkerRequest</span>
+class is meant to provide a <span class="SpellE">highlevel</span> abstraction
+around the low level interfaces so that regardless of where the data comes from,
+whether it’s a CGI Web Server, the Web Browser Control or some custom mechanism
+you use to feed the data to the HTTP Runtime. The key is that ASP.NET can
+retrieve the information consistently.</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">In the case of IIS the abstraction is centered <span class="GramE">around</span> an ISAPI ECB block. In our request processing, <span class="SpellE">ISAPIWorkerRequest</span> hangs on to the ISAPI ECB and retrieves
+data from it as needed. Listing 2 shows how the query string value is retrieved
+for example.</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="CodeListingHeader">Listing 2: An ISAPIWorkerRequest method that uses
+the unmanged </p>
+
+<p class="CodeListing"><span style="mso-bidi-font-family:&quot;Courier New&quot;;
+color:green">// *** Implemented in ISAPIWorkerRequest<o:p></o:p></span></p>
+
+<p class="CodeListing"><b><span style="color:blue">public</span></b> <b><span style="color:blue">override</span></b> <b><span style="color:blue">byte</span></b>[]
+GetQueryStringRawBytes()</p>
+
+<p class="CodeListing">{</p>
+
+<p class="CodeListing"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><b><span style="color:blue">byte</span></b>[] buffer1 = <b><span style="color:blue">new</span></b>
+<b><span style="color:blue">byte</span></b>[<b><span style="color:blue">this</span></b>._queryStringLength];</p>
+
+<p class="CodeListing"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><b><span style="color:blue">if</span></b> (<b><span style="color:blue">this</span></b>._queryStringLength
+&gt; 0)</p>
+
+<p class="CodeListing"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>{</p>
+
+<p class="CodeListing"><span style="mso-tab-count:2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><b><span style="color:blue">int</span></b> num1 = <b><span style="color:blue">this</span></b>.GetQueryStringRawBytesCore(buffer1,
+<b><span style="color:blue">this</span></b>._queryStringLength);</p>
+
+<p class="CodeListing"><span style="mso-tab-count:2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><b><span style="color:blue">if</span></b> (num1 != 1)</p>
+
+<p class="CodeListing"><span style="mso-tab-count:2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>{</p>
+
+<p class="CodeListing"><span style="mso-tab-count:3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><b><span style="color:blue">throw</span></b> <b><span style="color:blue">new</span></b>
+HttpException( <span style="background:silver;mso-highlight:silver">"Cannot_get_query_string_bytes"</span>);</p>
+
+<p class="CodeListing"><span style="mso-tab-count:2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>}</p>
+
+<p class="CodeListing"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>}</p>
+
+<p class="CodeListing"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><b><span style="color:blue">return</span></b> buffer1;</p>
+
+<p class="CodeListing">}</p>
+
+<p class="CodeListing"><span style="mso-bidi-font-family:&quot;Courier New&quot;"><o:p>&nbsp;</o:p></span></p>
+
+<p class="CodeListing"><span style="mso-bidi-font-family:&quot;Courier New&quot;;
+color:green">// *** Implemented in a specific implementation class
+ISAPIWorkerRequestInProcIIS6<o:p></o:p></span></p>
+
+<p class="CodeListing"><b><span style="mso-bidi-font-family:&quot;Courier New&quot;;
+color:blue">internal</span></b><span style="mso-bidi-font-family:&quot;Courier New&quot;">
+</span><b><span style="mso-bidi-font-family:&quot;Courier New&quot;;color:blue">override</span></b><span style="mso-bidi-font-family:&quot;Courier New&quot;"> </span><b><span style="mso-bidi-font-family:
+&quot;Courier New&quot;;color:blue">int</span></b><span style="mso-bidi-font-family:&quot;Courier New&quot;">
+GetQueryStringCore(</span><b><span style="mso-bidi-font-family:&quot;Courier New&quot;;
+color:blue">int</span></b><span style="mso-bidi-font-family:&quot;Courier New&quot;">
+encode, StringBuilder buffer, </span><b><span style="mso-bidi-font-family:&quot;Courier New&quot;;
+color:blue">int</span></b><span style="mso-bidi-font-family:&quot;Courier New&quot;">
+size)<o:p></o:p></span></p>
+
+<p class="CodeListing"><span style="mso-bidi-font-family:&quot;Courier New&quot;">{<o:p></o:p></span></p>
+
+<p class="CodeListing">
+<span style="mso-tab-count:1; mso-bidi-font-family:Courier New">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><b><span style="mso-bidi-font-family:
+&quot;Courier New&quot;;color:blue">if</span></b><span style="mso-bidi-font-family:&quot;Courier New&quot;">
+(</span><b><span style="mso-bidi-font-family:&quot;Courier New&quot;;color:blue">this</span></b><span style="mso-bidi-font-family:&quot;Courier New&quot;">._ecb == IntPtr.Zero)<o:p></o:p></span></p>
+
+<p class="CodeListing"><span style="mso-bidi-font-family:&quot;Courier New&quot;"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>{<o:p></o:p></span></p>
+
+<p class="CodeListing">
+<span style="mso-tab-count:2; mso-bidi-font-family:Courier New">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><b><span style="mso-bidi-font-family:
+&quot;Courier New&quot;;color:blue">return</span></b><span style="mso-bidi-font-family:
+&quot;Courier New&quot;"> 0;<o:p></o:p></span></p>
+
+<p class="CodeListing"><span style="mso-bidi-font-family:&quot;Courier New&quot;"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>}<o:p></o:p></span></p>
+
+<p class="CodeListing">
+<span style="mso-tab-count:1; mso-bidi-font-family:Courier New">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><b><span style="mso-bidi-font-family:
+&quot;Courier New&quot;;color:blue">return</span></b><span style="mso-bidi-font-family:
+&quot;Courier New&quot;"> UnsafeNativeMethods.EcbGetQueryString(</span><b><span style="mso-bidi-font-family:&quot;Courier New&quot;;color:blue">this</span></b><span style="mso-bidi-font-family:&quot;Courier New&quot;">._ecb, encode, buffer, size);<o:p></o:p></span></p>
+
+<p class="CodeListing"><span style="mso-bidi-font-family:&quot;Courier New&quot;">}<o:p></o:p></span></p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal"><span class="SpellE">ISAPIWorkerRequest</span> implements a
+high level wrapper method, that calls into lower level <i style="mso-bidi-font-style:
+normal">Core</i> methods, which are responsible for performing the actual
+access to the unmanaged APIs – or the ‘service level implementation’. The <i style="mso-bidi-font-style:normal">Core</i> methods are implemented in the
+specific <span class="SpellE">ISAPIWorkerRequest</span> instance subclasses and
+thus provide the specific implementation for the environment that it’s hosted
+in. This makes for an easily pluggable environment where additional
+implementation classes can be provided later as newer Web Server interfaces or
+other platforms are targeted by ASP.NET. There’s also a helper class <span class="SpellE">System.Web.UnsafeNativeMethods</span>. Many of these methods
+operate on the ISAPI ECB structure performing unmanaged calls into the ISAPI
+extension. </p>
+
+<h3><span class="SpellE">HttpRuntime</span>, <span class="SpellE">HttpContext</span>,
+and <span class="SpellE">HttpApplication</span> – Oh my</h3>
+
+<p class="MsoNormal">When a request hits, it is routed to the <span class="SpellE"><span class="GramE">ISAPIRuntime.ProcessRequest</span></span><span class="GramE">(</span>)
+method. This method in turn calls <span class="SpellE">HttpRuntime.ProcessRequest</span>
+that does several important things (look at <span class="SpellE">System.Web.HttpRuntime.ProcessRequestInternal</span>
+with Reflector):</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<ul style="margin-top:0in" type="disc">
+ <li class="MsoNormal" style="mso-list:l2 level1 lfo9;tab-stops:list .5in">Create
+     a new <span class="SpellE">HttpContext</span> instance for the request</li>
+ <li class="MsoNormal" style="mso-list:l2 level1 lfo9;tab-stops:list .5in">Retrieves
+     an <span class="SpellE">HttpApplication</span> Instance</li>
+ <li class="MsoNormal" style="mso-list:l2 level1 lfo9;tab-stops:list .5in">Calls <span class="SpellE">HttpApplication.Init</span>() to set up Pipeline Events</li>
+ <li class="MsoNormal" style="mso-list:l2 level1 lfo9;tab-stops:list .5in">Init()
+     fires <span class="SpellE">HttpApplication.ResumeProcessing</span>() which
+     starts the ASP.NET pipeline processing</li>
+</ul>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">First a new <span class="SpellE"><i style="mso-bidi-font-style:
+normal">HttpContext</i></span> object is created and it is passed the <span class="SpellE">ISAPIWorkerRequest</span> that wrappers the ISAPI ECB. The Context
+is available throughout the lifetime of the request and ALWAYS accessible via
+the static <span class="SpellE"><i style="mso-bidi-font-style:normal">HttpContext.Current</i></span>
+property. As the name implies, the <span class="SpellE"><span class="GramE">HttpContext</span></span><span class="GramE"> <span style="mso-spacerun:yes">&nbsp;</span>object</span> represents
+the context of the currently active request as it contains references to all of
+the vital objects you typically access during the request lifetime: Request,
+Response, Application, Server, Cache. At any time during request processing <span class="SpellE">HttpContext.Current</span> gives you access to <span class="GramE">all
+of these</span> object. </p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">The <span class="SpellE">HttpContext</span> object also
+contains a very useful Items collection that you can use to store data that is
+request specific. The context object gets created at the begging of the request
+cycle and released when the request finishes, so data stored there in the Items
+collection is specific only to the current request. A good example use is a request
+logging mechanism where you want to track start and end times of a request by
+hooking the <span class="SpellE">Application_BeginRequest</span> and <span class="SpellE">Application_EndRequest</span> methods in <span class="SpellE">Global.asax</span>
+as shown in Listing 3. <span class="SpellE">HttpContext</span> is your friend –
+you’ll use it liberally if you need data in different parts of the request or
+page processing.</p>
+
+<p class="MsoNormal"><span style="mso-spacerun:yes">&nbsp;</span></p>
+
+<p class="CodeListingHeader">Listing 3 – Using the HttpContext.Items collection
+lets you save data between pipeline events</p>
+
+<p class="CodeListing"><b><span style="mso-fareast-font-family:PMingLiU;
+color:blue;mso-fareast-language:ZH-TW">protected</span></b><span style="mso-fareast-font-family:PMingLiU;mso-fareast-language:ZH-TW"> </span><b><span style="mso-fareast-font-family:PMingLiU;color:blue;mso-fareast-language:ZH-TW">void</span></b><span style="mso-fareast-font-family:PMingLiU;mso-fareast-language:ZH-TW">
+Application_BeginRequest(Object sender, EventArgs e)<o:p></o:p></span></p>
+
+<p class="CodeListing"><span style="mso-fareast-font-family:PMingLiU;mso-fareast-language:
+ZH-TW">{<o:p></o:p></span></p>
+
+<p class="CodeListing">
+<span style="mso-tab-count:1; mso-fareast-font-family:PMingLiU; mso-fareast-language:ZH-TW">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="mso-fareast-font-family:PMingLiU;color:green;mso-fareast-language:ZH-TW">//***
+Request Logging<o:p></o:p></span></p>
+
+<p class="CodeListing">
+<span style="mso-tab-count:1; mso-fareast-font-family:PMingLiU; mso-fareast-language:ZH-TW">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><b><span style="mso-fareast-font-family:PMingLiU;color:blue;mso-fareast-language:ZH-TW">if</span></b><span style="mso-fareast-font-family:PMingLiU;mso-fareast-language:ZH-TW">
+(App.Configuration.LogWebRequests)<o:p></o:p></span></p>
+
+<p class="CodeListing"><span style="mso-fareast-font-family:PMingLiU;mso-fareast-language:
+ZH-TW"><span style="mso-tab-count:2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><b style="mso-bidi-font-weight:
+normal">Context.Items.Add(<span style="background:silver;mso-highlight:silver">"WebLog_StartTime"</span>,DateTime.Now);<o:p></o:p></b></span></p>
+
+<p class="CodeListing"><span style="mso-fareast-font-family:PMingLiU;mso-fareast-language:
+ZH-TW">}<o:p></o:p></span></p>
+
+<p class="CodeListing"><o:p>&nbsp;</o:p></p>
+
+<p class="CodeListing"><b><span style="mso-fareast-font-family:PMingLiU;
+color:blue;mso-fareast-language:ZH-TW">protected</span></b><span style="mso-fareast-font-family:PMingLiU;mso-fareast-language:ZH-TW"> </span><b><span style="mso-fareast-font-family:PMingLiU;color:blue;mso-fareast-language:ZH-TW">void</span></b><span style="mso-fareast-font-family:PMingLiU;mso-fareast-language:ZH-TW">
+Application_EndRequest(Object sender, EventArgs e)<o:p></o:p></span></p>
+
+<p class="CodeListing"><span style="mso-fareast-font-family:PMingLiU;mso-fareast-language:
+ZH-TW">{<o:p></o:p></span></p>
+
+<p class="CodeListing">
+<span style="mso-tab-count:1; mso-fareast-font-family:PMingLiU; mso-fareast-language:ZH-TW">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="mso-fareast-font-family:PMingLiU;color:green;mso-fareast-language:ZH-TW">//
+*** Request Logging<o:p></o:p></span></p>
+
+<p class="CodeListing">
+<span style="mso-tab-count:1; mso-fareast-font-family:PMingLiU; mso-fareast-language:ZH-TW">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><b><span style="mso-fareast-font-family:PMingLiU;color:blue;mso-fareast-language:ZH-TW">if</span></b><span style="mso-fareast-font-family:PMingLiU;mso-fareast-language:ZH-TW">
+(App.Configuration.LogWebRequests) <o:p></o:p></span></p>
+
+<p class="CodeListing"><span style="mso-fareast-font-family:PMingLiU;mso-fareast-language:
+ZH-TW"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>{<o:p></o:p></span></p>
+
+<p class="CodeListing">
+<span style="mso-tab-count:2; mso-fareast-font-family:PMingLiU; mso-fareast-language:ZH-TW">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><b><span style="mso-fareast-font-family:PMingLiU;color:blue;mso-fareast-language:ZH-TW">try</span></b><span style="mso-fareast-font-family:PMingLiU;mso-fareast-language:ZH-TW"> <o:p></o:p></span></p>
+
+<p class="CodeListing"><span style="mso-fareast-font-family:PMingLiU;mso-fareast-language:
+ZH-TW"><span style="mso-tab-count:2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>{<span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp; </span><o:p></o:p></span></p>
+
+<p class="CodeListing"><span style="mso-fareast-font-family:PMingLiU;mso-fareast-language:
+ZH-TW"><span style="mso-tab-count:3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>TimeSpan Span =
+DateTime.Now.Subtract( <o:p></o:p></span></p>
+
+<p class="CodeListing"><span style="mso-fareast-font-family:PMingLiU;mso-fareast-language:
+ZH-TW"><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><b style="mso-bidi-font-weight:normal">(DateTime) Context.Items[<span style="background:silver;mso-highlight:silver">"WebLog_StartTime"</span>]</b>
+);<o:p></o:p></span></p>
+
+<p class="CodeListing">
+<span style="mso-tab-count:3; mso-fareast-font-family:PMingLiU; mso-fareast-language:ZH-TW">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><b><span style="mso-fareast-font-family:PMingLiU;color:blue;mso-fareast-language:ZH-TW">int</span></b><span style="mso-fareast-font-family:PMingLiU;mso-fareast-language:ZH-TW"> MiliSecs =
+Span.TotalMilliseconds;<o:p></o:p></span></p>
+
+<p class="CodeListing"><span style="mso-fareast-font-family:PMingLiU;mso-fareast-language:
+ZH-TW"><o:p>&nbsp;</o:p></span></p>
+
+<p class="CodeListing"><span style="mso-fareast-font-family:PMingLiU;mso-fareast-language:
+ZH-TW"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="mso-tab-count:
+2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>// do your logging<o:p></o:p></span></p>
+
+<p class="CodeListing"><span style="mso-fareast-font-family:PMingLiU;mso-fareast-language:
+ZH-TW"><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>WebRequestLog.Log(App.Configuration.ConnectionString,<o:p></o:p></span></p>
+
+<p class="CodeListing"><b><span style="mso-fareast-font-family:PMingLiU;
+color:blue;mso-fareast-language:ZH-TW"><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>true</span></b><span style="mso-fareast-font-family:PMingLiU;mso-fareast-language:ZH-TW">,MilliSecs);<o:p></o:p></span></p>
+
+<p class="CodeListing"><span style="mso-fareast-font-family:PMingLiU;mso-fareast-language:
+ZH-TW"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>}<o:p></o:p></span></p>
+
+<p class="CodeListing"><span style="mso-fareast-font-family:PMingLiU;mso-fareast-language:
+ZH-TW">}<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="mso-layout-grid-align:none;text-autospace:none"><span style="font-family:&quot;Courier New&quot;;mso-fareast-font-family:PMingLiU;mso-fareast-language:
+ZH-TW"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">Once the Context has been set up, ASP.NET needs to route
+your incoming request to the appropriate application/virtual directory by way
+of an <span class="SpellE">HttpApplication</span> object. Every ASP.NET
+application must be set up as a Virtual (or Web Root) directory and each of
+these ‘applications’ are handled independently. </p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<div style="mso-element:para-border-div;border-top:solid navy 1.5pt;border-left:
+none;border-bottom:solid navy 1.5pt;border-right:none;padding:1.0pt 0in 1.0pt 0in;
+background:#FFFFCB;margin-left:.5in;margin-right:4.0in">
+
+<p class="PullQuote" style="margin:0in;margin-bottom:.0001pt;background:#FFFFCB">The
+<span class="SpellE">HttpApplication</span> is like a master of ceremonies – it
+is where the processing action starts</p>
+
+</div>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal"><b style="mso-bidi-font-weight:normal">Master of your
+domain: <span class="SpellE">HttpApplication</span><o:p></o:p></b></p>
+
+<p class="MsoNormal">Each request is routed to an <span class="SpellE">HttpApplication</span>
+object. The <span class="SpellE">HttpApplicationFactory</span> class creates a
+pool of <span class="SpellE">HttpApplication</span> objects for your ASP.NET
+application depending on the load on the application and hands out references
+for each incoming request. The size of the pool is limited to the setting of
+the <span class="SpellE">MaxWorkerThreads</span> setting in <span class="SpellE">machine.config’s</span>
+<span class="SpellE">ProcessModel</span> Key, which by default <span class="GramE">is</span>
+20. </p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">The pool starts out with a smaller number though; usually
+one and it then grows as multiple <span class="SpellE">simulataneous</span>
+requests need to be processed. The Pool is monitored so under load it may grow
+to its max number of instances, which is later scaled back to a smaller number
+as the load drops. </p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal"><span class="SpellE">HttpApplication</span> is the outer
+container for your specific Web application and it maps to the class that is
+defined in <span class="SpellE">Global.asax</span>. It’s the first entry point
+into the HTTP Runtime that you actually see on a regular basis in your
+applications. If you look in <span class="SpellE">Global.asax</span> (or the code
+behind class) you’ll find that this class derives directly from <span class="SpellE">HttpApplication</span>:</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="CodeSnippet"><b><span style="color:blue">public</span></b> <b><span style="color:blue">class</span></b> Global : System.Web.HttpApplication</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal"><span class="SpellE">HttpApplication’s</span> primary purpose
+is to act as the event controller of the Http Pipeline and so its interface
+consists primarily of events. The event hooks are extensive and include:</p>
+
+<p class="MsoNormal"><b><o:p>&nbsp;</o:p></b></p>
+
+<ul style="margin-top:0in" type="disc">
+ <li class="MsoNormal" style="mso-list:l3 level1 lfo6;tab-stops:list .5in"><span class="SpellE">BeginRequest</span></li>
+ <li class="MsoNormal" style="mso-list:l3 level1 lfo6;tab-stops:list .5in"><span class="SpellE">AuthenticateRequest</span></li>
+ <li class="MsoNormal" style="mso-list:l3 level1 lfo6;tab-stops:list .5in"><span class="SpellE">AuthorizeRequest</span></li>
+ <li class="MsoNormal" style="mso-list:l3 level1 lfo6;tab-stops:list .5in"><span class="SpellE">ResolveRequestCache</span></li>
+ <li class="MsoNormal" style="mso-list:l3 level1 lfo6;tab-stops:list .5in"><span class="SpellE">AquireRequestState</span></li>
+ <li class="MsoNormal" style="mso-list:l3 level1 lfo6;tab-stops:list .5in"><span class="SpellE">PreRequestHandlerExecute</span></li>
+ <li class="MsoNormal" style="mso-list:l3 level1 lfo6;tab-stops:list .5in"><b>…Handler
+     Execution…</b></li>
+ <li class="MsoNormal" style="mso-list:l3 level1 lfo6;tab-stops:list .5in"><span class="SpellE">PostRequestHandlerExecute</span></li>
+ <li class="MsoNormal" style="mso-list:l3 level1 lfo6;tab-stops:list .5in"><span class="SpellE">ReleaseRequestState</span></li>
+ <li class="MsoNormal" style="mso-list:l3 level1 lfo6;tab-stops:list .5in"><span class="SpellE">UpdateRequestCache</span></li>
+ <li class="MsoNormal" style="mso-list:l3 level1 lfo6;tab-stops:list .5in"><span class="SpellE">EndRequest</span><b><o:p></o:p></b></li>
+</ul>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">Each of these events <span class="GramE">are</span> also
+implemented in the <span class="SpellE">Global.asax</span> file via empty methods
+that start with an Application_ prefix. For example, <span class="SpellE">Application_<span class="GramE">BeginRequest</span></span><span class="GramE">(</span>), <span class="SpellE">Application_AuthorizeRequest</span>(). These handlers are provided
+for convenience since they are frequently used in applications and make it so
+that you don’t have to explicitly create the event handler delegates.</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">It’s important to understand that each ASP.NET virtual
+application runs in its own <span class="SpellE">AppDomain</span> and that there
+inside of the <span class="SpellE">AppDomain</span> multiple <span class="SpellE">HttpApplication</span>
+instances running simultaneously, fed out of a pool that ASP.NET manages. This
+is so that multiple requests can process at the same time without interfering
+with each other. </p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">To see the relationship between the <span class="SpellE">AppDomain</span>,
+Threads and the <span class="SpellE">HttpApplication</span> check out the code in
+Listing 4.</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="CodeListingHeader">Listing 4 – Showing the relation between AppDomain,
+Threads and HttpApplication instances</p>
+
+<p class="CodeListing"><b><span style="color:blue">private</span></b> <b><span style="color:blue">void</span></b> Page_Load(<b><span style="color:blue">object</span></b>
+sender, System.EventArgs e)</p>
+
+<p class="CodeListing">{</p>
+
+<p class="CodeListing"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="color:green">// Put user code to initialize the page here<o:p></o:p></span></p>
+
+<p class="CodeListing"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><b><span style="color:blue">this</span></b>.ApplicationId = ((HowAspNetWorks.Global) </p>
+
+<p class="CodeListing"><span style="mso-tab-count:3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>HttpContext.Current.ApplicationInstance).ApplicationId
+; </p>
+
+<p class="CodeListing"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><b><span style="color:blue">this</span></b>.ThreadId = AppDomain.GetCurrentThreadId();</p>
+
+<p class="CodeListing"><o:p>&nbsp;</o:p></p>
+
+<p class="CodeListing"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><b><span style="color:blue">this</span></b>.DomainId =
+AppDomain.CurrentDomain.FriendlyName;</p>
+
+<p class="CodeListing"><o:p>&nbsp;</o:p></p>
+
+<p class="CodeListing"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><b><span style="color:blue">this</span></b>.ThreadInfo = <span style="background:silver;
+mso-highlight:silver">"ThreadPool Thread: "</span> + </p>
+
+<p class="CodeListing"><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>System.Threading.Thread.CurrentThread.IsThreadPoolThread.ToString() +</p>
+
+<p class="CodeListing"><span style="mso-tab-count:2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="background:silver;
+mso-highlight:silver">"&lt;br&gt;Thread Apartment: "</span> + </p>
+
+<p class="CodeListing"><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>System.Threading.Thread.CurrentThread.ApartmentState.ToString();</p>
+
+<p class="CodeListing"><o:p>&nbsp;</o:p></p>
+
+<p class="CodeListing"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="color:green">// *** Simulate a slow request so we can see multiple<o:p></o:p></span></p>
+
+<p class="CodeListing"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="color:green">//<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp; </span>requests side
+by side.<o:p></o:p></span></p>
+
+<p class="CodeListing"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>System.Threading.Thread.Sleep(3000);</p>
+
+<p class="CodeListing">}</p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Courier New&quot;"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal">This is part of a demo is provided with your samples and the
+running form is shown in Figure 5. To check this out run two instances of a
+browser and hit this sample page and watch the various Ids. </p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Courier New&quot;"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><o:p></o:p>
+<img border="0" src="./A low-level Look at the ASP.NET Architecture_files/Figure 5.png" width="684" height="517"></p>
+
+<p class="FigureCaption"><b><span style="mso-bidi-font-style:italic">Figure 5</span></b>
+– You can easily check out how <span class="SpellE">AppDomains</span>,
+Application Pool instances, and Request Threads interact with each other by
+running a couple of browser instances simultaneously. When multiple requests fire
+you’ll see the thread and Application ids change, but the <span class="SpellE">AppDomain</span>
+staying the same.</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">You’ll notice that the <span class="SpellE">AppDomain</span>
+ID stays steady while thread and <span class="SpellE">HttpApplication</span> Ids
+change on most requests, although they likely will repeat. <span class="SpellE">HttpApplications</span>
+are running out of a collection and are reused for subsequent requests so the
+ids repeat at times. Note though that Application instance are not tied to a
+specific thread – rather they are assigned to the active executing thread of
+the current request.</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">Threads are served from the .NET <span class="SpellE">ThreadPool</span>
+and by default are Multithreaded Apartment (MTA) style threads. You can
+override this apartment state in ASP.NET pages with the
+ASPCOMPAT="true" attribute in the @Page directive. ASPCOMPAT is meant
+to provide COM components a safe environment to run in and ASPCOMPAT uses
+special Single Threaded Apartment (STA) threads to service those requests. STA
+threads are set aside and pooled separately as they require special handling.</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">The fact that these <span class="SpellE">HttpApplication</span>
+objects are all running in the same <span class="SpellE">AppDomain</span> is very
+important. This is how ASP.NET can guarantee that changes to web.config or
+individual ASP.NET pages get recognized throughout the <span class="SpellE">AppDomain</span>.
+Making a change to a value in web.config causes the <span class="SpellE">AppDomain</span>
+to be shut down and restarted. This makes sure that all instances of <span class="SpellE">HttpApplication</span> see the changes made because when the <span class="SpellE">AppDomain</span> reloads the changes from ASP.NET are re-read at
+startup. Any static references are also reloaded when the <span class="SpellE">AppDomain</span>
+so if the application reads values from App Configuration settings these values
+also get refreshed.<span style="mso-spacerun:yes">&nbsp; </span></p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">To see this in the sample, hit the <span class="SpellE">ApplicationPoolsAndThreads.aspx</span>
+page and note the <span class="SpellE">AppDomain</span> Id. Then go in and make a
+change in web.config (add a space and save). Then reload the page. You’ll l
+find that a new <span class="SpellE">AppDomain</span> has been created.</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">In essence the Web Application/Virtual completely ‘restarts’
+when this happens. Any requests that are already in the pipeline processing
+will continue running through the existing pipeline, while any new requests
+coming in are routed to the new <span class="SpellE">AppDomain</span>. In order
+to deal with ‘hung requests’ ASP.NET forcefully shuts down the <span class="SpellE">AppDomain</span> after the request timeout period is up even if
+requests are still pending. So it’s actually possible that two <span class="SpellE">AppDomains</span> exist for the same <span class="SpellE">HttpApplication</span>
+at a given point in time as the old one’s shutting down and the new one is
+ramping up. Both <span class="SpellE">AppDomains</span> continue to serve their
+clients until the old one has run out its pending requests and shuts down
+leaving just the new <span class="SpellE">AppDomain</span> running.</p>
+
+<h3>Flowing through the ASP.NET Pipeline</h3>
+
+<p class="MsoNormal">The <span class="SpellE">HttpApplication</span> is responsible
+for the request flow by firing events that signal your application that things
+are happening. This occurs as part of the <span class="SpellE"><span class="GramE">HttpApplication.Init</span></span><span class="GramE">(</span>) method (look at <span class="SpellE">System.Web.HttpApplication.InitInternal</span>
+and <span class="SpellE">HttpApplication.ResumeSteps</span>() with Reflector)
+which sets up and starts a series of events in succession including the call to
+execute any handlers. The event handlers map to the events that are
+automatically set up in <span class="SpellE">global.asax</span>, and they also
+map any attached <span class="SpellE"><i style="mso-bidi-font-style:normal">HTTPModules</i></span>,
+which are essentially an externalized event sink for the events that <span class="SpellE">HttpApplication</span> publishes.</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">Both <span class="SpellE"><i style="mso-bidi-font-style:normal">HttpModules</i></span>
+and <span class="SpellE"><i style="mso-bidi-font-style:normal">HttpHandlers</i></span><i style="mso-bidi-font-style:normal"> </i>are loaded dynamically via entries in
+Web.config and attached to the event chain. <span class="SpellE">HttpModules</span>
+are actual event handlers that hook specific <span class="SpellE">HttpApplication</span>
+events, while <span class="SpellE">HttpHandlers</span> are an end point that gets
+called to handle ‘application level request processing’. </p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">Both Modules and Handlers are loaded and attached to the
+call chain as part of the <span class="SpellE"><span class="GramE">HttpApplication.Init</span></span><span class="GramE">(</span>) method call. Figure 6 shows the various events and when
+they happen and which parts of the pipeline they affect.</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">
+<img border="0" src="./A low-level Look at the ASP.NET Architecture_files/Figure 6.png"></p>
+
+<p class="FigureCaption"><b style="mso-bidi-font-weight:normal">Figure 6</b> –
+Events flowing through the ASP.NET HTTP Pipeline. The <span class="SpellE">HttpApplication</span>
+object’s events drive requests through the pipeline. Http Modules can intercept
+these events and override or enhance existing functionality. </p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<h3><span class="SpellE">HttpContext</span>, <span class="SpellE">HttpModules</span>
+and <span class="SpellE">HttpHandlers</span></h3>
+
+<p class="MsoNormal">The <span class="SpellE">HttpApplication</span> itself knows
+nothing about the data being sent to the application – it is a merely messaging
+object that communicates via events. It fires events and passes information via
+the <span class="SpellE">HttpContext</span> object to the called methods. The
+actual state data for the current request is maintained in the <span class="SpellE">HttpContext</span> object mentioned earlier. It provides all the
+request specific data and follows each request from beginning to end through
+the pipeline. Figure 7 shows the flow through ASP.NET pipeline. Notice the
+Context object which is your <span class="SpellE">compadre</span> from beginning
+to end of the request and can be used to store information in one event method
+and retrieve it in a later event method.</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">Once the pipeline is started, <span class="SpellE">HttpApplication</span>
+starts firing events one by one as shown in Figure 6. Each of the event
+handlers is fired and if events are hooked up those handlers execute and
+perform their tasks. The main purpose of this process is to eventually call the
+<span class="SpellE">HttpHandler</span> hooked up to a specific request. Handlers
+are the core processing mechanism for ASP.NET requests and usually the place
+where any application level code is executed. Remember that the ASP.NET Page
+and Web Service frameworks are implemented as <span class="SpellE">HTTPHandlers</span>
+and that’s where <span class="GramE">all the</span> core processing of the
+request is handled. Modules tend to be of a more core nature used to prepare or
+post process the Context that is delivered to the handler. Typical default
+handlers in ASP.NET are Authentication, Caching for pre-processing and various
+encoding mechanisms on post processing.</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">There’s plenty of information available on <span class="SpellE">HttpHandlers</span> and <span class="SpellE">HttpModules</span> so to
+keep this article a reasonable length I’m going to provide only a brief
+overview of handlers. </p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal"><span class="SpellE"><b style="mso-bidi-font-weight:normal">HttpModules</b></span><b style="mso-bidi-font-weight:normal"><o:p></o:p></b></p>
+
+<p class="MsoNormal">As requests move through the pipeline a number of events
+fire on the <span class="SpellE">HttpApplication</span> object. We’ve already seen
+that these events are published as event methods in <span class="SpellE">Global.asax</span>.
+This approach is application specific though which is not always what you want.
+If you want to build generic <span class="SpellE">HttpApplication</span> event
+hooks that can be plugged into any Web applications you can use <span class="SpellE">HttpModules</span> which are reusable and don’t require
+application specific code except for an entry in web.config.</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">Modules are in essence filters – similar in functionality to
+ISAPI filters at the ASP.NET request level. Modules allow hooking events for EVERY
+request that pass through the ASP.NET <span class="SpellE">HttpApplication</span>
+object. These modules are stored as classes in external assemblies that are
+configured in web.config and loaded when the Application starts. By
+implementing specific interfaces and methods the module then gets hooked up to
+the <span class="SpellE">HttpApplication</span> event chain. Multiple <span class="SpellE">HttpModules</span> can hook the same event and event ordering is
+determined by the order they are declared in Web.config. Here’s what a handler
+definition looks like in Web.config:</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="CodeSnippet"><span style="mso-fareast-font-family:PMingLiU;color:blue;
+mso-fareast-language:ZH-TW">&lt;</span><span style="mso-fareast-font-family:
+PMingLiU;mso-fareast-language:ZH-TW">configuration</span><span style="mso-fareast-font-family:PMingLiU;color:blue;mso-fareast-language:ZH-TW">&gt;<o:p></o:p></span></p>
+
+<p class="CodeSnippet">
+<span style="mso-spacerun:yes; mso-fareast-font-family:PMingLiU; mso-fareast-language:ZH-TW">&nbsp; </span><span style="mso-fareast-font-family:
+PMingLiU;color:blue;mso-fareast-language:ZH-TW">&lt;</span><span style="mso-fareast-font-family:PMingLiU;mso-fareast-language:ZH-TW">system.web</span><span style="mso-fareast-font-family:PMingLiU;color:blue;mso-fareast-language:ZH-TW">&gt;</span><span style="mso-fareast-font-family:PMingLiU;mso-fareast-language:ZH-TW"><o:p></o:p></span></p>
+
+<p class="CodeSnippet">
+<span style="mso-spacerun:yes; mso-fareast-font-family:PMingLiU; mso-fareast-language:ZH-TW">&nbsp;&nbsp;&nbsp; </span><span style="mso-fareast-font-family:
+PMingLiU;color:blue;mso-fareast-language:ZH-TW">&lt;</span><span style="mso-fareast-font-family:PMingLiU;mso-fareast-language:ZH-TW">httpModules</span><span style="mso-fareast-font-family:PMingLiU;color:blue;mso-fareast-language:ZH-TW">&gt;<o:p></o:p></span></p>
+
+<p class="CodeSnippet"><span style="mso-fareast-font-family:PMingLiU;mso-fareast-language:
+ZH-TW"><span style="mso-tab-count:1">&nbsp;&nbsp; </span><span style="mso-spacerun:yes">&nbsp;
+</span></span><span style="mso-fareast-font-family:PMingLiU;color:blue;
+mso-fareast-language:ZH-TW">&lt;</span><span style="mso-fareast-font-family:
+PMingLiU;mso-fareast-language:ZH-TW">add</span><span style="mso-fareast-font-family:
+PMingLiU;color:fuchsia;mso-fareast-language:ZH-TW"> </span><span style="mso-fareast-font-family:PMingLiU;color:red;mso-fareast-language:ZH-TW">name</span><span style="mso-fareast-font-family:PMingLiU;color:blue;mso-fareast-language:ZH-TW">=</span><span style="mso-fareast-font-family:PMingLiU;color:fuchsia;mso-fareast-language:
+ZH-TW"> </span><span style="mso-fareast-font-family:PMingLiU;color:blue;
+mso-fareast-language:ZH-TW">"BasicAuthModule"</span><span style="mso-fareast-font-family:PMingLiU;color:fuchsia;mso-fareast-language:
+ZH-TW"> <o:p></o:p></span></p>
+
+<p class="CodeSnippet">
+<span style="mso-spacerun:yes; mso-fareast-font-family:PMingLiU; color:fuchsia; mso-fareast-language:ZH-TW">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="mso-fareast-font-family:PMingLiU;color:red;mso-fareast-language:ZH-TW">type</span><span style="mso-fareast-font-family:PMingLiU;color:blue;mso-fareast-language:ZH-TW">="HttpHandlers.BasicAuth,WebStore"</span><span style="mso-fareast-font-family:PMingLiU;color:fuchsia;mso-fareast-language:
+ZH-TW"> </span><span style="mso-fareast-font-family:PMingLiU;color:blue;
+mso-fareast-language:ZH-TW">/&gt;<o:p></o:p></span></p>
+
+<p class="CodeSnippet"><span style="mso-fareast-font-family:PMingLiU;color:blue;
+mso-fareast-language:ZH-TW"><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span>&lt;/</span><span style="mso-fareast-font-family:PMingLiU;mso-fareast-language:ZH-TW">httpModules</span><span style="mso-fareast-font-family:PMingLiU;color:blue;mso-fareast-language:ZH-TW">&gt;<o:p></o:p></span></p>
+
+<p class="CodeSnippet"><span style="mso-fareast-font-family:PMingLiU;color:blue;
+mso-fareast-language:ZH-TW"><span style="mso-spacerun:yes">&nbsp; </span>&lt;/</span><span style="mso-fareast-font-family:PMingLiU;mso-fareast-language:ZH-TW">system.web</span><span style="mso-fareast-font-family:PMingLiU;color:blue;mso-fareast-language:ZH-TW">&gt;<o:p></o:p></span></p>
+
+<p class="CodeSnippet"><span style="mso-fareast-font-family:PMingLiU;color:blue;
+mso-fareast-language:ZH-TW">&lt;/</span><span style="mso-fareast-font-family:
+PMingLiU;mso-fareast-language:ZH-TW">configuration</span><span style="mso-fareast-font-family:PMingLiU;color:blue;mso-fareast-language:ZH-TW">&gt;</span></p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">Note that you need to specify a full <span class="SpellE">typename</span>
+and an assembly name without the DLL extension.</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">Modules allow you look at each incoming Web request and
+perform an action based on the events that fire. Modules are great to modify
+request or response content, to provide custom authentication or otherwise
+provide pre or post processing to every request that occurs against ASP.NET in
+a particular application. Many of <span class="SpellE">ASP.NET’s</span> features
+like the Authentication and Session engines are implemented as HTTP Modules.</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">While <span class="SpellE">HttpModules</span> feel similar to
+ISAPI Filters in that they look at <i style="mso-bidi-font-style:normal">every</i>
+request in that comes through an ASP.NET Application, they are limited to
+looking at requests mapped to a single specific ASP.NET application or virtual
+directory and then only against requests that are mapped to ASP.NET. Thus you
+can look at all ASPX pages or any of the other custom extensions that are
+mapped to this application. You cannot however look at standard .HTM or image
+files unless you explicitly map the extension to the ASP.NET ISAPI <span class="SpellE">dll</span> by adding an extension as shown in Figure 1. A common
+use for a module might be to filter content to JPG images in a special folder
+and display a ‘SAMPLE’ overlay <span class="SpellE">ontop</span> of every image
+by drawing <span class="SpellE">ontop</span> of the returned bitmap with GDI+. </p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">Implementing an HTTP Module is very easy: You must implement
+the <span class="SpellE">IHttpModule</span> interface which contains only two
+methods <span class="GramE">Init(</span>) and Dispose(). The event parameters
+passed include a reference to the <span class="SpellE">HTTPApplication</span>
+object, which in turn gives you access to the <span class="SpellE">HttpContext</span>
+object. In these methods you hook up to <span class="SpellE">HttpApplication</span>
+events. For example, if you want to hook the <span class="SpellE">AuthenticateRequest</span>
+event with a module you would do what’s shown in Listing 5. </p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="CodeListingHeader"><span style="mso-fareast-font-family:PMingLiU;
+mso-fareast-language:ZH-TW">Listing 5: The basics of an HTTP Module are very
+simple to implement<o:p></o:p></span></p>
+
+<p class="CodeListing"><b><span style="mso-fareast-font-family:PMingLiU;
+color:blue;mso-fareast-language:ZH-TW">public</span></b><span style="mso-fareast-font-family:
+PMingLiU;mso-fareast-language:ZH-TW"> </span><b><span style="mso-fareast-font-family:
+PMingLiU;color:blue;mso-fareast-language:ZH-TW">class</span></b><span style="mso-fareast-font-family:PMingLiU;mso-fareast-language:ZH-TW">
+BasicAuthCustomModule : IHttpModule<o:p></o:p></span></p>
+
+<p class="CodeListing"><span style="mso-fareast-font-family:PMingLiU;mso-fareast-language:
+ZH-TW">{<o:p></o:p></span></p>
+
+<p class="CodeListing"><span style="mso-fareast-font-family:PMingLiU;mso-fareast-language:
+ZH-TW"><o:p>&nbsp;</o:p></span></p>
+
+<p class="CodeListing">
+<span style="mso-tab-count:1; mso-fareast-font-family:PMingLiU; mso-fareast-language:ZH-TW">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><b><span style="mso-fareast-font-family:PMingLiU;color:blue;mso-fareast-language:ZH-TW">public</span></b><span style="mso-fareast-font-family:PMingLiU;mso-fareast-language:ZH-TW"> </span><b><span style="mso-fareast-font-family:PMingLiU;color:blue;mso-fareast-language:ZH-TW">void</span></b><span style="mso-fareast-font-family:PMingLiU;mso-fareast-language:ZH-TW">
+Init(HttpApplication application)<o:p></o:p></span></p>
+
+<p class="CodeListing"><span style="mso-fareast-font-family:PMingLiU;mso-fareast-language:
+ZH-TW"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>{<o:p></o:p></span></p>
+
+<p class="CodeListing">
+<span style="mso-tab-count:2; mso-fareast-font-family:PMingLiU; mso-fareast-language:ZH-TW">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="mso-fareast-font-family:PMingLiU;color:green;mso-fareast-language:ZH-TW">//
+*** Hook up any HttpApplication events<o:p></o:p></span></p>
+
+<p class="CodeListing"><span style="mso-fareast-font-family:PMingLiU;mso-fareast-language:
+ZH-TW"><span style="mso-tab-count:2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>application.AuthenticateRequest
++= <o:p></o:p></span></p>
+
+<p class="CodeListing">
+<span style="mso-spacerun:yes; mso-fareast-font-family:PMingLiU; mso-fareast-language:ZH-TW">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><b><span style="mso-fareast-font-family:PMingLiU;color:blue;mso-fareast-language:ZH-TW">new</span></b><span style="mso-fareast-font-family:PMingLiU;mso-fareast-language:ZH-TW">
+EventHandler(</span><b><span style="mso-fareast-font-family:PMingLiU;
+color:blue;mso-fareast-language:ZH-TW">this</span></b><span style="mso-fareast-font-family:
+PMingLiU;mso-fareast-language:ZH-TW">.OnAuthenticateRequest);<o:p></o:p></span></p>
+
+<p class="CodeListing"><span style="mso-fareast-font-family:PMingLiU;mso-fareast-language:
+ZH-TW"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>}<o:p></o:p></span></p>
+
+<p class="CodeListing">
+<span style="mso-tab-count:1; mso-fareast-font-family:PMingLiU; mso-fareast-language:ZH-TW">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><b><span style="mso-fareast-font-family:PMingLiU;color:blue;mso-fareast-language:ZH-TW">public</span></b><span style="mso-fareast-font-family:PMingLiU;mso-fareast-language:ZH-TW"> </span><b><span style="mso-fareast-font-family:PMingLiU;color:blue;mso-fareast-language:ZH-TW">void</span></b><span style="mso-fareast-font-family:PMingLiU;mso-fareast-language:ZH-TW"> Dispose()
+{ }<o:p></o:p></span></p>
+
+<p class="CodeListing"><span style="mso-fareast-font-family:PMingLiU;mso-fareast-language:
+ZH-TW"><o:p>&nbsp;</o:p></span></p>
+
+<p class="CodeListing">
+<span style="mso-tab-count:1; mso-fareast-font-family:PMingLiU; mso-fareast-language:ZH-TW">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><b><span style="mso-fareast-font-family:PMingLiU;color:blue;mso-fareast-language:ZH-TW">public</span></b><span style="mso-fareast-font-family:PMingLiU;mso-fareast-language:ZH-TW"> </span><b><span style="mso-fareast-font-family:PMingLiU;color:blue;mso-fareast-language:ZH-TW">void</span></b><span style="mso-fareast-font-family:PMingLiU;mso-fareast-language:ZH-TW">
+OnAuthenticateRequest(</span><b><span style="mso-fareast-font-family:PMingLiU;
+color:blue;mso-fareast-language:ZH-TW">object</span></b><span style="mso-fareast-font-family:
+PMingLiU;mso-fareast-language:ZH-TW"> source, EventArgs eventArgs)<o:p></o:p></span></p>
+
+<p class="CodeListing"><span style="mso-fareast-font-family:PMingLiU;mso-fareast-language:
+ZH-TW"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>{<o:p></o:p></span></p>
+
+<p class="CodeListing"><span style="mso-fareast-font-family:PMingLiU;mso-fareast-language:
+ZH-TW"><span style="mso-tab-count:2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>HttpApplication app =
+(HttpApplication) source;<o:p></o:p></span></p>
+
+<p class="CodeListing"><span style="mso-fareast-font-family:PMingLiU;mso-fareast-language:
+ZH-TW"><span style="mso-tab-count:2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>HttpContext Context =
+HttpContext.Current;<o:p></o:p></span></p>
+
+<p class="CodeListing"><span style="mso-fareast-font-family:PMingLiU;mso-fareast-language:
+ZH-TW"><span style="mso-tab-count:2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>… </span><b><span style="mso-fareast-font-family:PMingLiU;color:blue;mso-fareast-language:ZH-TW">do</span></b><span style="mso-fareast-font-family:PMingLiU;mso-fareast-language:ZH-TW"> what you
+have to </span><b><span style="mso-fareast-font-family:PMingLiU;color:blue;
+mso-fareast-language:ZH-TW">do</span></b><span style="mso-fareast-font-family:
+PMingLiU;mso-fareast-language:ZH-TW">…<span style="mso-tab-count:7">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>}
+<o:p></o:p></span></p>
+
+<p class="CodeListing"><span style="mso-fareast-font-family:PMingLiU;mso-fareast-language:
+ZH-TW">}<o:p></o:p></span></p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">Remember that your Module has access the <span class="SpellE">HttpContext</span>
+object and from there to all the other intrinsic ASP.NET pipeline objects like
+Response and Request, so you can retrieve input etc. But keep in mind that
+certain things may not be available until later in the chain. </p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">You can hook multiple events in the <span class="GramE">Init(</span>)
+method so your module can manage multiple functionally different operations in
+one module. However, it’s probably cleaner to separate differing logic out into
+separate classes to make sure the module is modular. &lt;g&gt; In many cases
+functionality that you implement may require that you hook multiple events –
+for example a logging filter might log the start time of a request in Begin
+Request and then write the request completion into the log in <span class="SpellE">EndRequest</span>.</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">Watch out for one important gotcha with <span class="SpellE">HttpModules</span>
+and <span class="SpellE">HttpApplication</span> events: <span class="SpellE"><span class="GramE">Response.End</span></span><span class="GramE">(</span>) or <span class="SpellE">HttpApplication.CompleteRequest</span>() will shortcut the <span class="SpellE">HttpApplication</span> and Module event chain. See the sidebar
+“Watch out for <span class="SpellE"><span class="GramE">Response.End</span></span><span class="GramE">(</span>) “ for more info.</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal"><span class="SpellE"><b style="mso-bidi-font-weight:normal">HttpHandlers</b></span><b style="mso-bidi-font-weight:normal"><o:p></o:p></b></p>
+
+<p class="MsoNormal">Modules are fairly low level and fire against <i style="mso-bidi-font-style:normal">every</i> inbound request to the ASP.NET
+application. Http Handlers are more focused and operate on a specific request
+mapping, usually a page extension that is mapped to the handler.</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">Http Handler implementations are very basic in their
+requirements, but through access of the <span class="SpellE">HttpContext</span>
+object a lot of power is available. Http Handlers are implemented through a
+very simple <span class="SpellE">IHttpHandler</span> interface (or its
+asynchronous cousin, <span class="SpellE">IHttpAsyncHandler</span>) which
+consists of merely a single method – <span class="SpellE"><span class="GramE">ProcessRequest</span></span><span class="GramE">(</span>) – and a single property <span class="SpellE">IsReusable</span>.
+The key is <span class="SpellE"><span class="GramE">ProcessRequest</span></span><span class="GramE">(</span>) which gets passed an instance of the <span class="SpellE">HttpContext</span>
+object. This single method is responsible for handling a Web request start to
+finish.</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal"><span class="GramE">Single, simple method?</span> Must be too
+simple, right? Well, simple interface, but not simplistic in what’s possible! Remember
+that <span class="SpellE">WebForms</span> and <span class="SpellE">WebServices</span>
+are both implemented as Http Handlers, so there’s a lot of power wrapped up in
+this seemingly simplistic interface. The key is the fact that by the time an
+Http Handler is reached all of <span class="SpellE">ASP.NET’s</span> internal objects
+are set up and configured to start processing of requests. The key is the <span class="SpellE">HttpContext</span> <span class="GramE">object, which provides all of
+the relevant request functionality to <span class="SpellE">retireve</span> input
+and send</span> output back to the Web Server. </p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">For an HTTP Handler all action occurs through this single
+call to <span class="SpellE"><span class="GramE">ProcessRequest</span></span><span class="GramE">(</span>). This can be as simple as:</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="CodeSnippet"><b><span style="color:blue">public</span></b> <b><span style="color:blue">void</span></b> ProcessRequest(HttpContext context)</p>
+
+<p class="CodeSnippet">{</p>
+
+<p class="CodeSnippet"><span style="mso-tab-count:1">&nbsp;&nbsp; </span>context.Response.Write("Hello
+World");</p>
+
+<p class="CodeSnippet">}</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal"><span class="GramE">to</span> a full implementation like the <span class="SpellE">WebForms</span> Page engine that can render complex forms from HTML
+templates. The point is that it’s up to you to decide of what you want to do
+with this simple, but powerful interface!</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">Because the Context object is available to you, you get
+access to the Request, Response, Session and Cache objects, so you have all the
+key features of an ASP.NET request at your disposal to figure out what users
+submitted and return content you generate back to the client. Remember the
+Context object – it’s your friend throughout the lifetime of an ASP.NET
+request!</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">The key operation of the handler should be eventually write
+output into the <span class="SpellE">Respone</span> object or more specifically
+the Response object’s <span class="SpellE">OutputStream</span>. This output is
+what actually gets sent back to the client. Behind the scenes the <span class="SpellE">ISAPIWorkerRequest</span> manages sending the <span class="SpellE">OutputStream</span>
+back into the ISAPI <span class="SpellE">ecb.WriteClient</span> method that
+actually performs the IIS output generation.</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">
+<img border="0" src="./A low-level Look at the ASP.NET Architecture_files/Figure 7.png"></p>
+
+<p class="FigureCaption"><b style="mso-bidi-font-weight:normal">Figure </b><b>7</b> –
+The ASP.NET Request pipeline <span class="GramE">flows</span> requests through a
+set of event interfaces that provide much flexibility. The Application acts as
+the hosting container that loads up the Web application and fires events as
+requests come in and pass through the pipeline. Each request follows a common
+path through the Http Filters and Modules configured. Filters can examine each
+request going through the pipeline and Handlers allow implementation of
+application logic or application level interfaces like Web Forms and Web
+Services. To provide Input and Output for the application the Context object
+provides request specific information throughout the entire process.</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal"><span class="SpellE">WebForms</span> implements an Http
+Handler with a much more high level interface on top of this very basic
+framework, but eventually a <span class="SpellE">WebForm’s</span> Render() method
+simply ends up using an <span class="SpellE">HtmlTextWriter</span> object to
+write its final <span class="SpellE">final</span> output to the <span class="SpellE">context.Response.OutputStream</span>. So while very fancy,
+ultimately even a high level tool like Web forms is just a high level
+abstraction <span class="SpellE">ontop</span> of the Request and Response object.</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">You might wonder at this point whether you need to deal with
+Http Handlers at all. After all <span class="SpellE">WebForms</span> provides an
+easily accessible Http Handler implementation, so why bother with something a
+lot more low level and give up that flexibility? </p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal"><span class="SpellE">WebForms</span> are great for generating
+complex HTML pages and business level logic that requires graphical layout
+tools and template backed pages. But the <span class="SpellE">WebForms</span>
+engine performs a lot of tasks that are overhead intensive. If all you want to
+do is read a file from the system and return it back through code it’s much
+more efficient to bypass the Web Forms Page framework and directly feed the
+file back. If you do things like Image Serving from a Database there’s no need
+to go into the Page framework – you don’t need templates and there surely is no
+Web UI that requires you to capture events off an Image served.</p>
+
+<p class="MsoNormal">There’s no reason to set up a page object and session and
+hook up Page level events – all of that stuff requires execution of code that
+has nothing to do with your task at hand.</p>
+
+<p class="MsoNormal"><span style="mso-spacerun:yes">&nbsp;</span></p>
+
+<p class="MsoNormal">So handlers are more efficient. Handlers also can do things
+that aren’t possible with <span class="SpellE">WebForms</span> such as the
+ability to process requests without the need to have a physical file on disk,
+which is known as a virtual <span class="GramE">Url</span>. To do this make sure
+you turn off ‘Check that file exists’ checkbox in the Application Extension
+dialog shown in Figure 1.</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">This is common for content providers, such as dynamic image
+processing, XML servers, URL Redirectors providing vanity <span class="SpellE">Urls</span>,
+download managers and the like, none of which would benefit from the <span class="SpellE">WebForm</span> engine. </p>
+
+<h3>Have I stooped low enough for you?</h3>
+
+<p class="MsoNormal">Phew – we’ve come full circle here for the processing cycle
+of requests. That’s a lot of low level information and I haven’t even gone into
+great detail about how HTTP Modules and HTTP Handlers work. It took some time
+to dig up this information and I hope this gives you some of the same
+satisfaction it gave me in understanding how ASP.NET works under the covers.</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">Before I’m done let’s do the quick review of the event
+sequences I’ve discussed in this article from IIS to handler:</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<ul style="margin-top:0in" type="disc">
+ <li class="MsoNormal" style="mso-list:l9 level1 lfo11;tab-stops:list .5in">IIS
+     gets the request</li>
+ <li class="MsoNormal" style="mso-list:l9 level1 lfo11;tab-stops:list .5in">Looks
+     up a script map extension and maps to aspnet_isapi.dll</li>
+ <li class="MsoNormal" style="mso-list:l9 level1 lfo11;tab-stops:list .5in">Code
+     hits the worker process (aspnet_wp.exe in IIS5 or w3wp.exe in IIS6)</li>
+ <li class="MsoNormal" style="mso-list:l9 level1 lfo11;tab-stops:list .5in">.NET
+     runtime is loaded</li>
+ <li class="MsoNormal" style="mso-list:l9 level1 lfo11;tab-stops:list .5in"><span class="SpellE">IsapiRuntime.ProcessRequest</span>() called by non-managed
+     code</li>
+ <li class="MsoNormal" style="mso-list:l9 level1 lfo11;tab-stops:list .5in"><span class="SpellE">IsapiWorkerRequest</span> created once per request</li>
+ <li class="MsoNormal" style="mso-list:l9 level1 lfo11;tab-stops:list .5in"><span class="SpellE">HttpRuntime.ProcessRequest</span>() called with Worker
+     Request</li>
+ <li class="MsoNormal" style="mso-list:l9 level1 lfo11;tab-stops:list .5in"><span class="SpellE">HttpContext</span> Object created by passing Worker Request
+     as input</li>
+ <li class="MsoNormal" style="mso-list:l9 level1 lfo11;tab-stops:list .5in"><span class="SpellE">HttpApplication.GetApplicationInstance</span>() called with
+     Context to retrieve instance from pool</li>
+ <li class="MsoNormal" style="mso-list:l9 level1 lfo11;tab-stops:list .5in"><span class="SpellE">HttpApplication.Init</span>() called to start pipeline event sequence
+     and hook up modules and handlers</li>
+ <li class="MsoNormal" style="mso-list:l9 level1 lfo11;tab-stops:list .5in"><span class="SpellE">HttpApplicaton.ProcessRequest</span> called to start
+     processing</li>
+ <li class="MsoNormal" style="mso-list:l9 level1 lfo11;tab-stops:list .5in">Pipeline
+     events fire</li>
+ <li class="MsoNormal" style="mso-list:l9 level1 lfo11;tab-stops:list .5in">Handlers
+     are called and <span class="SpellE">ProcessRequest</span> method are fired</li>
+ <li class="MsoNormal" style="mso-list:l9 level1 lfo11;tab-stops:list .5in">Control
+     returns to pipeline and post request events fire</li>
+</ul>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">It’s a lot easier to remember how all of the pieces fit
+together with this simple list handy. I look at it from time to time to
+remember. So now, get back to work and do something non-abstract… </p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">Although what I discuss here is based on ASP.NET 1.1, it
+looks that the underlying processes described here haven’t changed in ASP.NET
+2.0.</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">Many thanks to Mike <span class="SpellE">Volodarsky</span>
+from Microsoft for reviewing this article and providing a few additional hints
+and <a href="http://www.dasblonde.net/">Michele <span class="SpellE">Leroux</span> <span class="SpellE">Bustamante</span></a>
+for providing the basis for the ASP.NET Pipeline Request Flow slide.</p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal">If you have any comments or questions feel free to post them 
+on the Comment link below.</p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><a href="http://west-wind.com/weblog/posts/2595.aspx">
+Comments or Questions</a></p>
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<table border="2" cellpadding="5" width="333" align="right" id="table3" style="border-collapse:collapse;">
+	<tbody><tr>
+		<td bgcolor="#B5C7D6">
+<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----
+MIIHNwYJKoZIhvcNAQcEoIIHKDCCByQCAQExggEwMIIBLAIBADCBlDCBjjELMAkG
+A1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQw
+EgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UE
+AxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20CAQAwDQYJ
+KoZIhvcNAQEBBQAEgYCS/Nte+8uwV4ILkTs5pi2yawKzC7xkXZReyWnnVirjKjv0
+uXyfrvcpuLDDuwrn+ML8GrN5RLOlnCunn98srXTQTI8anqkoPjgVT8XfgfrpDY7c
+fj1fVSOlaAveNjL8wrJEZyfFQHHq+/fsK7TyAg6ZNxsrW1yqeKWHqh6qlbPCvTEL
+MAkGBSsOAwIaBQAwgbQGCSqGSIb3DQEHATAUBggqhkiG9w0DBwQIUG9NsrdtZVSA
+gZCCbo1xbnWfp4HNyavvY8dIZ4tIFKNhQojVX+xC7d4iyzwmA4myyJcpc+pXk2R4
+Frf7j8rHYQJ8iMpBw1LAVNqZikMXhv39jVbZkMYFXlD2hMPQTH1wMBL7EN+cOXrc
+e7Sj1Egik14ZsGR6pop+WgjOVG/FhCbfMJAKBbJC4SZIzR804/rypqhszhK6lXKS
+026gggOHMIIDgzCCAuygAwIBAgIBADANBgkqhkiG9w0BAQUFADCBjjELMAkGA1UE
+BhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYD
+VQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQI
+bGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20wHhcNMDQwMjEz
+MTAxMzE1WhcNMzUwMjEzMTAxMzE1WjCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgT
+AkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5j
+LjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkq
+hkiG9w0BCQEWDXJlQHBheXBhbC5jb20wgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJ
+AoGBAMFHTt38RMxLXJyO2SmS+Ndl72T7oKJ4u4uw+6awntALWh03PewmIJuzbALS
+csTS4sZoS1fKciBGoh11gIfHzylvkdNe/hJl66/RGqrj5rFb08sAABNTzDTiqqNp
+JeBsYs/c2aiGozptX2RlnBktH+SUNpAajW724Nv2Wvhif6sFAgMBAAGjge4wgesw
+HQYDVR0OBBYEFJaffLvGbxe9WT9S1wob7BDWZJRrMIG7BgNVHSMEgbMwgbCAFJaf
+fLvGbxe9WT9S1wob7BDWZJRroYGUpIGRMIGOMQswCQYDVQQGEwJVUzELMAkGA1UE
+CBMCQ0ExFjAUBgNVBAcTDU1vdW50YWluIFZpZXcxFDASBgNVBAoTC1BheVBhbCBJ
+bmMuMRMwEQYDVQQLFApsaXZlX2NlcnRzMREwDwYDVQQDFAhsaXZlX2FwaTEcMBoG
+CSqGSIb3DQEJARYNcmVAcGF5cGFsLmNvbYIBADAMBgNVHRMEBTADAQH/MA0GCSqG
+SIb3DQEBBQUAA4GBAIFfOlaagFrl71+jq6OKidbWFSE+Q4FqROvdgIONth+8kSK/
+/Y/4ihuE4Ymvzn5ceE3S/iBSQQMjyvb+s2TWbQYDwcp129OPIbD9epdr4tJOUNiS
+ojw7BHwYRiPh58S1xGlFgHFXwrEBb3dgNbMUa+u4qectsMAXpVHnD9wIyfmHMYIB
+mjCCAZYCAQEwgZQwgY4xCzAJBgNVBAYTAlVTMQswCQYDVQQIEwJDQTEWMBQGA1UE
+BxMNTW91bnRhaW4gVmlldzEUMBIGA1UEChMLUGF5UGFsIEluYy4xEzARBgNVBAsU
+CmxpdmVfY2VydHMxETAPBgNVBAMUCGxpdmVfYXBpMRwwGgYJKoZIhvcNAQkBFg1y
+ZUBwYXlwYWwuY29tAgEAMAkGBSsOAwIaBQCgXTAYBgkqhkiG9w0BCQMxCwYJKoZI
+hvcNAQcBMBwGCSqGSIb3DQEJBTEPFw0wNDAyMjAyMjA0NThaMCMGCSqGSIb3DQEJ
+BDEWBBTskrbker+szqbC4TtfX5f8oh1WGDANBgkqhkiG9w0BAQEFAASBgHqz2/eL
+5ibQ+REzs2P0oq0BFD+nJFG2E7fCLEY0LCjmfNGI55W/RAcPQ1AXyhAGgOu3atrU
+xJ2vaS2uBtIrxx2i/I6LIVTlMlad9BqPcLwkjSqgT9WWaVjWXKHq/TBCozJy5Hs1
+NlMD07JJ8RVXtTeYnG/0p9uig+PlJ4Dc/+8a
+-----END PKCS7-----
+">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="image" align="left" hspace="4" src="./A low-level Look at the ASP.NET Architecture_files/paypaldonate.gif" border="0" name="I1" alt="Make a donation to West Wind Technologies with PayPal - it&#39;s fast, free and secure!"><font size="1" face="Verdana">If you find this article useful, 
+consider making a small donation to show your support&nbsp; for this Web site 
+and its content.</font></td>
+	</tr>
+</tbody></table>
+</form>
+<br clear="all">
+<p>
+
+</p>
+<p class="MsoNormal">
+&nbsp;</p>
+
+
+
+		</td>
+		<td width="229" valign="top" style="border-left-style: solid; border-left-width: 2; ">
+			<p class="MsoNormal" align="left"><i><span style="font-size: 9.0pt">
+			<img border="0" src="./A low-level Look at the ASP.NET Architecture_files/RickAuthor2.JPG"></span></i></p>
+		<p class="MsoNormal" align="left"><b>By Rick Strahl</b><i><span style="font-size: 9.0pt"><br>
+		</span></i><span class="style1">Rick Strahl is president 
+		of West Wind Technologies on Maui, Hawaii. The company specializes in Web 
+		and distributed application development and tools with focus on .NET, Visual Studio and Visual FoxPro. Rick is author of
+		<a href="http://www.west-wind.com/webconnection/" style="color: blue; text-decoration: underline; text-underline: single">
+		West Wind Web Connection</a>, a powerful and widely used Web application 
+		framework and
+		<a href="http://www.west-wind.com/wwhelp/" style="color: blue; text-decoration: underline; text-underline: single">
+		West Wind HTML Help Builder</a> and
+		<a href="http://www.west-wind.com/westwindwebstore/">West Wind Web Store</a>. He's also a 
+		C# MVP, 
+		a frequent speaker at international developer conferences and a frequent contributor to magazines and books. He is co-publisher of Code 
+		magazine. For more information 
+		please visit:
+		<a href="http://www.west-wind.com/" style="color: blue; text-decoration: underline; text-underline: single">
+		http://www.west-wind.com/</a> or contact Rick at
+		<a href="mailto:rstrahl@west-wind.com" style="color: blue; text-decoration: underline; text-underline: single">
+		rstrahl@west-wind.com</a></span><i><span style="font-size: 9.0pt">.</span></i></p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+<p class="MsoNormal">
+&nbsp;</p>
+
+<table border="2" cellpadding="5" width="90%" align="center" id="table4" style="border-collapse:collapse;">
+	<tbody><tr>
+		<td bgcolor="#B5C7D6">
+		<img src="./A low-level Look at the ASP.NET Architecture_files/paypaldonate.gif" border="0" align="left" style="CURSOR:hand; TEXT-DECORATION:none" onclick="window.open(&#39;https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&amp;business=rstrahl%40west%2dwind%2ecom&amp;item_name=West%20Wind%20Article%20Donation&amp;no_shipping=1&amp;no_note=1&amp;tax=0&amp;currency_code=USD&amp;lc=US&amp;charset=UTF%2d8&amp;charset=UTF%2d8&#39;,&#39;paypal&#39;);">
+               
+<font size="1" face="Verdana">If you find this article useful, 
+consider making a small donation to show your support&nbsp; for this Web site 
+and its content.</font></td>
+	</tr>
+</tbody></table>
+<br clear="all">
+<br> 
+<center>
+<script type="text/javascript"> 
+<!-- 
+lqm_channel=1;
+lqm_publisher=110;
+lqm_zone=1;
+lqm_format=5;
+//-->
+</script>
+<script type="text/javascript" src="./A low-level Look at the ASP.NET Architecture_files/s.js"></script><script language="JavaScript" src="./A low-level Look at the ASP.NET Architecture_files/ron;sz=125x125;tile=2" type="text/javascript"></script>
+<br>
+<br>
+<script type="text/javascript"><!--
+google_ad_client = "pub-2013123155768157";
+/* 160x600, created 2/5/08 */
+google_ad_slot = "7424551463";
+google_ad_width = 160;
+google_ad_height = 600;
+//-->
+</script>
+<script type="text/javascript" src="./A low-level Look at the ASP.NET Architecture_files/show_ads.js">
+</script><ins style="display:inline-table;border:none;height:600px;margin:0;padding:0;position:relative;visibility:visible;width:160px"><ins id="aswift_0_anchor" style="display:block;border:none;height:600px;margin:0;padding:0;position:relative;visibility:visible;width:160px"><iframe allowtransparency="true" frameborder="0" height="600" hspace="0" marginwidth="0" marginheight="0" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){i+=&#39;.call&#39;;setTimeout(h,0)}else if(h.match){i+=&#39;.nav&#39;;w.location.replace(h)}s.log&amp;&amp;s.log.push(i)}" scrolling="no" vspace="0" width="160" id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;"></iframe></ins></ins>
+</center>
+<div style="margin-top: 1000px;">
+<center>
+<script type="text/javascript"> 
+lqm_channel=1;
+lqm_publisher=110;
+lqm_zone=1;
+lqm_format=18;
+</script>
+<script type="text/javascript" src="./A low-level Look at the ASP.NET Architecture_files/s.js"></script><script language="JavaScript" src="./A low-level Look at the ASP.NET Architecture_files/ron;sz=160x600;tile=3" type="text/javascript"></script>
+</center></div>
+
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left"><b><font size="3" color="#993300">
+			IIS 6 Wildcard Application Mappings</font></b><br>
+			<font color="#993300">If you have an ASP.NET application that needs 
+			to handle EVERY single request to a virtual directory (or Web Server 
+			if configured in the root directory), IIS 6 introduces a new concept 
+			of Wildcard Application Mappings. An ISAPI extension that is mapped 
+			to a wildcard fires on every request against the server regardless 
+			of extension. This means every page runs through the extension. This 
+			is a powerful feature as you can use this mechanism to create custom 
+			vanity Urls and unix style URL patters that don’t use filenames at 
+			all. However, be careful with this setting because it passes 
+			everything through your application including static htm files, 
+			images, style sheets etc.</font></p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+
+
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left"><font color="#993300"><b>
+			<font size="3">What’s new in ASP.NET 2.0</font></b><br>
+			ASP.NET 2.0 hasn’t changed the underlying architecture much. The 
+			main features that are new are that the HttpApplication object gains 
+			a number of new events – mostly pre and post event hooks – that make 
+			the Application event pipeline even more granular. ASP.NET 2.0 also 
+			supports a new ISAPI function - HSE_REQ_EXEC_URL – that allows 
+			redirecting to another URL internally from within the ASP.NET 
+			process. This makes it possible for ASP.NET to be set up as a 
+			wildcard extension in IIS and process every request and then either 
+			handle the request directly with an HTTP handler or fall through to 
+			a new DefaultHttpHandler. DefaultHttpHandler then internally calls 
+			back to ISAPI to execute the original URL. This allows ASP.NET to 
+			handle things like Authentication and Logins prior to other pages 
+			like ASP to be fired.</font></p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			<p class="MsoNormal" align="left">&nbsp;</p>
+			</td></tr></tbody></table></body></html>

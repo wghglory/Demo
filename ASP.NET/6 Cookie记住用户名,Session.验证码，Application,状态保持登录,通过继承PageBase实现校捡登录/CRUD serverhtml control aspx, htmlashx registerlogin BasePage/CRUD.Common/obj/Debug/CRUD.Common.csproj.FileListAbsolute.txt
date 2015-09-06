@@ -1,0 +1,4 @@
+C:\Users\Steve\Desktop\Sln20130726（全）\CRUD.Common\bin\Debug\CRUD.Common.dll
+C:\Users\Steve\Desktop\Sln20130726（全）\CRUD.Common\bin\Debug\CRUD.Common.pdb
+C:\Users\Steve\Desktop\Sln20130726（全）\CRUD.Common\obj\Debug\CRUD.Common.dll
+C:\Users\Steve\Desktop\Sln20130726（全）\CRUD.Common\obj\Debug\CRUD.Common.pdb

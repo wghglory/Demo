@@ -1,0 +1,9 @@
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130726\CRUD.Model\bin\Debug\CRUD.Model.dll
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130726\CRUD.Model\bin\Debug\CRUD.Model.pdb
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130726\CRUD.Model\obj\Debug\CRUD.Model.dll
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130726\CRUD.Model\obj\Debug\CRUD.Model.pdb
+\\psf\Home\Documents\工作\MyCode\ASP.NET\2 一般处理程序用三层实现编辑和删除和显示列表数据\CRUD.Model\bin\Debug\CRUD.Model.dll
+\\psf\Home\Documents\工作\MyCode\ASP.NET\2 一般处理程序用三层实现编辑和删除和显示列表数据\CRUD.Model\bin\Debug\CRUD.Model.pdb
+\\psf\Home\Documents\工作\MyCode\ASP.NET\2 一般处理程序用三层实现编辑和删除和显示列表数据\CRUD.Model\obj\Debug\CRUD.Model.csprojResolveAssemblyReference.cache
+\\psf\Home\Documents\工作\MyCode\ASP.NET\2 一般处理程序用三层实现编辑和删除和显示列表数据\CRUD.Model\obj\Debug\CRUD.Model.dll
+\\psf\Home\Documents\工作\MyCode\ASP.NET\2 一般处理程序用三层实现编辑和删除和显示列表数据\CRUD.Model\obj\Debug\CRUD.Model.pdb

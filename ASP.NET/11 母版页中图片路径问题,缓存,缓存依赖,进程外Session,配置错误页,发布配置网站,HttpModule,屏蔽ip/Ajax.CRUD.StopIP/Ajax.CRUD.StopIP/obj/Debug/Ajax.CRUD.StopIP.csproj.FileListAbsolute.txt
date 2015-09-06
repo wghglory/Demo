@@ -1,0 +1,4 @@
+c:\users\steve\documents\visual studio 2010\Projects\Ajax.CRUD.StopIP\Ajax.CRUD.StopIP\bin\Debug\Ajax.CRUD.StopIP.dll
+c:\users\steve\documents\visual studio 2010\Projects\Ajax.CRUD.StopIP\Ajax.CRUD.StopIP\bin\Debug\Ajax.CRUD.StopIP.pdb
+c:\users\steve\documents\visual studio 2010\Projects\Ajax.CRUD.StopIP\Ajax.CRUD.StopIP\obj\Debug\Ajax.CRUD.StopIP.dll
+c:\users\steve\documents\visual studio 2010\Projects\Ajax.CRUD.StopIP\Ajax.CRUD.StopIP\obj\Debug\Ajax.CRUD.StopIP.pdb

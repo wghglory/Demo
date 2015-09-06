@@ -1,0 +1,11 @@
+C:\Users\Steve\documents\visual studio 2010\Projects\Ajax.CRUD\Ajax.CRUD.BLL\bin\Release\Ajax.CRUD.BLL.dll
+C:\Users\Steve\documents\visual studio 2010\Projects\Ajax.CRUD\Ajax.CRUD.BLL\bin\Release\Ajax.CRUD.BLL.pdb
+C:\Users\Steve\documents\visual studio 2010\Projects\Ajax.CRUD\Ajax.CRUD.BLL\bin\Release\Ajax.CRUD.DAL.dll
+C:\Users\Steve\documents\visual studio 2010\Projects\Ajax.CRUD\Ajax.CRUD.BLL\bin\Release\Ajax.CRUD.Model.dll
+C:\Users\Steve\documents\visual studio 2010\Projects\Ajax.CRUD\Ajax.CRUD.BLL\bin\Release\Ajax.CRUD.Utility.dll
+C:\Users\Steve\documents\visual studio 2010\Projects\Ajax.CRUD\Ajax.CRUD.BLL\bin\Release\Ajax.CRUD.DAL.pdb
+C:\Users\Steve\documents\visual studio 2010\Projects\Ajax.CRUD\Ajax.CRUD.BLL\bin\Release\Ajax.CRUD.Model.pdb
+C:\Users\Steve\documents\visual studio 2010\Projects\Ajax.CRUD\Ajax.CRUD.BLL\bin\Release\Ajax.CRUD.Utility.pdb
+C:\Users\Steve\documents\visual studio 2010\Projects\Ajax.CRUD\Ajax.CRUD.BLL\obj\Release\Ajax.CRUD.BLL.csprojResolveAssemblyReference.cache
+C:\Users\Steve\documents\visual studio 2010\Projects\Ajax.CRUD\Ajax.CRUD.BLL\obj\Release\Ajax.CRUD.BLL.dll
+C:\Users\Steve\documents\visual studio 2010\Projects\Ajax.CRUD\Ajax.CRUD.BLL\obj\Release\Ajax.CRUD.BLL.pdb

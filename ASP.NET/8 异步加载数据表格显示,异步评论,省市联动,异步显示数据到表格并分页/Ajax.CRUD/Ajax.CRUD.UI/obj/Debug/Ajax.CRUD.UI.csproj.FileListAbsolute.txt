@@ -1,0 +1,27 @@
+c:\users\steve\documents\visual studio 2010\Projects\Ajax.CRUD\Ajax.CRUD.UI\bin\Ajax.CRUD.UI.dll
+c:\users\steve\documents\visual studio 2010\Projects\Ajax.CRUD\Ajax.CRUD.UI\bin\Ajax.CRUD.UI.pdb
+c:\users\steve\documents\visual studio 2010\Projects\Ajax.CRUD\Ajax.CRUD.UI\obj\Debug\Ajax.CRUD.UI.dll
+c:\users\steve\documents\visual studio 2010\Projects\Ajax.CRUD\Ajax.CRUD.UI\obj\Debug\Ajax.CRUD.UI.pdb
+c:\users\steve\documents\visual studio 2010\Projects\Ajax.CRUD\Ajax.CRUD.UI\bin\Ajax.CRUD.BLL.dll
+c:\users\steve\documents\visual studio 2010\Projects\Ajax.CRUD\Ajax.CRUD.UI\bin\Ajax.CRUD.Model.dll
+c:\users\steve\documents\visual studio 2010\Projects\Ajax.CRUD\Ajax.CRUD.UI\bin\Ajax.CRUD.Utility.dll
+c:\users\steve\documents\visual studio 2010\Projects\Ajax.CRUD\Ajax.CRUD.UI\bin\Ajax.CRUD.DAL.dll
+c:\users\steve\documents\visual studio 2010\Projects\Ajax.CRUD\Ajax.CRUD.UI\bin\Ajax.CRUD.BLL.pdb
+c:\users\steve\documents\visual studio 2010\Projects\Ajax.CRUD\Ajax.CRUD.UI\bin\Ajax.CRUD.Model.pdb
+c:\users\steve\documents\visual studio 2010\Projects\Ajax.CRUD\Ajax.CRUD.UI\bin\Ajax.CRUD.Utility.pdb
+c:\users\steve\documents\visual studio 2010\Projects\Ajax.CRUD\Ajax.CRUD.UI\bin\Ajax.CRUD.DAL.pdb
+c:\users\steve\documents\visual studio 2010\Projects\Ajax.CRUD\Ajax.CRUD.UI\obj\Debug\Ajax.CRUD.UI.csprojResolveAssemblyReference.cache
+\\psf\Home\Documents\工作\MyCode\ASP.NET\8 异步加载数据表格显示,异步评论,省市联动,异步显示数据到表格并分页\Ajax.CRUD\Ajax.CRUD.UI\bin\Ajax.CRUD.UI.dll.config
+\\psf\Home\Documents\工作\MyCode\ASP.NET\8 异步加载数据表格显示,异步评论,省市联动,异步显示数据到表格并分页\Ajax.CRUD\Ajax.CRUD.UI\bin\Ajax.CRUD.UI.dll
+\\psf\Home\Documents\工作\MyCode\ASP.NET\8 异步加载数据表格显示,异步评论,省市联动,异步显示数据到表格并分页\Ajax.CRUD\Ajax.CRUD.UI\bin\Ajax.CRUD.UI.pdb
+\\psf\Home\Documents\工作\MyCode\ASP.NET\8 异步加载数据表格显示,异步评论,省市联动,异步显示数据到表格并分页\Ajax.CRUD\Ajax.CRUD.UI\bin\Ajax.CRUD.BLL.dll
+\\psf\Home\Documents\工作\MyCode\ASP.NET\8 异步加载数据表格显示,异步评论,省市联动,异步显示数据到表格并分页\Ajax.CRUD\Ajax.CRUD.UI\bin\Ajax.CRUD.Model.dll
+\\psf\Home\Documents\工作\MyCode\ASP.NET\8 异步加载数据表格显示,异步评论,省市联动,异步显示数据到表格并分页\Ajax.CRUD\Ajax.CRUD.UI\bin\Ajax.CRUD.Utility.dll
+\\psf\Home\Documents\工作\MyCode\ASP.NET\8 异步加载数据表格显示,异步评论,省市联动,异步显示数据到表格并分页\Ajax.CRUD\Ajax.CRUD.UI\bin\Ajax.CRUD.DAL.dll
+\\psf\Home\Documents\工作\MyCode\ASP.NET\8 异步加载数据表格显示,异步评论,省市联动,异步显示数据到表格并分页\Ajax.CRUD\Ajax.CRUD.UI\bin\Ajax.CRUD.BLL.pdb
+\\psf\Home\Documents\工作\MyCode\ASP.NET\8 异步加载数据表格显示,异步评论,省市联动,异步显示数据到表格并分页\Ajax.CRUD\Ajax.CRUD.UI\bin\Ajax.CRUD.Model.pdb
+\\psf\Home\Documents\工作\MyCode\ASP.NET\8 异步加载数据表格显示,异步评论,省市联动,异步显示数据到表格并分页\Ajax.CRUD\Ajax.CRUD.UI\bin\Ajax.CRUD.Utility.pdb
+\\psf\Home\Documents\工作\MyCode\ASP.NET\8 异步加载数据表格显示,异步评论,省市联动,异步显示数据到表格并分页\Ajax.CRUD\Ajax.CRUD.UI\bin\Ajax.CRUD.DAL.pdb
+\\psf\Home\Documents\工作\MyCode\ASP.NET\8 异步加载数据表格显示,异步评论,省市联动,异步显示数据到表格并分页\Ajax.CRUD\Ajax.CRUD.UI\obj\Debug\Ajax.CRUD.UI.csprojResolveAssemblyReference.cache
+\\psf\Home\Documents\工作\MyCode\ASP.NET\8 异步加载数据表格显示,异步评论,省市联动,异步显示数据到表格并分页\Ajax.CRUD\Ajax.CRUD.UI\obj\Debug\Ajax.CRUD.UI.dll
+\\psf\Home\Documents\工作\MyCode\ASP.NET\8 异步加载数据表格显示,异步评论,省市联动,异步显示数据到表格并分页\Ajax.CRUD\Ajax.CRUD.UI\obj\Debug\Ajax.CRUD.UI.pdb

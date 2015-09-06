@@ -1,0 +1,10 @@
+C:\Users\Steve\Documents\Visual Studio 2010\Projects\WebSite27\WebApplication1\bin\WebApplication1.dll
+C:\Users\Steve\Documents\Visual Studio 2010\Projects\WebSite27\WebApplication1\bin\WebApplication1.pdb
+C:\Users\Steve\Documents\Visual Studio 2010\Projects\WebSite27\WebApplication1\obj\Debug\WebApplication1.dll
+C:\Users\Steve\Documents\Visual Studio 2010\Projects\WebSite27\WebApplication1\obj\Debug\WebApplication1.pdb
+\\psf\Home\Documents\工作\MyCode\ASP.NET\6 Cookie记住用户名,Session.验证码，Application,状态保持登录,通过继承PageBase实现校捡登录\WebForm\WebApplication1\bin\WebApplication1.dll.config
+\\psf\Home\Documents\工作\MyCode\ASP.NET\6 Cookie记住用户名,Session.验证码，Application,状态保持登录,通过继承PageBase实现校捡登录\WebForm\WebApplication1\bin\WebApplication1.dll
+\\psf\Home\Documents\工作\MyCode\ASP.NET\6 Cookie记住用户名,Session.验证码，Application,状态保持登录,通过继承PageBase实现校捡登录\WebForm\WebApplication1\bin\WebApplication1.pdb
+\\psf\Home\Documents\工作\MyCode\ASP.NET\6 Cookie记住用户名,Session.验证码，Application,状态保持登录,通过继承PageBase实现校捡登录\WebForm\WebApplication1\obj\Debug\WebApplication1.csprojResolveAssemblyReference.cache
+\\psf\Home\Documents\工作\MyCode\ASP.NET\6 Cookie记住用户名,Session.验证码，Application,状态保持登录,通过继承PageBase实现校捡登录\WebForm\WebApplication1\obj\Debug\WebApplication1.dll
+\\psf\Home\Documents\工作\MyCode\ASP.NET\6 Cookie记住用户名,Session.验证码，Application,状态保持登录,通过继承PageBase实现校捡登录\WebForm\WebApplication1\obj\Debug\WebApplication1.pdb

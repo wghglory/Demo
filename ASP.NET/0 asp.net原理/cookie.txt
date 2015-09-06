@@ -1,0 +1,13 @@
+一、Cookie存储在客户端计算机中
+二、Cookie不能跨浏览器。
+三、Cookie是以键值对的方式存储的。（键、值都是字符串）
+四、Cookie可以分为：
+会话Cookie(存储在了浏览器的进程内存中，浏览器以关闭，则Cookie消失)、
+持久Cookie，把Cookie数据存储到了本地硬盘上。
+五、因为Cookie是由浏览器来保存的，所以不同浏览器对Cookie的保存路径、存储数据的格式、文件大小等都可能不同。所以不同浏览器之间也无法共享Cookie数据。
+五、当访问一个新的网址时，浏览器会根据Cookie的设置来决定是否携带对应的Cookie来访问新的网址。在写Cookie的时候可以指定，该Cookie有效域名：baidu.com、google.com、sina.com，当为Cookie指定域名后，浏览器就知道，当访问对应域名的网站的时候，才会自动携带该Cookie.
+
+六、（*）第三方Cookie。
+
+七、默认情况下是使用“会话Cookie”.因为Cookie需要设置一个有效期，如果没有显示设置有效期，则都是“会话Cookie”，“会话Cookie”只保留在内存中。【所以建议使用Cookie的时候要设置有效期】
+
