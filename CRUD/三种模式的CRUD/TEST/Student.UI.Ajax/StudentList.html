@@ -1,0 +1,228 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <script src="jquery-1.7.1.js"></script>
+    <script src="datapattern2.js"></script>
+    <!-- ReSharper disable InconsistentNaming -->
+    <script type="text/javascript">
+        $(function () {
+            loaddata(1);
+
+
+            $("#btnadddata").click(function () {
+                $('#dvAdd').css("display", "block");
+            });
+            $('#btnadd').click(function () {
+                $.getJSON("StudentAdd.ashx", $('#form2').serialize(), function (d) {
+                    if (d == 1) {
+                        $('#dvAdd').css("display", "none");
+                        loaddata($('#thisPageId').val());
+                    }
+                });
+            });
+            $('#btnclear1').click(function () {
+                $('#dvAdd').css("display", "none");
+            });
+        });
+
+
+        function loaddata(pageindex) {
+            $.getJSON("StudentList.ashx", { "pageindex": pageindex }, function (data) {
+
+                var students = data.listStudentModel;
+                $("#tb").empty();
+                for (var i = 0; i < students.length; i++) {
+                    $('<tr><td>' + students[i].SId + '</td><td>' + students[i].SName + '</td><td>' + students[i].SAge + '</td><td>' + students[i].SEmail + '</td><td>' + getdate(students[i].SBirthday) + '</td><td>' + students[i].SGender + '</td><td><a href="javaacript:void(0);" sid="' + students[i].SId + '" class="edit" >编辑</a></td><td><a href="javaacript:void(0);" sid="' + students[i].SId + '" class="del" >删除</a></td></tr>').appendTo($('#tb'));
+                }
+
+                document.getElementById('pagehelper').innerHTML = data.StrPage;
+
+                loadPageTableEvents();
+
+
+                loadEditEvents();
+
+
+                loadDeleteEvents();
+
+            });
+        }
+
+        function loadPageTableEvents() {
+            $('#pagehelper a').click(function () {
+                var hr = this.href;
+                loaddata(hr.substring(hr.lastIndexOf('=') + 1));
+                return false;
+            });
+        }
+
+        function loadDeleteEvents() {
+            $('#tb a.del').click(function () {
+                var td = $(this);
+                $.getJSON("StudentDelete.ashx?sid=" + td.attr('sid'), null, function (d) {
+                    if (d == 1) {
+                        //删除成功
+                        $('#dvedit').css("display", "none");
+                        td.parent().parent().remove();
+                    }
+                });
+            });
+        }
+
+        function loadEditEvents() {
+            $('#tb a.edit').click(function () {
+
+                $('#dvedit').css("display", "block");
+                var t = $(this);
+
+                $.getJSON("StudentEdit.ashx?action=get", { "sid": t.attr('sid') }, function (date) {
+
+                    $('#txtSid').val(date.SId);
+                    $('#txtName').val(date.SName);
+                    $('#txtAge').val(date.SAge);
+
+                    $('#txtEmail').val(date.SEmail);
+                    $('#txtBirthday').val(getdate(date.SBirthday));
+                    $('#txtGender').val(date.SGender);
+
+                    $('#btnSub').click(function () {
+                        $.getJSON("StudentEdit.ashx?action=up", $('#form1').serialize(), function (d) {
+
+                            if (d == 1) {
+                                //更新成功
+                                $('#dvedit').css("display", "none");
+                                loaddata($('#thisPageId').val());
+                            }
+                        });
+                    });
+                    $('#btnclear').click(function () {
+                        $('#dvedit').css("display", "none");
+                    });
+
+                });
+                return false;
+            });
+        }
+
+        function getdate(dt) {
+
+            return (eval(dt.replace(/\/Date\((\d+)\)\//gi, "new Date($1)"))).pattern("yyyy-M-d");
+        }
+    </script>
+    <!-- ReSharper restore InconsistentNaming -->
+</head>
+<body>
+    <table border="2">
+        <thead>
+            <tr>
+                <th>编号</th>
+                <th>姓名</th>
+                <th>年龄</th>
+                <th>邮箱</th>
+                <th>生日</th>
+                <th>性别</th>
+                <th>编辑</th>
+                <th>删除</th>
+            </tr>
+        </thead>
+        <tbody id="tb"></tbody>
+    </table>
+    <p id="pagehelper">sss</p>
+
+    <p>
+        <input type="button" id="btnadddata" value="添加一条数据" />
+    </p>
+
+
+    <div id="dvedit" style="display: none">
+
+        <form action="/" method="" id="form1">
+
+
+            <table border="2">
+                <tr>
+                    <th>编号</th>
+                    <td>
+                        <input type="text" name="txtSid" value="" id="txtSid" readonly="readonly" /></td>
+                </tr>
+                <tr>
+                    <th>姓名</th>
+                    <td>
+                        <input type="text" name="txtName" value="" id="txtName" /></td>
+                </tr>
+                <tr>
+                    <th>年龄</th>
+                    <td>
+                        <input type="text" name="txtAge" value="" id="txtAge" /></td>
+                </tr>
+                <tr>
+                    <th>邮箱</th>
+                    <td>
+                        <input type="text" name="txtEmail" value="" id="txtEmail" /></td>
+                </tr>
+                <tr>
+                    <th>生日</th>
+                    <td>
+                        <input type="text" name="txtBirthday" value="" id="txtBirthday" /></td>
+                </tr>
+                <tr>
+                    <th>性别</th>
+                    <td>
+                        <input type="text" name="txtGender" value="" id="txtGender" /></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="button" value="保存" id="btnSub" /><span style="color: red" id="msg"></span>
+                        <input type="button" id="btnclear" value="取消" />
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+
+    <div id="dvAdd" style="display: none">
+
+        <form action="/" method="" id="form2">
+
+
+            <table border="2">
+
+                <tr>
+                    <th>姓名</th>
+                    <td>
+                        <input type="text" name="txtName" value="" id="Text2" /></td>
+                </tr>
+                <tr>
+                    <th>年龄</th>
+                    <td>
+                        <input type="text" name="txtAge" value="" id="Text3" /></td>
+                </tr>
+                <tr>
+                    <th>邮箱</th>
+                    <td>
+                        <input type="text" name="txtEmail" value="" id="Text4" /></td>
+                </tr>
+                <tr>
+                    <th>生日</th>
+                    <td>
+                        <input type="text" name="txtBirthday" value="" id="Text5" /></td>
+                </tr>
+                <tr>
+                    <th>性别</th>
+                    <td>
+                        <input type="text" name="txtGender" value="" id="Text6" /></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="button" value="保存" id="btnadd" /><span style="color: red" id="Span1"></span>
+                        <input type="button" id="btnclear1" value="取消" />
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

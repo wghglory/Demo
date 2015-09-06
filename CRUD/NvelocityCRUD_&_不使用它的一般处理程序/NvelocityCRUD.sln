@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nvelocity.BLL", "NvelocityCRUD\Nvelocity.BLL.csproj", "{60A6AF5B-A19E-4F8D-820B-4DF2B78BAE07}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nvelocity.DAL", "Nvelocity.DAL\Nvelocity.DAL.csproj", "{75CC0EFA-D4BA-480D-A291-3521E2AF55D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nvelocity.Model", "Nvelocity.Model\Nvelocity.Model.csproj", "{12793339-4375-40E0-B446-F4B8FEBDC3EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nvelocity.Utilities", "Nvelocity.Utilities\Nvelocity.Utilities.csproj", "{4C57B6A4-4F1B-494F-9EF3-55F5D32339DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nvelocity.Common", "Nvelocity.Common\Nvelocity.Common.csproj", "{27B34653-28FD-416D-A066-F59BD94B10F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nvelocity.UI", "Nvelocity.UI\Nvelocity.UI.csproj", "{52D91010-1BB8-4C66-8C85-DCEC3C444C21}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{60A6AF5B-A19E-4F8D-820B-4DF2B78BAE07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60A6AF5B-A19E-4F8D-820B-4DF2B78BAE07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60A6AF5B-A19E-4F8D-820B-4DF2B78BAE07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60A6AF5B-A19E-4F8D-820B-4DF2B78BAE07}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75CC0EFA-D4BA-480D-A291-3521E2AF55D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75CC0EFA-D4BA-480D-A291-3521E2AF55D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75CC0EFA-D4BA-480D-A291-3521E2AF55D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75CC0EFA-D4BA-480D-A291-3521E2AF55D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12793339-4375-40E0-B446-F4B8FEBDC3EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12793339-4375-40E0-B446-F4B8FEBDC3EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12793339-4375-40E0-B446-F4B8FEBDC3EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12793339-4375-40E0-B446-F4B8FEBDC3EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C57B6A4-4F1B-494F-9EF3-55F5D32339DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C57B6A4-4F1B-494F-9EF3-55F5D32339DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C57B6A4-4F1B-494F-9EF3-55F5D32339DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C57B6A4-4F1B-494F-9EF3-55F5D32339DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27B34653-28FD-416D-A066-F59BD94B10F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27B34653-28FD-416D-A066-F59BD94B10F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27B34653-28FD-416D-A066-F59BD94B10F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27B34653-28FD-416D-A066-F59BD94B10F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52D91010-1BB8-4C66-8C85-DCEC3C444C21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52D91010-1BB8-4C66-8C85-DCEC3C444C21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52D91010-1BB8-4C66-8C85-DCEC3C444C21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52D91010-1BB8-4C66-8C85-DCEC3C444C21}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

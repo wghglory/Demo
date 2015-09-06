@@ -1,0 +1,5 @@
+\\psf\home\documents\visual studio 2013\Projects\一般处理程序三层CRUD\Common\bin\Debug\Common.dll
+\\psf\home\documents\visual studio 2013\Projects\一般处理程序三层CRUD\Common\bin\Debug\Common.pdb
+\\psf\home\documents\visual studio 2013\Projects\一般处理程序三层CRUD\Common\obj\Debug\GeneralHandler.Common.csprojResolveAssemblyReference.cache
+\\psf\home\documents\visual studio 2013\Projects\一般处理程序三层CRUD\Common\obj\Debug\Common.dll
+\\psf\home\documents\visual studio 2013\Projects\一般处理程序三层CRUD\Common\obj\Debug\Common.pdb

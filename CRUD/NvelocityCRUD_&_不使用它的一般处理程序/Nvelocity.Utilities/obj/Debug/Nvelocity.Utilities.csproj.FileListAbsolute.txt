@@ -1,0 +1,5 @@
+\\psf\home\documents\visual studio 2013\Projects\NvelocityCRUD\Nvelocity.Utilities\bin\Debug\Nvelocity.Utilities.dll
+\\psf\home\documents\visual studio 2013\Projects\NvelocityCRUD\Nvelocity.Utilities\bin\Debug\Nvelocity.Utilities.pdb
+\\psf\home\documents\visual studio 2013\Projects\NvelocityCRUD\Nvelocity.Utilities\obj\Debug\Nvelocity.Utilities.csprojResolveAssemblyReference.cache
+\\psf\home\documents\visual studio 2013\Projects\NvelocityCRUD\Nvelocity.Utilities\obj\Debug\Nvelocity.Utilities.dll
+\\psf\home\documents\visual studio 2013\Projects\NvelocityCRUD\Nvelocity.Utilities\obj\Debug\Nvelocity.Utilities.pdb

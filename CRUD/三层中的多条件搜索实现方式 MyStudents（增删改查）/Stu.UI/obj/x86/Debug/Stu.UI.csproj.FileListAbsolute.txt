@@ -1,0 +1,18 @@
+c:\users\steve\documents\visual studio 2010\Projects\MyStudents\Stu.UI\bin\Debug\Stu.UI.exe.config
+c:\users\steve\documents\visual studio 2010\Projects\MyStudents\Stu.UI\bin\Debug\Stu.UI.exe
+c:\users\steve\documents\visual studio 2010\Projects\MyStudents\Stu.UI\bin\Debug\Stu.UI.pdb
+c:\users\steve\documents\visual studio 2010\Projects\MyStudents\Stu.UI\obj\x86\Debug\Stu.UI.frmStudent.resources
+c:\users\steve\documents\visual studio 2010\Projects\MyStudents\Stu.UI\obj\x86\Debug\Stu.UI.Properties.Resources.resources
+c:\users\steve\documents\visual studio 2010\Projects\MyStudents\Stu.UI\obj\x86\Debug\Stu.UI.csproj.GenerateResource.Cache
+c:\users\steve\documents\visual studio 2010\Projects\MyStudents\Stu.UI\obj\x86\Debug\Stu.UI.exe
+c:\users\steve\documents\visual studio 2010\Projects\MyStudents\Stu.UI\obj\x86\Debug\Stu.UI.pdb
+c:\users\steve\documents\visual studio 2010\Projects\MyStudents\Stu.UI\bin\Debug\Stu.BLL.dll
+c:\users\steve\documents\visual studio 2010\Projects\MyStudents\Stu.UI\bin\Debug\Stu.Model.dll
+c:\users\steve\documents\visual studio 2010\Projects\MyStudents\Stu.UI\bin\Debug\Stu.DAL.dll
+c:\users\steve\documents\visual studio 2010\Projects\MyStudents\Stu.UI\bin\Debug\Stu.BLL.pdb
+c:\users\steve\documents\visual studio 2010\Projects\MyStudents\Stu.UI\bin\Debug\Stu.Model.pdb
+c:\users\steve\documents\visual studio 2010\Projects\MyStudents\Stu.UI\bin\Debug\Stu.DAL.pdb
+c:\users\steve\documents\visual studio 2010\Projects\MyStudents\Stu.UI\obj\x86\Debug\Stu.UI.csprojResolveAssemblyReference.cache
+\\psf\Home\Documents\工作\其他资料\三层资料和素材\MyStudents（三层增删改查）\Stu.UI\bin\Debug\Stu.UI.exe.config
+\\psf\Home\Documents\工作\其他资料\三层资料和素材\MyStudents（三层增删改查）\Stu.UI\obj\x86\Debug\Stu.UI.exe
+\\psf\Home\Documents\工作\其他资料\三层资料和素材\MyStudents（三层增删改查）\Stu.UI\obj\x86\Debug\Stu.UI.pdb

@@ -1,0 +1,5 @@
+E:\黑马\黑马练习代码\20130510\用户登录_三层\UsersLogin.Tools\bin\Debug\UsersLogin.Tools.dll
+E:\黑马\黑马练习代码\20130510\用户登录_三层\UsersLogin.Tools\bin\Debug\UsersLogin.Tools.pdb
+E:\黑马\黑马练习代码\20130510\用户登录_三层\UsersLogin.Tools\obj\Debug\UsersLogin.Tools.csprojResolveAssemblyReference.cache
+E:\黑马\黑马练习代码\20130510\用户登录_三层\UsersLogin.Tools\obj\Debug\UsersLogin.Tools.dll
+E:\黑马\黑马练习代码\20130510\用户登录_三层\UsersLogin.Tools\obj\Debug\UsersLogin.Tools.pdb

@@ -1,0 +1,15 @@
+E:\Desktop\TEST\TEST\Student.UI.Ajax\bin\Student.UI.Ajax.dll
+E:\Desktop\TEST\TEST\Student.UI.Ajax\bin\Student.UI.Ajax.pdb
+E:\Desktop\TEST\TEST\Student.UI.Ajax\obj\Debug\Student.UI.Ajax.dll
+E:\Desktop\TEST\TEST\Student.UI.Ajax\obj\Debug\Student.UI.Ajax.pdb
+E:\Desktop\TEST\TEST\Student.UI.Ajax\obj\Debug\Student.UI.Ajax.csprojResolveAssemblyReference.cache
+E:\Desktop\TEST\TEST\Student.UI.Ajax\bin\Student.BLL.dll
+E:\Desktop\TEST\TEST\Student.UI.Ajax\bin\Student.IBaseBLL.dll
+E:\Desktop\TEST\TEST\Student.UI.Ajax\bin\Student.Model.dll
+E:\Desktop\TEST\TEST\Student.UI.Ajax\bin\Student.DAL.dll
+E:\Desktop\TEST\TEST\Student.UI.Ajax\bin\Student.IBaseDAL.dll
+E:\Desktop\TEST\TEST\Student.UI.Ajax\bin\Student.BLL.pdb
+E:\Desktop\TEST\TEST\Student.UI.Ajax\bin\Student.IBaseBLL.pdb
+E:\Desktop\TEST\TEST\Student.UI.Ajax\bin\Student.Model.pdb
+E:\Desktop\TEST\TEST\Student.UI.Ajax\bin\Student.DAL.pdb
+E:\Desktop\TEST\TEST\Student.UI.Ajax\bin\Student.IBaseDAL.pdb

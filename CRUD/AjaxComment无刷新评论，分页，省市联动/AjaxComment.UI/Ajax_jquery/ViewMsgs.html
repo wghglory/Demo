@@ -1,0 +1,272 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style type="text/css">
+        table         {
+            font: 14px 宋体;
+        }
+    </style>
+
+    <link href="../css/pageHelperNav.css" rel="stylesheet" />
+    <link href="../css/pageindexNavPager.css" rel="stylesheet" />
+    <link href="../css/PagerView.css" rel="stylesheet" />
+    <script src="../js/jquery-1.8.2.js"></script>
+    <script src="../js/datapattern2.js"></script>
+    <script src="../js/pageindex.js"></script>
+    <script src="../js/PagerView.js"></script>
+    <script type="text/javascript">
+        $(function () {
+
+            //initComments();   //load all
+            initCommentsByPage(1,true);    //flag=true表示刷新导航
+
+            AddComment();
+
+        });
+
+        function AddComment() {
+            $('#btnCommit').click(function () {
+                //var title = $('#txtTitle').val();
+                //var comment = $('#txtArea').val();
+                //var nickName = $('#txtNickName').val();
+
+                //var post_data = 'title=' + title + '&comment=' + comment + '&nickName=' + nickName;
+                post_data = $('form').serialize();  //MUST INSIDE FORM, AND name=""
+
+                $.post('../Ajax_JS/AddComment.ashx', post_data, function (data) {
+                    if (data.IsOK == "1") {
+                        msg.value = '提交评论成功！';
+                        msg.style.color = 'green';
+
+                        //更新客户端表格:
+                        //思路1.重新调用initComments()
+                        //initComments();
+                        initCommentsByPage(1,true);   //每次添加数据就刷新导航！！！！！！！！
+
+                        //思路2.直接在当前表格后面增加一行。
+                        //$('#tblComments tbody').append('<tr><td>' + data.Model.NickName + '</td><td>' + (eval(data.Model.PostDate.replace(/\/Date\((\d+)\)\//gi, "new Date($1)"))).pattern("yyyy-MM-dd") + '</td><td>' + data.Model.IPAddress + '</td><td>' + data.Model.Title + '</td><td>' + data.Model.Message + '</td></tr>');
+
+                    } else {
+                        msg.value = '提交评论失败！';
+                        msg.style.color = 'red';
+                    }
+                }, 'json');
+
+            })
+        }
+
+        function initComments() {
+
+            $.getJSON('../Ajax_JS/GetAllComment.ashx', { id: Math.random() }, function (jsondata) {
+
+                $.each(jsondata, function (k, v) {
+                    $('#tblComments tbody').append('<tr><td>' + v.NickName + '</td><td>' + (eval(v.PostDate.replace(/\/Date\((\d+)\)\//gi, "new Date($1)"))).pattern("yyyy-MM-dd") + '</td><td>' + v.IPAddress + '</td><td>' + v.Title + '</td><td>' + v.Message + '</td></tr>');
+                })
+
+            });
+        }
+
+        function initCommentsByPage(pageindex,flag) {
+
+            $.getJSON('GetCommentByPage.ashx', { 'pageindex': pageindex }, function (jsondata) {
+
+                var pageSize = jsondata.PageSize;
+                var recordCount = jsondata.RecordCount;
+
+                $('#tblComments tbody').empty();
+
+                $.each(jsondata.CommentList, function (k, v) {
+                    $('#tblComments tbody').append('<tr><td>' + v.NickName + '</td><td>' + (eval(v.PostDate.replace(/\/Date\((\d+)\)\//gi, "new Date($1)"))).pattern("yyyy-MM-dd") + '</td><td>' + v.IPAddress + '</td><td>' + v.Title + '</td><td>' + v.Message + '</td></tr>');
+                })
+
+                //for (var key in jsondata.CommentList) {
+
+                //    $('#tblComments tbody').append('<tr><td>' + jsondata.CommentList[key].NickName + '</td><td>' + (eval(jsondata.CommentList[key].PostDate.replace(/\/Date\((\d+)\)\//gi, "new Date($1)"))).pattern("yyyy-MM-dd") + '</td><td>' + jsondata.CommentList[key].IPAddress + '</td><td>' + jsondata.CommentList[key].Title + '</td><td>' + jsondata.CommentList[key].Message + '</td></tr>');
+                //}
+
+
+                //for (var i = 0; i < jsondata.CommentList.length; i++) {
+
+                //    $('#tblComments tbody').append('<tr><td>' + jsondata.CommentList[i].NickName + '</td><td>' + (eval(jsondata.CommentList[i].PostDate.replace(/\/Date\((\d+)\)\//gi, "new Date($1)"))).pattern("yyyy-MM-dd") + '</td><td>' + jsondata.CommentList[i].IPAddress + '</td><td>' + jsondata.CommentList[i].Title + '</td><td>' + jsondata.CommentList[i].Message + '</td></tr>');
+                //}
+
+                /*使用1，3比较简单些。2的效率也不高，但是漂亮。*/
+
+//===============method 1:服务器端返回导航，把导航字符串写入pnav，后续注册click事件====================
+                //$('#pnav').html(jsondata.NavigatorString);
+                //initNavigatorEvents1();
+
+//===============method 2: 服务器之返回pagesize, totalrecordcount.使用pageindex.js===================
+
+
+                ////只执行一次！！！只有第一次加载pagerview。               
+                //if (flag == true)
+                //{
+                //    //注意，我修改了pageindex源代码，同步加载好超链接导航，方便后续为它们注册click事件
+                //    loadJsNavigator(jsondata.PageSize, jsondata.RecordCount);                   
+                //}
+                ////但是每次都要绑定事件。                
+                //initNavigatorEvents2();
+                                              
+
+//===============method 3: 服务器之返回pagesize, totalrecordcount.使用PagerView.js===================
+
+                if (flag == true) {
+                    loadPagerView(jsondata.PageSize, jsondata.RecordCount);                    
+                }
+                
+            });
+        }
+
+        
+
+        //method 1: 为导航超链接注册onclick事件
+        function initNavigatorEvents1() {
+            //PageHelper
+            $('.paginator a').click(function () {
+                var url = this.href;
+                var pindex = url.substring(url.lastIndexOf('=') + 1);
+                initCommentsByPage(pindex);
+                return false;
+            });
+        }
+
+        //method 2: pageindex.js生成的导航
+        function loadJsNavigator(ps, rc) {
+            var page = new Nature.Page.QuickPager();
+
+            //设置相关属性
+            page.pagerInfo = {
+                recordCount: rc,       //总记录数
+                pageSize: ps,           //一页记录数
+                pageTurnDivIDs: "divPagination",         //放置分页控件的div的id，可以是多个，用半角逗号分隔
+
+                //翻页的事件
+                OnPageChange: function (oldPageIndex, thisPageIndex) {
+                    // alert("翻页前页号：" + oldPageIndex);
+                    // alert("翻页后页号：" + thisPageIndex);
+
+                    //可以自行获取记录，创建table
+                }
+            };
+
+            page.Start(function () {
+                //内部自动调用OnPageChange(0,1)。
+            });
+            flag = false;
+        }
+
+        //method 2: 为导航超链接注册onclick事件
+        function initNavigatorEvents2() {
+           
+            $('a.navi,#S_First,#S_Prev,#S_Next,#S_Last').click(function () {
+                var pindex = $(this).attr('pageIndex');
+                initCommentsByPage(pindex);
+            });
+
+            $('#P_GO').click(function () {
+                initCommentsByPage($('#Txt_GO').attr('pageIndex'));
+            });
+
+        }
+
+        var flag = true;  //method 2 and 3 share, to make loadNavigator run only once.
+
+        //method 3: PagerView.js生成导航，并注册onclick事件
+        function loadPagerView(ps, rc) {
+
+            var pager = new PagerView('pager');
+            pager.itemCount = rc;
+            pager.size = ps;
+
+            //注册click事件
+            pager.onclick = function (index) {
+                //if(server failed){ // 获取数据失败, 不要更新分页控件.
+                //    return false;
+                //}
+                //alert(index);
+                initCommentsByPage(index);
+
+            };
+            pager.render();
+            flag = false;
+
+        }
+    </script>
+</head>
+<body>
+    <iframe name="content_frame" marginwidth=0 marginheight=0 width=100% height=40 src="Head.html" frameborder=0 scrolling="no"></iframe>
+
+    <a href="PostMsg.html">发表留言</a>
+
+    <form>
+        <table border="1" cellpadding="2" cellspacing="2">
+            <tr>
+                <td>
+                    昵称
+                </td>
+                <td>
+                    <input type="text" id="txtNickName" value="" name="nickName" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    标题
+                </td>
+                <td>
+                    <input type="text" id="txtTitle" value="" name="title" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    评论内容
+                </td>
+                <td>
+                    <textarea cols="20" rows="5" id="txtArea" name="comment"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="button" id="btnCommit" value="提交评论" />
+                    <input type="text" id="msg" />
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <table id="tblComments" border="1" cellpadding="2" cellspacing="2">
+        <thead>
+            <tr>
+                <th>
+                    昵称
+                </th>
+                <th>
+                    发表日期
+                </th>
+                <th>
+                    IP地址
+                </th>
+                <th>
+                    标题
+                </th>
+                <th>
+                    留言内容
+                </th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <br />
+    <p id="pnav" class="paginator"></p>
+
+    <div id="divPagination">
+    </div>
+
+    <div id="pager"></div>
+
+    <iframe name="content_frame" marginwidth=0 marginheight=0 width=100% height=40 src="Foot.html" frameborder=0></iframe>
+
+</body>
+</html>

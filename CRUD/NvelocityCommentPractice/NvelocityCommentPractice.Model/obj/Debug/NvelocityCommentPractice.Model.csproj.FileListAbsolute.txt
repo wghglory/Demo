@@ -1,0 +1,9 @@
+\\psf\home\documents\visual studio 2013\Projects\NvelocityCommentPractice\NvelocityCommentPractice.Model\bin\Debug\NvelocityCommentPractice.Model.dll
+\\psf\home\documents\visual studio 2013\Projects\NvelocityCommentPractice\NvelocityCommentPractice.Model\bin\Debug\NvelocityCommentPractice.Model.pdb
+\\psf\home\documents\visual studio 2013\Projects\NvelocityCommentPractice\NvelocityCommentPractice.Model\obj\Debug\NvelocityCommentPractice.Model.dll
+\\psf\home\documents\visual studio 2013\Projects\NvelocityCommentPractice\NvelocityCommentPractice.Model\obj\Debug\NvelocityCommentPractice.Model.pdb
+\\psf\Home\Documents\工作\MyCode\CRUD\NvelocityCommentPractice\NvelocityCommentPractice.Model\bin\Debug\NvelocityCommentPractice.Model.dll
+\\psf\Home\Documents\工作\MyCode\CRUD\NvelocityCommentPractice\NvelocityCommentPractice.Model\bin\Debug\NvelocityCommentPractice.Model.pdb
+\\psf\Home\Documents\工作\MyCode\CRUD\NvelocityCommentPractice\NvelocityCommentPractice.Model\obj\Debug\NvelocityCommentPractice.Model.csprojResolveAssemblyReference.cache
+\\psf\Home\Documents\工作\MyCode\CRUD\NvelocityCommentPractice\NvelocityCommentPractice.Model\obj\Debug\NvelocityCommentPractice.Model.dll
+\\psf\Home\Documents\工作\MyCode\CRUD\NvelocityCommentPractice\NvelocityCommentPractice.Model\obj\Debug\NvelocityCommentPractice.Model.pdb

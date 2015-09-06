@@ -1,0 +1,18 @@
+\\psf\home\documents\visual studio 2013\Projects\EasyUI_CRUD_Pagination\EasyUI.BLL\bin\Debug\EasyUI.BLL.dll
+\\psf\home\documents\visual studio 2013\Projects\EasyUI_CRUD_Pagination\EasyUI.BLL\bin\Debug\EasyUI.BLL.pdb
+\\psf\home\documents\visual studio 2013\Projects\EasyUI_CRUD_Pagination\EasyUI.BLL\bin\Debug\EasyUI.DAL.dll
+\\psf\home\documents\visual studio 2013\Projects\EasyUI_CRUD_Pagination\EasyUI.BLL\bin\Debug\EasyUI.Model.dll
+\\psf\home\documents\visual studio 2013\Projects\EasyUI_CRUD_Pagination\EasyUI.BLL\bin\Debug\EasyUI.DAL.pdb
+\\psf\home\documents\visual studio 2013\Projects\EasyUI_CRUD_Pagination\EasyUI.BLL\bin\Debug\EasyUI.Model.pdb
+\\psf\home\documents\visual studio 2013\Projects\EasyUI_CRUD_Pagination\EasyUI.BLL\obj\Debug\EasyUI.BLL.csprojResolveAssemblyReference.cache
+\\psf\home\documents\visual studio 2013\Projects\EasyUI_CRUD_Pagination\EasyUI.BLL\obj\Debug\EasyUI.BLL.dll
+\\psf\home\documents\visual studio 2013\Projects\EasyUI_CRUD_Pagination\EasyUI.BLL\obj\Debug\EasyUI.BLL.pdb
+\\psf\Home\Documents\工作\MyCode\CRUD\EasyUI_CRUD_Pagination\EasyUI.BLL\bin\Debug\EasyUI.BLL.dll
+\\psf\Home\Documents\工作\MyCode\CRUD\EasyUI_CRUD_Pagination\EasyUI.BLL\bin\Debug\EasyUI.BLL.pdb
+\\psf\Home\Documents\工作\MyCode\CRUD\EasyUI_CRUD_Pagination\EasyUI.BLL\bin\Debug\EasyUI.DAL.dll
+\\psf\Home\Documents\工作\MyCode\CRUD\EasyUI_CRUD_Pagination\EasyUI.BLL\bin\Debug\EasyUI.Model.dll
+\\psf\Home\Documents\工作\MyCode\CRUD\EasyUI_CRUD_Pagination\EasyUI.BLL\bin\Debug\EasyUI.DAL.pdb
+\\psf\Home\Documents\工作\MyCode\CRUD\EasyUI_CRUD_Pagination\EasyUI.BLL\bin\Debug\EasyUI.Model.pdb
+\\psf\Home\Documents\工作\MyCode\CRUD\EasyUI_CRUD_Pagination\EasyUI.BLL\obj\Debug\EasyUI.BLL.csprojResolveAssemblyReference.cache
+\\psf\Home\Documents\工作\MyCode\CRUD\EasyUI_CRUD_Pagination\EasyUI.BLL\obj\Debug\EasyUI.BLL.dll
+\\psf\Home\Documents\工作\MyCode\CRUD\EasyUI_CRUD_Pagination\EasyUI.BLL\obj\Debug\EasyUI.BLL.pdb

@@ -1,0 +1,12 @@
+\\psf\home\documents\visual studio 2013\Projects\NvelocityCommentPractice\NvelocityCommentPractice.DAL\bin\Release\NvelocityCommentPractice.DAL.dll
+\\psf\home\documents\visual studio 2013\Projects\NvelocityCommentPractice\NvelocityCommentPractice.DAL\bin\Release\NvelocityCommentPractice.DAL.pdb
+\\psf\home\documents\visual studio 2013\Projects\NvelocityCommentPractice\NvelocityCommentPractice.DAL\bin\Release\NvelocityCommentPractice.Common.dll
+\\psf\home\documents\visual studio 2013\Projects\NvelocityCommentPractice\NvelocityCommentPractice.DAL\bin\Release\NvelocityCommentPractice.Model.dll
+\\psf\home\documents\visual studio 2013\Projects\NvelocityCommentPractice\NvelocityCommentPractice.DAL\bin\Release\NvelocityCommentPractice.Utilities.dll
+\\psf\home\documents\visual studio 2013\Projects\NvelocityCommentPractice\NvelocityCommentPractice.DAL\bin\Release\NVelocity.dll
+\\psf\home\documents\visual studio 2013\Projects\NvelocityCommentPractice\NvelocityCommentPractice.DAL\bin\Release\NvelocityCommentPractice.Common.pdb
+\\psf\home\documents\visual studio 2013\Projects\NvelocityCommentPractice\NvelocityCommentPractice.DAL\bin\Release\NvelocityCommentPractice.Model.pdb
+\\psf\home\documents\visual studio 2013\Projects\NvelocityCommentPractice\NvelocityCommentPractice.DAL\bin\Release\NvelocityCommentPractice.Utilities.pdb
+\\psf\home\documents\visual studio 2013\Projects\NvelocityCommentPractice\NvelocityCommentPractice.DAL\obj\Release\NvelocityCommentPractice.DAL.csprojResolveAssemblyReference.cache
+\\psf\home\documents\visual studio 2013\Projects\NvelocityCommentPractice\NvelocityCommentPractice.DAL\obj\Release\NvelocityCommentPractice.DAL.dll
+\\psf\home\documents\visual studio 2013\Projects\NvelocityCommentPractice\NvelocityCommentPractice.DAL\obj\Release\NvelocityCommentPractice.DAL.pdb

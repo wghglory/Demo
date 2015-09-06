@@ -1,0 +1,7 @@
+\\psf\home\documents\visual studio 2013\Projects\一般处理程序三层CRUD\DAL\bin\Debug\DAL.dll
+\\psf\home\documents\visual studio 2013\Projects\一般处理程序三层CRUD\DAL\bin\Debug\DAL.pdb
+\\psf\home\documents\visual studio 2013\Projects\一般处理程序三层CRUD\DAL\bin\Debug\Model.dll
+\\psf\home\documents\visual studio 2013\Projects\一般处理程序三层CRUD\DAL\bin\Debug\Model.pdb
+\\psf\home\documents\visual studio 2013\Projects\一般处理程序三层CRUD\DAL\obj\Debug\GeneralHandler.DAL.csprojResolveAssemblyReference.cache
+\\psf\home\documents\visual studio 2013\Projects\一般处理程序三层CRUD\DAL\obj\Debug\DAL.dll
+\\psf\home\documents\visual studio 2013\Projects\一般处理程序三层CRUD\DAL\obj\Debug\DAL.pdb

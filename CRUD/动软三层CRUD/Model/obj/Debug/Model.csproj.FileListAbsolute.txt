@@ -1,0 +1,5 @@
+\\psf\Home\Documents\Visual Studio 2013\Projects\动软三层CRUD\Model\bin\Debug\MaticSoft.Model.dll
+\\psf\Home\Documents\Visual Studio 2013\Projects\动软三层CRUD\Model\bin\Debug\MaticSoft.Model.pdb
+\\psf\Home\Documents\Visual Studio 2013\Projects\动软三层CRUD\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+\\psf\Home\Documents\Visual Studio 2013\Projects\动软三层CRUD\Model\obj\Debug\MaticSoft.Model.dll
+\\psf\Home\Documents\Visual Studio 2013\Projects\动软三层CRUD\Model\obj\Debug\MaticSoft.Model.pdb

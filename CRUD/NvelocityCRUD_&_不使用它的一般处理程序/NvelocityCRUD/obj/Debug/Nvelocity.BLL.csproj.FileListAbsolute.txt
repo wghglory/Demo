@@ -1,0 +1,14 @@
+\\psf\home\documents\visual studio 2013\Projects\NvelocityCRUD\NvelocityCRUD\bin\Debug\NvelocityCRUD.dll
+\\psf\home\documents\visual studio 2013\Projects\NvelocityCRUD\NvelocityCRUD\bin\Debug\NvelocityCRUD.pdb
+\\psf\home\documents\visual studio 2013\Projects\NvelocityCRUD\NvelocityCRUD\obj\Debug\Nvelocity.BLL.csprojResolveAssemblyReference.cache
+\\psf\home\documents\visual studio 2013\Projects\NvelocityCRUD\NvelocityCRUD\obj\Debug\NvelocityCRUD.dll
+\\psf\home\documents\visual studio 2013\Projects\NvelocityCRUD\NvelocityCRUD\obj\Debug\NvelocityCRUD.pdb
+\\psf\home\documents\visual studio 2013\Projects\NvelocityCRUD\NvelocityCRUD\bin\Debug\Nvelocity.Common.dll
+\\psf\home\documents\visual studio 2013\Projects\NvelocityCRUD\NvelocityCRUD\bin\Debug\Nvelocity.DAL.dll
+\\psf\home\documents\visual studio 2013\Projects\NvelocityCRUD\NvelocityCRUD\bin\Debug\Nvelocity.Model.dll
+\\psf\home\documents\visual studio 2013\Projects\NvelocityCRUD\NvelocityCRUD\bin\Debug\Nvelocity.Utilities.dll
+\\psf\home\documents\visual studio 2013\Projects\NvelocityCRUD\NvelocityCRUD\bin\Debug\NVelocity.dll
+\\psf\home\documents\visual studio 2013\Projects\NvelocityCRUD\NvelocityCRUD\bin\Debug\Nvelocity.Common.pdb
+\\psf\home\documents\visual studio 2013\Projects\NvelocityCRUD\NvelocityCRUD\bin\Debug\Nvelocity.DAL.pdb
+\\psf\home\documents\visual studio 2013\Projects\NvelocityCRUD\NvelocityCRUD\bin\Debug\Nvelocity.Model.pdb
+\\psf\home\documents\visual studio 2013\Projects\NvelocityCRUD\NvelocityCRUD\bin\Debug\Nvelocity.Utilities.pdb

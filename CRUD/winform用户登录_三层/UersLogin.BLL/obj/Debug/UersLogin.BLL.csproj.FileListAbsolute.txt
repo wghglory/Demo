@@ -1,0 +1,11 @@
+E:\黑马\黑马练习代码\20130510\用户登录_三层\UersLogin.BLL\bin\Debug\UersLogin.BLL.dll
+E:\黑马\黑马练习代码\20130510\用户登录_三层\UersLogin.BLL\bin\Debug\UersLogin.BLL.pdb
+E:\黑马\黑马练习代码\20130510\用户登录_三层\UersLogin.BLL\bin\Debug\Model.dll
+E:\黑马\黑马练习代码\20130510\用户登录_三层\UersLogin.BLL\bin\Debug\UserLogin.DAL.dll
+E:\黑马\黑马练习代码\20130510\用户登录_三层\UersLogin.BLL\bin\Debug\UsersLogin.Tools.dll
+E:\黑马\黑马练习代码\20130510\用户登录_三层\UersLogin.BLL\bin\Debug\Model.pdb
+E:\黑马\黑马练习代码\20130510\用户登录_三层\UersLogin.BLL\bin\Debug\UserLogin.DAL.pdb
+E:\黑马\黑马练习代码\20130510\用户登录_三层\UersLogin.BLL\bin\Debug\UsersLogin.Tools.pdb
+E:\黑马\黑马练习代码\20130510\用户登录_三层\UersLogin.BLL\obj\Debug\UersLogin.BLL.csprojResolveAssemblyReference.cache
+E:\黑马\黑马练习代码\20130510\用户登录_三层\UersLogin.BLL\obj\Debug\UersLogin.BLL.dll
+E:\黑马\黑马练习代码\20130510\用户登录_三层\UersLogin.BLL\obj\Debug\UersLogin.BLL.pdb

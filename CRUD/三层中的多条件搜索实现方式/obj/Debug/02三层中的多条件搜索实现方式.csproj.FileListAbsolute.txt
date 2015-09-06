@@ -1,0 +1,10 @@
+C:\Documents and Settings\steve\My Documents\Visual Studio 2008\Projects\Sln20120628\02三层中的多条件搜索实现方式\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\steve\My Documents\Visual Studio 2008\Projects\Sln20120628\02三层中的多条件搜索实现方式\obj\Debug\_02三层中的多条件搜索实现方式.Form1.resources
+C:\Documents and Settings\steve\My Documents\Visual Studio 2008\Projects\Sln20120628\02三层中的多条件搜索实现方式\obj\Debug\_02三层中的多条件搜索实现方式.Properties.Resources.resources
+C:\Documents and Settings\steve\My Documents\Visual Studio 2008\Projects\Sln20120628\02三层中的多条件搜索实现方式\obj\Debug\02三层中的多条件搜索实现方式.csproj.GenerateResource.Cache
+C:\Documents and Settings\steve\My Documents\Visual Studio 2008\Projects\Sln20120628\02三层中的多条件搜索实现方式\bin\Debug\02三层中的多条件搜索实现方式.exe
+C:\Documents and Settings\steve\My Documents\Visual Studio 2008\Projects\Sln20120628\02三层中的多条件搜索实现方式\bin\Debug\02三层中的多条件搜索实现方式.pdb
+C:\Documents and Settings\steve\My Documents\Visual Studio 2008\Projects\Sln20120628\02三层中的多条件搜索实现方式\obj\Debug\02三层中的多条件搜索实现方式.exe
+C:\Documents and Settings\steve\My Documents\Visual Studio 2008\Projects\Sln20120628\02三层中的多条件搜索实现方式\obj\Debug\02三层中的多条件搜索实现方式.pdb
+\\psf\Home\Documents\工作\其他资料\三层资料和素材\02三层中的多条件搜索实现方式\obj\Debug\02三层中的多条件搜索实现方式.exe
+\\psf\Home\Documents\工作\其他资料\三层资料和素材\02三层中的多条件搜索实现方式\obj\Debug\02三层中的多条件搜索实现方式.pdb

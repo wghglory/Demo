@@ -1,0 +1,9 @@
+\\psf\home\documents\visual studio 2013\Projects\EasyUI_CRUD_Pagination\EasyUI.Utilities\bin\Debug\EasyUI.Utilities.dll
+\\psf\home\documents\visual studio 2013\Projects\EasyUI_CRUD_Pagination\EasyUI.Utilities\bin\Debug\EasyUI.Utilities.pdb
+\\psf\home\documents\visual studio 2013\Projects\EasyUI_CRUD_Pagination\EasyUI.Utilities\obj\Debug\EasyUI.Utilities.csprojResolveAssemblyReference.cache
+\\psf\home\documents\visual studio 2013\Projects\EasyUI_CRUD_Pagination\EasyUI.Utilities\obj\Debug\EasyUI.Utilities.dll
+\\psf\home\documents\visual studio 2013\Projects\EasyUI_CRUD_Pagination\EasyUI.Utilities\obj\Debug\EasyUI.Utilities.pdb
+\\psf\Home\Documents\工作\MyCode\CRUD\EasyUI_CRUD_Pagination\EasyUI.Utilities\bin\Debug\EasyUI.Utilities.dll
+\\psf\Home\Documents\工作\MyCode\CRUD\EasyUI_CRUD_Pagination\EasyUI.Utilities\bin\Debug\EasyUI.Utilities.pdb
+\\psf\Home\Documents\工作\MyCode\CRUD\EasyUI_CRUD_Pagination\EasyUI.Utilities\obj\Debug\EasyUI.Utilities.dll
+\\psf\Home\Documents\工作\MyCode\CRUD\EasyUI_CRUD_Pagination\EasyUI.Utilities\obj\Debug\EasyUI.Utilities.pdb

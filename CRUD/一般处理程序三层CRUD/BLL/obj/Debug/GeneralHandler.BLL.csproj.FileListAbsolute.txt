@@ -1,0 +1,13 @@
+\\psf\home\documents\visual studio 2013\Projects\一般处理程序三层CRUD\BLL\bin\Debug\BLL.dll
+\\psf\home\documents\visual studio 2013\Projects\一般处理程序三层CRUD\BLL\bin\Debug\BLL.pdb
+\\psf\home\documents\visual studio 2013\Projects\一般处理程序三层CRUD\BLL\bin\Debug\Common.dll
+\\psf\home\documents\visual studio 2013\Projects\一般处理程序三层CRUD\BLL\bin\Debug\DAL.dll
+\\psf\home\documents\visual studio 2013\Projects\一般处理程序三层CRUD\BLL\bin\Debug\Model.dll
+\\psf\home\documents\visual studio 2013\Projects\一般处理程序三层CRUD\BLL\bin\Debug\Utilities.dll
+\\psf\home\documents\visual studio 2013\Projects\一般处理程序三层CRUD\BLL\bin\Debug\Common.pdb
+\\psf\home\documents\visual studio 2013\Projects\一般处理程序三层CRUD\BLL\bin\Debug\DAL.pdb
+\\psf\home\documents\visual studio 2013\Projects\一般处理程序三层CRUD\BLL\bin\Debug\Model.pdb
+\\psf\home\documents\visual studio 2013\Projects\一般处理程序三层CRUD\BLL\bin\Debug\Utilities.pdb
+\\psf\home\documents\visual studio 2013\Projects\一般处理程序三层CRUD\BLL\obj\Debug\GeneralHandler.BLL.csprojResolveAssemblyReference.cache
+\\psf\home\documents\visual studio 2013\Projects\一般处理程序三层CRUD\BLL\obj\Debug\BLL.dll
+\\psf\home\documents\visual studio 2013\Projects\一般处理程序三层CRUD\BLL\obj\Debug\BLL.pdb

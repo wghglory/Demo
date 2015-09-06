@@ -1,0 +1,7 @@
+c:\users\steve\documents\visual studio 2010\Projects\MyStudents\Stu.DAL\bin\Debug\Stu.DAL.dll
+c:\users\steve\documents\visual studio 2010\Projects\MyStudents\Stu.DAL\bin\Debug\Stu.DAL.pdb
+c:\users\steve\documents\visual studio 2010\Projects\MyStudents\Stu.DAL\obj\Debug\Stu.DAL.dll
+c:\users\steve\documents\visual studio 2010\Projects\MyStudents\Stu.DAL\obj\Debug\Stu.DAL.pdb
+c:\users\steve\documents\visual studio 2010\Projects\MyStudents\Stu.DAL\bin\Debug\Stu.Model.dll
+c:\users\steve\documents\visual studio 2010\Projects\MyStudents\Stu.DAL\bin\Debug\Stu.Model.pdb
+c:\users\steve\documents\visual studio 2010\Projects\MyStudents\Stu.DAL\obj\Debug\Stu.DAL.csprojResolveAssemblyReference.cache

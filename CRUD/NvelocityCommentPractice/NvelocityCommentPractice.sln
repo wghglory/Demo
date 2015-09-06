@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NvelocityCommentPractice.BLL", "NvelocityCommentPractice\NvelocityCommentPractice.BLL.csproj", "{A99148DC-7717-446A-9EA2-74242DB32C09}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NvelocityCommentPractice.DAL", "NvelocityCommentPractice.DAL\NvelocityCommentPractice.DAL.csproj", "{9EF941E4-5CAD-41AF-8E04-4EFD086527E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NvelocityCommentPractice.Common", "NvelocityCommentPractice.Common\NvelocityCommentPractice.Common.csproj", "{AAF13A63-A691-498B-B22C-C044094B016C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NvelocityCommentPractice.Utilities", "NvelocityCommentPractice.Utilities\NvelocityCommentPractice.Utilities.csproj", "{DD326E26-20EB-4236-ACA4-5B54D2B3F592}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NvelocityCommentPractice.UI", "NvelocityCommentPractice.UI\NvelocityCommentPractice.UI.csproj", "{61EE00D5-AFDA-45F3-BFD9-06F87C720677}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NvelocityCommentPractice.Model", "NvelocityCommentPractice.Model\NvelocityCommentPractice.Model.csproj", "{0397158E-8106-4B4A-8C8B-6B11B8B53F57}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0397158E-8106-4B4A-8C8B-6B11B8B53F57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0397158E-8106-4B4A-8C8B-6B11B8B53F57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0397158E-8106-4B4A-8C8B-6B11B8B53F57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0397158E-8106-4B4A-8C8B-6B11B8B53F57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61EE00D5-AFDA-45F3-BFD9-06F87C720677}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61EE00D5-AFDA-45F3-BFD9-06F87C720677}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61EE00D5-AFDA-45F3-BFD9-06F87C720677}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61EE00D5-AFDA-45F3-BFD9-06F87C720677}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9EF941E4-5CAD-41AF-8E04-4EFD086527E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EF941E4-5CAD-41AF-8E04-4EFD086527E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EF941E4-5CAD-41AF-8E04-4EFD086527E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EF941E4-5CAD-41AF-8E04-4EFD086527E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A99148DC-7717-446A-9EA2-74242DB32C09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A99148DC-7717-446A-9EA2-74242DB32C09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A99148DC-7717-446A-9EA2-74242DB32C09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A99148DC-7717-446A-9EA2-74242DB32C09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AAF13A63-A691-498B-B22C-C044094B016C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAF13A63-A691-498B-B22C-C044094B016C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAF13A63-A691-498B-B22C-C044094B016C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAF13A63-A691-498B-B22C-C044094B016C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD326E26-20EB-4236-ACA4-5B54D2B3F592}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD326E26-20EB-4236-ACA4-5B54D2B3F592}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD326E26-20EB-4236-ACA4-5B54D2B3F592}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD326E26-20EB-4236-ACA4-5B54D2B3F592}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

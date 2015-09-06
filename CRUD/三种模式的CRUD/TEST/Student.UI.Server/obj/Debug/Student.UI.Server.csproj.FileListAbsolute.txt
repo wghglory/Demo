@@ -1,0 +1,15 @@
+E:\Desktop\TEST\TEST\Student.UI.Server\bin\Student.UI.Server.dll
+E:\Desktop\TEST\TEST\Student.UI.Server\bin\Student.UI.Server.pdb
+E:\Desktop\TEST\TEST\Student.UI.Server\bin\Student.BLL.dll
+E:\Desktop\TEST\TEST\Student.UI.Server\bin\Student.IBaseBLL.dll
+E:\Desktop\TEST\TEST\Student.UI.Server\bin\Student.Model.dll
+E:\Desktop\TEST\TEST\Student.UI.Server\bin\Student.DAL.dll
+E:\Desktop\TEST\TEST\Student.UI.Server\bin\Student.IBaseDAL.dll
+E:\Desktop\TEST\TEST\Student.UI.Server\bin\Student.BLL.pdb
+E:\Desktop\TEST\TEST\Student.UI.Server\bin\Student.IBaseBLL.pdb
+E:\Desktop\TEST\TEST\Student.UI.Server\bin\Student.Model.pdb
+E:\Desktop\TEST\TEST\Student.UI.Server\bin\Student.DAL.pdb
+E:\Desktop\TEST\TEST\Student.UI.Server\bin\Student.IBaseDAL.pdb
+E:\Desktop\TEST\TEST\Student.UI.Server\obj\Debug\Student.UI.Server.csprojResolveAssemblyReference.cache
+E:\Desktop\TEST\TEST\Student.UI.Server\obj\Debug\Student.UI.Server.dll
+E:\Desktop\TEST\TEST\Student.UI.Server\obj\Debug\Student.UI.Server.pdb

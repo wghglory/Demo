@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Basic CRUD Application - jQuery EasyUI CRUD Demo</title>
+    <link rel="stylesheet" type="text/css" href="http://www.jeasyui.com/easyui/themes/default/easyui.css">
+    <link rel="stylesheet" type="text/css" href="http://www.jeasyui.com/easyui/themes/icon.css">
+    <link rel="stylesheet" type="text/css" href="http://www.jeasyui.com/easyui/demo/demo.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.6.min.js"></script>
+    <script type="text/javascript" src="http://www.jeasyui.com/easyui/jquery.easyui.min.js"></script>
+    <script type="text/javascript" src="http://www.jeasyui.com/easyui/jquery.edatagrid.js"></script>
+    <script src="../js/datapattern2.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('#dg').edatagrid({
+                url: 'View.ashx',
+                saveUrl: 'Add.ashx',
+                updateUrl: 'Edit.ashx',
+                destroyUrl: 'Delete.ashx'
+                
+        });
+
+            $('#save').click(function () {
+                $('#dg').edatagrid('saveRow');
+            });
+
+            $('#add').click(function () {
+                $('#dg').edatagrid('addRow');
+            });
+
+            $('#cancel').click(function () {
+                $('#dg').edatagrid('cancelRow');
+            });
+
+            $('#remove').click(function () {
+                $('#dg').edatagrid('destroyRow');
+            });
+
+        });
+
+        function formatDate(date) {
+            if (checkNull(date) == "") {
+                return "";
+            } else {
+                return (eval(checkNull(date).replace(/\/Date\((\d+)\)\//gi, "new Date($1)"))).pattern("yyyy-MM-dd");
+            }
+        }
+
+        function checkNull(property) {
+            if (property == undefined) {
+                return "";
+            } else {
+                return property;
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2>Basic CRUD Application</h2>
+    <!------------------------------------主表---------------------------------------------->
+    <table id="dg" title="My Users" class="easyui-datagrid" style="width:800px;height:370px"
+           url="View.ashx"
+           toolbar="#toolbar" pagination="true"
+           rownumbers="true" fitcolumns="true" singleselect="true">
+        <thead>
+            <tr>
+                <th field="ProductName" width="50" editor="{type:'validatebox',options:{required:true}}">ProductName</th>
+                <th field="ProductCode" width="50" editor="{type:'validatebox',options:{validType:'email'}}">ProductCode</th>
+                <th field="SellAmount" width="50" editor="{type:'validatebox',options:{validType:'email'}}">SellAmount</th>
+                <th field="Purchaser" width="50" editor="text">Purchaser</th>
+                <th field="Salesperson" width="50" editor="text">Salesperson</th>
+                <th field="SellDate" width="50" editor="{type:'validatebox',options:{validType:'email'}}">SellDate</th>
+                <th field="SellPrice" width="50" editor="{type:'validatebox',options:{validType:'email'}}">SellPrice</th>
+            </tr>
+        </thead>
+    </table>
+    <!------------------------------------增删保存取消按钮----------------------------------------->
+    <div id="toolbar">
+        <a id="add" href="javascript:void(0)" class="easyui-linkbutton" iconcls="icon-add" plain="true">New</a>
+        <a id="remove" href="javascript:void(0)" class="easyui-linkbutton" iconcls="icon-remove" plain="true">Destroy</a>
+        <a id="save" href="javascript:void(0)" class="easyui-linkbutton" iconcls="icon-save" plain="true">Save</a>
+        <a id="cancel" href="javascript:void(0)" class="easyui-linkbutton" iconcls="icon-undo" plain="true">Cancel</a>
+    </div>
+</body>
+</html>
+//this needs to be learnt later

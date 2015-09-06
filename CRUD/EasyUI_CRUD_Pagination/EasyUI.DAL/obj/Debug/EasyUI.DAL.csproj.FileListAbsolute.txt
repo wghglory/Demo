@@ -1,0 +1,14 @@
+\\psf\home\documents\visual studio 2013\Projects\EasyUI_CRUD_Pagination\EasyUI.DAL\bin\Debug\EasyUI.DAL.dll
+\\psf\home\documents\visual studio 2013\Projects\EasyUI_CRUD_Pagination\EasyUI.DAL\bin\Debug\EasyUI.DAL.pdb
+\\psf\home\documents\visual studio 2013\Projects\EasyUI_CRUD_Pagination\EasyUI.DAL\bin\Debug\EasyUI.Model.dll
+\\psf\home\documents\visual studio 2013\Projects\EasyUI_CRUD_Pagination\EasyUI.DAL\bin\Debug\EasyUI.Model.pdb
+\\psf\home\documents\visual studio 2013\Projects\EasyUI_CRUD_Pagination\EasyUI.DAL\obj\Debug\EasyUI.DAL.csprojResolveAssemblyReference.cache
+\\psf\home\documents\visual studio 2013\Projects\EasyUI_CRUD_Pagination\EasyUI.DAL\obj\Debug\EasyUI.DAL.dll
+\\psf\home\documents\visual studio 2013\Projects\EasyUI_CRUD_Pagination\EasyUI.DAL\obj\Debug\EasyUI.DAL.pdb
+\\psf\Home\Documents\工作\MyCode\CRUD\EasyUI_CRUD_Pagination\EasyUI.DAL\bin\Debug\EasyUI.DAL.dll
+\\psf\Home\Documents\工作\MyCode\CRUD\EasyUI_CRUD_Pagination\EasyUI.DAL\bin\Debug\EasyUI.DAL.pdb
+\\psf\Home\Documents\工作\MyCode\CRUD\EasyUI_CRUD_Pagination\EasyUI.DAL\bin\Debug\EasyUI.Model.dll
+\\psf\Home\Documents\工作\MyCode\CRUD\EasyUI_CRUD_Pagination\EasyUI.DAL\bin\Debug\EasyUI.Model.pdb
+\\psf\Home\Documents\工作\MyCode\CRUD\EasyUI_CRUD_Pagination\EasyUI.DAL\obj\Debug\EasyUI.DAL.csprojResolveAssemblyReference.cache
+\\psf\Home\Documents\工作\MyCode\CRUD\EasyUI_CRUD_Pagination\EasyUI.DAL\obj\Debug\EasyUI.DAL.dll
+\\psf\Home\Documents\工作\MyCode\CRUD\EasyUI_CRUD_Pagination\EasyUI.DAL\obj\Debug\EasyUI.DAL.pdb

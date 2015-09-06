@@ -1,0 +1,15 @@
+\\psf\home\documents\visual studio 2013\Projects\NvelocityCommentPractice\NvelocityCommentPractice.UI\bin\NvelocityCommentPractice.UI.dll.config
+\\psf\home\documents\visual studio 2013\Projects\NvelocityCommentPractice\NvelocityCommentPractice.UI\bin\NvelocityCommentPractice.UI.dll
+\\psf\home\documents\visual studio 2013\Projects\NvelocityCommentPractice\NvelocityCommentPractice.UI\bin\NvelocityCommentPractice.UI.pdb
+\\psf\home\documents\visual studio 2013\Projects\NvelocityCommentPractice\NvelocityCommentPractice.UI\bin\NvelocityCommentPractice.Common.dll
+\\psf\home\documents\visual studio 2013\Projects\NvelocityCommentPractice\NvelocityCommentPractice.UI\bin\NvelocityCommentPractice.dll
+\\psf\home\documents\visual studio 2013\Projects\NvelocityCommentPractice\NvelocityCommentPractice.UI\bin\NvelocityCommentPractice.Model.dll
+\\psf\home\documents\visual studio 2013\Projects\NvelocityCommentPractice\NvelocityCommentPractice.UI\bin\NVelocity.dll
+\\psf\home\documents\visual studio 2013\Projects\NvelocityCommentPractice\NvelocityCommentPractice.UI\bin\NvelocityCommentPractice.DAL.dll
+\\psf\home\documents\visual studio 2013\Projects\NvelocityCommentPractice\NvelocityCommentPractice.UI\bin\NvelocityCommentPractice.Common.pdb
+\\psf\home\documents\visual studio 2013\Projects\NvelocityCommentPractice\NvelocityCommentPractice.UI\bin\NvelocityCommentPractice.Model.pdb
+\\psf\home\documents\visual studio 2013\Projects\NvelocityCommentPractice\NvelocityCommentPractice.UI\bin\NvelocityCommentPractice.pdb
+\\psf\home\documents\visual studio 2013\Projects\NvelocityCommentPractice\NvelocityCommentPractice.UI\bin\NvelocityCommentPractice.DAL.pdb
+\\psf\home\documents\visual studio 2013\Projects\NvelocityCommentPractice\NvelocityCommentPractice.UI\obj\Release\NvelocityCommentPractice.UI.csprojResolveAssemblyReference.cache
+\\psf\home\documents\visual studio 2013\Projects\NvelocityCommentPractice\NvelocityCommentPractice.UI\obj\Release\NvelocityCommentPractice.UI.dll
+\\psf\home\documents\visual studio 2013\Projects\NvelocityCommentPractice\NvelocityCommentPractice.UI\obj\Release\NvelocityCommentPractice.UI.pdb

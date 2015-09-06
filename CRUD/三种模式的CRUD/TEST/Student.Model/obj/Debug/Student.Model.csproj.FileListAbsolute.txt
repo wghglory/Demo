@@ -1,0 +1,4 @@
+E:\Desktop\TEST\TEST\Student.Model\bin\Debug\Student.Model.dll
+E:\Desktop\TEST\TEST\Student.Model\bin\Debug\Student.Model.pdb
+E:\Desktop\TEST\TEST\Student.Model\obj\Debug\Student.Model.dll
+E:\Desktop\TEST\TEST\Student.Model\obj\Debug\Student.Model.pdb

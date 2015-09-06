@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>
+        #if($Data.Action=="AddNew")
+        新增用户
+        #else
+        编辑用户: $Data.Supplier.CompanyName
+        #end
+    </title>
+</head>
+<body>
+    <form action="SupplierEdit.ashx" method="post">
+        <input type="hidden" name="Action" value="$Data.Action" />
+        <input type="hidden" name="Save" value="true" />
+        #if($Data.Action=="Edit")
+        <input type="hidden" name="Id" value="$Data.Supplier.SupplierID" />
+        #end
+        <table>
+            <tr>
+                <td>CompanyName:</td>
+                <td><input type="text" name="CompanyName" value="$Data.Supplier.CompanyName" /></td>
+            </tr>
+            <tr>
+                <td>ContactName:</td>
+                <td>
+                    <input type="text" name="ContactName" value="$Data.Supplier.ContactName" />
+                </td>
+            </tr>
+            <tr>
+                <td>Address:</td>
+                <td>
+                    <input type="text" name="Address" value="$Data.Supplier.Address" />
+                </td>
+            </tr>
+            <tr>
+                <td>City:</td>
+                <td>
+                    <input type="text" name="City" value="$Data.Supplier.City" />
+                </td>
+            </tr>
+            <tr>
+                <td>PostalCode:</td>
+                <td>
+                    <input type="text" name="PostalCode" value="$Data.Supplier.PostalCode" />
+                </td>
+            </tr>
+            <tr>
+                <td>Country:</td>
+                <td>
+                    <input type="text" name="Country" value="$Data.Supplier.Country" />
+                </td>
+            </tr>
+            <tr>
+                <td>Phone:</td>
+                <td>
+                    <input type="text" name="Phone" value="$Data.Supplier.Phone" />
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" value="保存" /></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

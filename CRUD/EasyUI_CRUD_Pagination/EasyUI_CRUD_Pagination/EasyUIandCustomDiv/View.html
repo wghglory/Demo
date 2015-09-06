@@ -1,0 +1,312 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="../css/themes/icon.css" rel="stylesheet" />
+    <link href="../css/themes/default/easyui.css" rel="stylesheet" />
+    <script src="../js/jquery-1.8.0.min.js"></script>
+    <script src="../js/jquery.easyui.min.js"></script>
+    <script src="../js/datapattern2.js"></script>
+    <script src="../js/datapattern2.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            initTable();
+        });
+
+        function initTable() {
+            $('#tt').datagrid({
+                url: 'View.ashx',//指向一个后台的地址，当表格加载完成后自动请求此地址
+                //自动往后台发送：rows:10  page:请求的当前页，
+                //要求返还的数据：  {total:200,rows:[{},{}]}
+                title: 'Order列表',
+                width: 700,
+                height: 400,
+                fitColumns: true,
+                idField: 'Id',//后台返还数据行中的主键列。一定注意大小写。
+                loadMsg: '正在加载信息...',
+                pagination: true,//启用分页
+                singleSelect: false,//只允许选中一行
+                pageSize: 10,//一页默认多少条
+                pageNumber: 1,//默认当前页
+                pageList: [10, 25, 30],//允许  一页多少条的设置。
+                queryParams: {},//发送异步请求，额外传递的数据
+                columns: [[
+                { field: 'ck', checkbox: true, align: 'left', width: 50 },//CheckBox列
+                {
+                    field: 'Id', title: '编号', width: 90,
+                    formatter: function (value, row, index) {
+                        return checkNull(value);
+                    }
+                },
+                {
+                    field: 'ProductName', title: '商品名称', width: 220,
+                    formatter: function (value, row, index) {
+                        return checkNull(value);
+                    }
+                },
+                {
+                    field: 'ProductCode', title: '商品序列号', width: 220,
+                    formatter: function (value, row, index) {
+                        return checkNull(value);
+                    }
+                },
+                {
+                    field: 'SellAmount', title: '销量', width: 80,
+                    formatter: function (value, row, index) {
+                        return checkNull(value);
+                    }
+                },
+                {
+                    field: 'Purchaser', title: '购买人', width: 220,
+                    formatter: function (value, row, index) {
+                        return checkNull(value);
+                    }
+                },
+                {
+                    field: 'Salesperson', title: '销售员', width: 180,
+                    formatter: function (value, row, index) {
+                        return checkNull(value);
+                    }
+                },
+                {
+                    field: 'SellDate', title: '销售日期', width: 230, align: 'right',
+                    formatter: function (value, row, index) {
+                        return formatDate(value);
+                    }
+                },
+                {
+                    field: 'SellPrice', title: '商品价格', width: 150,
+                    formatter: function (value, row, index) {
+                        return checkNull(value);
+                    }
+                }
+                ]],
+                toolbar: [{
+                    id: 'btnAdd',
+                    text: '添加',
+                    iconCls: 'icon-add',
+                    handler: function () {
+                        addBtnClick();
+                    }
+                }, {
+                    id: 'btnEdit',
+                    text: '修改',
+                    iconCls: 'icon-edit',
+                    handler: function () {
+                        editBtnClick();
+                    }
+                }, {
+                    id: 'btnDelete',
+                    text: '删除',
+                    iconCls: 'icon-remove',
+                    handler: function () {
+                        deleteBtnClick();
+                    }
+                }],
+                onHeaderContextMenu: function (e, field) {
+                }
+            });
+        }
+
+        function formatDate(date) {
+            if (checkNull(date) == "") {
+                return "";
+            } else {
+                return (eval(checkNull(date).replace(/\/Date\((\d+)\)\//gi, "new Date($1)"))).pattern("yyyy-MM-dd");
+            }
+        }
+
+        function checkNull(property) {
+            if (property == undefined) {
+                return "";
+            } else {
+                return property;
+            }
+        }
+
+        function addBtnClick() {            
+            //$("input[type=reset]").trigger("click");//这里清空好。触发reset按钮!清空数据，不然add时还存在edit的数据
+            //$('#hidId').val("");
+            $('#AddOrEditform').form('clear');   //这个好！！！
+
+            $("#AddOrEditDiv").css('display', 'block').dialog({
+                title: "修改对话框",
+                width: 500,
+                height: 500,
+                modal: true,
+                collapsible: true,
+                minimizable: true,
+                maximizable: true,
+                resizable: true,
+                buttons: [{
+                    text: "增加",
+                    iconCls: "icon-add",
+                    handler: subFrm
+                }, {
+                    text: "关闭",
+                    iconCls: "icon-cancel",
+                    handler: function () {
+                        $("#AddOrEditDiv").dialog("close");
+                        //$("input[type=reset]").trigger("click");//触发reset按钮!i清空数据，不然add时还存在edit的数据
+                    }
+                }]
+            });
+        }
+
+        function subFrm() {
+            var postData = $('#AddOrEditform').serialize(); //serializeArray();
+            //根据postData里面的hidden id有无判断新增还是修改的保存。
+            $.post('AddOrEdit.ashx', postData, function (data) {
+                if (data == 'ok') {
+                    //关闭对话框，刷新表格数据。
+                    $('#AddOrEditDiv').dialog('close');
+
+                    //$("input[type=reset]").trigger("click");//触发reset按钮!i清空数据，不然add时还存在edit的数据
+                    //$('#hidId').val("");
+                    $('#AddOrEditform').form('clear');
+
+                    $("#tt").datagrid("reload");  //刷新table
+
+                } else {
+                    //alert('not added!');
+                    $.messager.alert('提醒消息', '保存/修改败了', 'warning');
+                }
+            });
+        }
+
+        function editBtnClick() {
+            var rows = $("#tt").datagrid("getSelections");
+            if (rows.length != 1) {
+                $.messager.alert("消息提醒", "请选中一行", "warning");
+                return;
+            }
+            //alert(rows[0].Id);  //主键，区分大小写。
+            fillEditForm(rows[0].Id);
+            showEditDialog();
+
+        }
+
+        function fillEditForm(Id) {
+
+            $.getJSON('GetById.ashx', { id: Id }, function (data) {
+
+                $('#hidId').val(data.Id);
+                $('#txtProductName').val(data.ProductName);
+                $('#txtPrice').val(data.SellPrice);
+                $('#txtAmount').val(data.SellAmount);
+                $('#txtPurchaser').val(data.Purchaser);
+                $('#txtSellDate').val(formatDate(data.SellDate));
+                $('#txtSalesPerson').val(data.Salesperson);
+                $('#txtProductCode').val(data.ProductCode);
+
+                //showEditDialog();  //若发现有问题则这么尝试，保证值都加载到div后在运行下面，弹出对话框
+            });
+        }
+
+        function showEditDialog() {
+            $("#AddOrEditDiv").css('display', 'block').dialog({
+                title: "修改对话框",
+                width: 500,
+                height: 500,
+                modal: true,
+                collapsible: true,
+                minimizable: true,
+                maximizable: true,
+                resizable: true,
+                buttons: [{
+                    text: "修改",
+                    iconCls: "icon-edit",
+                    handler: subFrm
+                }, {
+                    text: "关闭",
+                    iconCls: "icon-cancel",
+                    handler: function () {
+                        $("#AddOrEditDiv").dialog("close");
+                        //$("input[type=reset]").trigger("click");//触发reset按钮!清空数据，不然add时还存在edit的数据
+                        //$('#hidId').val("");
+                    }
+                }]
+            });
+        }
+
+        function deleteBtnClick() {
+            var rows = $("#tt").datagrid("getSelections");
+            if (rows.length != 1) {
+                $.messager.alert("消息提醒", "请选中一行", "warning");
+                return;
+            }
+            //alert(rows[0].Id);  //主键，区分大小写。
+   
+            $.messager.confirm("提醒", "确认删除吗？", function (r) {
+                if (r) {                
+                    $.post("Delete.ashx", { id: rows[0].Id }, function (data) {
+                        if (data == "ok") {
+                            $("#tt").datagrid("reload");  //刷新table
+                        } else {
+                            $.messager.alert("提醒", "删除失败", "warning");
+                        }
+                    });
+                }
+            });
+            return false;
+        }
+       
+    </script>
+</head>
+<body>
+    <table id="tt" style="width: 700px;" title="标题，可以使用代码进行初始化，也可以使用这种属性的方式" ></table>  <!--iconcls="icon-edit"-->
+
+
+    <!----------------------------------增加、编辑对话框-------------------------------------------->
+    <div id="AddOrEditDiv" style="display:none">
+        <form id="AddOrEditform" method="POST">
+            <input type="hidden" name="hidId" id="hidId" />
+            <input type="reset" style="display:none" />
+            <table>
+                <tr>
+                    <td>商品名称：</td>
+                    <td>
+                        <input type="text" name="txtProductName" id="txtProductName" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>销售价格：</td>
+                    <td>
+                        <input type="text" name="txtPrice" id="txtPrice" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>销量：</td>
+                    <td>
+                        <input type="text" name="txtAmount" id="txtAmount" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>购买人：</td>
+                    <td>
+                        <input type="text" name="txtPurchaser" id="txtPurchaser" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>销售日期：</td>
+                    <td>
+                        <input type="text" name="txtSellDate" id="txtSellDate" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>销售人员：</td>
+                    <td>
+                        <input type="text" name="txtSalesPerson" id="txtSalesPerson" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>商品序号：</td>
+                    <td>
+                        <input type="text" name="txtProductCode" id="txtProductCode" />
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

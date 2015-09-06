@@ -1,0 +1,30 @@
+\\psf\home\documents\visual studio 2013\Projects\NvelocityCommentPractice\NvelocityCommentPractice.UI\bin\NvelocityCommentPractice.UI.dll.config
+\\psf\home\documents\visual studio 2013\Projects\NvelocityCommentPractice\NvelocityCommentPractice.UI\bin\NvelocityCommentPractice.UI.dll
+\\psf\home\documents\visual studio 2013\Projects\NvelocityCommentPractice\NvelocityCommentPractice.UI\bin\NvelocityCommentPractice.UI.pdb
+\\psf\home\documents\visual studio 2013\Projects\NvelocityCommentPractice\NvelocityCommentPractice.UI\obj\Debug\NvelocityCommentPractice.UI.csprojResolveAssemblyReference.cache
+\\psf\home\documents\visual studio 2013\Projects\NvelocityCommentPractice\NvelocityCommentPractice.UI\obj\Debug\NvelocityCommentPractice.UI.dll
+\\psf\home\documents\visual studio 2013\Projects\NvelocityCommentPractice\NvelocityCommentPractice.UI\obj\Debug\NvelocityCommentPractice.UI.pdb
+\\psf\home\documents\visual studio 2013\Projects\NvelocityCommentPractice\NvelocityCommentPractice.UI\bin\NvelocityCommentPractice.Common.dll
+\\psf\home\documents\visual studio 2013\Projects\NvelocityCommentPractice\NvelocityCommentPractice.UI\bin\NvelocityCommentPractice.dll
+\\psf\home\documents\visual studio 2013\Projects\NvelocityCommentPractice\NvelocityCommentPractice.UI\bin\NvelocityCommentPractice.Model.dll
+\\psf\home\documents\visual studio 2013\Projects\NvelocityCommentPractice\NvelocityCommentPractice.UI\bin\NvelocityCommentPractice.DAL.dll
+\\psf\home\documents\visual studio 2013\Projects\NvelocityCommentPractice\NvelocityCommentPractice.UI\bin\NvelocityCommentPractice.Common.pdb
+\\psf\home\documents\visual studio 2013\Projects\NvelocityCommentPractice\NvelocityCommentPractice.UI\bin\NvelocityCommentPractice.Model.pdb
+\\psf\home\documents\visual studio 2013\Projects\NvelocityCommentPractice\NvelocityCommentPractice.UI\bin\NvelocityCommentPractice.pdb
+\\psf\home\documents\visual studio 2013\Projects\NvelocityCommentPractice\NvelocityCommentPractice.UI\bin\NvelocityCommentPractice.DAL.pdb
+\\psf\home\documents\visual studio 2013\Projects\NvelocityCommentPractice\NvelocityCommentPractice.UI\bin\NVelocity.dll
+\\psf\Home\Documents\工作\MyCode\CRUD\NvelocityCommentPractice\NvelocityCommentPractice.UI\bin\NvelocityCommentPractice.UI.dll.config
+\\psf\Home\Documents\工作\MyCode\CRUD\NvelocityCommentPractice\NvelocityCommentPractice.UI\bin\NvelocityCommentPractice.UI.dll
+\\psf\Home\Documents\工作\MyCode\CRUD\NvelocityCommentPractice\NvelocityCommentPractice.UI\bin\NvelocityCommentPractice.UI.pdb
+\\psf\Home\Documents\工作\MyCode\CRUD\NvelocityCommentPractice\NvelocityCommentPractice.UI\bin\NvelocityCommentPractice.Common.dll
+\\psf\Home\Documents\工作\MyCode\CRUD\NvelocityCommentPractice\NvelocityCommentPractice.UI\bin\NvelocityCommentPractice.dll
+\\psf\Home\Documents\工作\MyCode\CRUD\NvelocityCommentPractice\NvelocityCommentPractice.UI\bin\NvelocityCommentPractice.Model.dll
+\\psf\Home\Documents\工作\MyCode\CRUD\NvelocityCommentPractice\NvelocityCommentPractice.UI\bin\NVelocity.dll
+\\psf\Home\Documents\工作\MyCode\CRUD\NvelocityCommentPractice\NvelocityCommentPractice.UI\bin\NvelocityCommentPractice.DAL.dll
+\\psf\Home\Documents\工作\MyCode\CRUD\NvelocityCommentPractice\NvelocityCommentPractice.UI\bin\NvelocityCommentPractice.Common.pdb
+\\psf\Home\Documents\工作\MyCode\CRUD\NvelocityCommentPractice\NvelocityCommentPractice.UI\bin\NvelocityCommentPractice.Model.pdb
+\\psf\Home\Documents\工作\MyCode\CRUD\NvelocityCommentPractice\NvelocityCommentPractice.UI\bin\NvelocityCommentPractice.pdb
+\\psf\Home\Documents\工作\MyCode\CRUD\NvelocityCommentPractice\NvelocityCommentPractice.UI\bin\NvelocityCommentPractice.DAL.pdb
+\\psf\Home\Documents\工作\MyCode\CRUD\NvelocityCommentPractice\NvelocityCommentPractice.UI\obj\Debug\NvelocityCommentPractice.UI.csprojResolveAssemblyReference.cache
+\\psf\Home\Documents\工作\MyCode\CRUD\NvelocityCommentPractice\NvelocityCommentPractice.UI\obj\Debug\NvelocityCommentPractice.UI.dll
+\\psf\Home\Documents\工作\MyCode\CRUD\NvelocityCommentPractice\NvelocityCommentPractice.UI\obj\Debug\NvelocityCommentPractice.UI.pdb

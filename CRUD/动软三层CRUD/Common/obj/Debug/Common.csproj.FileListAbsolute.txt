@@ -1,0 +1,9 @@
+\\psf\Home\Documents\Visual Studio 2013\Projects\动软三层CRUD\Common\bin\Debug\MaticSoft.Common.dll
+\\psf\Home\Documents\Visual Studio 2013\Projects\动软三层CRUD\Common\bin\Debug\MaticSoft.Common.pdb
+\\psf\Home\Documents\Visual Studio 2013\Projects\动软三层CRUD\Common\bin\Debug\COM.Excel.dll
+\\psf\Home\Documents\Visual Studio 2013\Projects\动软三层CRUD\Common\bin\Debug\Excel.dll
+\\psf\Home\Documents\Visual Studio 2013\Projects\动软三层CRUD\Common\bin\Debug\OpenSmtp.dll
+\\psf\Home\Documents\Visual Studio 2013\Projects\动软三层CRUD\Common\bin\Debug\OWC10Chart.dll
+\\psf\Home\Documents\Visual Studio 2013\Projects\动软三层CRUD\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
+\\psf\Home\Documents\Visual Studio 2013\Projects\动软三层CRUD\Common\obj\Debug\MaticSoft.Common.dll
+\\psf\Home\Documents\Visual Studio 2013\Projects\动软三层CRUD\Common\obj\Debug\MaticSoft.Common.pdb

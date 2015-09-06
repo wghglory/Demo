@@ -1,0 +1,9 @@
+\\psf\Home\Documents\Visual Studio 2013\Projects\动软三层CRUD\DBUtility\bin\Debug\MaticSoft.DBUtility.dll
+\\psf\Home\Documents\Visual Studio 2013\Projects\动软三层CRUD\DBUtility\bin\Debug\MaticSoft.DBUtility.pdb
+\\psf\Home\Documents\Visual Studio 2013\Projects\动软三层CRUD\DBUtility\bin\Debug\IBatisNet.Common.dll
+\\psf\Home\Documents\Visual Studio 2013\Projects\动软三层CRUD\DBUtility\bin\Debug\IBatisNet.DataMapper.dll
+\\psf\Home\Documents\Visual Studio 2013\Projects\动软三层CRUD\DBUtility\bin\Debug\MySql.Data.dll
+\\psf\Home\Documents\Visual Studio 2013\Projects\动软三层CRUD\DBUtility\bin\Debug\System.Data.SQLite.DLL
+\\psf\Home\Documents\Visual Studio 2013\Projects\动软三层CRUD\DBUtility\obj\Debug\DBUtility.csprojResolveAssemblyReference.cache
+\\psf\Home\Documents\Visual Studio 2013\Projects\动软三层CRUD\DBUtility\obj\Debug\MaticSoft.DBUtility.dll
+\\psf\Home\Documents\Visual Studio 2013\Projects\动软三层CRUD\DBUtility\obj\Debug\MaticSoft.DBUtility.pdb

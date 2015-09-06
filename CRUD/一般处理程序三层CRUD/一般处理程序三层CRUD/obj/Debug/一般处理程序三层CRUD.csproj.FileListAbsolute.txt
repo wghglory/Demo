@@ -1,0 +1,12 @@
+\\psf\home\documents\visual studio 2013\Projects\一般处理程序三层CRUD\一般处理程序三层CRUD\bin\一般处理程序三层CRUD.dll.config
+\\psf\home\documents\visual studio 2013\Projects\一般处理程序三层CRUD\一般处理程序三层CRUD\bin\一般处理程序三层CRUD.dll
+\\psf\home\documents\visual studio 2013\Projects\一般处理程序三层CRUD\一般处理程序三层CRUD\bin\一般处理程序三层CRUD.pdb
+\\psf\home\documents\visual studio 2013\Projects\一般处理程序三层CRUD\一般处理程序三层CRUD\obj\Debug\一般处理程序三层CRUD.csprojResolveAssemblyReference.cache
+\\psf\home\documents\visual studio 2013\Projects\一般处理程序三层CRUD\一般处理程序三层CRUD\obj\Debug\一般处理程序三层CRUD.dll
+\\psf\home\documents\visual studio 2013\Projects\一般处理程序三层CRUD\一般处理程序三层CRUD\obj\Debug\一般处理程序三层CRUD.pdb
+\\psf\home\documents\visual studio 2013\Projects\一般处理程序三层CRUD\一般处理程序三层CRUD\bin\BLL.dll
+\\psf\home\documents\visual studio 2013\Projects\一般处理程序三层CRUD\一般处理程序三层CRUD\bin\Model.dll
+\\psf\home\documents\visual studio 2013\Projects\一般处理程序三层CRUD\一般处理程序三层CRUD\bin\DAL.dll
+\\psf\home\documents\visual studio 2013\Projects\一般处理程序三层CRUD\一般处理程序三层CRUD\bin\BLL.pdb
+\\psf\home\documents\visual studio 2013\Projects\一般处理程序三层CRUD\一般处理程序三层CRUD\bin\Model.pdb
+\\psf\home\documents\visual studio 2013\Projects\一般处理程序三层CRUD\一般处理程序三层CRUD\bin\DAL.pdb

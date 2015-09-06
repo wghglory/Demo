@@ -1,0 +1,15 @@
+\\psf\home\documents\visual studio 2013\Projects\AjaxComment\AjaxComment.UI\bin\AjaxComment.UI.dll.config
+\\psf\home\documents\visual studio 2013\Projects\AjaxComment\AjaxComment.UI\bin\AjaxComment.UI.dll
+\\psf\home\documents\visual studio 2013\Projects\AjaxComment\AjaxComment.UI\bin\AjaxComment.UI.pdb
+\\psf\home\documents\visual studio 2013\Projects\AjaxComment\AjaxComment.UI\bin\AjaxComment.BLL.dll
+\\psf\home\documents\visual studio 2013\Projects\AjaxComment\AjaxComment.UI\bin\AjaxComment.Common.dll
+\\psf\home\documents\visual studio 2013\Projects\AjaxComment\AjaxComment.UI\bin\AjaxComment.Model.dll
+\\psf\home\documents\visual studio 2013\Projects\AjaxComment\AjaxComment.UI\bin\AjaxComment.DAL.dll
+\\psf\home\documents\visual studio 2013\Projects\AjaxComment\AjaxComment.UI\bin\AjaxComment.BLL.pdb
+\\psf\home\documents\visual studio 2013\Projects\AjaxComment\AjaxComment.UI\bin\AjaxComment.Common.pdb
+\\psf\home\documents\visual studio 2013\Projects\AjaxComment\AjaxComment.UI\bin\AjaxComment.Model.pdb
+\\psf\home\documents\visual studio 2013\Projects\AjaxComment\AjaxComment.UI\bin\AjaxComment.DAL.pdb
+\\psf\home\documents\visual studio 2013\Projects\AjaxComment\AjaxComment.UI\obj\Debug\AjaxComment.UI.csprojResolveAssemblyReference.cache
+\\psf\home\documents\visual studio 2013\Projects\AjaxComment\AjaxComment.UI\obj\Debug\AjaxComment.UI.dll
+\\psf\home\documents\visual studio 2013\Projects\AjaxComment\AjaxComment.UI\obj\Debug\AjaxComment.UI.pdb
+\\psf\home\documents\visual studio 2013\Projects\AjaxComment\AjaxComment.UI\bin\NVelocity.dll

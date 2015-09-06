@@ -1,0 +1,9 @@
+c:\users\steve\documents\visual studio 2010\Projects\MyStudents\Stu.BLL\bin\Debug\Stu.BLL.dll
+c:\users\steve\documents\visual studio 2010\Projects\MyStudents\Stu.BLL\bin\Debug\Stu.BLL.pdb
+c:\users\steve\documents\visual studio 2010\Projects\MyStudents\Stu.BLL\obj\Debug\Stu.BLL.dll
+c:\users\steve\documents\visual studio 2010\Projects\MyStudents\Stu.BLL\obj\Debug\Stu.BLL.pdb
+c:\users\steve\documents\visual studio 2010\Projects\MyStudents\Stu.BLL\bin\Debug\Stu.DAL.dll
+c:\users\steve\documents\visual studio 2010\Projects\MyStudents\Stu.BLL\bin\Debug\Stu.Model.dll
+c:\users\steve\documents\visual studio 2010\Projects\MyStudents\Stu.BLL\bin\Debug\Stu.DAL.pdb
+c:\users\steve\documents\visual studio 2010\Projects\MyStudents\Stu.BLL\bin\Debug\Stu.Model.pdb
+c:\users\steve\documents\visual studio 2010\Projects\MyStudents\Stu.BLL\obj\Debug\Stu.BLL.csprojResolveAssemblyReference.cache

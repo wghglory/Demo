@@ -1,0 +1,6 @@
+\\psf\home\documents\visual studio 2013\Projects\AjaxComment\AjaxComment.Common\bin\Debug\AjaxComment.Common.dll
+\\psf\home\documents\visual studio 2013\Projects\AjaxComment\AjaxComment.Common\bin\Debug\AjaxComment.Common.pdb
+\\psf\home\documents\visual studio 2013\Projects\AjaxComment\AjaxComment.Common\obj\Debug\AjaxComment.Common.csprojResolveAssemblyReference.cache
+\\psf\home\documents\visual studio 2013\Projects\AjaxComment\AjaxComment.Common\obj\Debug\AjaxComment.Common.dll
+\\psf\home\documents\visual studio 2013\Projects\AjaxComment\AjaxComment.Common\obj\Debug\AjaxComment.Common.pdb
+\\psf\home\documents\visual studio 2013\Projects\AjaxComment\AjaxComment.Common\bin\Debug\NVelocity.dll

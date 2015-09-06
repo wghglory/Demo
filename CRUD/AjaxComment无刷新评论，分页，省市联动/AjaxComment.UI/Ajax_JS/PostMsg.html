@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script type="text/javascript">
+        window.onload = function () {
+            document.getElementById('btnCommit').onclick = function () {
+
+                //1>获取用户输入的信息
+                var title = document.getElementById('txtTitle').value;
+                var comment = document.getElementById('txtArea').value;
+                var nickName = document.getElementById('txtNickName').value;
+                
+
+                //拼接post提交数据时的请求报文体。
+                var post_data = 'title=' + title + '&comment=' + comment + '&nickName=' + nickName;
+
+                var xhr = null;
+                if (typeof (XMLHttpRequest) != 'undefined') {
+                    xhr = new XMLHttpRequest();
+                } else {
+                    xhr = new ActiveXObject("Microsoft.XMLHttp");
+                }
+
+                xhr.onreadystatechange = function () {
+                    if (xhr.readyState == 4 && xhr.status == 200) {
+                        var msg = document.getElementById('msg');
+                        var jsonObj = JSON.parse(xhr.responseText);
+                        if (jsonObj.IsOK == "1") {
+                            //成功！
+                            msg.value = '提交评论成功！';
+                            msg.style.color = 'green';
+                            //思路2.直接在当前表格后面增加一行。
+                            //var autoId = jsonObj.Model.Id;
+                            //var tbodyObj = document.getElementById('tblComments').getElementsByTagName('tbody')[0];
+                            //var trObj = tbodyObj.insertRow(-1);
+                            //trObj.insertCell(-1).innerHTML = nickName;
+                            //trObj.insertCell(-1).innerHTML = postDate;
+                            //trObj.insertCell(-1).innerHTML = ip;
+                            //trObj.insertCell(-1).innerHTML = title;
+                            //trObj.insertCell(-1).innerHTML = comment;
+
+                        } else {
+
+                            msg.value = '提交评论失败！';
+                            msg.style.color = 'red';
+
+                        }
+
+                    }
+                };
+
+                xhr.open('post', 'AddComment.ashx', true);
+                xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+                xhr.send(post_data);
+
+
+                //3>更新客户端表格 思路1.重新调用initComments() 思路2.直接在当前表格后面增加一行。
+            };
+        }
+    </script>
+</head>
+<body>
+    <iframe name="content_frame" marginwidth=0 marginheight=0 width=100% height=40 src="Head.html" frameborder=0 scrolling="no"></iframe>
+
+    <table border="1" cellpadding="2" cellspacing="2">
+        <tr>
+            <td>
+                昵称
+            </td>
+            <td>
+                <input type="text" id="txtNickName" value="" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                标题
+            </td>
+            <td>
+                <input type="text" id="txtTitle" value="" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                评论内容
+            </td>
+            <td>
+                <textarea cols="20" rows="5" id="txtArea"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <input type="button" id="btnCommit" value="提交评论" />
+                <input type="text" id="msg" />
+            </td>
+        </tr>
+    </table>
+
+    <iframe name="content_frame" marginwidth=0 marginheight=0 width=100% height=40 src="Foot.html" frameborder=0></iframe>
+</body>
+</html>

@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="../js/jquery-1.8.2.js"></script>
+    <script type="text/javascript">
+        $(function () {
+
+            //1加载省份信息.第二个参数表示要加载省还是城市
+            initProvinceOrCity(0, 'sProvince');
+
+            //为sProvince注册一个【选择项改变事件】
+            $('#sProvince').change(function () {
+                //1.获取当前用户选择的省份的Id
+                var pid = $(this).val();
+
+                //重新加载之前要清空
+                //document.getElementById('sCity').innerHTML = '';  //wrong!
+                //var citySelect = document.getElementById('sCity');
+                //while (citySelect.firstChild) {
+                //    citySelect.removeChild(citySelect.firstChild);
+                //}
+
+                $('#sCity').empty();
+
+                //2.根据该省份Id，去查询对应的子城市的信息
+                initProvinceOrCity(pid, 'sCity');
+
+                //3.绑定数据，把数据绑定到sCity下拉菜单中(绑定之前要清空原来的内容)
+            });
+
+            //2.加载默认选中省份对应的城市信息
+        });
+
+        //pid表示，要根据pid这个父id来加载对应的所有子城市
+        //elementId表示加载城市还是省。将来获取到的数据要加载到哪个select标签下。
+        function initProvinceOrCity(pId, elementId) {
+
+            $.getJSON('GetAreaByParentId.ashx', { pid: pId }, function (jsondata) {
+                //获取从服务器端返回的默认要选中的城市的Id
+                var selected_id = jsondata.SelectedId; //默认获取的Id是10.
+
+                //获取具体的地区信息的json对象。
+                var jsonArea = jsondata.AreaJsonData;
+
+                //for (var i = 0; i < jsonArea.length; i++) {
+                //    //创建一个option标签
+                //    //var opt = $('<option value="' + jsonArea[i].AreaId + '"></option>');
+                //    //opt.text(jsonArea[i].AreaName);
+
+                //    var opt = $('<option value="' + jsonArea[i].AreaId + '">' + jsonArea[i].AreaName + '</option>');
+
+                //    if (elementId == 'sProvince') {
+                //        if (selected_id == jsonArea[i].AreaId) {
+                //            opt.selected = true;
+                //            //当获得某个向备选中后，立刻加载对应的城市信息
+                //            initProvinceOrCity(selected_id, 'sCity');
+                //        }
+                //    }
+
+                //    $('#' + elementId).append(opt);
+                //}
+
+
+
+                //for (var i in jsonArea) {
+                //    //创建一个option标签
+                //    //var opt = $('<option value="' + jsonArea[i].AreaId + '"></option>');
+                //    //opt.text(jsonArea[i].AreaName);
+
+                //    var opt = $('<option value="' + jsonArea[i].AreaId + '">' + jsonArea[i].AreaName + '</option>');
+
+                //    if (elementId == 'sProvince') {
+                //        if (selected_id == jsonArea[i].AreaId) {
+                //            opt.selected = true;
+                //            //当获得某个向备选中后，立刻加载对应的城市信息
+                //            initProvinceOrCity(selected_id, 'sCity');
+                //        }
+                //    }
+
+                //    $('#' + elementId).append(opt);
+                //}
+
+
+
+                $.each(jsonArea, function (k, v) {
+
+                    var opt = $('<option value="' + v.AreaId + '">' + v.AreaName + '</option>');
+
+                    if (elementId == 'sProvince') {
+                        if (selected_id == v.AreaId) {
+                            opt.selected = true;
+                            //当获得某个向备选中后，立刻加载对应的城市信息
+                            initProvinceOrCity(selected_id, 'sCity');
+                        }
+                    }
+
+                    $('#' + elementId).append(opt);
+
+                });
+
+
+
+            });
+
+        }
+    </script>
+</head>
+<body>
+    省：<select id="sProvince"></select>
+    市：<select id="sCity"></select>
+</body>
+</html>

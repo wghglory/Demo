@@ -1,0 +1,7 @@
+E:\Desktop\TEST\TEST\Student.IBaseBLL\bin\Debug\Student.IBaseBLL.dll
+E:\Desktop\TEST\TEST\Student.IBaseBLL\bin\Debug\Student.IBaseBLL.pdb
+E:\Desktop\TEST\TEST\Student.IBaseBLL\bin\Debug\Student.Model.dll
+E:\Desktop\TEST\TEST\Student.IBaseBLL\bin\Debug\Student.Model.pdb
+E:\Desktop\TEST\TEST\Student.IBaseBLL\obj\Debug\Student.IBaseBLL.csprojResolveAssemblyReference.cache
+E:\Desktop\TEST\TEST\Student.IBaseBLL\obj\Debug\Student.IBaseBLL.dll
+E:\Desktop\TEST\TEST\Student.IBaseBLL\obj\Debug\Student.IBaseBLL.pdb

@@ -1,0 +1,6 @@
+/Users/Guanghui/Documents/工作/MyCode/CRUD/NvelocityCommentPractice/NvelocityCommentPractice.Common/obj/Debug/.NETFramework,Version=v4.0.AssemblyAttribute.cs
+/Users/Guanghui/Documents/工作/MyCode/CRUD/NvelocityCommentPractice/NvelocityCommentPractice.Common/bin/Debug/NvelocityCommentPractice.Common.dll.mdb
+/Users/Guanghui/Documents/工作/MyCode/CRUD/NvelocityCommentPractice/NvelocityCommentPractice.Common/bin/Debug/NvelocityCommentPractice.Common.dll
+/Users/Guanghui/Documents/工作/MyCode/CRUD/NvelocityCommentPractice/NvelocityCommentPractice.Common/obj/Debug/NvelocityCommentPractice.Common.dll
+/Users/Guanghui/Documents/工作/MyCode/CRUD/NvelocityCommentPractice/NvelocityCommentPractice.Common/obj/Debug/NvelocityCommentPractice.Common.dll.mdb
+/Users/Guanghui/Documents/工作/MyCode/CRUD/NvelocityCommentPractice/NvelocityCommentPractice.Common/bin/Debug/NVelocity.dll

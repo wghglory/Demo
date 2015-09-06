@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AjaxComment.BLL", "AjaxComment.BLL\AjaxComment.BLL.csproj", "{F7AFE994-82AA-475E-A31B-7C492EFC0553}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AjaxComment.DAL", "AjaxComment.DAL\AjaxComment.DAL.csproj", "{93E75083-1DD4-4C73-BAA8-AF18CF62166E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AjaxComment.Common", "AjaxComment.Common\AjaxComment.Common.csproj", "{914BB5D5-E675-43A8-9ECA-0C8087D74326}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AjaxComment.Utilites", "AjaxComment.Utilites\AjaxComment.Utilites.csproj", "{A6925E8C-E55E-4895-A8EB-D4104E815020}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AjaxComment.Model", "AjaxComment.Model\AjaxComment.Model.csproj", "{DF3B9537-46EA-4DAA-8816-F1762C25A74F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AjaxComment.UI", "AjaxComment.UI\AjaxComment.UI.csproj", "{B230FF07-34D5-493C-ACF9-15FF45DC75B1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F7AFE994-82AA-475E-A31B-7C492EFC0553}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7AFE994-82AA-475E-A31B-7C492EFC0553}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7AFE994-82AA-475E-A31B-7C492EFC0553}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7AFE994-82AA-475E-A31B-7C492EFC0553}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93E75083-1DD4-4C73-BAA8-AF18CF62166E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93E75083-1DD4-4C73-BAA8-AF18CF62166E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93E75083-1DD4-4C73-BAA8-AF18CF62166E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93E75083-1DD4-4C73-BAA8-AF18CF62166E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{914BB5D5-E675-43A8-9ECA-0C8087D74326}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{914BB5D5-E675-43A8-9ECA-0C8087D74326}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{914BB5D5-E675-43A8-9ECA-0C8087D74326}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{914BB5D5-E675-43A8-9ECA-0C8087D74326}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6925E8C-E55E-4895-A8EB-D4104E815020}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6925E8C-E55E-4895-A8EB-D4104E815020}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6925E8C-E55E-4895-A8EB-D4104E815020}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6925E8C-E55E-4895-A8EB-D4104E815020}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF3B9537-46EA-4DAA-8816-F1762C25A74F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF3B9537-46EA-4DAA-8816-F1762C25A74F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF3B9537-46EA-4DAA-8816-F1762C25A74F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF3B9537-46EA-4DAA-8816-F1762C25A74F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B230FF07-34D5-493C-ACF9-15FF45DC75B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B230FF07-34D5-493C-ACF9-15FF45DC75B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B230FF07-34D5-493C-ACF9-15FF45DC75B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B230FF07-34D5-493C-ACF9-15FF45DC75B1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

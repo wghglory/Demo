@@ -1,0 +1,621 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="css/tableStyle.css" rel="stylesheet" />
+    <link href="css/pageHelperNav.css" rel="stylesheet" />
+    <link href="css/QuickPager.css" rel="stylesheet" />
+    <link href="css/PagerView.css" rel="stylesheet" />
+    <link href="css/themes/icon.css" rel="stylesheet" />
+    <link href="css/themes/default/easyui.css" rel="stylesheet" />
+    <script src="js/jquery-1.8.0.min.js"></script>
+    <script src="js/jquery.easyui.min.js"></script>
+    <script src="js/easyui-lang-zh_CN.js"></script>
+    <script src="js/datapattern2.js"></script>
+    <script src="js/QuickPager.js"></script>
+    <script src="js/PagerView.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('#AddOrEditDiv').css('display', 'none');
+            $('#DetailDiv').css('display', 'none');
+            $('#EditDiv').css('display', 'none');
+
+            initTableByPage(1, true);    //flag=true表示刷新导航
+
+            bindAddBtnClickEvent();  //绑定 添加按钮的点击事件，这个跟initTable无关
+
+            //note!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!必须在initTable绑定，不然都没加载好！！！
+            //bindDetailLinkClickEvent(); //不行！
+
+        });
+
+        function initTableByPage(pageindex, flag) {  
+            $('#tbBody').empty();
+
+            $.get('ViewOrders.ashx', { pageIndex: pageindex }, function (data) { //$.post一样。$.getJSON则不需要转换data
+                var jsondata = $.parseJSON(data);
+
+                $.each(jsondata.PagedList, function (k, v) {
+                    var $tr = $('<tr><td>' + checkNull(v.Productname) + '</td><td>' + checkNull(v.Price) + '</td><td>' + checkNull(v.Amount) + '</td><td>' + checkNull(v.Buyer) + '</td><td>' + formatDate(v.SellDate) + '</td><td><a Id="' + v.ID + '" href="#">详情</a>&nbsp;<a class="editLink" Id="' + v.ID + '" href="#">修改</a>&nbsp;<a class="deleteLink" Id="' + v.ID + '" href="#">删除</a></td></tr>');
+                    $('#tbBody').append($tr);
+                });
+
+
+//==============method 1:服务器端返回导航，把导航字符串写入pagehelperNav，后续注册click事件============
+                //pagehelper分页
+                $('#pagehelperNav').html(jsondata.NavStr);
+                initPageHelperNavEvent();
+
+//===============method 2: 服务器之返回pagesize, totalrecordcount.使用PagerView.js===================
+
+                //if (flag == true) {
+                //    loadPagerView(jsondata.PageSize, jsondata.RecordCount);
+                //}
+
+//===============method 3: 服务器之返回pagesize, totalrecordcount.使用QuickPager.js===================
+
+                ////只执行一次！！！只有第一次加载QuickPager。               
+                //if (flag == true) {
+                //    //注意，我修改了QuickPager源代码，同步加载好超链接导航，方便后续为它们注册click事件
+                //    loadQuickPager(jsondata.PageSize, jsondata.RecordCount);                 
+                //}
+
+                //必须在table加载好后绑定！！！
+                bindDetailLinkClickEvent();
+                //bindEditLinkClickEvent();   //我喜欢这个，用这个！
+                bindEditLinkClickEvent2();    //这个是子父容器通信，这里演示下
+                bindDeleteLinkClickEvent();
+            });
+
+        }
+
+        function initTable() {
+            $('#tbBody').empty();
+
+            $.get('ViewOrders.ashx', null, function (data) { //$.post一样。$.getJSON则不需要转换data
+                var jsondata = $.parseJSON(data);
+
+                //for (var i in jsondata) {
+                //    var $tr = $('<tr><td>' + jsondata[i].ID + '</td><td>' + jsondata[i].Productname + '</td><td>' + jsondata[i].Price + '</td><td>' + jsondata[i].Amount + '</td><td>' + jsondata[i].Buyer + '</td><td>' + jsondata[i].SellDate + '</td></tr>');
+                //    $('#tbBody').append($tr);
+                //}
+
+
+                $.each(jsondata, function (k, v) {
+                    var $tr = $('<tr><td>' + checkNull(v.Productname) + '</td><td>' + checkNull(v.Price) + '</td><td>' + checkNull(v.Amount) + '</td><td>' + checkNull(v.Purchaser) + '</td><td>' + formatDate(v.SellDate) + '</td><td><a Id="' + v.ID + '" href="#">详情</a>&nbsp;<a class="editLink" Id="' + v.ID + '" href="#">修改</a>&nbsp;<a class="deleteLink" Id="' + v.ID + '" href="#">删除</a></td></tr>');
+                    $('#tbBody').append($tr);
+                });
+
+                //必须在table加载好后绑定！！！
+                bindDetailLinkClickEvent();
+                bindEditLinkClickEvent();
+                bindDeleteLinkClickEvent();
+            });
+
+        }
+
+        function formatDate(date) {
+            if (checkNull(date) == "") {
+                return "";
+            } else {
+                return (eval(checkNull(date).replace(/\/Date\((\d+)\)\//gi, "new Date($1)"))).pattern("yyyy-MM-dd");
+            }
+        }
+
+        function checkNull(property) {
+            if (property == undefined) {
+                return "";
+            } else {
+                return property;
+            }
+        }
+
+        //-------------------------------------分页-------------------------------------------
+        //method 1: 为导航超链接注册onclick事件
+        function initPageHelperNavEvent() {
+            $('.paginator a').click(function () {
+                var url = this.href;
+                var pindex = url.substring(url.lastIndexOf('=') + 1);
+                initTableByPage(pindex);
+                return false;
+            });
+        }
+       
+        //method 2: PagerView.js生成导航，并注册onclick事件
+        //var flag = true;  //method 2, to make loadNavigator run only once.
+        function loadPagerView(ps, rc) {
+
+            var pager = new PagerView('pagerView');
+            pager.itemCount = rc;
+            pager.size = ps;
+
+            //注册click事件
+            pager.onclick = function (index) {
+                //if(server failed){ // 获取数据失败, 不要更新分页控件.
+                //    return false;
+                //}
+                //alert(index);
+                initTableByPage(index);   //不给第二个参数，flag就是false
+
+            };
+            pager.render();
+            //flag = false;
+        }
+
+        //method 3: QuickPager.js生成的导航
+        function loadQuickPager(ps, rc) {
+            var page = new Nature.Page.QuickPager();
+
+            //设置相关属性
+            page.pagerInfo = {
+                recordCount: rc,       //总记录数
+                pageSize: ps,           //一页记录数
+                pageTurnDivIDs: "quickPager",         //放置分页控件的div的id，可以是多个，用半角逗号分隔
+
+                //翻页的事件
+                OnPageChange: function (oldPageIndex, thisPageIndex) {
+                    // alert("翻页前页号：" + oldPageIndex);
+                    // alert("翻页后页号：" + thisPageIndex);
+
+                    //可以自行获取记录，创建table
+                    initTableByPage(thisPageIndex);
+                }
+            };
+
+            page.Start(function () {
+                //内部自动调用OnPageChange(0,1)。
+            });
+            flag = false;
+        }
+
+
+        //---------------------------------add/edit submit form-----------------------------------
+        function subFrm() {
+            //拿到表单中的数据,破办法不好
+            //var postData = {
+            //    title: $('#txtTitle').val(),
+            //    people: $('#txtPeople').val(),
+            //    content: $('#txtContent').val()
+            //};
+
+            var postData = $('#AddOrEditform').serialize(); //serializeArray();
+            //根据postData里面的hidden id有无判断新增还是修改的保存。
+            $.post('AddOrEditOrders.ashx', postData, function (data) {
+                if (data == 'ok') {
+                    //关闭对话框，刷新表格数据。
+                    $('#AddOrEditDiv').dialog('close');
+
+                    $("input[type=reset]").trigger("click");//触发reset按钮!i清空数据，不然add时还存在edit的数据
+                    $('#hidId').val("");
+
+                    //initTable();
+                    initTableByPage(1, true);    //flag=true表示刷新导航
+
+                } else {
+                    //alert('not added!');
+                    $.messager.alert('提醒消息', '保存/修改败了', 'warning');
+                }
+            });
+        }
+
+        //--------------------------------------add--------------------------------------------
+        function bindAddBtnClickEvent() {
+            $('#btnAdd').click(function () {
+                $('#hidId').val("");
+                $("input[type=reset]").trigger("click");//触发reset按钮!i清空数据，不然add时还存在edit的数据
+
+                $('#AddEditTitle').text('这是增加窗口');
+                $('#AddOrEditDiv').css('display', 'block');
+                //把这个div弹出到 中间，而且是模态
+                $('#AddOrEditDiv').dialog({
+                    title: '添加对话框',
+                    width: 300,
+                    height: 300,
+                    modal: true,
+                    collapsible: true,
+                    minimizable: true,
+                    maximizable: true,
+                    resizable: true,
+                    buttons: [{
+                        text: '添加',
+                        iconCls: 'icon-add',
+                        handler: subFrm //异步提交表单
+                    }, {
+                        text: '关闭',
+                        iconCls: 'icon-cancel',
+                        handler: function () {
+                            $('#AddOrEditDiv').dialog('close');
+                            //$("input[type=reset]").trigger("click");//触发reset按钮!i清空数据，不然add时还存在edit的数据
+                        }
+                    }]
+                });
+            });
+        }
+
+        //--------------------------------------detail--------------------------------------------
+
+        function bindDetailLinkClickEvent() {
+            $('a:contains("详情")').click(function () {
+
+                var Id = $(this).attr('Id');
+                fillDetailForm(Id); //获取新闻详情然后把数据放到div上去。
+                showDetailDialog(); //弹出一个显示详情的Div
+
+                return false;  //避免href="#"调回页面顶端。这样模态对话框就在当前屏幕中央显示了
+            });
+        }
+
+        //获取新闻详情然后把数据放到div上去。
+        function fillDetailForm(Id) {
+
+            $.getJSON('GetOrderById.ashx', { id: Id }, function (data) {
+                $('#spProductName').text(checkNull(data.ProductName));
+                $('#spPrice').text(checkNull(data.SellPrice));
+                $('#spAmount').text(checkNull(data.SellAmount));
+                $('#spPurchaser').text(checkNull(data.Purchaser));
+                $('#spSellDate').text(formatDate(data.SellDate));
+                $('#spSalesPerson').text(checkNull(data.Salesperson));
+                $('#spProductCode').text(checkNull(data.ProductCode));
+
+            });
+        }
+
+        //弹出一个显示详情的Div
+        function showDetailDialog() {
+
+            $('#DetailDiv').css('display', 'block');
+            //把这个div弹出到 中间，而且是模态
+            $('#DetailDiv').dialog({
+                title: '详情对话框',
+                width: 500,
+                height: 500,
+                modal: true,
+                collapsible: true,
+                minimizable: true,
+                maximizable: true,
+                resizable: true,
+                buttons: [
+                    //{
+                    //text: '添加',
+                    //iconCls: 'icon-add',
+                    //handler: function () {
+                    //    alert('add');
+                    //}
+                    //},
+                {
+                    text: '关闭',
+                    iconCls: 'icon-cancel',
+                    handler: function () {
+                        $('#DetailDiv').dialog('close');
+                    }
+                }]
+            });
+        }
+
+        //--------------------------------使用本页面模板edit，这个好----------------------------------
+
+        function bindEditLinkClickEvent() {
+            $('.editLink').click(function () {
+                var Id = $(this).attr('Id');
+
+                fillEditForm(Id);
+                showEditDialog();
+
+                return false;
+            });
+        }
+
+        function fillEditForm(Id) {
+
+            $.getJSON('GetOrderById.ashx', { id: Id }, function (data) {
+
+                $('#hidId').val(data.Id);
+                $('#txtProductName').val(data.ProductName);
+                $('#txtPrice').val(data.SellPrice);
+                $('#txtAmount').val(data.SellAmount);
+                $('#txtPurchaser').val(data.Purchaser);
+                $('#txtSellDate').val(formatDate(data.SellDate));
+                $('#txtSalesPerson').val(data.Salesperson);
+                $('#txtProductCode').val(data.ProductCode);
+
+                //showEditDialog();  //若发现有问题则这么尝试，保证值都加载到div后在运行下面，弹出对话框
+            });
+        }
+
+        function showEditDialog() {
+            $('#AddEditTitle').text('这是编辑窗口');
+            $('#AddOrEditDiv').css('display', 'block');
+
+            $('#AddOrEditDiv').dialog({
+                title: '修改对话框',
+                width: 500,
+                height: 500,
+                modal: true,
+                collapsible: true,
+                minimizable: true,
+                maximizable: true,
+                resizable: true,
+                buttons: [{
+                    text: '修改',
+                    iconCls: 'icon-edit',
+                    handler: subFrm
+                }, {
+                    text: '关闭',
+                    iconCls: 'icon-cancel',
+                    handler: function () {
+                        $('#AddOrEditDiv').dialog('close');
+                        $("input[type=reset]").trigger("click");//触发reset按钮!i清空数据，不然add时还存在edit的数据
+                        $('#hidId').val("");
+                    }
+                }]
+            });
+        }
+
+        //-----------------------------------子父容器通信edit，麻烦--------------------------------
+
+        //绑定 修改 超级链接的事件的响应方法
+        function bindEditLinkClickEvent2() {
+            $(".editLink").click(function () {
+                var Id = $(this).attr("Id");
+                
+                //弹出对话框之前，把iframe标签的src属性设置成 修改页面地址。
+                $("#editFrame").attr("src", "EditOrder.aspx?id=" + Id);
+                showEditDialog2(); //显示iframe，iframe里面是子页面GetById.aspx?id=
+            });
+        }
+        
+        //显示修改的对话框
+        function showEditDialog2() {
+            //显示一个修改 的对话框
+            $("#EditDiv").css("display", "block");
+            //把这个div弹出到 中间，而且是模态
+            $("#EditDiv").dialog({
+                title: "修改对话框",
+                width: 500,
+                height: 500,
+                modal: true,
+                collapsible: true,
+                minimizable: true,
+                maximizable: true,
+                resizable: true,
+                buttons: [{
+                    text: "修改",
+                    iconCls: "icon-edit",
+                    handler: submitChildEditFrm //iframe里面的EditOrder.aspx
+                }, {
+                    text: "关闭",
+                    iconCls: "icon-cancel",
+                    handler: function () {
+                        $("#EditDiv").dialog("close");
+                    }
+                }]
+            });
+        }
+
+        //提交子容器的修改表单。
+        function submitChildEditFrm() {
+            //拿到子容器的windows对象
+            var domFrame = $("#editFrame")[0];
+            domFrame.contentWindow.submitFrm();   //submitFrm()在EditOrder.aspx里面
+        }
+
+        //当修改成功之后，由子容器来调用的方法
+        function afterEditSuccess() {
+            //关闭对话框，刷新表格
+            $("#EditDiv").dialog("close");
+            initTableByPage(1,true);
+        }
+        
+
+        //--------------------------------------delete--------------------------------------------
+
+        function bindDeleteLinkClickEvent() {
+            $(".deleteLink").click(function () {
+                var tr = $(this).parent().parent();   //current tr
+                var Id = $(this).attr('Id');
+                $.messager.confirm("提醒", "会删除吗？", function (r) {
+                    if (r) {
+                        //发送异步请求到后台，然后把这条数据剁掉。
+                        $.post("DeleteOrder.ashx", { id: Id }, function (data) {
+                            if (data == "ok") {
+                                tr.fadeOut("slow");
+                                //initTableByPage(1, true);    //flag=true表示刷新导航
+                            } else {
+                                $.messager.alert("提醒", "删除失败", "warning");
+                            }
+                        });
+                    }
+                });
+
+                return false;
+            });
+        }
+
+        //如果自定义删除模板
+        //function bindDeleteLinkClickEvent() {
+        //    $('.deleteLink').click(function () {
+        //        var Id = $(this).attr('Id');
+        //        $('#deletehidden').val(Id);  //method 2,在delete div添加隐藏域
+        //        $('#DeleteDiv').css('display', 'block');
+
+        //        $('#DeleteDiv').dialog({
+        //            title: '确认删除对话框',
+        //            width: 300,
+        //            height: 300,
+        //            modal: true,
+        //            collapsible: true,
+        //            minimizable: true,
+        //            maximizable: true,
+        //            resizable: true,
+        //            buttons: [{
+        //                text: '确定删除',
+        //                iconCls: 'icon-ok',
+        //                handler: runDelete    //这里不能runDelete(Id),只是注册事件，不立马执行.无法传参，所以把他存到delete div中的隐藏域。
+
+        //                ////method 1,下面这样可以。
+        //                //handler: function runDelete() {
+        //                //    $.post('DeleteOrder.ashx', { id: Id }, function (data) {
+        //                //        if (data == 'ok') {
+        //                //            //关闭对话框，刷新表格数据。
+        //                //            $('#DeleteDiv').dialog('close');
+        //                //            initTable();
+        //                //        } else {
+        //                //            $.messager.alert('提醒消息', '删除失败了', 'warning');
+        //                //        }
+        //                //    });
+        //                //}
+        //            }, {
+        //                text: '取消',
+        //                iconCls: 'icon-cancel',
+        //                handler: function () {
+        //                    $('#DeleteDiv').dialog('close');
+        //                }
+        //            }]
+        //        });
+
+        //        return false;
+
+        //    });
+        //}
+
+        function runDelete() {
+            $.post('DeleteOrder.ashx', { id: $('#deletehidden').val() }, function (data) {
+                if (data == 'ok') {
+                    $('#DeleteDiv').dialog('close');
+                    //initTable();
+                    initTableByPage(1, true);    //flag=true表示刷新导航
+                } else {
+                    $.messager.alert('提醒消息', '删除失败了', 'warning');
+                }
+
+            });
+        }
+    </script>
+</head>
+
+<body>
+    <input type="button" value="添加" id="btnAdd" />
+    <hr />
+    <!------------------------------------显示列表--------------------------------------->
+    <table>
+        <thead>
+            <tr>
+                <!--<th>Id</th>-->
+                <th>商品名称</th>
+                <th>销售价格</th>
+                <th>销量</th>
+                <th>购买人</th>
+                <th>销售日期</th>
+                <th>操作</th>
+            </tr>
+        </thead>
+        <tbody id="tbBody"></tbody>
+    </table>
+    <!---------------------------------------分页--------------------------------------->
+    <div id="pagehelperNav" class="paginator"></div>
+    <div id="pagerView"></div>
+    <div id="quickPager"></div>
+
+    <!--------------------------------显示增加、修改的对话框------------------------------------>
+    <div id="AddOrEditDiv">
+        <h1 id="AddEditTitle"></h1>
+        <hr />
+        <form id="AddOrEditform" method="POST">
+            <input type="hidden" name="hidId" id="hidId" />
+            <input type="reset" style="display:none;" />
+            <table>
+                <tr>
+                    <td>商品名称：</td>
+                    <td>
+                        <input type="text" name="txtProductName" id="txtProductName" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>销售价格：</td>
+                    <td>
+                        <input type="text" name="txtPrice" id="txtPrice" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>销量：</td>
+                    <td>
+                        <input type="text" name="txtAmount" id="txtAmount" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>购买人：</td>
+                    <td>
+                        <input type="text" name="txtPurchaser" id="txtPurchaser" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>销售日期：</td>
+                    <td>
+                        <input type="text" name="txtSellDate" id="txtSellDate" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>销售人员：</td>
+                    <td>
+                        <input type="text" name="txtSalesPerson" id="txtSalesPerson" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>商品序号：</td>
+                    <td>
+                        <input type="text" name="txtProductCode" id="txtProductCode" />
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+    <!-----------------------------父子容器edit，GetById.aspx------------------------------------>
+    <div id="EditDiv" style="display:none">
+        <iframe src="javascript:void(0)" id="editFrame" width="100%" height="100%" frameborder="0"></iframe>
+    </div>
+
+    <!-----------------------------显示详情信息的对话框------------------------------------>
+    <div id="DetailDiv">
+        <h1>显示详情信息</h1>
+        <hr />
+        <table>
+            <tr>
+                <td>商品名称：</td>
+                <td><span id="spProductName" /></td>
+            </tr>
+            <tr>
+                <td>销售价格：</td>
+                <td><span id="spPrice" /></td>
+            </tr>
+            <tr>
+                <td>销量：</td>
+                <td><span id="spAmount" /></td>
+            </tr>
+            <tr>
+                <td>购买人：</td>
+                <td><span id="spPurchaser" /></td>
+            </tr>
+            <tr>
+                <td>销售日期：</td>
+                <td><span id="spSellDate" /></td>
+            </tr>
+            <tr>
+                <td>销售人员：</td>
+                <td><span id="spSalesPerson" /></td>
+            </tr>
+            <tr>
+                <td>商品序号：</td>
+                <td><span id="spProductCode" /></td>
+            </tr>
+        </table>
+    </div>
+
+    <!--------------------------------删除确认对话框---------------------------------------->
+    <div id="DeleteDiv" style="display:none">
+        <input type="hidden" name="deletehidden" id="deletehidden" />
+        are you sure you want to delete?
+    </div>
+</body>
+
+</html>

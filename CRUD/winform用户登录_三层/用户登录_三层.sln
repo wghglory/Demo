@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserLogin.UI", "UserLogin.UI\UserLogin.UI.csproj", "{54A088B3-710C-4D21-B127-54A41C0F8228}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UersLogin.BLL", "UersLogin.BLL\UersLogin.BLL.csproj", "{43B9C06A-D6FA-4CBF-9813-DC44EBA25BF7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserLogin.DAL", "UserLogin.DAL\UserLogin.DAL.csproj", "{731F3085-A926-469C-A840-29420615822E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj", "{B88D93B2-54E5-415D-9310-425774EEA8A6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsersLogin.Tools", "UsersLogin.Tools\UsersLogin.Tools.csproj", "{75EF3EEC-1FE0-4ABB-A6DE-306E2A1BC6F2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "用户登录", "用户登录", "{7C0CAE4C-E64C-4818-A8F3-D0C3662BBECC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{54A088B3-710C-4D21-B127-54A41C0F8228}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54A088B3-710C-4D21-B127-54A41C0F8228}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54A088B3-710C-4D21-B127-54A41C0F8228}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54A088B3-710C-4D21-B127-54A41C0F8228}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43B9C06A-D6FA-4CBF-9813-DC44EBA25BF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43B9C06A-D6FA-4CBF-9813-DC44EBA25BF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43B9C06A-D6FA-4CBF-9813-DC44EBA25BF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43B9C06A-D6FA-4CBF-9813-DC44EBA25BF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{731F3085-A926-469C-A840-29420615822E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{731F3085-A926-469C-A840-29420615822E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{731F3085-A926-469C-A840-29420615822E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{731F3085-A926-469C-A840-29420615822E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B88D93B2-54E5-415D-9310-425774EEA8A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B88D93B2-54E5-415D-9310-425774EEA8A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B88D93B2-54E5-415D-9310-425774EEA8A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B88D93B2-54E5-415D-9310-425774EEA8A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75EF3EEC-1FE0-4ABB-A6DE-306E2A1BC6F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75EF3EEC-1FE0-4ABB-A6DE-306E2A1BC6F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75EF3EEC-1FE0-4ABB-A6DE-306E2A1BC6F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75EF3EEC-1FE0-4ABB-A6DE-306E2A1BC6F2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B88D93B2-54E5-415D-9310-425774EEA8A6} = {7C0CAE4C-E64C-4818-A8F3-D0C3662BBECC}
+		{43B9C06A-D6FA-4CBF-9813-DC44EBA25BF7} = {7C0CAE4C-E64C-4818-A8F3-D0C3662BBECC}
+		{731F3085-A926-469C-A840-29420615822E} = {7C0CAE4C-E64C-4818-A8F3-D0C3662BBECC}
+		{54A088B3-710C-4D21-B127-54A41C0F8228} = {7C0CAE4C-E64C-4818-A8F3-D0C3662BBECC}
+		{75EF3EEC-1FE0-4ABB-A6DE-306E2A1BC6F2} = {7C0CAE4C-E64C-4818-A8F3-D0C3662BBECC}
+	EndGlobalSection
+EndGlobal

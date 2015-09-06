@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style type="text/css">
+        table         {
+            font: 14px 宋体;
+        }
+    </style>
+    <script src="../js/json2.js" type="text/javascript"></script>
+    <script src="../js/datapattern2.js"></script>
+    <script type="text/javascript">
+        window.onload = function () {
+            initComments();
+        };
+
+        function initComments() {
+
+            var xhr = null;
+            if (typeof (XMLHttpRequest) != 'undefined') {
+                xhr = new XMLHttpRequest();
+            } else {
+                xhr = new ActiveXObject("Microsoft.XMLHttp");
+            }
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState == 4 && xhr.status == 200) {
+                    //xhr.responseText;获取的是一个json格式的字符串
+                    //可以实现，但不安全。使用json2.js。IE8+已经内置了一个JSON对象。可以不引用json2.js
+                    //var jsonObj = eval("(" + xhr.responseText + ")");
+                    //把json字符串转换为一个json对象
+                    var jsonObject = JSON.parse(xhr.responseText);
+
+                    //获取tbody对象
+                    var tbodyObject = document.getElementById('tblComments').getElementsByTagName('tbody')[0];
+
+                    //2.把json字符串解析成一个json对象，遍历json对象根据json对象动态创建表格的行添加到tblComments表格的tbody中。
+                    //遍历json中的每个对象
+                    for (var i = 0; i < jsonObject.length; i++) {
+                        //对于每个对象，又是一个键值对“集合”
+                        //向表格中最后追加一行。
+                        var trObj = tbodyObject.insertRow(-1);
+
+                        //向当前行中创建一些单元格
+                        trObj.insertCell(-1).innerHTML = jsonObject[i].NickName;
+                        trObj.insertCell(-1).innerHTML = (eval(jsonObject[i].PostDate.replace(/\/Date\((\d+)\)\//gi, "new Date($1)"))).pattern("yyyy-MM-dd");
+                        trObj.insertCell(-1).innerHTML = jsonObject[i].IPAddress;
+                        trObj.insertCell(-1).innerHTML = jsonObject[i].Title;
+                        trObj.insertCell(-1).innerHTML = jsonObject[i].Message.substring(0, 15) + '...';
+
+                    }
+
+                }
+            };
+            xhr.open('get', 'GetAllComment.ashx?id=' + Math.random(), true);   //防止缓存   
+            xhr.send(null);
+        }
+    </script>
+</head>
+<body>
+    <iframe name="content_frame" marginwidth=0 marginheight=0 width=100% height=40 src="Head.html" frameborder=0 scrolling="no"></iframe>
+
+    <a href="PostMsg.html">发表留言</a>
+
+    <table id="tblComments" border="1" cellpadding="2" cellspacing="2">
+        <thead>
+            <tr>
+                <th>
+                    昵称
+                </th>
+                <th>
+                    发表日期
+                </th>
+                <th>
+                    IP地址
+                </th>
+                <th>
+                    标题
+                </th>
+                <th>
+                    留言内容
+                </th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <br />
+
+    <iframe name="content_frame" marginwidth=0 marginheight=0 width=100% height=40 src="Foot.html" frameborder=0></iframe>
+
+</body>
+</html>

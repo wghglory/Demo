@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <a href="SupplierEdit.ashx?Action=AddNew">
+        新增人员
+    </a>
+    <table border="1" cellpadding="2" cellspacing="2" style="font-size:10px">
+        <thead>
+            <tr>
+                <td>
+                    删除
+                </td>
+                <td>
+                    编辑
+                </td>
+                <td hidden="hidden">
+                    SupplierID
+                </td>
+                <td>
+                    CompanyName
+                </td>
+                <td>
+                    ContactName
+                </td>
+                <td>
+                    Address
+                </td>
+                <td>
+                    City
+                </td>
+                <td>
+                    Country
+                </td>
+                <td>
+                    PostalCode
+                </td>
+                <td>
+                    Phone
+                </td>
+            </tr>
+        </thead>
+        <tbody>
+            #foreach($Supplier in $Data)
+            <tr>
+                <td>
+                    <a href="SupplierEdit.ashx?Action=Delete&Id=$Supplier.SupplierID">删除</a>
+                </td>
+                <td>
+                    <a href="SupplierEdit.ashx?Action=Edit&Id=$Supplier.SupplierID">编辑</a>
+                </td>
+                <td hidden="hidden">
+                    $Supplier.SupplierID
+                </td>
+                <td>
+                    $Supplier.CompanyName
+                </td>
+                <td>
+                    $Supplier.ContactName
+                </td>
+                <td>
+                    $Supplier.Address
+                </td>
+                <td>
+                    $Supplier.City
+                </td>
+                <td>
+                    $Supplier.Country
+                </td>
+                <td>
+                    $Supplier.PostalCode
+                </td>
+                <td>
+                    $Supplier.Phone
+                </td>
+            </tr>
+            #end
+        </tbody>
+    </table>
+</body>
+</html>

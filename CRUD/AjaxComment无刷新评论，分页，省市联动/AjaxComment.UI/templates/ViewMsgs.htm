@@ -1,0 +1,16 @@
+﻿#parse("Head.htm")
+<a href="PostMsg.ashx">发表留言</a>
+<ul>
+    #foreach($msg in $Model.Msgs)
+    <li>
+        <table border="1" cellpadding="2" cellspacing="2">
+            <tr><td>昵称：</td><td>$msg.NickName</td></tr>
+            <tr><td>发表日期:</td><td>$msg.PostDate</td></tr>
+            <tr><td>IP地址：</td><td>$msg.IPAddress</td></tr>
+            <tr><td>标题:</td><td>$msg.Title</td></tr>
+            <tr><td>留言内容:</td><td>$msg.Message</td></tr>
+        </table>
+    </li>
+    #end
+</ul>
+#parse("Foot.htm")

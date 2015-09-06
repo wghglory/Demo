@@ -1,0 +1,33 @@
+﻿#parse("Head.htm")
+<form action="PostMsg.ashx" method="post">
+    <table>
+        <tbody>
+            <tr>
+                <td>昵称：</td>
+                <td>
+                    <input type="text" name="NickName" />
+                    <input type="checkbox" name="IsAnonymous" id="IsAnonymous" />
+                    <label for="IsAnonymous">匿名</label>
+                </td>
+            </tr>
+            <tr>
+                <td>标题：</td>
+                <td><input type="text" name="Title" /></td>
+            </tr>
+            <tr>
+                <td>正文：</td>
+                <td><textarea name="Msg" id="ZhengWen" cols="50" rows="5"></textarea></td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td><input type="submit" name="Save" value="发表" /></td>
+            </tr>
+        </tbody>
+    </table>
+    <script type="text/javascript">
+        var zhengwen = document.getElementById("ZhengWen");
+        CKEDITOR.replace(zhengwen);
+    </script>
+</form>
+#parse("Foot.htm")

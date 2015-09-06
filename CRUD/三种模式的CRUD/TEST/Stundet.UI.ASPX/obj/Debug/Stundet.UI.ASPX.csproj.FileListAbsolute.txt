@@ -1,0 +1,15 @@
+E:\Desktop\TEST\TEST\Stundet.UI.ASPX\bin\Stundet.UI.ASPX.dll
+E:\Desktop\TEST\TEST\Stundet.UI.ASPX\bin\Stundet.UI.ASPX.pdb
+E:\Desktop\TEST\TEST\Stundet.UI.ASPX\obj\Debug\Stundet.UI.ASPX.csprojResolveAssemblyReference.cache
+E:\Desktop\TEST\TEST\Stundet.UI.ASPX\obj\Debug\Stundet.UI.ASPX.dll
+E:\Desktop\TEST\TEST\Stundet.UI.ASPX\obj\Debug\Stundet.UI.ASPX.pdb
+E:\Desktop\TEST\TEST\Stundet.UI.ASPX\bin\Student.BLL.dll
+E:\Desktop\TEST\TEST\Stundet.UI.ASPX\bin\Student.IBaseBLL.dll
+E:\Desktop\TEST\TEST\Stundet.UI.ASPX\bin\Student.Model.dll
+E:\Desktop\TEST\TEST\Stundet.UI.ASPX\bin\Student.DAL.dll
+E:\Desktop\TEST\TEST\Stundet.UI.ASPX\bin\Student.IBaseDAL.dll
+E:\Desktop\TEST\TEST\Stundet.UI.ASPX\bin\Student.BLL.pdb
+E:\Desktop\TEST\TEST\Stundet.UI.ASPX\bin\Student.IBaseBLL.pdb
+E:\Desktop\TEST\TEST\Stundet.UI.ASPX\bin\Student.Model.pdb
+E:\Desktop\TEST\TEST\Stundet.UI.ASPX\bin\Student.DAL.pdb
+E:\Desktop\TEST\TEST\Stundet.UI.ASPX\bin\Student.IBaseDAL.pdb
