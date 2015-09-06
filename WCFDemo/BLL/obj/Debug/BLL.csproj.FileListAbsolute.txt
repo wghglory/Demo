@@ -1,0 +1,14 @@
+\\psf\Home\Desktop\WCFDemo\BLL\bin\Debug\BLL.dll
+\\psf\Home\Desktop\WCFDemo\BLL\bin\Debug\BLL.pdb
+\\psf\Home\Desktop\WCFDemo\BLL\bin\Debug\IBLL.dll
+\\psf\Home\Desktop\WCFDemo\BLL\bin\Debug\IBLL.pdb
+\\psf\Home\Desktop\WCFDemo\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+\\psf\Home\Desktop\WCFDemo\BLL\obj\Debug\BLL.dll
+\\psf\Home\Desktop\WCFDemo\BLL\obj\Debug\BLL.pdb
+C:\WCFDemo\BLL\bin\Debug\BLL.dll
+C:\WCFDemo\BLL\bin\Debug\BLL.pdb
+C:\WCFDemo\BLL\bin\Debug\IBLL.dll
+C:\WCFDemo\BLL\bin\Debug\IBLL.pdb
+C:\WCFDemo\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+C:\WCFDemo\BLL\obj\Debug\BLL.dll
+C:\WCFDemo\BLL\obj\Debug\BLL.pdb
