@@ -1,0 +1,21 @@
+D:\Work\CZBK\Html5\Deom\HTML5Demos\SocktServerAndClient\bin\Debug\SocktServerAndClient.exe
+D:\Work\CZBK\Html5\Deom\HTML5Demos\SocktServerAndClient\bin\Debug\SocktServerAndClient.pdb
+D:\Work\CZBK\Html5\Deom\HTML5Demos\SocktServerAndClient\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Work\CZBK\Html5\Deom\HTML5Demos\SocktServerAndClient\obj\x86\Debug\SocktServerAndClient.Properties.Resources.resources
+D:\Work\CZBK\Html5\Deom\HTML5Demos\SocktServerAndClient\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\Work\CZBK\Html5\Deom\HTML5Demos\SocktServerAndClient\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\Work\CZBK\Html5\Deom\HTML5Demos\SocktServerAndClient\obj\x86\Debug\SocktServerAndClient.exe
+D:\Work\CZBK\Html5\Deom\HTML5Demos\SocktServerAndClient\obj\x86\Debug\SocktServerAndClient.pdb
+F:\NetClass\黑马5期\2013年5月6日 最后一天 流程结束 WCF NH Memcached Mongodb 优化\HTML5Demos\SocktServerAndClient\obj\x86\Debug\SocktServerAndClient.exe
+F:\NetClass\黑马5期\2013年5月6日 最后一天 流程结束 WCF NH Memcached Mongodb 优化\HTML5Demos\SocktServerAndClient\obj\x86\Debug\SocktServerAndClient.pdb
+F:\NetClass\黑马6期\2013年6月27日 高级技术\HTML5Demos\SocktServerAndClient\obj\x86\Debug\SocktServerAndClient.exe
+F:\NetClass\黑马6期\2013年6月27日 高级技术\HTML5Demos\SocktServerAndClient\obj\x86\Debug\SocktServerAndClient.pdb
+F:\NetClass\黑马7期\2013年9月2日高级技术  工作流结束\HTML5Demos\SocktServerAndClient\obj\x86\Debug\SocktServerAndClient.exe
+F:\NetClass\黑马7期\2013年9月2日高级技术  工作流结束\HTML5Demos\SocktServerAndClient\obj\x86\Debug\SocktServerAndClient.pdb
+\\psf\Home\Documents\工作\MyCode\Html and CSS\HTML5Demos\SocktServerAndClient\obj\x86\Debug\SocktServerAndClient.exe
+\\psf\Home\Documents\工作\MyCode\Html and CSS\HTML5Demos\SocktServerAndClient\obj\x86\Debug\SocktServerAndClient.pdb
+\\psf\Home\Documents\工作\MyCode\Html and CSS\HTML5Demos\SocktServerAndClient\bin\Debug\SocktServerAndClient.exe
+\\psf\Home\Documents\工作\MyCode\Html and CSS\HTML5Demos\SocktServerAndClient\bin\Debug\SocktServerAndClient.pdb
+\\psf\Home\Documents\工作\MyCode\Html and CSS\HTML5Demos\SocktServerAndClient\obj\x86\Debug\SocktServerAndClient.csprojResolveAssemblyReference.cache
+\\psf\Home\Documents\工作\MyCode\Html and CSS\HTML5Demos\SocktServerAndClient\obj\x86\Debug\SocktServerAndClient.Properties.Resources.resources
+\\psf\Home\Documents\工作\MyCode\Html and CSS\HTML5Demos\SocktServerAndClient\obj\x86\Debug\SocktServerAndClient.csproj.GenerateResource.Cache

@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style type="text/css">
+        input.cls
+        {
+            background-color: Black;
+            width: 200px;
+            height: 100px;
+        }
+        div.cls
+        {
+            background-color: yellow;
+            width: 500px;
+            height: 300px;
+        }
+        /*类名相同,但是不同标签就应用不同的样式了*/
+        
+        div p span
+        {
+            background-color:Yellow;
+            }
+            
+         /*   div,input,p,h1
+            {
+                
+                }*/
+    </style>
+</head>
+<body>
+    <input type="button" name="name" value="我是按钮" class="cls" />
+    <input type="text" name="name" value="我是按钮" class="cls" />
+    <div class="cls">
+        我是层
+    </div>
+    <div>
+        <p>
+            <span>我是span</span>
+        </p>
+    </div>
+</body>
+</html>

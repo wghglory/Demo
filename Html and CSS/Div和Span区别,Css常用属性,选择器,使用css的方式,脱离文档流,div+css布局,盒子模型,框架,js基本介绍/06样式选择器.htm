@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style type="text/css">
+        /*  #dv
+       {
+           width:300px;
+        
+           border:1px solid red;
+           }
+           
+           div
+           {
+               cursor:pointer;
+               font-family:全新硬笔行书简;
+               color:Blue;
+               }
+               
+             .cls
+             {
+                    height:200px;
+           background-color:Orange;
+                 }  */
+        /*
+                 #dv--表示的是id选择器,通常用在特定或者特指的某个元素上使用
+                 div--表示的是标签选择器,通常用在很多相同标签上.希望这些标签都使用一个样式
+                 .cls--表示的是类选择器,通常用在不同标签上,一般是几个标签(不同)应用同一个样式
+                 
+                 
+                 */
+        
+          .cls1
+        {
+            cursor:pointer;
+            color:Gray;
+            background-color:Yellow;
+            }
+        .cls
+        {
+            background-color: Black;
+        }
+        #dv
+        {
+            background-color: Blue;
+        }
+        div
+        {
+            width: 300px;
+            height: 200px;
+            background-color: Red !important;
+        }
+      
+        /* id选择器> 类选择器 > 标签选择器*/
+    </style>
+</head>
+<body>
+    <div id="dv" >
+        老马有才:文能提笔控萝莉,
+    </div>
+    <div class="cls cls1">
+        老马看见了老苏洗澡;
+    </div>
+    <div>
+        老马看见了老苏洗澡;
+    </div>
+    <div>
+        老马看见了老苏洗澡;
+    </div>
+    <input class="cls" type="button" name="name" value="我是按钮" />
+    <input type="text" name="name" value="我是文本框" />
+    <a href="http://www.itcast.cn">传智播客</a>
+</body>
+</html>

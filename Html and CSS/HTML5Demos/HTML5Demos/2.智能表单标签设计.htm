@@ -1,0 +1,72 @@
+﻿
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="Scripts/jquery-1.5.1.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("#shitColor").change(function () {
+                alert($(this).val());
+            });
+        });
+    </script>
+</head>
+<body>
+    <h3></h3>
+    <hr />
+    <form action="/home/index" method="POST" id="frmdemo">
+
+        <input type="color" name="myColor" id="shitColor" />
+
+        <h3>日期</h3>
+        <input type="date" name="now" />
+
+
+        <p>
+            <h3>datalist</h3>
+            <input type="text" name="txtDataList" list="nameList" />
+            <datalist id="nameList">
+                <option lable="杨中科" value="1">杨中科</option>
+                <option lable="老苏" value="2">老苏</option>
+            </datalist>
+        </p>
+
+        <h3>placeholder</h3>
+        <input type="text" name="placeholder" placeholder="demo 提示" />
+        <input type="text" name="placeholder" placeholder="demo 提示2222222222" />
+
+
+
+        <h3>自动完成</h3>
+        <input type="text" autocomplete="on" name="demoAutoComplete" list="autoNames" />
+        <datalist id="autoNames">
+            <option value="飞龙天惊"></option>
+            <option value="厚德IT"></option>
+            <option value="Flydragon"></option>
+        </datalist>
+
+        <hr />
+        <h3>智能化的input</h3>
+        url:<input type="url" placeholder="请输入网址" name="url" /><br />
+
+        email:<input type="email" name="email" placeholder="请输入注册邮箱" /><br />
+        time:<input type="time" name="time" required=required /><br />
+        number:<input type="number" value="2" name="number" step="3" /><br />
+
+
+        <input type="submit" value="提交" />
+
+        <input type="tel" placeholder="输入电话" name="phone" />
+
+        progressbar:<progress id="pbar" value="30" name="pbar" max="100"><span>%</span></progress>
+        <input type="button" value="设置值" onclick="document.getElementById('pbar').value +=10;" />
+        <hr />
+    </form>
+
+    <input form="frmdemo" type="text" name="demoOtherForm" autofocus="autofocus" />
+    <p>
+        <a href="index.htm">回到Demo首页</a>
+    </p>
+</body>
+</html>
