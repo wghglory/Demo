@@ -1,0 +1,56 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style type="text/css">
+
+    </style>
+    <script type="text/javascript">
+        window.onload = function () {
+            document.getElementById('btnall').onclick = function () {
+
+                var chs = document.getElementsByTagName('input');
+                for (var i = 0; i < chs.length; i++) {
+                    if (chs[i].type == 'checkbox') {
+                        chs[i].checked = true;
+                    }
+                }
+            };
+            document.getElementById('btnnoall').onclick = function () {
+
+                var chs = document.getElementsByTagName('input');
+                for (var i = 0; i < chs.length; i++) {
+                    if (chs[i].type == 'checkbox') {
+                        chs[i].checked = false;
+                    }
+                }
+            };
+            document.getElementById('btnfanxuan').onclick = function () {
+
+                var chs = document.getElementsByTagName('input');
+
+                for (var i = 0; i < chs.length; i++) {
+                    if (chs[i].type == 'checkbox') {//为了严禁
+                        chs[i].checked = !chs[i].checked;
+                    }
+                }
+            };
+        };
+    </script>
+</head>
+<body>
+    <input type="button" name="name" value="全选" id="btnall" />
+    <input type="button" name="name" value="全不选" id="btnnoall" />
+    <input type="button" name="name" value="反选" id="btnfanxuan" />
+    <div id="dv">
+        <input type="checkbox" name="name" value="1" />忐忑
+        <input type="checkbox" name="name" value="2" />老男孩
+        <input type="checkbox" name="name" value="3" />我是一只"鸡"
+        <input type="checkbox" name="name" value="4" />真的爱你
+        <input type="checkbox" name="name" value="5" />江南style
+        <input type="checkbox" name="name" value="6" />法海你不懂爱
+        <input type="checkbox" name="name" value="7" />金箍棒
+        <input type="checkbox" name="name" value="8" />孙悟空
+    </div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script type="text/javascript">
+
+        window.onload = function () {
+
+            document.body.oncopy = function () {
+                alert('复制的爽吧');
+                return false;
+            };
+            document.body.onpaste = function () {
+                alert('让你复制,就不让你粘贴,气死你,');
+                return false;
+            };
+        };
+    
+    </script>
+</head>
+<body>
+    复制的爽吧
+    <input type="text" name="name" value="" />
+    啊,大海,全是水,啊老马,就一张嘴.啊老苏,吐了 是水,啊老马,就一张嘴.啊老苏,吐了 苏,吐了 是水,啊老马,就一张嘴.啊老苏,吐了
+</body>
+</html>

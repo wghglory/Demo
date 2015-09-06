@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+
+    <script type="text/javascript">
+
+//        window.onload = function () {
+//            var tds = document.getElementById('tb').getElementsByTagName('td');
+//            for (var i = 0; i < tds.length; i++) {
+//                tds[i].onmouseover = function () {
+//                    for (var j = 0; j < tds.length; j++) {
+//                      //  if (tds[j] == this) {
+//                            for (var k = 0; k <= j; k++) {
+//                                tds[k].innerText = '★';
+//                            }
+//                          
+//                        //}
+//                    }
+//                };
+
+//               tds[i].onmouseout = function () {
+
+//                    for (var j = 0; j < tds.length; j++) {
+//                        tds[j].innerText = '☆';
+//                    }
+//                };
+//            }
+//        };
+    
+    </script>
+    <script type="text/javascript">
+        window.onload = function () {
+            var tds = document.getElementById('tb').getElementsByTagName('td');
+            for (var i = 0; i < tds.length; i++) {
+                tds[i].onmouseover = function () {
+                    for (var j = 0; j < tds.length; j++) {
+                        tds[j].innerHTML = '★';
+                        //如果当前循环的单元格和与鼠标移动的单元格是一个,表示后面的单元格不需要变了
+                        if (tds[j] == this) {
+                            break;
+                        }
+                    }
+                };
+
+                tds[i].onmouseout = function () {
+                    for (var j = 0; j < tds.length; j++) {
+                        tds[j].innerHTML = '☆';
+                    }
+                };
+            }
+        };
+    </script>
+</head>
+<body>
+    <table id="tb" border="1" style=" width:400px; height:50px; cursor:pointer; text-align:center;">
+        <tr>
+            <td>
+            ☆
+            </td>
+             <td>
+            ☆
+            </td>
+             <td>
+            ☆
+            </td>
+             <td>
+            ☆
+            </td>
+             <td>
+            ☆
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

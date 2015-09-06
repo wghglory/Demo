@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style type="text/css">
+        
+    </style>
+    <script type="text/javascript">
+        var arr = new Array(100);
+        function showMAP() {
+            for (var i = 0; i <= 29; i++) {
+                var spObj = document.createElement('span');
+                spObj.innerHTML = '口';
+                document.getElementById('dv').appendChild(spObj);
+
+            }
+            var bObj = document.createElement('br');
+            document.getElementById('dv').appendChild(bObj);
+            for (var i = 30; i < 34; i++) {
+                for (var j = 0; j <= 29; j++) {
+                    var spObj = document.createElement('span');
+                    spObj.innerHTML = '&nbsp;&nbsp;&nbsp;&nbsp;';
+                    document.getElementById('dv').appendChild(spObj);
+                }
+               
+                spObj.innerHTML = '口';
+                document.getElementById('dv').appendChild(spObj);
+                var bObj = document.createElement('br');
+                document.getElementById('dv').appendChild(bObj);
+            }
+        }
+       
+
+        window.onload = function () {
+            // var sec = document.getElementById('se1');
+            showMAP();
+        };
+    </script>
+</head>
+<body>
+    <div>
+        <span>***************************************</span><br />
+        <span>**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **</span><br />
+        <span>**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 骑士飞行棋&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **</span><br /> 
+        <span>**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **</span><br />
+        <span>***************************************</span><br />
+    </div>
+    <div id="dv">
+     </div>
+    <!-- <select id="se1">
+        <option value="7777">7777</option>
+        <option value="888">888</option>
+        <option value="000007">000007</option>
+        <option value="000007">765788</option>
+    </selec-->
+</body>
+</html>

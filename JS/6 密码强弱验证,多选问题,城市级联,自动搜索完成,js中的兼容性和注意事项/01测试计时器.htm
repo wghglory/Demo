@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+	 <style type="text/css">
+    
+    </style>
+    <script type="text/javascript">
+        var setid = null;
+        window.onload = function () {
+           
+            document.getElementById('btn').onfocus = function () {
+                setid = setInterval(function () {
+                    alert('哈哈');
+                }, 1000);
+            };
+            //=======================================================
+
+            document.getElementById('btn').onblur = function () {
+                clearInterval(setid);
+            };
+        };
+    </script>
+</head>
+<body>
+    <input type="text" name="name" value="启动计时器" id="btn" />
+     
+</body>
+</html>

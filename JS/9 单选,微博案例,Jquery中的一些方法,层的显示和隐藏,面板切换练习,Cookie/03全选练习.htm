@@ -1,0 +1,43 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style type="text/css">
+    </style>
+    <script src="jquery-1.8.3.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('#btnall').click(function () {
+                $('#dv input[type=checkbox]').attr('checked', true);
+            });
+            $('#btnnoall').click(function () {
+                $('#dv input[type=checkbox]').attr('checked', false);
+            });
+            $('#btnfanxuan').click(function () {
+
+                $('div :checkbox').each(function () {
+                    $(this).attr('checked', !$(this).attr('checked'));
+                });
+
+                //$('#dv input[type=checkbox]').map(function () {
+                //    $(this).attr('checked') == false || $(this).attr('checked') == undefined ? $(this).attr('checked', true) : $(this).attr('checked', false);
+                //})
+            });
+        });
+    </script>
+</head>
+<body>
+
+    <input type="button" name="name" value="全选" id="btnall" />
+    <input type="button" name="name" value="全不选" id="btnnoall" />
+    <input type="button" name="name" value="反选" id="btnfanxuan" />
+    <div id="dv">
+        <input type="checkbox" name="name" value="1" />吃饭
+        <input type="checkbox" name="name" value="2" />睡觉
+        <input type="checkbox" name="name" value="3" />打豆豆
+        <input type="checkbox" name="name" value="4" />打篮球
+        <input type="checkbox" name="name" value="5" />打足球
+        <input type="checkbox" name="name" value="6" />打铅球
+    </div>
+</body>
+</html>

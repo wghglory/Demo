@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script type="text/javascript">
+
+        document.write('你好啊');    //document.write之间没有任何距离
+        document.write('你好啊');
+        document.write('你好啊');
+        document.write('你好啊');
+
+
+        document.writeln('换行了吗');    //writeln页面看起来像有个空格
+        document.writeln('换行了吗');
+        document.writeln('换行了吗');
+        document.writeln('换行了吗');
+        document.writeln('换行了吗');
+
+        window.onload = function () {
+            document.getElementById('btn').onclick = function () {
+                document.write('<font color="red" size="7">24K纯帅</font>');  //通过他来动态创建元素,最好在页面加载的时候去用,如果页面加载后去创建,则把整个页面的内容全部干掉了
+
+            };
+        };
+    </script>
+</head>
+<body>
+    <input type="button" name="name" value="创建元素" id="btn" />
+    今天天气不错
+</body>
+</html>

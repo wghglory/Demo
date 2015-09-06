@@ -1,0 +1,30 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style type="text/css">
+    </style>
+    <script src="jquery-1.8.3.js" type="text/javascript"></script>
+    <script type="text/javascript">
+
+        $(function () {
+            //在Jquery中,js里面的属性和事件几乎都变成了方法,
+            //如果在方法中写内容,那么意味着是设置,
+            //如果方法中没写任何的参数,那么表示的是获取=========一般情况
+            alert($('#btn').val());
+            alert($('#btn'));//想要获取name中的值和type中的值怎么办===后面通过attr来实现
+
+            $('#btn').css('backgroundColor', 'blue');
+            $('#btn').css('width', '300px');
+
+            $('#btn').css({ 'backgroundColor': 'blue', 'width': '300px' });  //这个最好！！！！！
+            $('#btn').css('backgroundColor', 'blue').css('width', '300px'); //链式编程
+            //缺点是：可能断链
+        });
+    </script>
+</head>
+<body>
+    <input type="button" name="name" value="按钮323" id="btn" />
+</body>
+</html>

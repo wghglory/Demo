@@ -1,0 +1,42 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style type="text/css">
+    </style>
+    <script type="text/javascript">
+        window.onload = function () {
+
+            document.getElementById('dv').onclick = function (e) {
+
+                if (arguments.length > 0) { //FF length=1, IE = 0
+                    alert(e.clientX);
+                } else {
+                    alert(window.event.clientX);
+                }
+
+
+                if (arguments.length > 0) {//不传参数的方法
+                    alert(arguments[0].clientX);
+                } else {
+                    alert(window.event.clientX);
+                }
+
+
+                if (e) {
+                    alert(e.target.id);  //FF事件源
+                } else {
+
+                    alert(window.event.srcElement.id);
+                }
+
+            };
+        };
+    </script>
+</head>
+<body>
+    <div id="dv" style=" width:300px; height:300px; background-color:orange;">
+    </div>
+</body>
+</html>

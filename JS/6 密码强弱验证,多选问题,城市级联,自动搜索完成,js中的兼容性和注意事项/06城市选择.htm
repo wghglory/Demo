@@ -1,0 +1,65 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style type="text/css">
+
+    </style>
+    <script type="text/javascript">
+        window.onload = function () {
+            var datas = {
+                "吉林": ["长春", "四平", "松原"],
+                "山东": ["青岛", "济南", "烟台"],
+                "山西": ["大同", "太原", "运城"]
+            };
+            var defau = '山西';
+            //动态创建option
+            for (var key in datas) {//遍历键值对
+                var ops1 = document.createElement('option'); //创建option
+                ops1.innerHTML = key; //把key赋值给option
+                ops1.value = key;
+                ops1.selected = ops1.innerText == defau ? true : false; //让某个省份选中
+                document.getElementById('s1').appendChild(ops1); //把option添加到select中
+            }
+            //在放在下拉框中
+           
+            for (var i = 0; i < datas[defau].length; i++) {
+                //添加到第二个下拉框中
+                var ops2 = document.createElement('option');
+                ops2.innerHTML = datas[defau][i];
+                ops2.value = datas[defau][i];
+                document.getElementById('s2').appendChild(ops2);
+
+            }
+            document.getElementById('s1').onchange = function () {
+
+                //清空第二个下拉框
+                while (document.getElementById('s2').firstChild) {
+                    document.getElementById('s2').removeChild(document.getElementById('s2').firstChild);
+                }
+
+                //拿到省份对应的城市
+                for (var i = 0; i < datas[this.value].length; i++) {
+                    //alert(datas[this.value][i]);
+                    var opsboj = document.createElement('option');
+                    opsboj.innerHTML = datas[this.value][i];
+                    opsboj.value = datas[this.value][i];
+                    document.getElementById('s2').appendChild(opsboj);
+
+                }
+
+            };
+
+        };
+    </script>
+</head>
+<body>
+    省份:
+    <select id="s1"></select>
+    城市:
+    <select id="s2"></select>
+
+
+</body>
+</html>

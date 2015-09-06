@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script type="text/javascript">
+
+        window.onload = function () {
+
+            setInterval(function () {
+                var txtValu = parseInt(document.getElementById('txt').value);
+                txtValu++;
+                document.getElementById('txt').value = txtValu;
+            }, 1000);
+        };
+
+
+    </script>
+    <script type="text/javascript">
+
+        window.onload = function () {
+            var number = 0;
+            setInterval(function () {
+                number = number + 1;
+                document.getElementById('txt1').value = number;
+            }, 1000);
+        };
+        
+    </script>
+</head>
+<body>
+    <input type="text" name="name" value="0" id="txt1" />
+</body>
+</html>

@@ -1,0 +1,84 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style type="text/css">
+    </style>
+    <script src="jquery-1.8.3.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        var arr = [1, 2, 3, 4, 5, 6];
+        var newarr = $.map(arr, function (ele, index) {
+            // alert(arguments[0] + '===' + arguments[1]);
+            return ele * 2;
+        });
+        alert(newarr);
+
+        //        $.map(arr, function () {
+        //            alert(arguments[0]+'==='+arguments[1]+'====='+arguments[2]);
+
+        //        });
+
+        //        $.map(arr, function (ele, index) {
+        //            alert(ele+'          '+index);
+
+        //        });
+
+        //        function f1(arr) {
+        //
+        //            for (var i = 0; i < arr.length; i++) {
+        //               arr[i]= arr[i] * 2;
+        //           }
+        //           return arr;
+        //        }
+        //        newarr = f1(arr);
+        //        alert(newarr);
+
+        //索引大于3的翻倍：
+        var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        var newarr = $.map(arr, function (ele, index) {
+            if (index > 3) {
+                return ele * 2;
+            } else {
+                return ele;
+            }
+
+        });
+        alert(newarr);
+
+        //遍历停止：return false. User each as below!!!
+        var arr = [1, 2, 3, 4, 5];
+        var newarr = $.map(arr, function (ele, index) {
+            if (ele == 2) {
+                // break不行;
+                alert(ele);
+                return false;
+            }
+        });
+        alert(newarr); //里面存的是false
+    </script>
+    <script type="text/javascript">
+
+        var dic = { "name": "xy", "age": 18, true: false };
+        //each最好去遍历键值对
+        $.each(dic, function (k, v) {
+            alert(k + '++++++++++++++++' + v);
+        });
+        //map这个方法最好遍历数组,但当需要跳出循环用each，且不要接受$.each()
+        var arr = [1, 2, 3, 4, 5];
+        $.map(arr, function (value, index) {
+            alert(value + '++++++++++++++++' + index);
+        });
+
+        //数组跳出循环return false, cannot use break
+        var arr = [1, 2, 3, 4, 5];
+        $.each(arr, function (k, v) {
+            alert(k + ',' + v);
+            if (k == 2) {
+                return false;
+            }
+        });
+    </script>
+</head>
+<body>
+</body>
+</html>

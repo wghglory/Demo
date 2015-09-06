@@ -1,0 +1,28 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style type="text/css">
+    </style>
+    <script src="jquery-1.8.3.js" type="text/javascript"></script>
+    <script type="text/javascript">
+
+        $(function () {
+            //在层里找被选中的元素
+            $('div :checked').css('backgroundColor', 'red');
+            //找到被选中的checkbox,
+            $('input[type=checkbox]:checked').css('backgroundColor', 'red');
+        });
+    </script>
+</head>
+<body>
+    <div>
+
+        <input type="checkbox" name="name" value="1" />吃饭
+        <input type="checkbox" name="name" value="2" checked="checked" />睡觉
+        <input type="checkbox" name="name" value="3" />打豆豆
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,71 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style type="text/css">
+
+    </style>
+    <script type="text/javascript">
+        window.onload = function () {
+            document.getElementById('toRight').onclick = function () {
+                leftToRight(document.getElementById('se1'), document.getElementById('se2'));
+            };
+            document.getElementById('toLeft').onclick = function () {
+                leftToRight(document.getElementById('se2'), document.getElementById('se1'));
+            };
+            document.getElementById('toAllLeft').onclick = function () {
+                leftalltoRight(document.getElementById('se1'), document.getElementById('se2'));
+            };
+            document.getElementById('toAllRight').onclick = function () {
+                leftalltoRight(document.getElementById('se2'), document.getElementById('se1'));
+
+            };
+        };
+        //se1表示第一个下拉框,se2表示第二个下拉框
+
+        //这里很特殊，是剪切过去而不是复制，不知道为啥
+
+        function leftToRight(s1, s2) {
+            var ops = s1.getElementsByTagName('option');
+            for (var i = 0; i < ops.length; i++) {
+                if (ops[i].selected) {
+                    s2.appendChild(ops[i]);
+                    i--;    //剪切长度变了.调试看，length每次-，i一直-1再0
+                }
+            }
+        }
+
+        function leftalltoRight(s1, s2) {
+            var ops = s1.getElementsByTagName('option');
+            //            for (var i = 0; i < ops.length; i++) {
+            //                s2.appendChild(ops[i]);
+            //
+            //            }
+
+            for (var i = ops.length - 1; i >= 0; i--) {
+                s2.insertBefore(ops[i], s2.firstChild);
+            }
+
+        }
+
+    </script>
+</head>
+<body>
+    <div style="margin-left: 400px; margin-top: 10px;">
+        <select multiple="multiple" style="float: left; width: 40px; height: 100px;" id="se1">
+            <option>添加</option>
+            <option>删除</option>
+            <option>修改</option>
+            <option>查询</option>
+            <option>打印</option>
+        </select>
+        <div style="width: 50px; float: left;">
+            <input type="button" name="name" value=">" style="width: 50px;" id="toRight" />
+            <input type="button" name="name" value="<" style="width: 50px;" id="toLeft" />
+            <input type="button" name="name" value=">>" style="width: 50px;" id="toAllLeft" />
+            <input type="button" name="name" value="<<" style="width: 50px;" id="toAllRight" />
+        </div>
+        <select multiple="multiple" style="float: left; width: 40px; height: 100px;" id="se2"></select>
+    </div>
+</body>
+</html>

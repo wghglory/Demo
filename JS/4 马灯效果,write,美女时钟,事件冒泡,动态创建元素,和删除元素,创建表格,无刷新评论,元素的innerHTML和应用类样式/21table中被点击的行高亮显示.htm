@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+
+    <script type="text/javascript">
+
+        window.onload = function () {
+
+            //获取所有的行
+            var trs = document.getElementById('tb').getElementsByTagName('tr');
+            //遍历所有的tr
+            for (var i = 0; i < trs.length; i++) {
+                trs[i].onclick = function () {//为每一行都注册一个点击事件
+
+
+                    for (var j = 0; j < trs.length; j++) {
+                        trs[j].style.backgroundColor = '';
+                    }
+                    this.style.backgroundColor = 'green';
+                };
+
+            }
+        };
+    
+    </script>
+</head>
+<body>
+ <table border="1" id="tb" style=" cursor:pointer;">
+        <tr>
+            <td>老杨
+            </td>
+              <td>老杨
+            </td>
+        </tr>
+         <tr>
+            <td>老杨
+            </td>
+              <td>老杨
+            </td>
+        </tr>
+         <tr>
+            <td>老杨
+            </td>
+              <td>老杨
+            </td>
+        </tr>
+         <tr>
+            <td>老杨
+            </td>
+              <td>老杨
+            </td>
+        </tr>
+         <tr>
+            <td>老杨
+            </td>
+              <td>老杨
+            </td>
+        </tr>
+         <tr>
+            <td>老杨
+            </td>
+              <td>老杨
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,36 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style type="text/css">
+
+    </style>
+    <script src="jquery-1.8.3.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('#btn').click(function () {
+                $('br').replaceWith('<hr />');//把br 替换hr
+            });
+            $('#btn2').click(function () {
+                $('<br />').replaceAll('hr');//把hr替换br
+            });
+        });
+    </script>
+</head>
+<body>
+    <input type="button" name="name" value="改我换" id="btn" />
+    <input type="button" name="name" value="改我再换" id="btn2" />
+    <br />
+    静夜思
+    <br />
+    床前明月光,
+    <br />
+    疑是地上霜.
+    <br />
+    举头望明月,
+    <br />
+    低头思故乡.
+
+</body>
+</html>

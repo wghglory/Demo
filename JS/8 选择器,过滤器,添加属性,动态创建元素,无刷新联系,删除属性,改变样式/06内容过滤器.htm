@@ -1,0 +1,29 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style type="text/css">
+    </style>
+    <script src="jquery-1.8.3.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(function () {
+
+            //内容过滤器,获取包含x内容的层
+            alert($('div:contains(x)').text());
+
+            $('div:empty').css('backgroundColor', 'red');//获取不包含任何内容的层
+            $('div:has(a)').css('backgroundColor', 'red'); //获取包含a标签的层
+
+            $('div:parent').css('backgroundColor', 'red');//就是获取是父级元素的层
+        });
+    </script>
+</head>
+<body>
+    <div style=" width:300px; height:400px; border:1px solid green;">
+    </div>
+    <div style=" width:300px; height:400px; border:1px solid green;">
+        <a href="#">content</a>
+    </div>
+</body>
+</html>

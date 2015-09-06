@@ -1,0 +1,73 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style type="text/css">
+    </style>
+    <script type="text/javascript">
+        window.onload = function () {
+
+            document.getElementById('txtpwd').onchange = function () {
+                var tds = document.getElementsByTagName('td');
+                for (var i = 0; i < tds.length; i++) {
+                    tds[i].style.backgroundColor = '#E6E6E6';
+                }
+                var txtvalue = this.value;
+                if (txtvalue.length > 0) {
+                    var i = checkPwd(txtvalue);
+                    if (i <= 1) {
+                        document.getElementsByTagName('td')[0].style.backgroundColor = 'orange';
+                    } else if (i == 2) {
+                        document.getElementsByTagName('td')[0].style.backgroundColor = 'yellow';
+                        document.getElementsByTagName('td')[1].style.backgroundColor = 'yellow';
+                    } else if (i == 3) {
+                        document.getElementsByTagName('td')[0].style.backgroundColor = 'green';
+                        document.getElementsByTagName('td')[1].style.backgroundColor = 'green';
+                        document.getElementsByTagName('td')[2].style.backgroundColor = 'green';
+                    }
+                }
+
+                //调个方法,专门的去判断字符串中是否包含数字,字母,特殊符号.
+            };
+
+            setInterval(function () {
+                document.getElementById('txtpwd').onchange();
+            }, 100);
+        };
+        function checkPwd(pwdvalue) {
+            //定义个变量,
+            var len = 0;
+            if (pwdvalue.match(/\d/)) {
+                len++;
+            }
+            if (pwdvalue.match(/[a-zA-Z]/)) {
+                len++;
+            }
+            if (pwdvalue.match(/[^a-zA-Z0-9]/)) {
+                len++;
+            }
+            if (pwdvalue.length < 6) {
+                len--;
+            }
+            return len;
+        }
+    </script>
+</head>
+<body>
+    <input type="text" name="name" value="" id="txtpwd" />
+    <table border="1" style=" width:300px; height:30px; background-color:#E6E6E6; text-align:center;">
+        <tr>
+            <td>
+                弱
+            </td>
+            <td>
+                中
+            </td>
+            <td>
+                强
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

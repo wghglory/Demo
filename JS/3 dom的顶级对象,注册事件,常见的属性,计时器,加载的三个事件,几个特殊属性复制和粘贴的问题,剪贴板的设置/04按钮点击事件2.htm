@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <input type="button" name="name" value="第一个按钮" id="btn1" onclick="f1();" />
+    <input type="button" name="name" value="第二个按钮" id="btn2" onclick="f2();" />
+    <input type="button" name="name" value="第三个按钮" id="btn3" onclick="ff();" />
+</body>
+<script type="text/javascript">
+    ////点击btn3之后，调用ff(),修改了btn1 and btn2 onclick events to f3, f4!
+    //    function f1() {
+    //        alert('第一个按钮');
+    //    }
+    //    function f2() {
+    //        alert('第二个按钮');
+    //    }
+    //    function ff() {
+    //        document.getElementById('btn1').onclick = f3;
+    //        document.getElementById('btn2').onclick = f4;
+    //    }
+    //    function f3() {
+    //        alert('第一个按钮第二次');
+    //    }
+    //    function f4() {
+    //        alert('第二个按钮第二次');
+    //    }
+
+
+    //点击btn3之后，调用ff(),直接调用f3(),f4()
+    function f1() {
+        alert('第一个按钮');
+    }
+    function f2() {
+        alert('第二个按钮');
+    }
+    function ff() {
+        document.getElementById('btn1').onclick = f3();
+        document.getElementById('btn2').onclick = f4();
+    }
+    function f3() {
+        alert('第一个按钮第二次');
+    }
+    function f4() {
+        alert('第二个按钮第二次');
+    }     
+</script>
+</html>

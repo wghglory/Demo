@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script type="text/javascript">
+
+        window.onload = function () {
+
+            document.getElementById('btn').onclick = function () {
+
+                //创建层
+                var dvObj = document.createElement('div');
+                dvObj.style.width = '300px';
+                dvObj.style.height = '200px';
+                dvObj.style.border = '1px solid red';
+                dvObj.style.backgroundColor = 'yellow';
+                dvObj.innerText = '哈哈,我又变帅了,24K纯帅';
+
+
+                //把层添加到body中
+                document.body.appendChild(dvObj);
+            };
+        };
+    
+    </script>
+</head>
+<body>
+    <input type="button" name="name" value="创建一个层" id="btn" />
+</body>
+</html>

@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script type="text/javascript">
+
+        var arr = { 0: "不信", "老杨": "未知", "老苏": "妖", "老牛": "公" };   //json      
+        alert(arr[0]);   //不信
+        alert(arr[1]);   //undefined
+        for (var key in arr) {
+            alert(key + '===========' + arr[key]);
+        }
+        //这样不行
+        //        for (var i = 0; i < arr.length; i++) {
+        //            alert(arr[i]);
+        //        }
+
+
+        var arr = [{ "name": "steve", "age": 18 }, { "name": "guanghui", "age": 28}];
+        for (var i = 0; i < arr.length; i++) {    //for循环数组，2个元素，每个元素都是json格式
+            alert(arr[i]['name']);     //arr[1]表示{ "name": "steve", "age": 18 }
+            alert(arr[i].name);
+        }
+        //键值对两种方式
+        //arr[i]['name']
+        //arr[i].name
+
+
+        var personalInfo = { "name": "周杰伦", "age": 20, "address": { "city": "beijing", "country": "China"} };
+        alert(personalInfo.name);
+        alert(personalInfo.age);
+        alert(personalInfo.address.city);
+        alert(personalInfo.address.country);
+
+
+            
+    </script>
+</head>
+<body>
+</body>
+</html>

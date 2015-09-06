@@ -1,0 +1,48 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style type="text/css">
+    </style>
+    <script type="text/javascript">
+
+        window.onload = function () {
+            var aObj = document.getElementById('al');
+            aObj.onmouseover = function () {
+                //防止每次移上来都添加一个层
+                //if (document.getElementById('newdiv') == null) {  //method1: 判断层是否已经有了
+                    var dvObj = document.createElement('div');
+
+                    dvObj.id = 'newdiv';
+                    dvObj.style.width = '300px';
+                    dvObj.style.height = '200px';
+                    dvObj.style.border = '1px solid red';
+                    dvObj.style.position = 'absolute';
+                    dvObj.style.left = this.offsetLeft + 'px';
+                    dvObj.style.top = this.offsetTop + this.offsetHeight + 'px';
+
+                    document.body.appendChild(dvObj);
+               // }
+
+            };
+
+            //method2: 需要在鼠标离开的时候把刚才创建的层删除
+            aObj.onmouseleave = function () {
+
+                var dvObj = document.getElementById('newdiv');
+                document.body.removeChild(dvObj);
+            };
+        };
+
+    </script>
+</head>
+<body>
+
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    faf 从前有个山,山里有个庙,庙里有个和尚叫老道 a个山,山里有个庙,庙里有个和尚叫老道 af 从前有个山,山里有个庙,庙里有个和尚叫老af <a id="al" href="http://www.baidu.com">老杨</a>
+
+
+
+</body>
+</html>

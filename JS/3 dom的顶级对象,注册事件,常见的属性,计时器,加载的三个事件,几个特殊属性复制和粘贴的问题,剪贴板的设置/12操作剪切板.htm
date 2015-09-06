@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script type="text/javascript">
+
+        window.onload = function () {
+            document.body.oncopy = function () {
+
+                setTimeout(function () {
+                    var tt = window.clipboardData.getData('text') + '文本出自小杨';
+                    window.clipboardData.setData('text', tt);
+                }, 10);
+            };
+
+            document.getElementById('btn').onclick = function () {
+                //alert(window.clipboardData.getData('text'));
+                window.clipboardData.setData('text', '小杨好帅');   //设置剪切板内容
+            };
+        };
+    
+    </script>
+</head>
+<body>
+    <input type="button" name="name" value="获取剪贴板内容" id="btn" />
+    <input type="text" name="name" value=" " />
+    传说有个很帅气的人存活在这天地间,据说,此人极其的... 说有个很帅气的人存活在这天地间,据说,此人极文本出自小杨
+</body>
+</html>

@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+
+    <script type="text/javascript">
+        window.onload = function () {
+
+            //获得按钮并注册事件
+            document.getElementById('btn').onclick = function () {
+
+                //获得表格中的行
+                var trs = document.getElementById('tb').getElementsByTagName('tr');
+                //循环遍历所有的行
+                for (var i = 0; i < trs.length; i++) {
+                    //判断是偶数行还是奇数行
+                    if (i % 2 == 0) {
+                        trs[i].style.backgroundColor = '';//奇数行
+                    } else {
+                        trs[i].style.backgroundColor = 'yellow';//偶数行
+                    }
+                }
+            };
+        };
+    
+    </script>
+</head>
+<body>
+    <input type="button" name="name" value="偶数行变色" id="btn" />
+    <table border="1" id="tb">
+        <tr>
+            <td>老杨
+            </td>
+              <td>老杨
+            </td>
+        </tr>
+         <tr>
+            <td>老杨
+            </td>
+              <td>老杨
+            </td>
+        </tr>
+         <tr>
+            <td>老杨
+            </td>
+              <td>老杨
+            </td>
+        </tr>
+         <tr>
+            <td>老杨
+            </td>
+              <td>老杨
+            </td>
+        </tr>
+         <tr>
+            <td>老杨
+            </td>
+              <td>老杨
+            </td>
+        </tr>
+         <tr>
+            <td>老杨
+            </td>
+              <td>老杨
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

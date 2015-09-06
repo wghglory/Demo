@@ -1,0 +1,44 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style type="text/css">
+        .cls {
+            width: 300px;
+            height: 200px;
+            background-color: Orange;
+        }
+    </style>
+    <script src="jquery-1.8.3.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(function () {
+            // $('#dv').html('<p>这是p标签</p>');//id选择器
+
+            // $('div').html('<p>这是p标签</p>');//标签选择器
+
+            // $('.cls').html('<p>这是p标签</p>');//类选择器
+
+            $('#btn').click(function () {
+                $('p').text('他们都是p'); //隐式迭代
+                $('p').text('他们都是p'); ----设置(返回的是当前对象本身)
+                $('p').text(); ---------获取(对象这个属性中的值)
+
+                $('p').text('我们都是好孩子').css('backgroundColor', 'blue').click(function () {
+                    alert('真的可以啊');
+                });
+            });
+
+        });
+    </script>
+</head>
+<body>
+    <input type="button" name="name" value="他们都是p" id="btn" />
+    <p>
+        这是p标签
+    </p>
+
+    <div id="dv" class="cls">
+    </div>
+</body>
+</html>

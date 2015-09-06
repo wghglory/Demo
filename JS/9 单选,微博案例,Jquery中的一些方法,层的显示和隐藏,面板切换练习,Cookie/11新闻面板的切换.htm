@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+ 
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+     <style type="text/css">
+        #dvTab
+        {
+            width: 500px; /*  border: 1px solid blue;*/
+            height: 200px;
+        }
+        
+        #dvTab ul
+        {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+        #dvTab ul li
+        {
+            text-align: center;
+            background-color: Yellow;
+            color: Red;
+            width: 100px;
+            font-weight: bolder;
+            font-size: 14px;
+            float: left;
+            border-right: 1px solid blue;
+            cursor: pointer;
+        }
+        
+        #dvTab div
+        {
+            width: 400px;
+            height: 200px;
+            border: 1px solid red;
+        }
+    </style>
+    <script src="jquery-1.8.3.js" type="text/javascript"></script>
+    <script type="text/javascript">
+//        $(function () {
+//            $('#dvTab div:gt(0)').css('display', 'none');
+//            $('#dvTab ul li').mouseover(function () {
+//                var txt = $(this).text();
+//                switch (txt) {
+//                    case "新闻": $('#dvNews').show().siblings('div').hide(); break;
+//                    case "图片": $('#dvPic').show().siblings('div').hide(); break;
+//                    case "深度": $('#dvDeep').show().siblings('div').hide(); break;
+//                    case "军事": $('#dvMl').show().siblings('div').hide(); break;
+//                }
+//            });
+
+        //        });
+        //很好
+        $(function () {
+            $("#dvTab div:gt(0)").hide();
+            $("#dvTab ul >li").mouseover(function () {
+                $($("#dvTab div").get($(this).index())).show().siblings("div").hide();
+            });
+        });
+      
+    </script>
+</head>
+<body>
+ <div id="dvTab">
+        <ul>
+            <li>新闻</li>
+            <li>图片</li>
+            <li>深度</li>
+            <li>军事</li>
+        </ul>
+        <div id="dvNews">
+            新闻新闻新闻
+        </div>
+        <div id="dvPic">
+            图片，图片图片图图片图片图图图片贴图
+        </div>
+        <div id="dvDeep">
+            深度深度深度深度十多年对于
+        </div>
+        <div id="dvMl">
+            军事军事军事军事
+        </div>
+    </div>
+</body>
+</html>
+

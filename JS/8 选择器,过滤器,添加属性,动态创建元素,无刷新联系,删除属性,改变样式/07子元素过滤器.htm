@@ -1,0 +1,38 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style type="text/css">
+
+    </style>
+    <script src="jquery-1.8.3.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('ul li:first').css('fontSize', '50px');
+            $('ul li:first-child').css('fontSize', '50px');
+            $('ul li:nth-child(2)').css('fontSize', '50px'); //所有的ul中的第二个元素
+            $('ul').children().css('fontSize', '50px');//获得所有的ul下的子元素
+        });
+    </script>
+</head>
+<body>
+    <ul>
+        <li>老牛</li>
+        <li>老杨</li>
+        <li>老苏</li>
+        <li>老马</li>
+    </ul>
+    <ul>
+        <li>老牛</li>
+        <li>老杨</li>
+        <li>老苏</li>
+        <li>老马</li>
+    </ul>
+    <ul>
+        <li>老牛</li>
+        <li>老杨</li>
+        <li>老苏</li>
+        <li>老马</li>
+    </ul>
+</body>
+</html>

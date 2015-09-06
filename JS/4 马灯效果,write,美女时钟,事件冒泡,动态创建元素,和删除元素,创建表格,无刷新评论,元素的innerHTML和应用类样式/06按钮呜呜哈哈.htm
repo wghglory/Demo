@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script type="text/javascript">
+        window.onload = function () {
+            var inps = document.getElementsByTagName('input');
+            for (var i = 0; i < inps.length; i++) {
+                if (inps[i].type == 'button') {//获取所有的按钮了
+
+                    inps[i].onclick = function () {
+                        //第一改变所有的value
+                        for (var j = 0; j < inps.length; j++) {  //i=0时，把所有按钮value=哈哈，再点自己this.value=wuwu
+                            if (inps[j].type == 'button') {
+                                inps[j].value = '哈哈';
+                            }
+                        }
+                        //第二改变自己的value值
+
+                        this.value = '呜呜~~~';
+                    };
+                }
+            }
+        };
+    
+    </script>
+</head>
+<body>
+    <input type="button" name="name" value="哈哈" />
+    <input type="button" name="name" value="哈哈" />
+    <input type="button" name="name" value="哈哈" />
+    <input type="button" name="name" value="哈哈" />
+    <input type="button" name="name" value="哈哈" />
+    <input type="button" name="name" value="哈哈" />
+    <input type="button" name="name" value="哈哈" />
+    <input type="button" name="name" value="哈哈" />
+    <input type="text" name="name" value="哈哈" />
+</body>
+</html>

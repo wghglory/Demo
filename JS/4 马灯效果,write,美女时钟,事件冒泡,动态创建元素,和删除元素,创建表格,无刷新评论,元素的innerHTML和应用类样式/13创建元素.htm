@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script type="text/javascript">
+
+        window.onload = function () {
+
+            document.getElementById('btn').onclick = function () {
+                var btnObj = document.createElement('input');
+                btnObj.type = 'button';
+                btnObj.value = '创建的第一个';
+                document.getElementById('dv').appendChild(btnObj);
+            };
+
+            document.getElementById('btnrev').onclick = function () {
+                //document.body.removeChild(document.getElementById('dv'));   //里面的元素也被删除了
+
+                //删除层里面元素，层留着
+                var dvObj = document.getElementById('dv');
+                while (dvObj.firstChild) {
+                    dvObj.removeChild(dvObj.firstChild);
+                }
+            };
+        };
+    
+    </script>
+</head>
+<body>
+    <input type="button" name="name" value="创建一个层" id="btn" />
+    <input type="button" name="name" value="删除按钮" id="btnrev" />
+    <div id="dv" style="width: 300px; height: 200px; border: 1px solid red;">
+    </div>
+</body>
+</html>

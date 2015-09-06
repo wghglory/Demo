@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script type="text/javascript">
+
+        window.onload = function () {
+
+            document.getElementById('btn1').onclick = function () {
+                alert(document.getElementById('dv').innerText);
+                //显示的是文本内容
+            };
+            document.getElementById('btn2').onclick = function () {
+                alert(document.getElementById('dv').innerHTML);
+                //显示的是文本和标签
+            };
+            document.getElementById('btn3').onclick = function () {
+                document.getElementById('dv').innerText = '<font color="blue">哦买雷电嘎嘎闹!!!</font>';
+                //直接把内容放在层中显示
+
+            };
+            document.getElementById('btn4').onclick = function () {
+                document.getElementById('dv').innerHTML = '<font color="blue">哦买雷电嘎嘎闹!!!</font>';
+                //连同效果一起显示出来
+
+            };
+        };
+    
+    </script>
+</head>
+<body>
+    <input type="button" name="name" value="显示innerText" id="btn1" />
+    <input type="button" name="name" value="显示innerHTML" id="btn2" />
+    <input type="button" name="name" value="设置innerText" id="btn3" />
+    <input type="button" name="name" value="设置innerHTML" id="btn4" />
+    <div id="dv" style="width: 300px; height: 200px; border: 1px solid red;">
+        这是文本内容 <font color="red" size="7">24K纯帅</font>
+    </div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+
+    <script type="text/javascript">
+
+        window.onload = function () {
+
+            document.getElementById('btn').onclick = function () {
+                var dvObj = document.getElementById('dv');
+                dvObj.style.overflow = 'hidden';
+
+                var setId = setInterval(function () {
+
+                    var h = dvObj.offsetHeight - 10;
+                    if (h <= 0) {
+                        h = 0;
+                        dvObj.style.display = 'none';
+                        clearInterval(setId);
+                    }
+                    dvObj.style.height = h;
+
+
+                }, 10);
+
+
+            };
+        };
+    
+    </script>
+</head>
+<body>
+    <input type="button" name="name" value="层隐藏" id="btn" />
+
+    <div id="dv" style=" width:300px; height:500px; border:1px solid red;">
+
+        <input type="button" name="name" value="按钮" />
+        <input type="text" name="name" value=" " />
+    </div>
+</body>
+</html>

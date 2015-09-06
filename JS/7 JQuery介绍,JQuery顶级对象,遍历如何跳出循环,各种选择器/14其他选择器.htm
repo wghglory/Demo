@@ -1,0 +1,67 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style type="text/css">
+
+    </style>
+    <script src="jquery-1.8.3.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(function () {
+
+            $('#btn').click(function () {
+                $('ul li:first').css('backgroundColor', 'red');
+                $('ul li').first('li').css('backgroundColor', 'red');
+                $('ul:first li').css('backgroundColor', 'red');
+                $('ul li:last').css('backgroundColor', 'red');
+                $('ul li:even').css('backgroundColor', 'red');
+                偶数, 但是给用户显示的是奇数
+                这里的偶数指的是索引,
+                $('ul li:odd').css('backgroundColor', 'red');//给用户显示的时候是偶数
+                $('ul li:gt(2):lt(2)').css('backgroundColor', 'red');
+
+                $('h1,h2,h3,h4,h5,h6').css('backgroundColor', 'red');
+                $(':header').css('backgroundColor', 'red');
+            });
+
+        });
+    </script>
+</head>
+<body>
+    <input type="button" name="name" value="显示效果" id="btn" />
+    <h1>第一个</h1>
+    <h2>第一个</h2>
+    <h3>第一个</h3>
+    <h4>第一个</h4>
+    <h5>第一个</h5>
+    <h6>第一个</h6>
+
+
+    <ul>
+        <li>热火</li>
+        <li>老马</li>
+        <li>马刺</li>
+        <li>小牛</li>
+        <li>老牛</li>
+        <li>公牛</li>
+        <li>老杨</li>
+        <li>老苏</li>
+        <li>老鹰</li>
+        <li>晓组织</li>
+        <li>鸣人</li>
+    </ul>
+    <ul>
+        <li>热火</li>
+        <li>老马</li>
+        <li>马刺</li>
+        <li>小牛</li>
+        <li>老牛</li>
+        <li>公牛</li>
+        <li>老杨</li>
+        <li>老苏</li>
+        <li>老鹰</li>
+        <li>晓组织</li>
+        <li>鸣人</li>
+    </ul>
+</body>
+</html>

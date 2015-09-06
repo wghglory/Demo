@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>24K纯帅</title>
+    <script type="text/javascript">
+
+        var def = 'left';
+
+        function f1() {
+            def = 'left';
+        }
+        function f2() {
+            def = 'right';
+        }
+
+        setInterval(function () {
+            var tt = document.title;
+            if (def == 'left') {
+                document.title = tt.substr(1) + tt.charAt(0);
+            } else if (def == 'right') {
+                document.title = tt.charAt(tt.length - 1) + tt.substring(0, tt.length - 1);
+            }
+        }, 1000);
+
+
+        window.onload = function () {
+
+            document.getElementById('btnleft').onclick = f1;
+            document.getElementById('btnright').onclick = f2;
+        };
+
+    </script>
+</head>
+<body>
+    <input type="button" name="name" value="向左走" id="btnleft" />
+    <input type="button" name="name" value="向右走" id="btnright" />
+</body>
+</html>

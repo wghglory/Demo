@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script type="text/javascript">
+        window.onload = function () {
+            //如果需要操作页面的元素了就写到这里来
+            var dvObj = document.getElementById('dv'); //通过id获取元素
+            alert(dvObj.id);
+
+            var inputsObj = document.getElementsByName('name');
+            for (var i = 0; i < inputsObj.length; i++) {
+                inputsObj[i].value = '24K纯帅';
+            }
+
+            var inps = document.getElementsByTagName('input');
+            for (var i = 0; i < inps.length; i++) {
+                inps[i].value = '改了';
+            } //此处不能使用for in循环，for in循环的是键值对而不是对象本身！！！！！！！！！！！！！！！！！！
+        };
+    
+    </script>
+</head>
+<body>
+    <input type="button" name="name" value="我是按钮" />
+    <input type="button" name="name" value="我是按钮" />
+    <input type="text" name="name" value="我是按钮" />
+    <input type="text" name="name" value="我是按钮" />
+    <div id="dv">
+    </div>
+</body>
+</html>

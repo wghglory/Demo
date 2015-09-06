@@ -1,0 +1,41 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script type="text/javascript">
+        var reg = new RegExp(/^[0-9]/);
+        var postcode = '123456sda';
+        alert(reg.test(postcode));
+
+
+        var reg = /\d+/g;   //global全剧模式
+        var msg = '中国工行:95588,中国移动:10086,中国联通:10010,中国电信:10000';
+        //var result = reg.exec(msg);
+        //alert(result);
+        //alert(reg.exec(msg));
+        //alert(reg.exec(msg));
+        //alert(reg.exec(msg));
+        //alert(reg.exec(msg));
+
+        while (result = reg.exec(msg)) {
+            alert(result);
+        }
+
+
+        var msg = '杨忠科:13888888888苏坤:13999999999小虎:13111111111';
+        msg = msg.replace(/(\d{3})(\d{4})(\d{4})/g, '$1****$3');
+        alert(msg);
+
+        var str = '     老马      ';
+
+        function mytrim(st) {
+            return st.replace(/^\s+|\s+$/g, ''); //
+            //        /\s*([^\s+]+)\s*/;
+        }
+
+        alert('++++' + mytrim(str) + '++++++');
+    </script>
+</head>
+<body>
+</body>
+</html>

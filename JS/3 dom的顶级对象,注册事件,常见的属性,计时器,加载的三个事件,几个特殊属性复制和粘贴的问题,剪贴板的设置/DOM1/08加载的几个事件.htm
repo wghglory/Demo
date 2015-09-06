@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script type="text/javascript">
+        //        window.onload = function () {
+        //            alert('加载了');
+        //        };
+        window.onload = function () {
+            alert('又加载了');
+        };  //覆盖
+
+        window.onbeforeunload = function () {
+            alert('再看触发没');      //阻止onunload。没用
+        };
+        window.onunload = function () {
+            alert('什么时候触发');    //关闭浏览器后弹出
+        };
+    </script>
+</head>
+<body>
+    +++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+</body>
+</html>

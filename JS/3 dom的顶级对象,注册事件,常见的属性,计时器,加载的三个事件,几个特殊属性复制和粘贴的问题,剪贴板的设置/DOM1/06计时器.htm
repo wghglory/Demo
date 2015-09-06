@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>听说小赵怀了</title>
+    <script type="text/javascript">
+        //setInterval耗内存
+        var setIntervalId = setInterval(function () {
+            var txt = document.title;
+            document.title = txt.substr(1) + txt.charAt(0);
+
+        }, 1000);
+        clearInterval(setIntervalId); //如果计时器被销毁了，就直接废了
+
+
+        var setid = setTimeout(function () {
+            alert('你好啊');
+        }, 1000);
+        clearTimeout(setid);
+    </script>
+</head>
+<body>
+</body>
+</html>

@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script type="text/javascript">
+
+        //indexOf(‘字符串’,startIndex)方法：获取指定字符串第一次出现的位置。startIndex表示从第几个开始搜索。
+        var str = '老马,文能提笔控萝莉,武能床上挨人骑马';
+        str = str.indexOf('马', 2);
+        alert(str);
+
+
+        //split(‘分隔符’,limit);//根据分隔符将一个字符串返回为一个数组。limit表示要返回的数组的最大长度（可自定义）。多个分隔符使用正则表达式：var msg = 'a★b★c☆d☆e#f';var vals = msg.split(/☆|★|#/);alert(vals);
+        var msg = 'a★b★c☆d☆e#f';
+        msg = msg.split(/★|☆|#/);   //正则表达式
+        alert(msg);
+
+        var str = '老杨|老马|老苏|老牛|老虎|老刘|栋哥';
+        var arr = str.split('|', 2);   //只要2个
+        //alert(arr);   //切割后,如果直接显示会以,分隔开来     
+        for (var i = 0; i < arr.length; i++) {
+            alert(arr[i]);
+        }       //在js中数组可以直接显示,--通常我们都遍历
+
+
+
+        //substr(startIndex,len)//从startIndex开始，截取len个字符。
+        var str = '小杨好帅啊';
+        str = str.substr(2, 2);   //好帅
+        alert(str);
+        //substring(startIndex,stopIndex)//从startIndex开始，截取到stopIndex位置（不包括stopIndex所在的字符）。
+        var str = '老苏邪恶啊';
+        str = str.substring(1, 2);    //苏
+        alert(str);
+    </script>
+</head>
+<body>
+</body>
+</html>

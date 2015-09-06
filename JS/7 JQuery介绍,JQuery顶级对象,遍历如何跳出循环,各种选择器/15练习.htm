@@ -1,0 +1,87 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style type="text/css">
+
+    </style>
+    <script src="jquery-1.8.3.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('#btn').click(function () {
+
+                $('#table1 tr:first').css('fontSize', '30px');
+                $('#table1 tr:last').css('color', 'red');
+                $('#table1 tr:gt(0):lt(3)').css('fontSize', '28px');
+                $('#table1 tr:odd').css('backgroundColor', 'red');
+            });
+
+        });
+    </script>
+</head>
+<body>
+
+    <input type="button" name="name" value="显示效果" id="btn" />
+    <table id="table1" border="1">
+        <tr>
+            <td>
+                姓名
+            </td>
+            <td>
+                成绩
+            </td>
+        </tr>
+        <tr>
+            <td>
+                tom
+            </td>
+            <td>
+                100
+            </td>
+        </tr>
+        <tr>
+            <td>
+                jim
+            </td>
+            <td>
+                99
+            </td>
+        </tr>
+        <tr>
+            <td>
+                john
+            </td>
+            <td>
+                98
+            </td>
+        </tr>
+        <tr>
+            <td>
+                jason
+            </td>
+            <td>
+                97
+            </td>
+        </tr>
+        <tr>
+            <td>
+                aaa
+            </td>
+            <td>
+                97
+            </td>
+        </tr>
+        <tr>
+            <td>
+                平均分
+            </td>
+            <td>
+                98
+            </td>
+        </tr>
+    </table>
+
+
+</body>
+</html>

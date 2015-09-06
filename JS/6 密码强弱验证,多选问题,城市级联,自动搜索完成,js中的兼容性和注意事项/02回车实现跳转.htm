@@ -1,0 +1,30 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style type="text/css">
+
+    </style>
+    <script type="text/javascript">
+        window.onload = function () {
+            var txts = document.getElementsByTagName('input');
+            for (var i = 0; i < txts.length; i++) {
+                txts[i].onkeydown = function () {
+                    if (window.event.keyCode == 13) {
+                        window.event.keyCode = 9;
+                    }
+                    // alert(window.event.keyCode);
+                };
+            }
+        };
+    </script>
+</head>
+<body>
+    <input type="text" name="name" value="" />
+    <input type="text" name="name" value="" />
+    <input type="text" name="name" value="" />
+    <input type="text" name="name" value="" />
+    <input type="text" name="name" value="" />
+</body>
+</html>

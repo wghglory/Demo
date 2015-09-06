@@ -1,0 +1,48 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style type="text/css">
+
+    </style>
+    <script src="jquery-1.8.3.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(function () {
+
+            $('#btn').click(function () {
+                //把每个p标签包含在各个font标签中
+                $('p').wrap('<font color="red" size="7" face="全新硬笔行书简"></font>');
+                //把所有的p标签都包含在一对font标签中,里面的层直接踢出去
+                $('p').wrapAll('<font color="red" size="7" face="全新硬笔行书简"></font>');
+                //在每一对p标签中加上一对font标签
+                $('p').wrapInner('<font color="red" size="7" face="全新硬笔行书简"></font>');
+            });
+        });
+    </script>
+</head>
+<body>
+    <input type="button" name="name" value="改我换" id="btn" />
+    <div>
+        <p>
+            这是一个p标签
+        </p>
+        <div>
+            这是层
+            <p>
+                这是层中的p
+            </p>
+        </div>
+        <p>
+            这是一个p标签
+        </p>
+        <p>
+            这是一个p标签
+        </p>
+        <p>
+            这是一个p标签
+        </p>
+
+    </div>
+</body>
+</html>

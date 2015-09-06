@@ -1,0 +1,37 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style type="text/css">
+        div {
+            width: 300px;
+            height: 200px;
+            background-color: Orange;
+        }
+    </style>
+    <script src="jquery-1.8.3.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(function () {
+            //隐藏
+            $('#btnhidden').click(function () {
+                $('div').hide(500); //隐藏
+            });
+            //显示层
+            $('#btnshow').click(function () {
+                $('div').show(1000); //显示
+            });
+            $('#btn').click(function () {
+                $('div').toggle(500); //显示
+            });
+        });
+    </script>
+</head>
+<body>
+    <input type="button" name="name" value="显示层" id="btnshow" />
+    <input type="button" name="name" value="隐藏层" id="btnhidden" />
+    <input type="button" name="name" value="显示和隐藏层" id="btn" />
+    <div>
+    </div>
+</body>
+</html>

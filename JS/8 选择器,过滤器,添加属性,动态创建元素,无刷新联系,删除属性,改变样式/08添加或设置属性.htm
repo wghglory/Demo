@@ -1,0 +1,44 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style type="text/css">
+        .cls1 {
+            background-color: Red;
+        }
+
+        .cls2 {
+            font-size: 50px;
+        }
+
+        .cls3 {
+            font-family: 全新硬笔行书简;
+        }
+    </style>
+    <script src="jquery-1.8.3.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(function () {
+
+            $('#btn').click(function () {
+                $(this).attr('class', 'cls1'); //attr也可以添加样式
+                $(this).removeAttr('class'); //属性都没了    
+                $(this).attr('class', ''); //属性清空
+                $(this).remove();  //自杀。元素都没了
+
+                alert($('a').attr('href'));  //得到href
+                $('a').attr('href', 'http://www.itcast.cn');  //设置href
+            });
+
+            $('#btn2').click(function () {
+                $('#btn').addClass('cls1');
+                $(this).attr('class', 'cls1 cls2 cls3')
+            });
+        });
+    </script>
+</head>
+<body>
+    <input type="button" name="name" value="显示超链接中的地址添加" id="btn2" />
+    <input type="button" name="name" value="显示超链接中的地址" id="btn" class="cls" />
+    <a href="httP://www.baidu.com">百度</a>
+</body>
+</html>

@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script type="text/javascript">
+
+        function f1() {
+            alert('第一次点我');
+        }
+        function ff() {
+            document.getElementById('btn3').onclick = f1();
+        }
+    </script>
+</head>
+<body>
+    <input type="button" name="name" value="点我撒" id="btn" onclick="alert('点我干啥子');" />
+    <input type="button" name="name" value="第二个按钮点我撒" id="Button1" onclick="f1();" />
+    <input type="button" name="name" value="第3个按钮点我撒" id="btn3" onclick="ff();" />
+</body>
+</html>

@@ -1,0 +1,45 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+
+    <script type="text/javascript">
+
+        //        window.onload = function () {
+        //            var dvobj = document.getElementById('dv');
+
+        //            setInterval(function () {
+        //                var time1 = new Date();
+        //                dvobj.innerText = time1.toLocaleTimeString();
+        //            }, 1000);
+        //        };
+    </script>
+
+    <script type="text/javascript">
+
+        window.onload = function () {
+            document.getElementById('txt').onfocus = function () {
+
+                if (this.value == '请输入搜索关键词' && this.style.color == 'gray') {
+                    this.value = '';
+                    this.style.color = 'black';
+                }
+            };
+            var n = 'fdsfas';
+
+            document.getElementById('txt').onblur = function () {
+                //切掉两边空格自己做
+                if (this.value == '') {
+                    this.value = '请输入搜索关键词';
+                    this.style.color = 'gray';
+                }
+            };
+        };
+    </script>
+</head>
+<body>
+
+    <input type="text" name="name" value="请输入搜索关键词" id="txt" style=" color:Gray;" />
+</body>
+</html>

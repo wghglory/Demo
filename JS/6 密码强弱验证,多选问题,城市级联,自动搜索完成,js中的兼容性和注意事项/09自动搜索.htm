@@ -1,0 +1,61 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style type="text/css">
+
+    </style>
+    <script type="text/javascript">
+        window.onload = function () {
+
+            setInterval(function () {
+
+                document.getElementById('txt').onchange();
+            }, 100);
+            var keyWords = {
+                "传智播客": ["传智播客java视频", "传智播客.net视频", "传智播客php视频"],
+                "杨忠科": ["杨忠科的视频", "杨忠科的微博", "杨忠科的邮箱"],
+                "杨": ["杨利伟", "杨振宇", "杨过"],
+                "杨忠": ["杨忠科", "杨忠学", "杨忠爱国"]
+            };
+            //获取文本框内的内容
+            document.getElementById('txt').onchange = function () {
+
+                var txtcontent = this.value;
+                if (document.getElementById('dv1')) {
+                    document.body.removeChild(document.getElementById('dv1'));
+
+                }
+                if (keyWords[txtcontent]) {
+
+                    //创建层
+                    var dvObj = document.createElement('div');
+                    dvObj.id = 'dv1';
+                    dvObj.style.width = '300px';
+                    dvObj.style.height = '200px';
+                    dvObj.style.border = '1px solid gray';
+                    dvObj.style.position = 'absolute';
+                    dvObj.style.left = this.offsetLeft + 'px';
+                    dvObj.style.top = this.offsetTop + this.offsetHeight + 1 + 'px';
+                    for (var i = 0; i < keyWords[txtcontent].length; i++) {
+                        var pObj = document.createElement('p');
+                        pObj.style.margin = '0';
+                        pObj.innerHTML = keyWords[txtcontent][i];
+
+                        dvObj.appendChild(pObj);
+                    }
+
+                    document.body.appendChild(dvObj);
+
+                    //创建li或者p标签
+
+                };
+            }
+
+        };
+    </script>
+</head>
+<body>
+    请输入搜索内容:<input type="text" name="name" value="" id="txt" />
+</body>
+</html>

@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script type="text/javascript">
+
+    //这一夜的方法都不适用
+        window.onload = function () {
+            var objHtml = document.documentElement;
+            for (var i = 0; i < objHtml.childNodes.length; i++) {
+                alert(objHtml.childNodes[i].nodeName);
+            } //元素嵌套的话取元素很不方便
+
+
+            //递归。也不好哦
+            function dg(snodes) {
+                //alert(snodes.nodeName + '   ' + snodes.childNodes.length);
+
+                for (var i = 0; i < snodes.childNodes.length; i++) {
+                    alert(snodes.childNodes[i].nodeName);
+
+                    if (snodes.childNodes[i].childNodes.length > 0) {
+                        dg(snodes.childNodes[i]);
+                    }
+                }
+
+            }
+            dg(document.documentElement);
+        };
+
+    
+    </script>
+</head>
+<body>
+</body>
+</html>

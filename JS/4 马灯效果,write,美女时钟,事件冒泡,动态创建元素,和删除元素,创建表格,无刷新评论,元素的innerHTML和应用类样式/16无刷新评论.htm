@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script type="text/javascript">
+        window.onload = function () {
+            document.getElementById('btn1').onclick = function () {
+                //获取昵称
+                var userName = document.getElementById('txt').value;
+                //获取内容
+                var txtcon = document.getElementById('textContent').value;
+             
+                //创建行
+                var trObj = document.createElement('tr');
+                //创建单元格
+                var tdObj1 = document.createElement('td');
+                tdObj1.innerText = userName;
+
+                var tdObj2 = document.createElement('td');
+                tdObj2.innerText = txtcon;
+                //添加到表中
+                trObj.appendChild(tdObj1);
+                trObj.appendChild(tdObj2);
+
+                document.getElementById('tb').appendChild(trObj);
+
+            };
+
+        };
+    </script>
+</head>
+<body>
+    <table border="1" id="tb">
+        <tr>
+            <td>
+                猫猫：
+            </td>
+            <td>
+                沙发耶！
+            </td>
+        </tr>
+    </table>
+    昵称：<input type="text" id="txt" /><br />
+    <textarea id="textContent" rows="10" cols="15"></textarea><br />
+    <input type="button" value="评论" id="btn1" />
+</body>
+</html>

@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script type="text/javascript">
+
+        window.onload = function () {
+            f1();
+            setInterval(f1, 1000);
+        };
+        function f1() {
+            var newDate = new Date();
+            //小时
+            var h = newDate.getHours();
+            h = h < 10 ? '0' + h : h;
+            //秒数
+            var sec = newDate.getSeconds();
+            sec = sec < 10 ? '0' + sec : sec;
+            document.getElementById('im').src = 'images/' + h + '_' + sec + '.jpg';
+        }
+    
+    </script>
+</head>
+<body>
+    <img src="" id="im" />
+</body>
+</html>

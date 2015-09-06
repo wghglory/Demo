@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+
+    <script type="text/javascript">
+
+        var n = '老马这个邪恶的家伙,听说要有哇。了';
+        alert(n.charAt(0));
+       // alert(n.length);
+    
+    
+    </script>
+    <script type="text/javascript">
+
+
+        //        function () {
+        //            var name = '小杨';
+        //            function f1() {
+
+        //                alert(name);
+        //            }
+        //            return f1();
+
+        //        };
+        //为了访问方法中内部变量的值,我们可以通过闭包来实现
+      
+      
+    </script>
+
+    <script type="text/javascript">
+        sum = 100;//全局变量
+       
+    </script>
+    <script type="text/javascript">
+      
+//    　  function f1() {
+//        var n = 100;
+//        sum += 10;
+//            function f2() {
+//                alert(n);
+//                var temp = 10;
+//                alert(temp);
+//               
+//            }
+//            return f2;
+//        }
+//       
+//        var result = f1();
+//        result();
+//        alert(sum);
+
+        function f1() {
+
+        }
+        function Persson(name, age) {
+            this.name = name;
+            this.age = age;
+
+        }
+        var per = new Persson('小杨', '18');
+
+        per.age;
+        per.gender = '男';
+//        alert(per.name);
+//        alert(per.gender);
+        alert(per['name']);
+//        var per = new Persson();
+//        per.name = '小杨';
+//        per.gender = '男';
+//        per.age = 18;
+//        per.say = function () {
+//            alert('哈哈');
+//        };
+//        alert(per.name);
+//        per.say();
+
+    //闭包没事别用
+    </script>
+</head>
+<body>
+</body>
+</html>

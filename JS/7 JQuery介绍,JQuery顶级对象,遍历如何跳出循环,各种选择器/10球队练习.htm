@@ -1,0 +1,32 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style type="text/css">
+
+    </style>
+    <script src="jquery-1.8.3.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('li').mouseover(function () {
+                $(this).css('backgroundColor', 'red').siblings().css('backgroundColor', '');
+            }).click(function () {
+                //                $(this).prevAll('li').css('backgroundColor', 'yellow');
+                //                $(this).nextAll('li').css('backgroundColor', 'blue');
+
+                $(this).prevAll('li').css('backgroundColor', 'yellow').end().nextAll('li').css('backgroundColor', 'blue');
+            });
+        });
+    </script>
+</head>
+<body>
+    <ul>
+        <li>热火 </li>
+        <li>马刺 </li>
+        <li>雷霆 </li>
+        <li>老牛 </li>
+        <li>老马 </li>
+        <li>老杨 </li>
+    </ul>
+</body>
+</html>

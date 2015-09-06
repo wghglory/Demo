@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+	 <style type="text/css">
+    img
+    {
+        position:absolute;
+        }
+    </style>
+    <script src="jquery-1.8.3.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('#btn').click(function () {
+
+                $('#im').animate({ "left": "842px", "top": "269px" }).animate({ "left": "830px", "top": "20px", "width": "100px", "height": "100px" }).animate({ "left": "10px", "top": "900px", "width": "20px", "height": "20px" });
+               // $('#im').stop(true);//停止动画了
+            });
+        });
+    </script>
+</head>
+<body>
+    <input type="button" name="name" value="飞啊" id="btn" /><br />
+    <img id="im" src="pig.png" />
+   
+</body>
+</html>

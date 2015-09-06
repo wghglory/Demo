@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style type="text/css">
+        div
+        {
+            width: 300px;
+            height: 200px;
+            background-color: Orange;
+        }
+        p
+        {
+            width: 150px;
+            height: 100px;
+            background-color: green;
+        }
+        span
+        {
+            background-color: blue;
+        }
+    </style>
+    <script src="jquery-1.8.3.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('div').click(function (e) {
+                // alert($(this).attr('id'));
+                alert($(e.target).attr('id'));//事件源
+            });
+            $('p').click(function () {
+                alert($(this).attr('id'));
+                //return false;
+            });
+            $('span').click(function (e) {
+                alert($(this).attr('id'));
+                //e.stopPropagation();//jquery内部做了判断
+
+              
+            });
+        });
+    </script>
+
+    <script type="text/javascript">
+
+//        $(function () {
+//            $('#btn').click(function (e) {
+
+//                alert(e.clientX);
+
+//            });
+        //        });
+
+//        $(function () {
+//            $('#btn').click({ 'name': '老牛' }, function (e) {
+//                //alert(e.data);//为空是因为没传东西
+//                alert(e.data.name);
+//                //alert(e.data.name);
+//            });
+//        });
+//       
+
+    </script>
+
+
+</head>
+<body>
+
+    <input type="button" name="name" value="显示坐标" id="btn" />
+    <div id="dv">
+        <p id="p1">
+            <span id="sp">这是span</span>
+        </p>
+    </div>
+</body>
+</html>

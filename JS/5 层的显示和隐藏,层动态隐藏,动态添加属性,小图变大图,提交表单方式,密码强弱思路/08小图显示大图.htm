@@ -1,0 +1,63 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+
+    <script type="text/javascript">
+
+        window.onload = function () {
+            var datas = {
+                "mv/1-1.jpg": ["mv/1.jpg", "老牛", "163cm"],
+                "mv/2-1.jpg": ["mv/2.jpg", "老马", "165cm"],
+                "mv/3-1.jpg": ["mv/3.jpg", "老蒋", "150cm"]
+            };
+
+            //获取显示小图片的小层
+            var dvimgSmall = document.getElementById('dvSmall');
+            //动态创建图片标签
+            for (var key in datas) {
+                var imgObj = document.createElement('img');
+                imgObj.src = key;
+                imgObj.setAttribute('keyim', key);
+                imgObj.style.marginLeft = '10px'; //设置图片之间距离
+                //每个图片添加一个鼠标事件
+                imgObj.onmouseover = function () {
+
+                    //要显示大层
+                    var dvObj = document.getElementById('dvBig');
+                    dvObj.style.display = 'block';
+                    //大层要不要脱离文档流
+                    dvObj.style.position = 'absolute';
+                    //距离左边的距离,距离上面的距离
+                    dvObj.style.left = this.offsetLeft + 'px';
+                    dvObj.style.top = this.offsetTop + this.offsetHeight + 10 + 'px';
+
+
+                    //获取大图的标签
+                    var imbigObj = document.getElementById('imBig');
+                    imbigObj.src = datas[this.getAttribute('keyim')][0];  //获取大图片的路径
+                    document.getElementById('spName').innerText = datas[this.getAttribute('keyim')][1];
+                    document.getElementById('spHeight').innerText = datas[this.getAttribute('keyim')][2];
+
+                };
+
+                //小图放进层中
+                dvimgSmall.appendChild(imgObj);
+            }
+
+        };
+    </script>
+</head>
+<body>
+    <div id="dvSmall">
+    </div>
+    <div id="dvBig" style="background-color: Orange; border: 1px solid green; width: 630px;
+        display: none;">
+        大头像:<br />
+        <img id="imBig" src="#" alt="Alternate Text" />
+        姓名:<span id="spName"></span><br />
+        身高:<span id="spHeight"></span>
+    </div>
+</body>
+</html>

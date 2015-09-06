@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style type="text/css">
+        
+    </style>
+    <script type="text/javascript">
+        window.onload = function () {
+
+            //   document.getElementById('dvbig').getElementsByTagName('div')[0].style.display = true;
+            //            var dvs = document.getElementById('divbig').getElementsByTagName('div');
+            //            for (var i = 0; i < dvs.length; i++) {
+            //                dvs[i].style.display = flase;
+            //            }
+
+            var lis = document.getElementsByTagName('li');
+            for (var i = 0; i < lis.length; i++) {
+
+                lis[i].onmouseover = function () {
+                    //  alert(this.innerHTML);
+
+                    switch (parseInt( this.innerHTML)) {
+                        case 1: ; break;
+                        case 2: alert('fsaf'); break;
+                        case 3: alert('fsaf'); break;
+                        case 4: alert('fsaf'); break;
+                        case 5: alert('fsaf'); break;
+                        case 6: alert('fsaf'); break;
+                    }
+                };
+            }
+        };
+    </script>
+</head>
+<body>
+    <div style="width: 300px; height: 250px; border: 1px solid red;" id="dvbig">
+        <ul style="list-style-type: none; margin: 0; padding: 0;">
+            <li style="float: left; padding-left: 20px;">1</li>
+            <li style="float: left; padding-left: 20px;">|</li>
+            <li style="float: left; padding-left: 20px;">2</li>
+            <li style="float: left; padding-left: 20px;">|</li>
+            <li style="float: left; padding-left: 20px;">3</li>
+            <li style="float: left; padding-left: 20px;">|</li>
+            <li style="float: left; padding-left: 20px;">4</li>
+            <li style="float: left; padding-left: 20px;">|</li>
+            <li style="float: left; padding-left: 20px;">5</li>
+            <li style="float: left; padding-left: 20px;">|</li>
+            <li style="float: left; padding-left: 20px;">6</li>
+        </ul>
+        <hr style="clear: both; color: Red;" />
+        <div>
+            <img src="imags/1.jpg" width="295" height="220" />
+        </div>
+        <div style="display: none;">
+            <img src="imags/2.jpg" width="295" height="220" />
+        </div>
+        <div style="display: none;">
+            <img src="imags/3.jpg" width="295" height="220" />
+        </div>
+        <div style="display: none;">
+            <img src="imags/4.jpg" width="295" height="220" />
+        </div>
+        <div style="display: none;">
+            <img src="imags/5.jpg" width="295" height="220" />
+        </div>
+        <div style="display: none;">
+            <img src="imags/6.jpg" width="295" height="220" />
+        </div>
+    </div>
+</body>
+</html>

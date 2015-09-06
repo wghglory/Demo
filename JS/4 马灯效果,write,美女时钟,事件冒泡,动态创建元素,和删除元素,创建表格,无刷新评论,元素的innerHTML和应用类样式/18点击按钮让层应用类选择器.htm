@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style type="text/css">
+        .cls
+        {
+            /* background-image:url(23.png);
+        background-repeat:no-repeat;*/
+            background-color: green;
+            width: 300px;
+            height: 200px;
+            float: right;
+        }
+        .cls1
+        {
+            border: 1px solid red;
+        }
+    </style>
+    <script type="text/javascript">
+        window.onload = function () {
+            document.getElementById('btn').onclick = function () {
+                document.getElementById('dv').className = 'cls cls1';
+            };
+            document.getElementById('btnFloat').onclick = function () {
+                document.getElementById('dv').style.cssFloat = 'right'; //火狐
+                document.getElementById('dv').style.styleFloat = 'right'; //IE
+            };
+        };
+    
+    </script>
+</head>
+<body>
+    <input type="button" name="name" value="应用" id="btn" />
+    <input type="button" name="name" value="层浮动" id="btnFloat" />
+    <div id="dv">
+    </div>
+</body>
+</html>

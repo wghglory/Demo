@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style type="text/css">
+        div
+        {
+            width: 300px;
+            height: 200px;
+            background-color: Orange;
+        }
+    </style>
+    <script src="jquery-1.8.3.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('#btnslideDown').click(function () {
+                $('div').slideDown(500);
+            });
+            $('#btnslideUp').click(function () {
+                $('div').slideUp(500);
+            });
+            $('#btnslideToggle').click(function () {
+                $('div').slideToggle(500);
+            });
+            $('#btnfadeIn').click(function () {
+                $('div').fadeIn(500);
+            });
+            $('#btnfadeOut').click(function () {
+                $('div').fadeOut(500);
+            });
+            $('#btnfadeToggle').click(function () {
+                $('div').fadeToggle(500);
+            });
+            $('#btn').click(function () {
+                $('div').fadeTo(500,0.3);//设置透明
+            });
+        });
+    </script>
+</head>
+<body>
+    <input type="button" name="name" value="透明了吗" id="btn" />
+    <input type="button" name="name" value="slideDown" id="btnslideDown" />
+    <input type="button" name="name" value="slideUp" id="btnslideUp" />
+    <input type="button" name="name" value="slideToggle" id="btnslideToggle" />
+    <input type="button" name="name" value="fadeIn" id="btnfadeIn" />
+    <input type="button" name="name" value="fadeOut" id="btnfadeOut" />
+    <input type="button" name="name" value="fadeToggle" id="btnfadeToggle" />
+    <div>
+    </div>
+</body>
+</html>

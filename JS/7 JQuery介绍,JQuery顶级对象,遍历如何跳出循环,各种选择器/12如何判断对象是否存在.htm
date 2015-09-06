@@ -1,0 +1,50 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style type="text/css">
+        .cls {
+            width: 300px;
+            height: 200px;
+            background-color: Orange;
+        }
+    </style>
+    <script src="jquery-1.8.3.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        //  $(function () {
+
+        //            if ($('#dv').length) {
+        //                alert('存在');
+        //            } else {
+        //                alert('不存在');
+        //            }
+        // });
+    </script>
+
+    <script type="text/javascript">
+
+        $(function () {
+            $('#btn').click(function () {
+                //$('#dv').addClass('cls');
+                $('#dv').toggleClass('cls');
+            });
+            //            $('#btn1').click(function () {
+            //                // $('#dv').removeClass('cls');
+            //                $('#dv').remove();//自杀了
+            //            });
+
+
+        });
+
+    </script>
+</head>
+<body>
+
+    <input type="button" name="name" value="添加样式" id="btn" />
+    <input type="button" name="name" value="移除样式" id="btn1" />
+    <div id="dv">
+
+    </div>
+</body>
+</html>

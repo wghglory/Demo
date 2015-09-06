@@ -1,0 +1,35 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style type="text/css">
+
+    </style>
+    <script src="jquery-1.8.3.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        //十秒钟后协议文本框下的注册按钮才能点击，时钟倒数。设置可用性等jQuery未封装方法：attr("")setInterval()
+
+        $(function () {
+            var sec = 5;
+            var setId = setInterval(function () {
+                sec--;
+                if (sec < 0) {
+                    sec = 0;
+                    //按钮启用,计时器销毁,设置按钮中的内容
+                    $('#btn').val('同意').attr('disabled', false);
+                    clearInterval(setId);
+                } else {
+
+                    $('#btn').val('请仔细阅读协议(' + sec + ')');
+                }
+
+            }, 1000);
+        });
+
+    </script>
+</head>
+<body>
+    <input type="button" name="name" value="请仔细阅读协议(5)" id="btn" disabled="disabled" />
+</body>
+</html>
