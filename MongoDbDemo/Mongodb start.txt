@@ -1,0 +1,4 @@
+mongodb
+
+
+c:\work\mongodb\mongod --dbpath=c:\work\mongodb --logpath=c:\work\mongodb\log\log.txt --install
