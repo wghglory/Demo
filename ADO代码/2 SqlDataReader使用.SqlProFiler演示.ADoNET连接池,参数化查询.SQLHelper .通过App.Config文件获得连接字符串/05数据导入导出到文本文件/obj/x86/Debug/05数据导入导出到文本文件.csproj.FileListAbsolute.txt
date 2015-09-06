@@ -1,0 +1,7 @@
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130625\05数据导入导出到文本文件\bin\Debug\05数据导入导出到文本文件.exe
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130625\05数据导入导出到文本文件\bin\Debug\05数据导入导出到文本文件.pdb
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130625\05数据导入导出到文本文件\obj\x86\Debug\_05数据导入导出到文本文件.Form1.resources
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130625\05数据导入导出到文本文件\obj\x86\Debug\_05数据导入导出到文本文件.Properties.Resources.resources
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130625\05数据导入导出到文本文件\obj\x86\Debug\05数据导入导出到文本文件.csproj.GenerateResource.Cache
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130625\05数据导入导出到文本文件\obj\x86\Debug\05数据导入导出到文本文件.exe
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130625\05数据导入导出到文本文件\obj\x86\Debug\05数据导入导出到文本文件.pdb

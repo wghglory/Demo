@@ -1,0 +1,7 @@
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130628\03DataTable与DataSet\bin\Debug\03DataTable与DataSet.exe
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130628\03DataTable与DataSet\bin\Debug\03DataTable与DataSet.pdb
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130628\03DataTable与DataSet\obj\x86\Debug\_03DataTable与DataSet.Form1.resources
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130628\03DataTable与DataSet\obj\x86\Debug\_03DataTable与DataSet.Properties.Resources.resources
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130628\03DataTable与DataSet\obj\x86\Debug\03DataTable与DataSet.csproj.GenerateResource.Cache
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130628\03DataTable与DataSet\obj\x86\Debug\03DataTable与DataSet.exe
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130628\03DataTable与DataSet\obj\x86\Debug\03DataTable与DataSet.pdb

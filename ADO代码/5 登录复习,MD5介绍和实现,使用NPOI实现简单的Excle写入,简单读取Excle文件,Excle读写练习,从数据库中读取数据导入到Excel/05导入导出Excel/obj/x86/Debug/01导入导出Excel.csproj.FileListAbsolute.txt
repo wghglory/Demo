@@ -1,0 +1,15 @@
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130715\01导入导出Excel\bin\Debug\01导入导出Excel.exe.config
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130715\01导入导出Excel\bin\Debug\01导入导出Excel.exe
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130715\01导入导出Excel\bin\Debug\01导入导出Excel.pdb
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130715\01导入导出Excel\bin\Debug\Ionic.Zip.dll
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130715\01导入导出Excel\bin\Debug\NPOI.dll
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130715\01导入导出Excel\bin\Debug\NPOI.xml
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130715\01导入导出Excel\obj\x86\Debug\01导入导出Excel.csprojResolveAssemblyReference.cache
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130715\01导入导出Excel\obj\x86\Debug\_01导入导出Excel.Form1.resources
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130715\01导入导出Excel\obj\x86\Debug\_01导入导出Excel.Properties.Resources.resources
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130715\01导入导出Excel\obj\x86\Debug\01导入导出Excel.csproj.GenerateResource.Cache
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130715\01导入导出Excel\obj\x86\Debug\01导入导出Excel.exe
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130715\01导入导出Excel\obj\x86\Debug\01导入导出Excel.pdb
+\\psf\Home\Documents\工作\黑马7\33----2013.07.15---Excle导入导出,执行带事务的Sql语句,拼音转换,更新表中的拼音字段,递归,三层实现年龄自增长和登录\This Teacher\Code\Sln20130715（全）\01导入导出Excel\bin\Debug\01导入导出Excel.exe.config
+\\psf\Home\Documents\工作\黑马7\33----2013.07.15---Excle导入导出,执行带事务的Sql语句,拼音转换,更新表中的拼音字段,递归,三层实现年龄自增长和登录\This Teacher\Code\Sln20130715（全）\01导入导出Excel\obj\x86\Debug\01导入导出Excel.exe
+\\psf\Home\Documents\工作\黑马7\33----2013.07.15---Excle导入导出,执行带事务的Sql语句,拼音转换,更新表中的拼音字段,递归,三层实现年龄自增长和登录\This Teacher\Code\Sln20130715（全）\01导入导出Excel\obj\x86\Debug\01导入导出Excel.pdb

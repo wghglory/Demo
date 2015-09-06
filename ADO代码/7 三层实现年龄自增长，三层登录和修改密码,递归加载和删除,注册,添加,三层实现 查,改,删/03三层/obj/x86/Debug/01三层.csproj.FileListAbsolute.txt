@@ -1,0 +1,14 @@
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130716\01三层\obj\x86\Debug\_01三层.Properties.Resources.resources
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130716\01三层\obj\x86\Debug\_01三层.UI.Form1.resources
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130716\01三层\obj\x86\Debug\01三层.csproj.GenerateResource.Cache
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130716\01三层\bin\Debug\01三层.exe.config
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130716\01三层\bin\Debug\01三层.exe
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130716\01三层\bin\Debug\01三层.pdb
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130716\01三层\obj\x86\Debug\01三层.exe
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130716\01三层\obj\x86\Debug\01三层.pdb
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130716\01三层\obj\x86\Debug\_01三层.UI.Form2.resources
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130716\01三层\obj\x86\Debug\_01三层.UI.Form3.resources
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130716\01三层\obj\x86\Debug\_01三层.UI.Form4.resources
+\\psf\Home\Documents\工作\黑马7\34----2013.07.16---三层登录和修改密码,递归加载和删除,注册,添加,三层实现 查,改,删\This Teacher\Code\01三层\bin\Debug\01三层.exe.config
+\\psf\Home\Documents\工作\黑马7\34----2013.07.16---三层登录和修改密码,递归加载和删除,注册,添加,三层实现 查,改,删\This Teacher\Code\01三层\obj\x86\Debug\01三层.exe
+\\psf\Home\Documents\工作\黑马7\34----2013.07.16---三层登录和修改密码,递归加载和删除,注册,添加,三层实现 查,改,删\This Teacher\Code\01三层\obj\x86\Debug\01三层.pdb

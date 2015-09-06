@@ -1,0 +1,4 @@
+c:\users\steve\documents\visual studio 2010\Projects\Solution1\02计算文件与字符串的Md5值\bin\Debug\02计算文件与字符串的Md5值.exe
+c:\users\steve\documents\visual studio 2010\Projects\Solution1\02计算文件与字符串的Md5值\bin\Debug\02计算文件与字符串的Md5值.pdb
+c:\users\steve\documents\visual studio 2010\Projects\Solution1\02计算文件与字符串的Md5值\obj\x86\Debug\02计算文件与字符串的Md5值.exe
+c:\users\steve\documents\visual studio 2010\Projects\Solution1\02计算文件与字符串的Md5值\obj\x86\Debug\02计算文件与字符串的Md5值.pdb

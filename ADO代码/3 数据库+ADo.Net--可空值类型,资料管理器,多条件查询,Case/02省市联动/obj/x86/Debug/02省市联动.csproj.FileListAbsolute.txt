@@ -1,0 +1,8 @@
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130627\02省市联动\bin\Debug\02省市联动.exe.config
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130627\02省市联动\bin\Debug\02省市联动.exe
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130627\02省市联动\bin\Debug\02省市联动.pdb
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130627\02省市联动\obj\x86\Debug\_02省市联动.Form1.resources
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130627\02省市联动\obj\x86\Debug\_02省市联动.Properties.Resources.resources
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130627\02省市联动\obj\x86\Debug\02省市联动.csproj.GenerateResource.Cache
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130627\02省市联动\obj\x86\Debug\02省市联动.exe
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130627\02省市联动\obj\x86\Debug\02省市联动.pdb

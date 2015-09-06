@@ -1,0 +1,4 @@
+C:\Users\Steve\documents\visual studio 2010\Projects\Sln20130627\04可空值类型\bin\Debug\04可空值类型.exe
+C:\Users\Steve\documents\visual studio 2010\Projects\Sln20130627\04可空值类型\bin\Debug\04可空值类型.pdb
+C:\Users\Steve\documents\visual studio 2010\Projects\Sln20130627\04可空值类型\obj\x86\Debug\04可空值类型.exe
+C:\Users\Steve\documents\visual studio 2010\Projects\Sln20130627\04可空值类型\obj\x86\Debug\04可空值类型.pdb

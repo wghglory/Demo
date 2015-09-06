@@ -1,0 +1,4 @@
+C:\Users\Steve\documents\visual studio 2010\Projects\Sln20130624\05查询表中的所有记录\bin\Debug\05查询表中的所有记录.exe
+C:\Users\Steve\documents\visual studio 2010\Projects\Sln20130624\05查询表中的所有记录\bin\Debug\05查询表中的所有记录.pdb
+C:\Users\Steve\documents\visual studio 2010\Projects\Sln20130624\05查询表中的所有记录\obj\x86\Debug\05查询表中的所有记录.exe
+C:\Users\Steve\documents\visual studio 2010\Projects\Sln20130624\05查询表中的所有记录\obj\x86\Debug\05查询表中的所有记录.pdb

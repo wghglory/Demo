@@ -1,0 +1,45 @@
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130718\Scripts.UI\bin\Debug\Scripts.UI.exe
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130718\Scripts.UI\bin\Debug\Scripts.UI.pdb
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130718\Scripts.UI\obj\x86\Debug\Scripts.UI.Form1.resources
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130718\Scripts.UI\obj\x86\Debug\Scripts.UI.Properties.Resources.resources
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130718\Scripts.UI\obj\x86\Debug\Scripts.UI.csproj.GenerateResource.Cache
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130718\Scripts.UI\obj\x86\Debug\Scripts.UI.exe
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130718\Scripts.UI\obj\x86\Debug\Scripts.UI.pdb
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130718\Scripts.UI\bin\Debug\Scripts.UI.exe.config
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130718\Scripts.UI\bin\Debug\Scripts.BLL.dll
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130718\Scripts.UI\bin\Debug\Scripts.Model.dll
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130718\Scripts.UI\bin\Debug\Scripts.DAL.dll
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130718\Scripts.UI\bin\Debug\Scripts.BLL.pdb
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130718\Scripts.UI\bin\Debug\Scripts.Model.pdb
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130718\Scripts.UI\bin\Debug\Scripts.DAL.pdb
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130718\Scripts.UI\obj\x86\Debug\Scripts.UI.csprojResolveAssemblyReference.cache
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130718\Scripts.UI\obj\x86\Debug\Scripts.UI.frmAddScripts.resources
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130718\Scripts.UI\obj\x86\Debug\Scripts.UI.frmEdit.resources
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130718\Scripts.UI\obj\x86\Debug\Scripts.UI.frmGenericCode.resources
+C:\Users\Steve\Desktop\Sln20130718（全）\Scripts.UI\bin\Debug\Scripts.UI.exe.config
+C:\Users\Steve\Desktop\Sln20130718（全）\Scripts.UI\obj\x86\Debug\Scripts.UI.exe
+C:\Users\Steve\Desktop\Sln20130718（全）\Scripts.UI\obj\x86\Debug\Scripts.UI.pdb
+C:\Users\Steve\Desktop\Sln20130718（全）\Scripts.UI\bin\Debug\Scripts.UI.exe
+C:\Users\Steve\Desktop\Sln20130718（全）\Scripts.UI\bin\Debug\Scripts.UI.pdb
+C:\Users\Steve\Desktop\Sln20130718（全）\Scripts.UI\bin\Debug\Scripts.BLL.dll
+C:\Users\Steve\Desktop\Sln20130718（全）\Scripts.UI\bin\Debug\Scripts.Model.dll
+C:\Users\Steve\Desktop\Sln20130718（全）\Scripts.UI\bin\Debug\Scripts.DAL.dll
+C:\Users\Steve\Desktop\Sln20130718（全）\Scripts.UI\bin\Debug\Scripts.BLL.pdb
+C:\Users\Steve\Desktop\Sln20130718（全）\Scripts.UI\bin\Debug\Scripts.Model.pdb
+C:\Users\Steve\Desktop\Sln20130718（全）\Scripts.UI\bin\Debug\Scripts.DAL.pdb
+C:\Users\Steve\Desktop\Sln20130718（全）\Scripts.UI\obj\x86\Debug\Scripts.UI.csprojResolveAssemblyReference.cache
+C:\Users\Steve\Desktop\Sln20130718（全）\Scripts.UI\obj\x86\Debug\Scripts.UI.Form1.resources
+C:\Users\Steve\Desktop\Sln20130718（全）\Scripts.UI\obj\x86\Debug\Scripts.UI.frmAddScripts.resources
+C:\Users\Steve\Desktop\Sln20130718（全）\Scripts.UI\obj\x86\Debug\Scripts.UI.frmEdit.resources
+C:\Users\Steve\Desktop\Sln20130718（全）\Scripts.UI\obj\x86\Debug\Scripts.UI.frmGenericCode.resources
+C:\Users\Steve\Desktop\Sln20130718（全）\Scripts.UI\obj\x86\Debug\Scripts.UI.Properties.Resources.resources
+C:\Users\Steve\Desktop\Sln20130718（全）\Scripts.UI\obj\x86\Debug\Scripts.UI.csproj.GenerateResource.Cache
+C:\Users\Steve\Desktop\Sln20130718（全）\Scripts.UI\obj\x86\Debug\Scripts.UI.Form2.resources
+C:\Users\Steve\Desktop\Sln20130718（全）\Scripts.UI\obj\x86\Debug\Scripts.UI.Form3.resources
+C:\Users\Steve\Desktop\Sln20130718（全）\Scripts.UI\obj\x86\Debug\Scripts.UI.frm通过程序实现发邮件.resources
+G:\Alian-------------------HeiMa .NET Seven\36----2013.07.19---代码生成器之数据类型判断,单例模式,代码生成,邮件发送,和配置\This Teacher\Code\Scripts.UI\bin\Debug\Scripts.UI.exe.config
+G:\Alian-------------------HeiMa .NET Seven\36----2013.07.19---代码生成器之数据类型判断,单例模式,代码生成,邮件发送,和配置\This Teacher\Code\Scripts.UI\obj\x86\Debug\Scripts.UI.exe
+G:\Alian-------------------HeiMa .NET Seven\36----2013.07.19---代码生成器之数据类型判断,单例模式,代码生成,邮件发送,和配置\This Teacher\Code\Scripts.UI\obj\x86\Debug\Scripts.UI.pdb
+\\psf\Home\Documents\工作\黑马7\36----2013.07.19---代码生成器之数据类型判断,单例模式,代码生成,邮件发送,和配置\This Teacher\Code\Scripts.UI\bin\Debug\Scripts.UI.exe.config
+\\psf\Home\Documents\工作\黑马7\36----2013.07.19---代码生成器之数据类型判断,单例模式,代码生成,邮件发送,和配置\This Teacher\Code\Scripts.UI\obj\x86\Debug\Scripts.UI.exe
+\\psf\Home\Documents\工作\黑马7\36----2013.07.19---代码生成器之数据类型判断,单例模式,代码生成,邮件发送,和配置\This Teacher\Code\Scripts.UI\obj\x86\Debug\Scripts.UI.pdb

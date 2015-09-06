@@ -1,0 +1,8 @@
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130715\07非三层实现年龄长一岁\bin\Debug\07非三层实现年龄长一岁.exe.config
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130715\07非三层实现年龄长一岁\bin\Debug\07非三层实现年龄长一岁.exe
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130715\07非三层实现年龄长一岁\bin\Debug\07非三层实现年龄长一岁.pdb
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130715\07非三层实现年龄长一岁\obj\x86\Debug\_07非三层实现年龄长一岁.Form1.resources
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130715\07非三层实现年龄长一岁\obj\x86\Debug\_07非三层实现年龄长一岁.Properties.Resources.resources
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130715\07非三层实现年龄长一岁\obj\x86\Debug\07非三层实现年龄长一岁.csproj.GenerateResource.Cache
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130715\07非三层实现年龄长一岁\obj\x86\Debug\07非三层实现年龄长一岁.exe
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130715\07非三层实现年龄长一岁\obj\x86\Debug\07非三层实现年龄长一岁.pdb

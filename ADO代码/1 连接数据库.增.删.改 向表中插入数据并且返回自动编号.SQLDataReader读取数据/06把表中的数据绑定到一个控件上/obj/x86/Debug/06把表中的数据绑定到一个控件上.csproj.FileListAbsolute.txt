@@ -1,0 +1,7 @@
+C:\Users\Steve\documents\visual studio 2010\Projects\Sln20130624\06把表中的数据绑定到一个控件上\bin\Debug\06把表中的数据绑定到一个控件上.exe
+C:\Users\Steve\documents\visual studio 2010\Projects\Sln20130624\06把表中的数据绑定到一个控件上\bin\Debug\06把表中的数据绑定到一个控件上.pdb
+C:\Users\Steve\documents\visual studio 2010\Projects\Sln20130624\06把表中的数据绑定到一个控件上\obj\x86\Debug\_06把表中的数据绑定到一个控件上.Form1.resources
+C:\Users\Steve\documents\visual studio 2010\Projects\Sln20130624\06把表中的数据绑定到一个控件上\obj\x86\Debug\_06把表中的数据绑定到一个控件上.Properties.Resources.resources
+C:\Users\Steve\documents\visual studio 2010\Projects\Sln20130624\06把表中的数据绑定到一个控件上\obj\x86\Debug\06把表中的数据绑定到一个控件上.csproj.GenerateResource.Cache
+C:\Users\Steve\documents\visual studio 2010\Projects\Sln20130624\06把表中的数据绑定到一个控件上\obj\x86\Debug\06把表中的数据绑定到一个控件上.exe
+C:\Users\Steve\documents\visual studio 2010\Projects\Sln20130624\06把表中的数据绑定到一个控件上\obj\x86\Debug\06把表中的数据绑定到一个控件上.pdb

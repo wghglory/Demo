@@ -1,0 +1,4 @@
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130628\05逆变与协变\bin\Debug\05逆变与协变.exe
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130628\05逆变与协变\bin\Debug\05逆变与协变.pdb
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130628\05逆变与协变\obj\x86\Debug\05逆变与协变.exe
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130628\05逆变与协变\obj\x86\Debug\05逆变与协变.pdb

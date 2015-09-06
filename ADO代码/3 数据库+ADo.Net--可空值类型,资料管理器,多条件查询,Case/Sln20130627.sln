@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01通过ado.net连接SqlExpress", "01通过ado.net连接SqlExpress\01通过ado.net连接SqlExpress.csproj", "{7B619A27-3ABC-4C18-9FF3-359CB0533721}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02省市联动", "02省市联动\02省市联动.csproj", "{2C3AD429-B229-4A73-93E2-4CE9E9413EE4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03省市数据递归加载到TreeView", "03省市数据递归加载到TreeView\03省市数据递归加载到TreeView.csproj", "{80D73E65-C0A9-4538-A502-A45476254280}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04可空值类型", "04可空值类型\04可空值类型.csproj", "{181CD8C3-CECE-4076-A14A-5E80E8B297A0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05资料管理器", "05资料管理器\05资料管理器.csproj", "{6A221CF2-FB81-4BB4-8B62-8B2DE69517FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06多条件查询的时候的Sql语句问题", "06多条件查询的时候的Sql语句问题\06多条件查询的时候的Sql语句问题.csproj", "{C0E84AED-20C6-4F84-AD45-75AD503A2CC4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7B619A27-3ABC-4C18-9FF3-359CB0533721}.Debug|x86.ActiveCfg = Debug|x86
+		{7B619A27-3ABC-4C18-9FF3-359CB0533721}.Debug|x86.Build.0 = Debug|x86
+		{7B619A27-3ABC-4C18-9FF3-359CB0533721}.Release|x86.ActiveCfg = Release|x86
+		{7B619A27-3ABC-4C18-9FF3-359CB0533721}.Release|x86.Build.0 = Release|x86
+		{2C3AD429-B229-4A73-93E2-4CE9E9413EE4}.Debug|x86.ActiveCfg = Debug|x86
+		{2C3AD429-B229-4A73-93E2-4CE9E9413EE4}.Debug|x86.Build.0 = Debug|x86
+		{2C3AD429-B229-4A73-93E2-4CE9E9413EE4}.Release|x86.ActiveCfg = Release|x86
+		{2C3AD429-B229-4A73-93E2-4CE9E9413EE4}.Release|x86.Build.0 = Release|x86
+		{80D73E65-C0A9-4538-A502-A45476254280}.Debug|x86.ActiveCfg = Debug|x86
+		{80D73E65-C0A9-4538-A502-A45476254280}.Debug|x86.Build.0 = Debug|x86
+		{80D73E65-C0A9-4538-A502-A45476254280}.Release|x86.ActiveCfg = Release|x86
+		{80D73E65-C0A9-4538-A502-A45476254280}.Release|x86.Build.0 = Release|x86
+		{181CD8C3-CECE-4076-A14A-5E80E8B297A0}.Debug|x86.ActiveCfg = Debug|x86
+		{181CD8C3-CECE-4076-A14A-5E80E8B297A0}.Debug|x86.Build.0 = Debug|x86
+		{181CD8C3-CECE-4076-A14A-5E80E8B297A0}.Release|x86.ActiveCfg = Release|x86
+		{181CD8C3-CECE-4076-A14A-5E80E8B297A0}.Release|x86.Build.0 = Release|x86
+		{6A221CF2-FB81-4BB4-8B62-8B2DE69517FB}.Debug|x86.ActiveCfg = Debug|x86
+		{6A221CF2-FB81-4BB4-8B62-8B2DE69517FB}.Debug|x86.Build.0 = Debug|x86
+		{6A221CF2-FB81-4BB4-8B62-8B2DE69517FB}.Release|x86.ActiveCfg = Release|x86
+		{6A221CF2-FB81-4BB4-8B62-8B2DE69517FB}.Release|x86.Build.0 = Release|x86
+		{C0E84AED-20C6-4F84-AD45-75AD503A2CC4}.Debug|x86.ActiveCfg = Debug|x86
+		{C0E84AED-20C6-4F84-AD45-75AD503A2CC4}.Debug|x86.Build.0 = Debug|x86
+		{C0E84AED-20C6-4F84-AD45-75AD503A2CC4}.Release|x86.ActiveCfg = Release|x86
+		{C0E84AED-20C6-4F84-AD45-75AD503A2CC4}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

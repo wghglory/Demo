@@ -1,0 +1,11 @@
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130628\01通过存储过程实现增删改查\bin\Debug\01通过存储过程实现增删改查.exe
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130628\01通过存储过程实现增删改查\bin\Debug\01通过存储过程实现增删改查.pdb
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130628\01通过存储过程实现增删改查\obj\x86\Debug\_01通过存储过程实现增删改查.Form1.resources
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130628\01通过存储过程实现增删改查\obj\x86\Debug\_01通过存储过程实现增删改查.Properties.Resources.resources
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130628\01通过存储过程实现增删改查\obj\x86\Debug\01通过存储过程实现增删改查.csproj.GenerateResource.Cache
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130628\01通过存储过程实现增删改查\obj\x86\Debug\01通过存储过程实现增删改查.exe
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130628\01通过存储过程实现增删改查\obj\x86\Debug\01通过存储过程实现增删改查.pdb
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130628\01通过存储过程实现增删改查\obj\x86\Debug\_01通过存储过程实现增删改查.Form2.resources
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130628\01通过存储过程实现增删改查\obj\x86\Debug\_01通过存储过程实现增删改查.Form3.resources
+\\psf\Home\Desktop\Sln20130628（全New）\01通过存储过程实现增删改查\obj\x86\Debug\01通过存储过程实现增删改查.exe
+\\psf\Home\Desktop\Sln20130628（全New）\01通过存储过程实现增删改查\obj\x86\Debug\01通过存储过程实现增删改查.pdb

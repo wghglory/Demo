@@ -1,0 +1,5 @@
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130627\01通过ado.net连接SqlExpress\bin\Debug\01通过ado.net连接SqlExpress.exe
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130627\01通过ado.net连接SqlExpress\bin\Debug\01通过ado.net连接SqlExpress.pdb
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130627\01通过ado.net连接SqlExpress\obj\x86\Debug\01通过ado.net连接SqlExpress.exe
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130627\01通过ado.net连接SqlExpress\obj\x86\Debug\01通过ado.net连接SqlExpress.pdb
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130627\01通过ado.net连接SqlExpress\bin\Debug\01通过ado.net连接SqlExpress.exe.config

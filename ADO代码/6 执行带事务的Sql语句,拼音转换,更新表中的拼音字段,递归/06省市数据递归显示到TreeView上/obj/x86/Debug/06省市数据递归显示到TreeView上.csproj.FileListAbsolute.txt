@@ -1,0 +1,14 @@
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130715\06省市数据递归显示到TreeView上\bin\Debug\06省市数据递归显示到TreeView上.exe.config
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130715\06省市数据递归显示到TreeView上\bin\Debug\06省市数据递归显示到TreeView上.exe
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130715\06省市数据递归显示到TreeView上\bin\Debug\06省市数据递归显示到TreeView上.pdb
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130715\06省市数据递归显示到TreeView上\obj\x86\Debug\_06省市数据递归显示到TreeView上.Form1.resources
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130715\06省市数据递归显示到TreeView上\obj\x86\Debug\_06省市数据递归显示到TreeView上.Properties.Resources.resources
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130715\06省市数据递归显示到TreeView上\obj\x86\Debug\06省市数据递归显示到TreeView上.csproj.GenerateResource.Cache
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130715\06省市数据递归显示到TreeView上\obj\x86\Debug\06省市数据递归显示到TreeView上.exe
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130715\06省市数据递归显示到TreeView上\obj\x86\Debug\06省市数据递归显示到TreeView上.pdb
+\\psf\Home\Documents\工作\黑马7\33----2013.07.15---Excle导入导出,执行带事务的Sql语句,拼音转换,更新表中的拼音字段,递归,三层实现年龄自增长和登录\This Teacher\Code\Sln20130715（全）\06省市数据递归显示到TreeView上\bin\Debug\06省市数据递归显示到TreeView上.exe.config
+\\psf\Home\Documents\工作\黑马7\33----2013.07.15---Excle导入导出,执行带事务的Sql语句,拼音转换,更新表中的拼音字段,递归,三层实现年龄自增长和登录\This Teacher\Code\Sln20130715（全）\06省市数据递归显示到TreeView上\obj\x86\Debug\06省市数据递归显示到TreeView上.exe
+\\psf\Home\Documents\工作\黑马7\33----2013.07.15---Excle导入导出,执行带事务的Sql语句,拼音转换,更新表中的拼音字段,递归,三层实现年龄自增长和登录\This Teacher\Code\Sln20130715（全）\06省市数据递归显示到TreeView上\obj\x86\Debug\06省市数据递归显示到TreeView上.pdb
+\\psf\Home\Documents\工作\MyCode\ADO代码\6 执行带事务的Sql语句,拼音转换,更新表中的拼音字段,递归,三层实现年龄自增长和登录\06省市数据递归显示到TreeView上\bin\Debug\06省市数据递归显示到TreeView上.exe.config
+\\psf\Home\Documents\工作\MyCode\ADO代码\6 执行带事务的Sql语句,拼音转换,更新表中的拼音字段,递归,三层实现年龄自增长和登录\06省市数据递归显示到TreeView上\obj\x86\Debug\06省市数据递归显示到TreeView上.exe
+\\psf\Home\Documents\工作\MyCode\ADO代码\6 执行带事务的Sql语句,拼音转换,更新表中的拼音字段,递归,三层实现年龄自增长和登录\06省市数据递归显示到TreeView上\obj\x86\Debug\06省市数据递归显示到TreeView上.pdb

@@ -1,0 +1,8 @@
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130625\06自己封装一个SqlHelper\bin\Debug\06自己封装一个SqlHelper.exe
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130625\06自己封装一个SqlHelper\bin\Debug\06自己封装一个SqlHelper.pdb
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130625\06自己封装一个SqlHelper\obj\x86\Debug\_06自己封装一个SqlHelper.Form1.resources
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130625\06自己封装一个SqlHelper\obj\x86\Debug\_06自己封装一个SqlHelper.Properties.Resources.resources
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130625\06自己封装一个SqlHelper\obj\x86\Debug\06自己封装一个SqlHelper.csproj.GenerateResource.Cache
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130625\06自己封装一个SqlHelper\obj\x86\Debug\06自己封装一个SqlHelper.exe
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130625\06自己封装一个SqlHelper\obj\x86\Debug\06自己封装一个SqlHelper.pdb
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130625\06自己封装一个SqlHelper\bin\Debug\06自己封装一个SqlHelper.exe.config

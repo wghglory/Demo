@@ -1,0 +1,4 @@
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130715\02ado.net中使用事务\bin\Debug\02ado.net中使用事务.exe
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130715\02ado.net中使用事务\bin\Debug\02ado.net中使用事务.pdb
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130715\02ado.net中使用事务\obj\x86\Debug\02ado.net中使用事务.exe
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130715\02ado.net中使用事务\obj\x86\Debug\02ado.net中使用事务.pdb

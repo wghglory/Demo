@@ -1,0 +1,24 @@
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130718\Scripts.UI\bin\Debug\Scripts.UI.exe
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130718\Scripts.UI\bin\Debug\Scripts.UI.pdb
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130718\Scripts.UI\obj\x86\Debug\Scripts.UI.Form1.resources
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130718\Scripts.UI\obj\x86\Debug\Scripts.UI.Properties.Resources.resources
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130718\Scripts.UI\obj\x86\Debug\Scripts.UI.csproj.GenerateResource.Cache
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130718\Scripts.UI\obj\x86\Debug\Scripts.UI.exe
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130718\Scripts.UI\obj\x86\Debug\Scripts.UI.pdb
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130718\Scripts.UI\bin\Debug\Scripts.UI.exe.config
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130718\Scripts.UI\bin\Debug\Scripts.BLL.dll
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130718\Scripts.UI\bin\Debug\Scripts.Model.dll
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130718\Scripts.UI\bin\Debug\Scripts.DAL.dll
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130718\Scripts.UI\bin\Debug\Scripts.BLL.pdb
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130718\Scripts.UI\bin\Debug\Scripts.Model.pdb
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130718\Scripts.UI\bin\Debug\Scripts.DAL.pdb
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130718\Scripts.UI\obj\x86\Debug\Scripts.UI.csprojResolveAssemblyReference.cache
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130718\Scripts.UI\obj\x86\Debug\Scripts.UI.frmAddScripts.resources
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130718\Scripts.UI\obj\x86\Debug\Scripts.UI.frmEdit.resources
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130718\Scripts.UI\obj\x86\Debug\Scripts.UI.frmGenericCode.resources
+\\psf\Home\Documents\工作\黑马7\35----2013.07.18---话术脚本任务,功能-加载,显示,增加,删除,代码生成器\This Teacher\Code\Scripts.UI\bin\Debug\Scripts.UI.exe.config
+\\psf\Home\Documents\工作\黑马7\35----2013.07.18---话术脚本任务,功能-加载,显示,增加,删除,代码生成器\This Teacher\Code\Scripts.UI\obj\x86\Debug\Scripts.UI.exe
+\\psf\Home\Documents\工作\黑马7\35----2013.07.18---话术脚本任务,功能-加载,显示,增加,删除,代码生成器\This Teacher\Code\Scripts.UI\obj\x86\Debug\Scripts.UI.pdb
+\\psf\Home\Documents\工作\MyCode\ADO代码\8 话术脚本任务,功能-加载,显示,增加,删除,代码生成器\Scripts.UI\bin\Debug\Scripts.UI.exe.config
+\\psf\Home\Documents\工作\MyCode\ADO代码\8 话术脚本任务,功能-加载,显示,增加,删除,代码生成器\Scripts.UI\obj\x86\Debug\Scripts.UI.exe
+\\psf\Home\Documents\工作\MyCode\ADO代码\8 话术脚本任务,功能-加载,显示,增加,删除,代码生成器\Scripts.UI\obj\x86\Debug\Scripts.UI.pdb

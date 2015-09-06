@@ -1,0 +1,4 @@
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130625\04Ado.net连接池\bin\Debug\04Ado.net连接池.exe
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130625\04Ado.net连接池\bin\Debug\04Ado.net连接池.pdb
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130625\04Ado.net连接池\obj\x86\Debug\04Ado.net连接池.exe
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130625\04Ado.net连接池\obj\x86\Debug\04Ado.net连接池.pdb

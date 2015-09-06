@@ -1,0 +1,4 @@
+C:\Users\Steve\Desktop\Sln20130718（全）\01单例模式演示\bin\Debug\01单例模式演示.exe
+C:\Users\Steve\Desktop\Sln20130718（全）\01单例模式演示\bin\Debug\01单例模式演示.pdb
+C:\Users\Steve\Desktop\Sln20130718（全）\01单例模式演示\obj\x86\Debug\01单例模式演示.exe
+C:\Users\Steve\Desktop\Sln20130718（全）\01单例模式演示\obj\x86\Debug\01单例模式演示.pdb

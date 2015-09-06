@@ -1,0 +1,7 @@
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130625\03登录\bin\Debug\03登录.exe
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130625\03登录\bin\Debug\03登录.pdb
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130625\03登录\obj\x86\Debug\_03登录.Form1.resources
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130625\03登录\obj\x86\Debug\_03登录.Properties.Resources.resources
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130625\03登录\obj\x86\Debug\03登录.csproj.GenerateResource.Cache
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130625\03登录\obj\x86\Debug\03登录.exe
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130625\03登录\obj\x86\Debug\03登录.pdb

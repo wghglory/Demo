@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02ado.net中使用事务", "02ado.net中使用事务\02ado.net中使用事务.csproj", "{E5B47C52-0867-47F0-BC69-B9C567359168}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03把给定的汉字转换为拼音", "03把给定的汉字转换为拼音\03把给定的汉字转换为拼音.csproj", "{90AAD7BF-3025-48E3-BC5B-1E048A556D7B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04更新表中的拼音列", "04更新表中的拼音列\04更新表中的拼音列.csproj", "{EA3D2F0E-2F58-4D69-B58A-FFF659A64D4B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05递归", "05递归\05递归.csproj", "{7CDAD3E3-612E-44A9-B887-148DE7E79C72}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06省市数据递归显示到TreeView上", "06省市数据递归显示到TreeView上\06省市数据递归显示到TreeView上.csproj", "{0B58A043-6EB5-42CE-9326-57C144E4FC47}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07非三层实现年龄长一岁", "07非三层实现年龄长一岁\07非三层实现年龄长一岁.csproj", "{862CD9D2-70A0-49DC-9489-3336BE9A1867}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08使用三层实现年龄长1岁", "08使用三层实现年龄长1岁\08使用三层实现年龄长1岁.csproj", "{8B5BB206-6B1B-4CD3-A68D-13EF1589C740}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E5B47C52-0867-47F0-BC69-B9C567359168}.Debug|x86.ActiveCfg = Debug|x86
+		{E5B47C52-0867-47F0-BC69-B9C567359168}.Debug|x86.Build.0 = Debug|x86
+		{E5B47C52-0867-47F0-BC69-B9C567359168}.Release|x86.ActiveCfg = Release|x86
+		{E5B47C52-0867-47F0-BC69-B9C567359168}.Release|x86.Build.0 = Release|x86
+		{90AAD7BF-3025-48E3-BC5B-1E048A556D7B}.Debug|x86.ActiveCfg = Debug|x86
+		{90AAD7BF-3025-48E3-BC5B-1E048A556D7B}.Debug|x86.Build.0 = Debug|x86
+		{90AAD7BF-3025-48E3-BC5B-1E048A556D7B}.Release|x86.ActiveCfg = Release|x86
+		{90AAD7BF-3025-48E3-BC5B-1E048A556D7B}.Release|x86.Build.0 = Release|x86
+		{EA3D2F0E-2F58-4D69-B58A-FFF659A64D4B}.Debug|x86.ActiveCfg = Debug|x86
+		{EA3D2F0E-2F58-4D69-B58A-FFF659A64D4B}.Debug|x86.Build.0 = Debug|x86
+		{EA3D2F0E-2F58-4D69-B58A-FFF659A64D4B}.Release|x86.ActiveCfg = Release|x86
+		{EA3D2F0E-2F58-4D69-B58A-FFF659A64D4B}.Release|x86.Build.0 = Release|x86
+		{7CDAD3E3-612E-44A9-B887-148DE7E79C72}.Debug|x86.ActiveCfg = Debug|x86
+		{7CDAD3E3-612E-44A9-B887-148DE7E79C72}.Debug|x86.Build.0 = Debug|x86
+		{7CDAD3E3-612E-44A9-B887-148DE7E79C72}.Release|x86.ActiveCfg = Release|x86
+		{7CDAD3E3-612E-44A9-B887-148DE7E79C72}.Release|x86.Build.0 = Release|x86
+		{0B58A043-6EB5-42CE-9326-57C144E4FC47}.Debug|x86.ActiveCfg = Debug|x86
+		{0B58A043-6EB5-42CE-9326-57C144E4FC47}.Debug|x86.Build.0 = Debug|x86
+		{0B58A043-6EB5-42CE-9326-57C144E4FC47}.Release|x86.ActiveCfg = Release|x86
+		{0B58A043-6EB5-42CE-9326-57C144E4FC47}.Release|x86.Build.0 = Release|x86
+		{862CD9D2-70A0-49DC-9489-3336BE9A1867}.Debug|x86.ActiveCfg = Debug|x86
+		{862CD9D2-70A0-49DC-9489-3336BE9A1867}.Debug|x86.Build.0 = Debug|x86
+		{862CD9D2-70A0-49DC-9489-3336BE9A1867}.Release|x86.ActiveCfg = Release|x86
+		{862CD9D2-70A0-49DC-9489-3336BE9A1867}.Release|x86.Build.0 = Release|x86
+		{8B5BB206-6B1B-4CD3-A68D-13EF1589C740}.Debug|x86.ActiveCfg = Debug|x86
+		{8B5BB206-6B1B-4CD3-A68D-13EF1589C740}.Debug|x86.Build.0 = Debug|x86
+		{8B5BB206-6B1B-4CD3-A68D-13EF1589C740}.Release|x86.ActiveCfg = Release|x86
+		{8B5BB206-6B1B-4CD3-A68D-13EF1589C740}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,7 @@
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130716\RenYuan.DAL\bin\Debug\RenYuan.DAL.dll
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130716\RenYuan.DAL\bin\Debug\RenYuan.DAL.pdb
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130716\RenYuan.DAL\obj\Debug\RenYuan.DAL.dll
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130716\RenYuan.DAL\obj\Debug\RenYuan.DAL.pdb
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130716\RenYuan.DAL\bin\Debug\RenYuan.Model.dll
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130716\RenYuan.DAL\bin\Debug\RenYuan.Model.pdb
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130716\RenYuan.DAL\obj\Debug\RenYuan.DAL.csprojResolveAssemblyReference.cache

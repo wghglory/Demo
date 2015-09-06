@@ -1,0 +1,15 @@
+F:\Alian-------------------HeiMa .NET Seven\32----2013.07.15---\This Me\Homework\Homework\Homework\bin\Debug\Homework.exe.config
+F:\Alian-------------------HeiMa .NET Seven\32----2013.07.15---\This Me\Homework\Homework\Homework\obj\Debug\Homework.csprojResolveAssemblyReference.cache
+F:\Alian-------------------HeiMa .NET Seven\32----2013.07.15---\This Me\Homework\Homework\Homework\obj\Debug\Homework.Form1.resources
+F:\Alian-------------------HeiMa .NET Seven\32----2013.07.15---\This Me\Homework\Homework\Homework\obj\Debug\Homework.Properties.Resources.resources
+F:\Alian-------------------HeiMa .NET Seven\32----2013.07.15---\This Me\Homework\Homework\Homework\obj\Debug\Homework.csproj.GenerateResource.Cache
+F:\Alian-------------------HeiMa .NET Seven\32----2013.07.15---\This Me\Homework\Homework\Homework\bin\Debug\Homework.exe
+F:\Alian-------------------HeiMa .NET Seven\32----2013.07.15---\This Me\Homework\Homework\Homework\bin\Debug\Homework.pdb
+F:\Alian-------------------HeiMa .NET Seven\32----2013.07.15---\This Me\Homework\Homework\Homework\obj\Debug\Homework.exe
+F:\Alian-------------------HeiMa .NET Seven\32----2013.07.15---\This Me\Homework\Homework\Homework\obj\Debug\Homework.pdb
+\\psf\Home\Documents\工作\黑马7\33----2013.07.15---Excle导入导出,执行带事务的Sql语句,拼音转换,更新表中的拼音字段,递归,三层实现年龄自增长和登录\This Me\Homework\Homework\Homework\bin\Debug\Homework.exe.config
+\\psf\Home\Documents\工作\黑马7\33----2013.07.15---Excle导入导出,执行带事务的Sql语句,拼音转换,更新表中的拼音字段,递归,三层实现年龄自增长和登录\This Me\Homework\Homework\Homework\obj\Debug\Homework.exe
+\\psf\Home\Documents\工作\黑马7\33----2013.07.15---Excle导入导出,执行带事务的Sql语句,拼音转换,更新表中的拼音字段,递归,三层实现年龄自增长和登录\This Me\Homework\Homework\Homework\obj\Debug\Homework.pdb
+\\psf\Home\Documents\工作\黑马7\33----2013.07.15---Excle导入导出,执行带事务的Sql语句,拼音转换,更新表中的拼音字段,递归,三层实现年龄自增长和登录\This Me\Homework\Homework\Excel\bin\Debug\Homework.exe.config
+\\psf\Home\Documents\工作\黑马7\33----2013.07.15---Excle导入导出,执行带事务的Sql语句,拼音转换,更新表中的拼音字段,递归,三层实现年龄自增长和登录\This Me\Homework\Homework\Excel\obj\Debug\Homework.exe
+\\psf\Home\Documents\工作\黑马7\33----2013.07.15---Excle导入导出,执行带事务的Sql语句,拼音转换,更新表中的拼音字段,递归,三层实现年龄自增长和登录\This Me\Homework\Homework\Excel\obj\Debug\Homework.pdb
