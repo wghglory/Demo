@@ -1,0 +1,10 @@
+c:\users\wangg3\documents\visual studio 2010\Projects\BootStrap\BootStrap\bin\BootStrap.dll
+c:\users\wangg3\documents\visual studio 2010\Projects\BootStrap\BootStrap\bin\BootStrap.pdb
+c:\users\wangg3\documents\visual studio 2010\Projects\BootStrap\BootStrap\obj\Debug\BootStrap.dll
+c:\users\wangg3\documents\visual studio 2010\Projects\BootStrap\BootStrap\obj\Debug\BootStrap.pdb
+C:\Users\wangg3\documents\visual studio 2010\Projects\BootStrap\BootStrap\obj\Debug\BootStrap.csprojResolveAssemblyReference.cache
+C:\Users\wangg3\Desktop\BootStrap\BootStrap practice\BootStrap\bin\BootStrap.dll
+C:\Users\wangg3\Desktop\BootStrap\BootStrap practice\BootStrap\bin\BootStrap.pdb
+C:\Users\wangg3\Desktop\BootStrap\BootStrap practice\BootStrap\obj\Debug\BootStrap.csprojResolveAssemblyReference.cache
+C:\Users\wangg3\Desktop\BootStrap\BootStrap practice\BootStrap\obj\Debug\BootStrap.dll
+C:\Users\wangg3\Desktop\BootStrap\BootStrap practice\BootStrap\obj\Debug\BootStrap.pdb

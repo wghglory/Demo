@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.css" />
+</head>
+<body>
+    <div class="container">
+        <p>Add data-toggle="dropdown" to a link or button to toggle a dropdown.</p>
+        <div class="dropdown" id="myDropdown">
+            <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="btn btn-default">
+                Dropdown trigger <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+            </ul>
+        </div>
+
+        <p>To keep URLs intact with link buttons, use the data-target attribute instead of
+            href="#".</p>
+        <div class="dropdown">
+            <a id="A1" data-target="#" href="http://example.com" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">Dropdown trigger <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+            </ul>
+        </div>
+    </div>
+    <script src="js/jquery-1.11.2.js" type="text/javascript"></script>
+    <script src="js/bootstrap.js" type="text/javascript"></script>
+    <script type="text/javascript">
+
+        //$('.dropdown-toggle').dropdown(); //data-toggle="dropdown" still required. Regardless of whether you call your dropdown via JavaScript or instead use the data-api, data-toggle="dropdown" is always required to be present on the dropdown's trigger element.
+
+        $('#myDropdown').on('show.bs.dropdown', function () {
+            alert('show le');
+        })
+
+        //show.bs.dropdown	    This event fires immediately when the show instance method is called.
+        //shown.bs.dropdown	    This event is fired when the dropdown has been made visible to the user (will wait for CSS transitions, to complete).
+        //hide.bs.dropdown	    This event is fired immediately when the hide instance method has been called.
+        //hidden.bs.dropdown    This event is fired when the dropdown has finished being hidden from the user (will wait for CSS transitions, to complete).
+    </script>
+</body>
+</html>

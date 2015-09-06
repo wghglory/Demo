@@ -1,0 +1,349 @@
+﻿h1, h3, p, a, button
+{
+    font-family: "Helvetica Neue" , Helvetica, Arial, "Hiragino Sans GB" , "Hiragino Sans GB W3" , "WenQuanYi Micro Hei" , "Microsoft YaHei UI" , "Microsoft YaHei" , sans-serif;
+}
+
+/*导航*/
+.navdiv
+{
+    position: fixed;
+    top: 45%;
+    right: 20px;
+    z-index: 1;
+}
+
+.navdiv ul.navul
+{
+    text-align: center;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+.navdiv ul.navul > li
+{
+    display: block;
+    line-height: 1.45em;
+    margin: 0;
+    padding: 8px 0;
+}
+
+.navdiv ul.navul > li > a
+{
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #e2e2e2;
+    
+}
+/*第一屏幕*/
+.pageone
+{
+    height: 750px;
+}
+
+.pageone-bg
+{
+    height: 800px;
+    width: 100%;
+    position: absolute;
+    background-position: center center;
+    background-size: cover;
+}
+
+#pageonebg
+{
+    background-image: url("../images/1.jpg");
+}
+
+.headh1content
+{
+    margin-top: 150px;
+    line-height: 75px;
+}
+.title
+{
+    margin-left: 50px;
+}
+
+.headfontsize h1
+{
+    font-size: 50pt;
+    color: #ffffff;
+}
+
+.headfontsize p
+{
+    color: #ffffff;
+}
+
+/*第二屏幕*/
+.pagetwo
+{
+    padding: 2px 0 0 2px;
+    height: auto;
+    background-image: url("../images/pagetwobg.jpg");
+    width: 100%;
+    background-size: cover;
+    position: relative;
+}
+
+.pagetwo-text
+{
+    width: 100%;
+    text-align: center;
+}
+
+.pagetwo-text-h1
+{
+    margin-left: 120px;
+    letter-spacing: 2px;
+    margin-top: 80px;
+    margin-bottom: 0;
+    padding: 20px 0 0 0;
+    color: #fff5e1;
+}
+
+.pagetwo-text-h1 img
+{
+    margin-top: -20px;
+    width: 120px;
+}
+
+.pagetwo .row
+{
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.pagetwo-courses
+{
+    float: left;
+    background: #FFFFFF;
+    padding: 0 2px 2px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.pagetwo-courses > a
+{
+    width: 100%;
+    height: 100%;
+    float: left;
+    text-align: center;
+    position: relative;
+}
+
+.classicon h3
+{
+    margin-top: 120px;
+    color: #d1e973;
+}
+
+.classicon h1
+{
+    color: #fff5e1;
+}
+
+.classicon
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #fff;
+    opacity: 0;
+}
+
+.classicon:hover
+{
+    background: #1eb450;
+    opacity: 0.9;
+    transition: opacity 0.5s;
+    -webkit-transition: opacity 0.5s;
+}
+.pagetwobtn
+{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+.pagetwobtn .btn-lg
+{
+    font-size: 25px;
+}
+
+#pagetwo-easy
+{
+    margin: 50px 0;
+    margin-bottom: 100px;
+}
+
+/*第三屏*/
+.pagethree
+{
+    position: absolute;
+    width: 100%;
+    height: 800px;
+    background: url("../images/3.jpg");
+}
+.pagethree-bg
+{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#pagethreebg
+{
+    background-image: url("../images/pagethreebg.png");
+}
+
+.pagethreecontent
+{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.pagethreetext
+{
+    margin-top: 100px;
+}
+
+.pagethreetext p
+{
+    margin-top: 20px;
+    color: black;
+    font-size: 20px;
+    line-height: 32px;
+}
+
+#pagethreebtn
+{
+    margin-top: 530px;
+    font-size: 25px;
+}
+
+/*第四屏*/
+.pagefour
+{
+    height: 1100px;
+    background-image: url("../images/pagefourbg.jpg");
+    margin-top: 800px;
+}
+
+.detail
+{
+    margin-top: 100px;
+    color: #ffffff;
+    width: 100%;
+    text-align: center;
+}
+
+.detail p
+{
+    margin-top: 25px;
+    font-size: 20px;
+}
+
+.pagefour .container .carousel
+{
+    margin-top: 100px;
+}
+
+.carousel-control.left
+{
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
+    background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0)));
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+    background-repeat: repeat-x;
+}
+
+.carousel-control.right
+{
+    right: 0;
+    left: auto;
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
+    background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0)));
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
+    background-repeat: repeat-x;
+}
+
+.carousel-control .icon-prev, .carousel-control .glyphicon-chevron-left
+{
+    left: -20%;
+}
+
+.carousel-control .icon-next, .carousel-control .glyphicon-chevron-right
+{
+    right: -20%;
+}
+
+.carousel-inner .item img
+{
+    width: 100%;
+    height: 600px;
+}
+
+/*第五屏*/
+
+.pagefive-bg
+{
+    height: 800px;
+    width: 100%;
+    position: absolute;
+    background-position: center center;
+    background-size: cover;
+}
+
+#pagefivebg
+{
+    background-image: url("../images/pagefivebg.jpg");
+}
+
+.footertext
+{
+    margin-top: 55px;
+    width: 100%;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+}
+.footerbtn
+{
+    margin-top: 100px;
+    text-align: center;
+}
+
+.fiveicon
+{
+    width: 200px;
+}
+
+.fiveicon:hover
+{
+    border: 2px solid #d9edf7;
+}
+
+.footertextbtn
+{
+    margin-top: 150px;
+    width: 100%;
+    text-align: center;
+}
+
+.footertextbtn-text
+{
+    margin-top: 20px;
+    color: wheat;
+}

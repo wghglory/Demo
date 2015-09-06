@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>弹出框</title>
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.css" />
+    <style type="text/css">
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Popover title"
+                data-content="And here's some amazing content. It's very engaging. Right?">
+                点我弹出/隐藏弹出框</button></div><br/>
+        <div>
+            通过使用 focus 触发器可以在用户点击弹出框是让其消失： 实现“点击并让弹出框消失”的效果需要一些额外的代码 为了更好的跨浏览器和跨平台效果，你必须使用 a标签，不能使用
+            button标签，并且，还必须包含 role="button"和 tabindex 属性。
+            <br />
+            <a id="myPopover" tabindex="0" class="btn btn-lg btn-danger" role="button" data-toggle="popover"
+                data-trigger="focus" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?">
+                可消失的弹出框</a>
+        </div>
+        <br />
+        <div>
+            <button type="button" class="btn btn-default" data-container="body" data-toggle="popover"
+                data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                Popover on 左侧
+            </button>
+            <button type="button" class="btn btn-default" data-container="body" data-toggle="popover"
+                data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                Popover on 顶部
+            </button>
+            <button type="button" class="btn btn-default" data-container="body" data-toggle="popover"
+                data-placement="bottom" data-content="Vivamus
+sagittis lacus vel augue laoreet rutrum faucibus.">
+                Popover on 底部
+            </button>
+            <button type="button" class="btn btn-default" data-container="body" data-toggle="popover"
+                data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                Popover on 右侧
+            </button>
+        </div>
+    </div>
+    <script src="js/jquery-1.11.2.js" type="text/javascript"></script>
+    <script src="js/bootstrap.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('[data-toggle="popover"]').popover(); //必须初始化
+
+        });
+
+        $('#myPopover').on('hidden.bs.popover', function() {
+            alert('hiden');
+        });
+    </script>
+</body>
+</html>

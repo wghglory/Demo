@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>过渡效果</title>
+    <style type="text/css">
+        #mydiv
+        {
+            width: 100px;
+            height: 100px;
+            background: red;
+            -webkit-transition: width 2s;
+            transition: width 2s;
+        }
+        #mydiv:hover
+        {
+            width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <div id="mydiv">
+    </div>
+    <script type="text/javascript">
+        document.getElementById('mydiv').addEventListener('transitionend', function () {
+            this.innerHTML = '过度事件触发--已完成';
+        })
+    </script>
+</body>
+</html>
