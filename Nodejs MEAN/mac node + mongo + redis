@@ -1,0 +1,18 @@
+mac node + mongo + redis:
+
+1. install xcode.
+2. install homebrew: google homebrew and open terminal, paste the code below:
+	ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+3. use homebrew to install nodejs:
+	brew install nodejs
+	node --version
+
+4. use homebrew to install mongodb:
+	brew install mongodb
+   check the mongo version:
+    mongo --version
+
+5. use homebrew to install redis and check version:
+	brew install redis
+	redis-cli --version
