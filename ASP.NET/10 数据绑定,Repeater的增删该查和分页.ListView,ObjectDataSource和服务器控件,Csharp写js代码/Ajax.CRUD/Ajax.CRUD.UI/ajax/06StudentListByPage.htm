@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="../scripts/datapattern2.js" type="text/javascript"></script>
+    <script src="../scripts/jquery-1.8.2.js" type="text/javascript"></script>
+    <script src="../scripts/json2.js" type="text/javascript"></script>
+    <script type="text/javascript" src="../scripts/MyJs.js"></script>
+    <script type="text/javascript">
+    </script>
+</head>
+<body>
+    <table id="tblStudent" border="1" cellpadding="2" cellspacing="2">
+        <thead>
+            <tr>
+                <th>
+                    学生编号
+                </th>
+                <th>
+                    学生姓名
+                </th>
+                <th>
+                    学生年龄
+                </th>
+                <th>
+                    学生性别
+                </th>
+                <th>
+                    学生Email
+                </th>
+                <th>
+                    学生生日
+                </th>
+                <th>
+                    编辑
+                </th>
+                <th>
+                    删除
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <p id="pnav">
+    </p>
+    <div id="dvDetails" style="position: absolute; left: 250px; top: 250px; display: none;
+        border: 1px solid blue; width: 250px;">
+        <form id="fromEdit" action="/" method="post">
+        <table border="1" cellpadding="2" cellspacing="2">
+            <tr>
+                <td>
+                    编号
+                </td>
+                <td>
+                    <span id="spNumber"></span>
+                    <input type="hidden" id="hiddenStuId" name="stuId" value="" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    姓名
+                </td>
+                <td>
+                    <input type="text" name="stuName" id="txtUserName" value="" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    年龄
+                </td>
+                <td>
+                    <input type="text" name="stuAge" id="txtAge" value="19" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    性别
+                </td>
+                <td>
+                    <select name="stuGender" id="selectGender">
+                        <option value="男">男</option>
+                        <option value="女">女</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Email
+                </td>
+                <td>
+                    <input type="text" name="stuEmail" id="txtEmail" value="fdsafds" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    生日
+                </td>
+                <td>
+                    <input type="text" name="stuBirthday" id="txtBirthday" value="2001-10-10" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" id="btnSave" value="保存" />
+                </td>
+                <td>
+                    <input type="button" id="btnCancel" value="取消" />
+                </td>
+            </tr>
+        </table>
+        </form>
+    </div>
+</body>
+</html>

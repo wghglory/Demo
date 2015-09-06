@@ -1,0 +1,9 @@
+c:\users\steve\documents\visual studio 2010\Projects\Ajax.CRUD\Ajax.CRUD.Utility\bin\Debug\Ajax.CRUD.Utility.dll
+c:\users\steve\documents\visual studio 2010\Projects\Ajax.CRUD\Ajax.CRUD.Utility\bin\Debug\Ajax.CRUD.Utility.pdb
+c:\users\steve\documents\visual studio 2010\Projects\Ajax.CRUD\Ajax.CRUD.Utility\obj\Debug\Ajax.CRUD.Utility.dll
+c:\users\steve\documents\visual studio 2010\Projects\Ajax.CRUD\Ajax.CRUD.Utility\obj\Debug\Ajax.CRUD.Utility.pdb
+\\psf\Home\Documents\工作\MyCode\ASP.NET\9 异步删除和异步加载数据编辑修改,服务器端控件\Ajax.CRUD\Ajax.CRUD.Utility\bin\Debug\Ajax.CRUD.Utility.dll
+\\psf\Home\Documents\工作\MyCode\ASP.NET\9 异步删除和异步加载数据编辑修改,服务器端控件\Ajax.CRUD\Ajax.CRUD.Utility\bin\Debug\Ajax.CRUD.Utility.pdb
+\\psf\Home\Documents\工作\MyCode\ASP.NET\9 异步删除和异步加载数据编辑修改,服务器端控件\Ajax.CRUD\Ajax.CRUD.Utility\obj\Debug\Ajax.CRUD.Utility.csprojResolveAssemblyReference.cache
+\\psf\Home\Documents\工作\MyCode\ASP.NET\9 异步删除和异步加载数据编辑修改,服务器端控件\Ajax.CRUD\Ajax.CRUD.Utility\obj\Debug\Ajax.CRUD.Utility.dll
+\\psf\Home\Documents\工作\MyCode\ASP.NET\9 异步删除和异步加载数据编辑修改,服务器端控件\Ajax.CRUD\Ajax.CRUD.Utility\obj\Debug\Ajax.CRUD.Utility.pdb

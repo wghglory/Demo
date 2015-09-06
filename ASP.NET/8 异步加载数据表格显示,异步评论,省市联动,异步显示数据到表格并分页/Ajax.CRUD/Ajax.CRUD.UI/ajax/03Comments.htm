@@ -1,0 +1,189 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style type="text/css">
+        table
+        {
+            font: 14px 宋体;
+        }
+    </style>
+    <script src="../scripts/json2.js" type="text/javascript"></script>
+    <script type="text/javascript">
+
+        //页面加载完毕事件
+        window.onload = function () {
+
+            //异步加载评论信息到表格
+            initComments();
+
+
+            //2.为提交按钮注册一个单击事件
+            document.getElementById('btnCommit').onclick = function () {
+
+                //1>获取用户输入的信息
+                var user_title = document.getElementById('txtTitle').value;
+                var user_content = document.getElementById('txtArea').value;
+                var user_email = document.getElementById('txtEmail').value;
+                //拼接post提交数据时的请求报文体。
+                var post_data = 'title=' + user_title + '&content=' + user_content + '&email=' + user_email;
+
+                //var post_data = $('form').serialize()
+
+                //2>创建异步对象，请求一般处理程序，实现插入数据库操作。
+                var xhr = null;
+                if (typeof XMLHttpRequest != 'undefined') {
+                    xhr = new XMLHttpRequest();
+                } else {
+                    xhr = new ActiveXObject("Microsoft.XMLHttp");
+                }
+
+                xhr.onreadystatechange = function () {
+                    if (xhr.readyState == 4 && xhr.status == 200) {
+                        var fontMsg = document.getElementById('msg');
+                        var jsonObj = JSON.parse(xhr.responseText);
+                        if (jsonObj.IsOK == "1") {
+                            //成功！
+                            fontMsg.innerHTML = '提交评论成功！';
+                            fontMsg.color = 'green';
+                            //2.直接在当前表格后面增加一行。
+                            var autoId = jsonObj.AutoId;
+                            var tbodyObj = document.getElementById('tblComments').getElementsByTagName('tbody')[0];
+                            var trObj = tbodyObj.insertRow(-1);
+                            trObj.insertCell(-1).innerHTML = autoId;
+                            trObj.insertCell(-1).innerHTML = user_title;
+                            trObj.insertCell(-1).innerHTML = user_content;
+                            trObj.insertCell(-1).innerHTML = user_email;
+
+
+                        } else {
+                            //失败!
+                            fontMsg.innerHTML = '提交评论失败！';
+                            //fontMsg.innerText
+                        }
+
+
+                        //                        //如果返回1表示成功，返回0表示失败！
+                        //                        if (xhr.responseText == '1') {
+                        //                            //成功！
+                        //                            fontMsg.innerHTML = '提交评论成功！';
+                        //                            fontMsg.color = 'green';
+                        //                        } else {
+                        //                            //失败!
+                        //                            fontMsg.innerHTML = '提交评论失败！';
+                        //                            //fontMsg.innerText
+                        //                        }
+                    }
+                };
+
+                xhr.open('post', 'AddComments.ashx', true);
+                xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+                xhr.send(post_data);
+
+
+                //3>更新客户端表格 1.重新调用initComments() 2.直接在当前表格后面增加一行。
+            };
+
+
+        };
+
+        //加载评论信息到表格
+        function initComments() {
+            //1.异步请求对应的一般处理程序，获取评论的json格式字符串
+            var xhr = null;
+            if (typeof (XMLHttpRequest) != 'undefined') {
+                xhr = new XMLHttpRequest();
+            } else {
+                xhr = new ActiveXObject("Microsoft.XMLHttp");
+            }
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState == 4 && xhr.status == 200) {
+                    //xhr.responseText;获取的是一个json格式的字符串
+                    //可以实现，但不安全。使用json2.js。IE8+已经内置了一个JSON对象。可以不引用json2.js
+                    //var jsonObj = eval("(" + xhr.responseText + ")");
+                    //把json字符串转换为一个json对象
+                    var jsonObject = JSON.parse(xhr.responseText);
+
+                    //获取tbody对象
+                    var tbodyObject = document.getElementById('tblComments').getElementsByTagName('tbody')[0];
+
+                    //2.把json字符串解析成一个json对象，遍历json对象根据json对象动态创建表格的行添加到tblComments表格的tbody中。
+                    //遍历json中的每个对象
+                    for (var i = 0; i < jsonObject.length; i++) {
+                        //对于每个对象，又是一个键值对“集合”
+                        //向表格中最后追加一行。
+                        var trObj = tbodyObject.insertRow(-1);
+
+                        //向当前行中创建一些单元格
+                        trObj.insertCell(-1).innerHTML = jsonObject[i].AutoId;
+                        trObj.insertCell(-1).innerHTML = jsonObject[i].Title;
+                        trObj.insertCell(-1).innerHTML = jsonObject[i].Content.substring(0, 15) + '...';
+                        trObj.insertCell(-1).innerHTML = jsonObject[i].Email;
+                    }
+
+                }
+            };
+            xhr.open('get', 'GetAllComments.ashx', true);
+            xhr.send(null);
+        }
+    </script>
+</head>
+<body>
+    <table border="1" cellpadding="2" cellspacing="2">
+        <tr>
+            <td>
+                标题
+            </td>
+            <td>
+                <input type="text" id="txtTitle" value="" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                评论内容
+            </td>
+            <td>
+                <textarea cols="20" rows="5" id="txtArea"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                邮箱
+            </td>
+            <td>
+                <input type="text" id="txtEmail" value="" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+            </td>
+            <td>
+                <input type="button" id="btnCommit" value="提交评论" />
+                <font color="red" id="msg"></font>
+            </td>
+        </tr>
+    </table>
+    <br />
+    ===================华丽的分割线=============================================<br />
+    <table id="tblComments" border="1" cellpadding="2" cellspacing="2">
+        <thead>
+            <tr>
+                <th>
+                    编号
+                </th>
+                <th>
+                    标题
+                </th>
+                <th>
+                    内容
+                </th>
+                <th>
+                    邮箱
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+</body>
+</html>

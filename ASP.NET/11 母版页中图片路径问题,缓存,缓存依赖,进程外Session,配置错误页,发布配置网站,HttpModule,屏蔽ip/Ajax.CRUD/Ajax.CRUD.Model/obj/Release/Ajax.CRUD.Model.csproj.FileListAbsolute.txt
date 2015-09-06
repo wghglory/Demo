@@ -1,0 +1,4 @@
+C:\Users\Steve\documents\visual studio 2010\Projects\Ajax.CRUD\Ajax.CRUD.Model\bin\Release\Ajax.CRUD.Model.dll
+C:\Users\Steve\documents\visual studio 2010\Projects\Ajax.CRUD\Ajax.CRUD.Model\bin\Release\Ajax.CRUD.Model.pdb
+C:\Users\Steve\documents\visual studio 2010\Projects\Ajax.CRUD\Ajax.CRUD.Model\obj\Release\Ajax.CRUD.Model.dll
+C:\Users\Steve\documents\visual studio 2010\Projects\Ajax.CRUD\Ajax.CRUD.Model\obj\Release\Ajax.CRUD.Model.pdb

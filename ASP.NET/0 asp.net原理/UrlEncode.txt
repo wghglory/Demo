@@ -1,0 +1,14 @@
+http://www.baidu.com/?wd=北京/传智播客.net&_c=aaa
+
+
+http://www.baidu.com/?wd=%E5%8C%97%E4%BA%AC%E4%BC%A0%E6%99%BA%E6%92%AD%E5%AE%A2.net&_c=aaa
+
+UrlEncode() url编码，也叫做百分号编码percent encoding.
+
+UrlDecode();
+
+/ →找到ASCII码是47→47对应的16进制表示位2f→前边加上%就是 → %2f
+
+
+
+

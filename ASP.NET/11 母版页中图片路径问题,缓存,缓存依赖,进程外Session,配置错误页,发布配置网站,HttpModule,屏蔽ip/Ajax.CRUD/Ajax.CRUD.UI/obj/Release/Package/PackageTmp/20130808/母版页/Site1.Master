@@ -1,0 +1,38 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Ajax.CRUD.UI._20130808.母版页.Site1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <%--<img src="../../imgs/bear.jpg" />--%>
+    <!-- ~/ 表示是网站根目录，只能在服务器端控件，或者是后台代码中使用，客户端html标签不支持该操作。-->
+    <asp:Image ID="Image1" runat="server" ImageUrl="~/imgs/bg.png" />
+    <%--<img src="../../imgs/bear.jpg" />--%>
+    <
+    <img src='<%=ResolveUrl("../../imgs/bear.jpg") %>' />
+    11111111111111111111
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server">
+    </asp:ContentPlaceHolder>
+    <form id="form1" runat="server">
+    <div>
+        2222222222222222222
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    3333333333333333333333333333
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder4" runat="server">
+    </asp:ContentPlaceHolder>
+    444444444444444444444444444
+</body>
+<asp:contentplaceholder id="head2" runat="server">
+    </asp:contentplaceholder>
+tttttttttttttttttt
+<asp:textbox id="TextBox1" runat="server">1111111111111111111</asp:textbox>
+</form>
+</html>

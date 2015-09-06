@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+<body>
+
+<div ng-app="myApp" ng-controller="myCtrl">
+
+angular.lowercase()	Converts a string to lowercase<br/>
+angular.uppercase()	Converts a string to uppercase<br/>
+angular.isString()	Returns true if the reference is a string<br/>
+angular.isNumber()	Returns true if the reference is a number<br/>
+    <p>{{ x1 }}</p>
+    <p>{{ x2 }}</p>
+</div>
+
+<script>
+    var app = angular.module('myApp', []);
+    app.controller('myCtrl', function ($scope) {
+        $scope.x1 = "JOHN";
+        $scope.x2 = angular.lowercase($scope.x1);  //.uppercase()   
+        //$scope.x2 = angular.isString($scope.x1);   //true
+    });
+</script>
+
+</body>
+</html>

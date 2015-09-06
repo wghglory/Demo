@@ -1,0 +1,13 @@
+C:\Users\Steve\documents\visual studio 2010\Projects\Ajax.CRUD\Ajax.CRUD.UI\bin\Ajax.CRUD.UI.dll
+C:\Users\Steve\documents\visual studio 2010\Projects\Ajax.CRUD\Ajax.CRUD.UI\bin\Ajax.CRUD.UI.pdb
+C:\Users\Steve\documents\visual studio 2010\Projects\Ajax.CRUD\Ajax.CRUD.UI\bin\Ajax.CRUD.BLL.dll
+C:\Users\Steve\documents\visual studio 2010\Projects\Ajax.CRUD\Ajax.CRUD.UI\bin\Ajax.CRUD.Model.dll
+C:\Users\Steve\documents\visual studio 2010\Projects\Ajax.CRUD\Ajax.CRUD.UI\bin\Ajax.CRUD.Utility.dll
+C:\Users\Steve\documents\visual studio 2010\Projects\Ajax.CRUD\Ajax.CRUD.UI\bin\Ajax.CRUD.DAL.dll
+C:\Users\Steve\documents\visual studio 2010\Projects\Ajax.CRUD\Ajax.CRUD.UI\bin\Ajax.CRUD.BLL.pdb
+C:\Users\Steve\documents\visual studio 2010\Projects\Ajax.CRUD\Ajax.CRUD.UI\bin\Ajax.CRUD.Model.pdb
+C:\Users\Steve\documents\visual studio 2010\Projects\Ajax.CRUD\Ajax.CRUD.UI\bin\Ajax.CRUD.Utility.pdb
+C:\Users\Steve\documents\visual studio 2010\Projects\Ajax.CRUD\Ajax.CRUD.UI\bin\Ajax.CRUD.DAL.pdb
+C:\Users\Steve\documents\visual studio 2010\Projects\Ajax.CRUD\Ajax.CRUD.UI\obj\Release\Ajax.CRUD.UI.csprojResolveAssemblyReference.cache
+C:\Users\Steve\documents\visual studio 2010\Projects\Ajax.CRUD\Ajax.CRUD.UI\obj\Release\Ajax.CRUD.UI.dll
+C:\Users\Steve\documents\visual studio 2010\Projects\Ajax.CRUD\Ajax.CRUD.UI\obj\Release\Ajax.CRUD.UI.pdb

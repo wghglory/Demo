@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script type="text/javascript">
+        window.onload = function () {
+
+            //为按钮注册单击事件
+            document.getElementById('btnLogin').onclick = function () {
+                //1.获取用户输入的用户名与密码
+                var loginId = document.getElementById('txtLoginId').value;
+                var password = document.getElementById('txtPassword').value;
+
+                //2.发起异步请求校验登录是否成功！
+                var xhr = null;
+                if (typeof (XMLHttpRequest) != 'undefined') {
+                    xhr = new XMLHttpRequest();
+                } else {
+                    xhr = new ActiveXObject("Microsoft.XMLHttp");
+                }
+                xhr.onreadystatechange = function () {
+                    if (xhr.readyState == 4 && xhr.status == 200) {
+                        //to do ...
+                        var fontMsg = document.getElementById('msg');
+                        if (xhr.responseText == '1') {
+                            // 登录成功！
+                            fontMsg.innerHTML = '登录成功！';
+                            fontMsg.color = 'green';
+
+                        } else if (xhr.responseText == '2') {
+                            //失败
+                            fontMsg.innerHTML = '登录失败！';
+                            fontMsg.color = 'red';
+                        }
+                    }
+                };
+                xhr.open('post', 'Login.ashx', true);
+                xhr.setRequestHeader('content-type', 'application/x-www-form-urlencoded');
+                xhr.send('loginId=' + loginId + '&password=' + password);
+            };
+        };
+    </script>
+</head>
+<body>
+    用户名：<input type="text" id="txtLoginId" value="" />
+    <br />
+    密码：
+    <input type="password" id="txtPassword" value="" />
+    <br />
+    <input type="button" id="btnLogin" value="登录" />
+    <font color="red" id="msg"></font>
+</body>
+</html>

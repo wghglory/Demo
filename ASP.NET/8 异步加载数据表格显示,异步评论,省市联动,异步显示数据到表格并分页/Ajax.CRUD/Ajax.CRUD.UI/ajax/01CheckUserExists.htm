@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script type="text/javascript">
+        window.onload = function () {
+
+            //按钮的单击事件
+            document.getElementById('btnCheck').onclick = function () {
+
+                var userInput = document.getElementById('txtLoginId').value;
+
+                //通过ajax异步请求CheckUserExists.ashx
+                //1.创建xhr对象
+                var xhr = null;
+                if (typeof (XMLHttpRequest) != 'undefined') {
+                    xhr = new XMLHttpRequest();
+                } else {
+                    xhr = new ActiveXObject("Microsoft.XMLHttp");
+                }
+
+                //2.设置回调函数
+                xhr.onreadystatechange = function () {
+                    //表示请求返回成功！
+                    if (xhr.readyState == 4 && xhr.status == 200) {
+                        var fontMsg = document.getElementById('msg');
+                        //to do.
+                        if (xhr.responseText == "1") {
+                            //表示用户名存在！
+                            fontMsg.color = 'red';
+                            fontMsg.innerHTML = '该用户名已被注册！';
+                        } else if (xhr.responseText == "0") {
+                            //用户名不存在！
+                            fontMsg.innerHTML = '用户名可用！';
+                            fontMsg.color = 'green';
+                        }
+
+                    }
+                };
+
+                //3.初始化
+                xhr.open('post', 'CheckUserExists.ashx', true);
+                //3.1设置请求报文
+                xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+
+                //4.发起请求
+                xhr.send('loginId=' + userInput);
+            };
+        };
+    </script>
+</head>
+<body>
+    <input type="text" id="txtLoginId" value="" /><font color="red" id="msg"></font>
+    <input type="button" id="btnCheck" value="检查用户名是否存在" />
+</body>
+</html>

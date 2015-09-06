@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style type="text/css">
+        div
+        {
+            border: 1px solid blue;
+            width: 300px;
+            height: 30px;
+            font: 25px 宋体;
+        }
+    </style>
+    <script type="text/javascript">
+        window.onload = function () {
+
+            document.getElementById('btn').onclick = function () {
+
+                //=================================Get请求==============================
+                //                //开始异步获取数据
+                //                //一、创建异步对象
+                //                var xhr = null;
+                //                if (XMLHttpRequest) {
+                //                    xhr = new XMLHttpRequest();
+                //                } else {
+                //                    xhr = new ActiveXObject("Microsoft.XMLHttp");
+                //                }
+                //                //二、设置回调函数
+                //                xhr.onreadystatechange = function () {
+                //                    //编码
+                //                    if (xhr.readyState == 4 && (xhr.status >= 200 && xhr.status < 300 || xhr.status == 304)) { //浏览器接收完毕服务器的数据
+                //                        document.getElementById('dv1').innerHTML = xhr.responseText;
+                //                    }
+                //                };
+
+                //                //三、初始化
+                //                //xhr.open("get", "ServerTime.ashx?Id=0001&name=hl", true);
+
+                //                xhr.open("get", "ServerTime.ashx?" + window.encodeURIComponent("编号") + "=" + encodeURIComponent("零零狗") + "&" + encodeURIComponent("姓名") + "=" + encodeURIComponent("黄林"), true);
+
+                //                //在open()之后，send()之前，设置请求的报文头中的其他信息
+                //                xhr.setRequestHeader("If-Modified-Since", "0");
+
+                //                //四、发起请求
+                //                xhr.send(null);
+
+                //=================Post==============================================
+
+                document.getElementById('img').style.display = 'block';
+                //开始异步获取数据
+                //一、创建异步对象
+                var xhr = null;
+                if (XMLHttpRequest) {
+                    xhr = new XMLHttpRequest();
+                } else {
+                    xhr = new ActiveXObject("Microsoft.XMLHttp");
+                }
+                //二、设置回调函数
+                xhr.onreadystatechange = function () {
+                    //编码
+                    if (xhr.readyState == 4 && (xhr.status >= 200 && xhr.status < 300 || xhr.status == 304)) {
+                        document.getElementById('img').style.display = 'none';
+                        //浏览器接收完毕服务器的数据
+                        document.getElementById('dv1').innerHTML = xhr.responseText;
+                        //alert(xhr.getResponseHeader("Date"));
+                        //获取所有报文头返回一个字符串
+                        //                        var headers = xhr.getAllResponseHeaders();
+                        //                        alert(headers);
+                    }
+                };
+
+                //三、初始化
+                //xhr.open("get", "ServerTime.ashx?Id=0001&name=hl", true);
+
+                xhr.open("post", "ServerTime.ashx", true);
+
+                //设置请求报文头，要放在open()之后，send()之前。
+                xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+
+                //四、发起请求
+                //xhr.send("name=bob&age=18&gender=male");
+                xhr.send("name=鲍勃&age=十八&gender=男");
+            };
+        };
+    </script>
+</head>
+<body>
+    <input type="button" name="name" value="get time" id="btn" />
+    <div id="dv1">
+    </div>
+    <img id="img" style="display: none; margin-top: 100px;" src="wait.gif" alt="Alternate Text" />
+</body>
+</html>

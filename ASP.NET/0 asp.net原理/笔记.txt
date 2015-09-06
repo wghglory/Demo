@@ -1,0 +1,35 @@
+一、配置objectDataSource
+---选择业务逻辑层的类
+二、配置Select对应的方法，必须是一个带两个整型参数的方法，第一个参数表示要查看的第一条记录的前一条30,第二个参数每页最多能显示的记录条数pagesize
+这两个参数都是由分页控件DataPager来传递的。无需我们考虑。
+
+
+between 30+1 and 30+1+pagesize
+31-35
+
+对于select对应的查询方法中的两个参数，在配置数据源的时候不需要指定。并且删除生成的参数代码。
+
+三、配置ObjectDataSource启用分页：EnablePaging=true
+四、设置objectDataSource的两个属性：
+MaximumRowsPrameterName=""这里指定的参数就是select查询方法中的第二个参数（必须与业务逻辑层中的查询方法的第二个参数名称一致）
+
+StartRowIndexParameterName=""必须与查询方法中的第一个参数的名字一样。
+
+
+五、设置ObjectDataSource的SelectCountMethod="GetCount";设置该属性为业务逻辑层的一个方法，这个方法的作用就是查询出当前表中一共有多少条记录：select count(*) from aspx_students
+六、
+-----添加一个ListView控件，设置数据源为ObjectDataSource
+-----配置ListView,启用“编辑”、“删除”、“插入”，不要启用“分页”
+
+七、
+---添加一个DataPager控件。设置该控件的PagedControlID为对应的ListView
+---设置该控件的PageSize属性，每页显示多少条。
+---为该控件选择一个分页导航的样式。
+
+
+
+
+
+
+
+

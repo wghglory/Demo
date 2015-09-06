@@ -1,0 +1,14 @@
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130726\CRUD.DAL\bin\Debug\CRUD.DAL.dll
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130726\CRUD.DAL\bin\Debug\CRUD.DAL.pdb
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130726\CRUD.DAL\obj\Debug\CRUD.DAL.dll
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130726\CRUD.DAL\obj\Debug\CRUD.DAL.pdb
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130726\CRUD.DAL\bin\Debug\CRUD.Model.dll
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130726\CRUD.DAL\bin\Debug\CRUD.Model.pdb
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130726\CRUD.DAL\obj\Debug\CRUD.DAL.csprojResolveAssemblyReference.cache
+C:\Users\Steve\Desktop\Sln20130726（全）\CRUD.DAL\bin\Debug\CRUD.DAL.dll
+C:\Users\Steve\Desktop\Sln20130726（全）\CRUD.DAL\bin\Debug\CRUD.DAL.pdb
+C:\Users\Steve\Desktop\Sln20130726（全）\CRUD.DAL\bin\Debug\CRUD.Model.dll
+C:\Users\Steve\Desktop\Sln20130726（全）\CRUD.DAL\bin\Debug\CRUD.Model.pdb
+C:\Users\Steve\Desktop\Sln20130726（全）\CRUD.DAL\obj\Debug\CRUD.DAL.csprojResolveAssemblyReference.cache
+C:\Users\Steve\Desktop\Sln20130726（全）\CRUD.DAL\obj\Debug\CRUD.DAL.dll
+C:\Users\Steve\Desktop\Sln20130726（全）\CRUD.DAL\obj\Debug\CRUD.DAL.pdb

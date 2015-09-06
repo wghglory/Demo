@@ -1,0 +1,6 @@
+Add AngularJs to site: install-package AngularJS.core
+Add EntityFrame: install-package EntityFramework
+Enable-Migrations
+update-database
+
+install-package -IncludePrerelease AngularJS.Route

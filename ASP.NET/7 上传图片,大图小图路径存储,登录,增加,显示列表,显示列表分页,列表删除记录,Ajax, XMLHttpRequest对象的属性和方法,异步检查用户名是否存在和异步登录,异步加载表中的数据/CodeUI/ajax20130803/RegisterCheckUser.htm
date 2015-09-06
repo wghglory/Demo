@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script type="text/javascript">
+        window.onload = function () {
+
+            //为文本框注册一个失去焦点事件
+            document.getElementById('txtLoginId').onblur = function () {
+                //获取文本框中输入的内容
+                var loginId = this.value;
+
+                //异步访问数据库，判断用户名是否正确
+                var xhr = null;
+                if (XMLHttpRequest) {
+                    xhr = new XMLHttpRequest();
+                } else {
+                    xhr = new ActiveXObject("Microsoft.XMLHttp");
+                }
+                xhr.open('post', "CheckUserExists.ashx", true);
+                xhr.onreadystatechange = function () {
+                    if (xhr.readyState == 4 && xhr.status == 200) {
+                        var fontMessage = document.getElementById('fontMsg');
+                        if (xhr.responseText == 'UserExists') {
+                            fontMessage.innerHTML = '该用户名已经被注册，请选择其他用户名';
+                            fontMessage.color = "red";
+                        } else {
+                            fontMessage.innerHTML = '该用户尚未注册，可以使用！';
+                            fontMessage.color = "green";
+                        }
+                    }
+                };
+                xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+                xhr.send("loginId=" + loginId);
+            };
+        };
+    </script>
+</head>
+<body>
+    <form action="/" method="post">
+    用户名：<input type="text" id="txtLoginId" name="txtLoginId" value="" /><font id="fontMsg"
+        color="red"></font>
+    <br />
+    密码：<input type="password" name="txtPwd1" value="" /><br />
+    再次输入密码：
+    <input type="password" name="txtPwd2" value="" />
+    <br />
+    <input type="submit" name="name" value="提交" />
+    </form>
+</body>
+</html>

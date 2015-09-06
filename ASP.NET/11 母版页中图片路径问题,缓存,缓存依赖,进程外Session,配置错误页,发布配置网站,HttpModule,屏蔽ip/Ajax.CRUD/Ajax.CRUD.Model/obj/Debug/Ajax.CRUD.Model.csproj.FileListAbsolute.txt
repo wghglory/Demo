@@ -1,0 +1,9 @@
+C:\Users\Steve\documents\visual studio 2010\Projects\Ajax.CRUD\Ajax.CRUD.Model\bin\Debug\Ajax.CRUD.Model.dll
+C:\Users\Steve\documents\visual studio 2010\Projects\Ajax.CRUD\Ajax.CRUD.Model\bin\Debug\Ajax.CRUD.Model.pdb
+C:\Users\Steve\documents\visual studio 2010\Projects\Ajax.CRUD\Ajax.CRUD.Model\obj\Debug\Ajax.CRUD.Model.dll
+C:\Users\Steve\documents\visual studio 2010\Projects\Ajax.CRUD\Ajax.CRUD.Model\obj\Debug\Ajax.CRUD.Model.pdb
+\\psf\Home\Documents\工作\MyCode\ASP.NET\11 ListView控件,母版页,缓存,缓存依赖,进程外Session,配置错误页,微软Ajax组件,发布配置网站,HttpModule\Ajax.CRUD\Ajax.CRUD.Model\bin\Debug\Ajax.CRUD.Model.dll
+\\psf\Home\Documents\工作\MyCode\ASP.NET\11 ListView控件,母版页,缓存,缓存依赖,进程外Session,配置错误页,微软Ajax组件,发布配置网站,HttpModule\Ajax.CRUD\Ajax.CRUD.Model\bin\Debug\Ajax.CRUD.Model.pdb
+\\psf\Home\Documents\工作\MyCode\ASP.NET\11 ListView控件,母版页,缓存,缓存依赖,进程外Session,配置错误页,微软Ajax组件,发布配置网站,HttpModule\Ajax.CRUD\Ajax.CRUD.Model\obj\Debug\Ajax.CRUD.Model.csprojResolveAssemblyReference.cache
+\\psf\Home\Documents\工作\MyCode\ASP.NET\11 ListView控件,母版页,缓存,缓存依赖,进程外Session,配置错误页,微软Ajax组件,发布配置网站,HttpModule\Ajax.CRUD\Ajax.CRUD.Model\obj\Debug\Ajax.CRUD.Model.dll
+\\psf\Home\Documents\工作\MyCode\ASP.NET\11 ListView控件,母版页,缓存,缓存依赖,进程外Session,配置错误页,微软Ajax组件,发布配置网站,HttpModule\Ajax.CRUD\Ajax.CRUD.Model\obj\Debug\Ajax.CRUD.Model.pdb
