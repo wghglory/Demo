@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+</head>
+<body>
+    <div ng-app="" ng-init="firstName='John';second=12">
+        <p>
+            The name is <span ng-bind="firstName"></span>
+            <p>
+                AngularJS expressions are written inside double braces: {{ expression }}. AngularJS
+                will "output" data exactly where the expression is written:<br />
+                My first expression: {{ 5 + 5 }}</p>
+        </p>
+    </div>
+    <h4>
+        You can use data-ng-, instead of ng-, if you want to make your page HTML valid.</h4>
+    <div data-ng-app="" data-ng-init="fn='John'">
+        <p>
+            The name is <span data-ng-bind="fn"></span>
+        </p>
+    </div>
+</body>
+</html>

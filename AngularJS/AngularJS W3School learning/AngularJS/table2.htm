@@ -1,0 +1,133 @@
+﻿<!DOCTYPE html>
+<html>
+<style>
+    table, th, td
+    {
+        border: 1px solid grey;
+        border-collapse: collapse;
+        padding: 5px;
+    }
+    table tr:nth-child(odd)
+    {
+        background-color: #f1f1f1;
+    }
+    table tr:nth-child(even)
+    {
+        background-color: #ffffff;
+    }
+</style>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+<body>
+    <div ng-app="myApp" ng-controller="customersCtrl">
+        <table>
+            <tr ng-repeat="x in names | orderBy : 'Country'">
+                <td>
+                    {{ $index + 1 }}
+                </td>
+                <td>
+                    {{ x.Name }}
+                </td>
+                <td>
+                    {{ x.Country | uppercase }}
+                </td>
+            </tr>
+        </table>
+    </div>
+    <script>
+        var app = angular.module('myApp', []);
+        app.controller('customersCtrl', function ($scope, $http) {
+            $http.get("http://www.w3schools.com/angular/customers.php")
+    .success(function (response) { $scope.names = response.records; });
+        });
+    </script>
+</body>
+</html>
+<!--{
+"records": [
+  {
+    "Name" : "Alfreds Futterkiste",
+    "City" : "Berlin",
+    "Country" : "Germany"
+  },
+  {
+    "Name" : "Berglunds snabbköp",
+    "City" : "Luleå",
+    "Country" : "Sweden"
+  },
+  {
+    "Name" : "Centro comercial Moctezuma",
+    "City" : "México D.F.",
+    "Country" : "Mexico"
+  },
+  {
+    "Name" : "Ernst Handel",
+    "City" : "Graz",
+    "Country" : "Austria"
+  },
+  {
+    "Name" : "FISSA Fabrica Inter. Salchichas S.A.",
+    "City" : "Madrid",
+    "Country" : "Spain"
+  },
+  {
+    "Name" : "Galería del gastrónomo",
+    "City" : "Barcelona",
+    "Country" : "Spain"
+  },
+  {
+    "Name" : "Island Trading",
+    "City" : "Cowes",
+    "Country" : "UK"
+  },
+  {
+    "Name" : "Königlich Essen",
+    "City" : "Brandenburg",
+    "Country" : "Germany"
+  },
+  {
+    "Name" : "Laughing Bacchus Wine Cellars",
+    "City" : "Vancouver",
+    "Country" : "Canada"
+  },
+  {
+    "Name" : "Magazzini Alimentari Riuniti",
+    "City" : "Bergamo",
+    "Country" : "Italy"
+  },
+  {
+    "Name" : "North/South",
+    "City" : "London",
+    "Country" : "UK"
+  },
+  {
+    "Name" : "Paris spécialités",
+    "City" : "Paris",
+    "Country" : "France"
+  },
+  {
+    "Name" : "Rattlesnake Canyon Grocery",
+    "City" : "Albuquerque",
+    "Country" : "USA"
+  },
+  {
+    "Name" : "Simons bistro",
+    "City" : "København",
+    "Country" : "Denmark"
+  },
+  {
+    "Name" : "The Big Cheese",
+    "City" : "Portland",
+    "Country" : "USA"
+  },
+  {
+    "Name" : "Vaffeljernet",
+    "City" : "Århus",
+    "Country" : "Denmark"
+  },
+  {
+    "Name" : "Wolski Zajazd",
+    "City" : "Warszawa",
+    "Country" : "Poland"
+  }
+]
+}-->
