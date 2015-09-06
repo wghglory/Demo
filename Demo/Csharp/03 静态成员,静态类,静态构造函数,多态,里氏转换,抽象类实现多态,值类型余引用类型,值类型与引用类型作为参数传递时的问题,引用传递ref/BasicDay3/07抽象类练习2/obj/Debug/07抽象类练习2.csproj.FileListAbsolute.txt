@@ -1,0 +1,5 @@
+\\psf\Home\Documents\practice project\BasicDay3\07抽象类练习2\bin\Debug\07抽象类练习2.exe
+\\psf\Home\Documents\practice project\BasicDay3\07抽象类练习2\bin\Debug\07抽象类练习2.pdb
+\\psf\Home\Documents\practice project\BasicDay3\07抽象类练习2\obj\Debug\07抽象类练习2.csprojResolveAssemblyReference.cache
+\\psf\Home\Documents\practice project\BasicDay3\07抽象类练习2\obj\Debug\07抽象类练习2.exe
+\\psf\Home\Documents\practice project\BasicDay3\07抽象类练习2\obj\Debug\07抽象类练习2.pdb

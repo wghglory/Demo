@@ -1,0 +1,4 @@
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130615\05通过反射调用私有成员\bin\Debug\05通过反射调用私有成员.exe
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130615\05通过反射调用私有成员\bin\Debug\05通过反射调用私有成员.pdb
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130615\05通过反射调用私有成员\obj\x86\Debug\05通过反射调用私有成员.exe
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130615\05通过反射调用私有成员\obj\x86\Debug\05通过反射调用私有成员.pdb

@@ -1,0 +1,8 @@
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130722\SocketServer\bin\Debug\SocketServer.exe
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130722\SocketServer\bin\Debug\SocketServer.pdb
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130722\SocketServer\obj\x86\Debug\SocketServer.exe
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130722\SocketServer\obj\x86\Debug\SocketServer.pdb
+C:\Users\wangg3\Desktop\Code\Code\SocketServer\bin\Debug\SocketServer.exe
+C:\Users\wangg3\Desktop\Code\Code\SocketServer\bin\Debug\SocketServer.pdb
+C:\Users\wangg3\Desktop\Code\Code\SocketServer\obj\x86\Debug\SocketServer.exe
+C:\Users\wangg3\Desktop\Code\Code\SocketServer\obj\x86\Debug\SocketServer.pdb

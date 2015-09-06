@@ -1,0 +1,8 @@
+1.写一个IIS服务端，接收用户的请求，并且把请求报文显示到文本框中。
+2.把请求的报文封装到HttpContext中
+1>HttpContext，添加Response与Request属性。
+2>HttpRequest,解析报文，获取请求方法Method和请求路径RequestUrl
+3>HttpResponse,添加ResponseBody属性，和ResponseHeader属性（只读）
+
+============================
+3.创建HttpApplication类型，为该类型增加ProcessRequest(HttpContext)方法

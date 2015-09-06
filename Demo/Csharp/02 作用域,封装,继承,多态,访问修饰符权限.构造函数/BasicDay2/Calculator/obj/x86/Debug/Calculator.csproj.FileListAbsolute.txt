@@ -1,0 +1,7 @@
+c:\users\wangg3\documents\visual studio 2010\Projects\BasicDay2\Calculator\bin\Debug\Calculator.exe
+c:\users\wangg3\documents\visual studio 2010\Projects\BasicDay2\Calculator\bin\Debug\Calculator.pdb
+c:\users\wangg3\documents\visual studio 2010\Projects\BasicDay2\Calculator\obj\x86\Debug\Calculator.Form1.resources
+c:\users\wangg3\documents\visual studio 2010\Projects\BasicDay2\Calculator\obj\x86\Debug\Calculator.Properties.Resources.resources
+c:\users\wangg3\documents\visual studio 2010\Projects\BasicDay2\Calculator\obj\x86\Debug\Calculator.csproj.GenerateResource.Cache
+c:\users\wangg3\documents\visual studio 2010\Projects\BasicDay2\Calculator\obj\x86\Debug\Calculator.exe
+c:\users\wangg3\documents\visual studio 2010\Projects\BasicDay2\Calculator\obj\x86\Debug\Calculator.pdb

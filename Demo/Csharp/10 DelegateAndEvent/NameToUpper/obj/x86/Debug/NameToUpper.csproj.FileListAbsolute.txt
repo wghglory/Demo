@@ -1,0 +1,7 @@
+c:\users\wangg3\documents\visual studio 2010\Projects\BasicDay11\NameToUpper\bin\Debug\NameToUpper.exe
+c:\users\wangg3\documents\visual studio 2010\Projects\BasicDay11\NameToUpper\bin\Debug\NameToUpper.pdb
+c:\users\wangg3\documents\visual studio 2010\Projects\BasicDay11\NameToUpper\bin\Debug\委托.dll
+c:\users\wangg3\documents\visual studio 2010\Projects\BasicDay11\NameToUpper\bin\Debug\委托.pdb
+c:\users\wangg3\documents\visual studio 2010\Projects\BasicDay11\NameToUpper\obj\x86\Debug\NameToUpper.csprojResolveAssemblyReference.cache
+c:\users\wangg3\documents\visual studio 2010\Projects\BasicDay11\NameToUpper\obj\x86\Debug\NameToUpper.exe
+c:\users\wangg3\documents\visual studio 2010\Projects\BasicDay11\NameToUpper\obj\x86\Debug\NameToUpper.pdb

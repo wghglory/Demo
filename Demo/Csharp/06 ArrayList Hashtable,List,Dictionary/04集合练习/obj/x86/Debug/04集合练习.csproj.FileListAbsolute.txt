@@ -1,0 +1,9 @@
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130607\04集合练习\bin\Debug\04集合练习.exe
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130607\04集合练习\bin\Debug\04集合练习.pdb
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130607\04集合练习\obj\x86\Debug\04集合练习.exe
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130607\04集合练习\obj\x86\Debug\04集合练习.pdb
+\\psf\Home\Documents\06 ArrayList Hashtable,泛型集合\BasicDay6\04集合练习\bin\Debug\04集合练习.exe
+\\psf\Home\Documents\06 ArrayList Hashtable,泛型集合\BasicDay6\04集合练习\bin\Debug\04集合练习.pdb
+\\psf\Home\Documents\06 ArrayList Hashtable,泛型集合\BasicDay6\04集合练习\obj\x86\Debug\04集合练习.csprojResolveAssemblyReference.cache
+\\psf\Home\Documents\06 ArrayList Hashtable,泛型集合\BasicDay6\04集合练习\obj\x86\Debug\04集合练习.exe
+\\psf\Home\Documents\06 ArrayList Hashtable,泛型集合\BasicDay6\04集合练习\obj\x86\Debug\04集合练习.pdb

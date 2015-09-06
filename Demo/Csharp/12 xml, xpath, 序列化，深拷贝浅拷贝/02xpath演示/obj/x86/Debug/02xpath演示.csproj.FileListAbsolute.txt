@@ -1,0 +1,4 @@
+C:\Users\Steve\documents\visual studio 2010\Projects\Sln20130618\02xpath演示\bin\Debug\02xpath演示.exe
+C:\Users\Steve\documents\visual studio 2010\Projects\Sln20130618\02xpath演示\bin\Debug\02xpath演示.pdb
+C:\Users\Steve\documents\visual studio 2010\Projects\Sln20130618\02xpath演示\obj\x86\Debug\02xpath演示.exe
+C:\Users\Steve\documents\visual studio 2010\Projects\Sln20130618\02xpath演示\obj\x86\Debug\02xpath演示.pdb

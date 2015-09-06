@@ -1,0 +1,15 @@
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130607\07简体繁体转换\bin\Debug\07简体繁体转换.exe
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130607\07简体繁体转换\bin\Debug\07简体繁体转换.pdb
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130607\07简体繁体转换\obj\x86\Debug\_07简体繁体转换.Form1.resources
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130607\07简体繁体转换\obj\x86\Debug\_07简体繁体转换.Properties.Resources.resources
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130607\07简体繁体转换\obj\x86\Debug\07简体繁体转换.csproj.GenerateResource.Cache
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130607\07简体繁体转换\obj\x86\Debug\07简体繁体转换.exe
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130607\07简体繁体转换\obj\x86\Debug\07简体繁体转换.pdb
+\\psf\Home\Documents\06 ArrayList Hashtable,泛型集合\BasicDay6\07简体繁体转换\bin\Debug\07简体繁体转换.exe
+\\psf\Home\Documents\06 ArrayList Hashtable,泛型集合\BasicDay6\07简体繁体转换\bin\Debug\07简体繁体转换.pdb
+\\psf\Home\Documents\06 ArrayList Hashtable,泛型集合\BasicDay6\07简体繁体转换\obj\x86\Debug\07简体繁体转换.csprojResolveAssemblyReference.cache
+\\psf\Home\Documents\06 ArrayList Hashtable,泛型集合\BasicDay6\07简体繁体转换\obj\x86\Debug\_07简体繁体转换.Form1.resources
+\\psf\Home\Documents\06 ArrayList Hashtable,泛型集合\BasicDay6\07简体繁体转换\obj\x86\Debug\_07简体繁体转换.Properties.Resources.resources
+\\psf\Home\Documents\06 ArrayList Hashtable,泛型集合\BasicDay6\07简体繁体转换\obj\x86\Debug\07简体繁体转换.csproj.GenerateResource.Cache
+\\psf\Home\Documents\06 ArrayList Hashtable,泛型集合\BasicDay6\07简体繁体转换\obj\x86\Debug\07简体繁体转换.exe
+\\psf\Home\Documents\06 ArrayList Hashtable,泛型集合\BasicDay6\07简体繁体转换\obj\x86\Debug\07简体繁体转换.pdb

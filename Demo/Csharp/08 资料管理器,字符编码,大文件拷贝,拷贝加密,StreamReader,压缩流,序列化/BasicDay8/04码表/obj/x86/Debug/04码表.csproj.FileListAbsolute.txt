@@ -1,0 +1,9 @@
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130610\04码表\bin\Debug\04码表.exe
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130610\04码表\bin\Debug\04码表.pdb
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130610\04码表\obj\x86\Debug\04码表.exe
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130610\04码表\obj\x86\Debug\04码表.pdb
+\\psf\Home\Documents\08 资料管理器,字符编码,大文件拷贝,拷贝加密,StreamReader,压缩流,序列化\BasicDay8\04码表\bin\Debug\04码表.exe
+\\psf\Home\Documents\08 资料管理器,字符编码,大文件拷贝,拷贝加密,StreamReader,压缩流,序列化\BasicDay8\04码表\bin\Debug\04码表.pdb
+\\psf\Home\Documents\08 资料管理器,字符编码,大文件拷贝,拷贝加密,StreamReader,压缩流,序列化\BasicDay8\04码表\obj\x86\Debug\04码表.csprojResolveAssemblyReference.cache
+\\psf\Home\Documents\08 资料管理器,字符编码,大文件拷贝,拷贝加密,StreamReader,压缩流,序列化\BasicDay8\04码表\obj\x86\Debug\04码表.exe
+\\psf\Home\Documents\08 资料管理器,字符编码,大文件拷贝,拷贝加密,StreamReader,压缩流,序列化\BasicDay8\04码表\obj\x86\Debug\04码表.pdb

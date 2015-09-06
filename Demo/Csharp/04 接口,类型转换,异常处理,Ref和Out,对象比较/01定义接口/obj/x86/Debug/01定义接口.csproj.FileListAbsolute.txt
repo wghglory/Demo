@@ -1,0 +1,6 @@
+c:\users\wangg3\documents\visual studio 2010\Projects\BasicDay4\01定义接口\bin\Debug\01定义接口.exe
+c:\users\wangg3\documents\visual studio 2010\Projects\BasicDay4\01定义接口\bin\Debug\01定义接口.pdb
+c:\users\wangg3\documents\visual studio 2010\Projects\BasicDay4\01定义接口\obj\x86\Debug\01定义接口.exe
+c:\users\wangg3\documents\visual studio 2010\Projects\BasicDay4\01定义接口\obj\x86\Debug\01定义接口.pdb
+\\psf\Home\Documents\04 接口,类型转换,异常处理,Ref和Out,对象比较\BasicDay4\01定义接口\obj\x86\Debug\01定义接口.exe
+\\psf\Home\Documents\04 接口,类型转换,异常处理,Ref和Out,对象比较\BasicDay4\01定义接口\obj\x86\Debug\01定义接口.pdb

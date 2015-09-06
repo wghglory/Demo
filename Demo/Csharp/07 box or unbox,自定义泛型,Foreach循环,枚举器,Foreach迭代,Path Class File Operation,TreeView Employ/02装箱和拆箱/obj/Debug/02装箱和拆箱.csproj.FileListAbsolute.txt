@@ -1,0 +1,10 @@
+C:\Users\Steve\Documents\Visual Studio 2008\Projects\Sln20130608\02装箱和拆箱\bin\Debug\02装箱和拆箱.exe
+C:\Users\Steve\Documents\Visual Studio 2008\Projects\Sln20130608\02装箱和拆箱\bin\Debug\02装箱和拆箱.pdb
+C:\Users\Steve\Documents\Visual Studio 2008\Projects\Sln20130608\02装箱和拆箱\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Steve\Documents\Visual Studio 2008\Projects\Sln20130608\02装箱和拆箱\obj\Debug\02装箱和拆箱.exe
+C:\Users\Steve\Documents\Visual Studio 2008\Projects\Sln20130608\02装箱和拆箱\obj\Debug\02装箱和拆箱.pdb
+\\psf\Home\Documents\07 box or unbox,自定义泛型,Foreach循环,枚举器,Foreach迭代,Path Class File Operation,TreeView Employ\BasicDay7\02装箱和拆箱\bin\Debug\02装箱和拆箱.exe
+\\psf\Home\Documents\07 box or unbox,自定义泛型,Foreach循环,枚举器,Foreach迭代,Path Class File Operation,TreeView Employ\BasicDay7\02装箱和拆箱\bin\Debug\02装箱和拆箱.pdb
+\\psf\Home\Documents\07 box or unbox,自定义泛型,Foreach循环,枚举器,Foreach迭代,Path Class File Operation,TreeView Employ\BasicDay7\02装箱和拆箱\obj\Debug\02装箱和拆箱.csprojResolveAssemblyReference.cache
+\\psf\Home\Documents\07 box or unbox,自定义泛型,Foreach循环,枚举器,Foreach迭代,Path Class File Operation,TreeView Employ\BasicDay7\02装箱和拆箱\obj\Debug\02装箱和拆箱.exe
+\\psf\Home\Documents\07 box or unbox,自定义泛型,Foreach循环,枚举器,Foreach迭代,Path Class File Operation,TreeView Employ\BasicDay7\02装箱和拆箱\obj\Debug\02装箱和拆箱.pdb

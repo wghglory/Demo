@@ -1,0 +1,7 @@
+\\psf\Home\Documents\practice project\BasicDay3\MyCalculator\bin\Debug\MyCalculator.exe
+\\psf\Home\Documents\practice project\BasicDay3\MyCalculator\bin\Debug\MyCalculator.pdb
+\\psf\Home\Documents\practice project\BasicDay3\MyCalculator\obj\Debug\MyCalculator.exe
+\\psf\Home\Documents\practice project\BasicDay3\MyCalculator\obj\Debug\MyCalculator.pdb
+\\psf\Home\Documents\practice project\BasicDay3\MyCalculator\obj\Debug\MyCalculator.csprojResolveAssemblyReference.cache
+\\psf\Home\Documents\practice project\BasicDay3\MyCalculator\bin\Debug\CalculatorDLL.dll
+\\psf\Home\Documents\practice project\BasicDay3\MyCalculator\bin\Debug\CalculatorDLL.pdb

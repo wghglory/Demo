@@ -1,0 +1,15 @@
+C:\Users\Steve\documents\visual studio 2010\Projects\Sln20130613\05敏感词过滤\obj\x86\Debug\_05敏感词过滤.Form1.resources
+C:\Users\Steve\documents\visual studio 2010\Projects\Sln20130613\05敏感词过滤\obj\x86\Debug\_05敏感词过滤.Properties.Resources.resources
+C:\Users\Steve\documents\visual studio 2010\Projects\Sln20130613\05敏感词过滤\obj\x86\Debug\05敏感词过滤.csproj.GenerateResource.Cache
+C:\Users\Steve\documents\visual studio 2010\Projects\Sln20130613\05敏感词过滤\bin\Debug\05敏感词过滤.exe
+C:\Users\Steve\documents\visual studio 2010\Projects\Sln20130613\05敏感词过滤\bin\Debug\05敏感词过滤.pdb
+C:\Users\Steve\documents\visual studio 2010\Projects\Sln20130613\05敏感词过滤\obj\x86\Debug\05敏感词过滤.exe
+C:\Users\Steve\documents\visual studio 2010\Projects\Sln20130613\05敏感词过滤\obj\x86\Debug\05敏感词过滤.pdb
+\\psf\Home\Documents\09 正则提取,单词边界,反向引用,UBB,敏感词过滤\正则\05敏感词过滤\bin\Debug\05敏感词过滤.exe
+\\psf\Home\Documents\09 正则提取,单词边界,反向引用,UBB,敏感词过滤\正则\05敏感词过滤\bin\Debug\05敏感词过滤.pdb
+\\psf\Home\Documents\09 正则提取,单词边界,反向引用,UBB,敏感词过滤\正则\05敏感词过滤\obj\x86\Debug\05敏感词过滤.csprojResolveAssemblyReference.cache
+\\psf\Home\Documents\09 正则提取,单词边界,反向引用,UBB,敏感词过滤\正则\05敏感词过滤\obj\x86\Debug\_05敏感词过滤.Form1.resources
+\\psf\Home\Documents\09 正则提取,单词边界,反向引用,UBB,敏感词过滤\正则\05敏感词过滤\obj\x86\Debug\_05敏感词过滤.Properties.Resources.resources
+\\psf\Home\Documents\09 正则提取,单词边界,反向引用,UBB,敏感词过滤\正则\05敏感词过滤\obj\x86\Debug\05敏感词过滤.csproj.GenerateResource.Cache
+\\psf\Home\Documents\09 正则提取,单词边界,反向引用,UBB,敏感词过滤\正则\05敏感词过滤\obj\x86\Debug\05敏感词过滤.exe
+\\psf\Home\Documents\09 正则提取,单词边界,反向引用,UBB,敏感词过滤\正则\05敏感词过滤\obj\x86\Debug\05敏感词过滤.pdb

@@ -1,0 +1,11 @@
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130611\01作业\bin\Debug\01作业.exe
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130611\01作业\bin\Debug\01作业.pdb
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130611\01作业\obj\x86\Debug\01作业.exe
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130611\01作业\obj\x86\Debug\01作业.pdb
+\\psf\Home\Documents\工作\黑马7\09----2013.06.11---基础加强--正则表达式-.元字符.字符串提取.匹配\This Teacher\09_201306011Net基础加强\Sln20130611（全）\01作业\obj\x86\Debug\01作业.exe
+\\psf\Home\Documents\工作\黑马7\09----2013.06.11---基础加强--正则表达式-.元字符.字符串提取.匹配\This Teacher\09_201306011Net基础加强\Sln20130611（全）\01作业\obj\x86\Debug\01作业.pdb
+\\psf\Home\Documents\09 正则表达式-.元字符.字符串提取.匹配\Sln20130119（全）\01作业\bin\Debug\01作业.exe
+\\psf\Home\Documents\09 正则表达式-.元字符.字符串提取.匹配\Sln20130119（全）\01作业\bin\Debug\01作业.pdb
+\\psf\Home\Documents\09 正则表达式-.元字符.字符串提取.匹配\Sln20130119（全）\01作业\obj\x86\Debug\01作业.csprojResolveAssemblyReference.cache
+\\psf\Home\Documents\09 正则表达式-.元字符.字符串提取.匹配\Sln20130119（全）\01作业\obj\x86\Debug\01作业.exe
+\\psf\Home\Documents\09 正则表达式-.元字符.字符串提取.匹配\Sln20130119（全）\01作业\obj\x86\Debug\01作业.pdb

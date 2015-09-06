@@ -1,0 +1,4 @@
+c:\users\wangg3\documents\visual studio 2010\Projects\BasicDay4\08类型转换\bin\Debug\08类型转换.exe
+c:\users\wangg3\documents\visual studio 2010\Projects\BasicDay4\08类型转换\bin\Debug\08类型转换.pdb
+c:\users\wangg3\documents\visual studio 2010\Projects\BasicDay4\08类型转换\obj\x86\Debug\08类型转换.exe
+c:\users\wangg3\documents\visual studio 2010\Projects\BasicDay4\08类型转换\obj\x86\Debug\08类型转换.pdb

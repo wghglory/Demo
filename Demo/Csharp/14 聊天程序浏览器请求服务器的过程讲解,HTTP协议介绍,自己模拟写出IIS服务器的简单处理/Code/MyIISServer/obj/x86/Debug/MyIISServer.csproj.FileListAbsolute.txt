@@ -1,0 +1,7 @@
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130723\MyIISServer\bin\Debug\MyIISServer.exe
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130723\MyIISServer\bin\Debug\MyIISServer.pdb
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130723\MyIISServer\obj\x86\Debug\MyIISServer.Form1.resources
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130723\MyIISServer\obj\x86\Debug\MyIISServer.Properties.Resources.resources
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130723\MyIISServer\obj\x86\Debug\MyIISServer.csproj.GenerateResource.Cache
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130723\MyIISServer\obj\x86\Debug\MyIISServer.exe
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130723\MyIISServer\obj\x86\Debug\MyIISServer.pdb

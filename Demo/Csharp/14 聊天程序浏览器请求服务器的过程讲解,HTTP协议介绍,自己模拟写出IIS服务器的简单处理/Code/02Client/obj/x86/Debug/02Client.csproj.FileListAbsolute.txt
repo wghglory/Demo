@@ -1,0 +1,7 @@
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130723\02Client\bin\Debug\02Client.exe
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130723\02Client\bin\Debug\02Client.pdb
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130723\02Client\obj\x86\Debug\_02Client.Form1.resources
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130723\02Client\obj\x86\Debug\_02Client.Properties.Resources.resources
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130723\02Client\obj\x86\Debug\02Client.csproj.GenerateResource.Cache
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130723\02Client\obj\x86\Debug\02Client.exe
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130723\02Client\obj\x86\Debug\02Client.pdb

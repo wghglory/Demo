@@ -1,0 +1,14 @@
+C:\Users\Steve\Documents\Visual Studio 2008\Projects\Sln20130608\01作业问题\bin\Debug\01作业问题.exe
+C:\Users\Steve\Documents\Visual Studio 2008\Projects\Sln20130608\01作业问题\bin\Debug\01作业问题.pdb
+C:\Users\Steve\Documents\Visual Studio 2008\Projects\Sln20130608\01作业问题\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Steve\Documents\Visual Studio 2008\Projects\Sln20130608\01作业问题\obj\Debug\01作业问题.exe
+C:\Users\Steve\Documents\Visual Studio 2008\Projects\Sln20130608\01作业问题\obj\Debug\01作业问题.pdb
+\\psf\Home\Documents\黑马7\07----2013.06.08---基础加强--box or unbox,自定义泛型,Foreach循环,枚举器,Foreach迭代,Path Class File Operation,TreeView Employ\This Teacher\Net基础加强\Sln20130608（全）\01作业问题\obj\Debug\01作业问题.exe
+\\psf\Home\Documents\黑马7\07----2013.06.08---基础加强--box or unbox,自定义泛型,Foreach循环,枚举器,Foreach迭代,Path Class File Operation,TreeView Employ\This Teacher\Net基础加强\Sln20130608（全）\01作业问题\obj\Debug\01作业问题.pdb
+\\psf\Home\Documents\工作\黑马7\07----2013.06.08---基础加强--box or unbox,自定义泛型,Foreach循环,枚举器,Foreach迭代,Path Class File Operation,TreeView Employ\This Teacher\Net基础加强\Sln20130608（全）\01作业问题\obj\Debug\01作业问题.exe
+\\psf\Home\Documents\工作\黑马7\07----2013.06.08---基础加强--box or unbox,自定义泛型,Foreach循环,枚举器,Foreach迭代,Path Class File Operation,TreeView Employ\This Teacher\Net基础加强\Sln20130608（全）\01作业问题\obj\Debug\01作业问题.pdb
+\\psf\Home\Documents\07 box or unbox,自定义泛型,Foreach循环,枚举器,Foreach迭代,Path Class File Operation,TreeView Employ\BasicDay7\01作业问题\obj\Debug\01作业问题.exe
+\\psf\Home\Documents\07 box or unbox,自定义泛型,Foreach循环,枚举器,Foreach迭代,Path Class File Operation,TreeView Employ\BasicDay7\01作业问题\obj\Debug\01作业问题.pdb
+\\psf\Home\Documents\07 box or unbox,自定义泛型,Foreach循环,枚举器,Foreach迭代,Path Class File Operation,TreeView Employ\BasicDay7\01作业问题\bin\Debug\01作业问题.exe
+\\psf\Home\Documents\07 box or unbox,自定义泛型,Foreach循环,枚举器,Foreach迭代,Path Class File Operation,TreeView Employ\BasicDay7\01作业问题\bin\Debug\01作业问题.pdb
+\\psf\Home\Documents\07 box or unbox,自定义泛型,Foreach循环,枚举器,Foreach迭代,Path Class File Operation,TreeView Employ\BasicDay7\01作业问题\obj\Debug\01作业问题.csprojResolveAssemblyReference.cache

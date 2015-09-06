@@ -1,0 +1,9 @@
+C:\Documents and Settings\steve\My Documents\Visual Studio 2008\Projects\Sln20130118\07文件乱码问题\bin\Debug\07文件乱码问题.exe
+C:\Documents and Settings\steve\My Documents\Visual Studio 2008\Projects\Sln20130118\07文件乱码问题\bin\Debug\07文件乱码问题.pdb
+C:\Documents and Settings\steve\My Documents\Visual Studio 2008\Projects\Sln20130118\07文件乱码问题\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\steve\My Documents\Visual Studio 2008\Projects\Sln20130118\07文件乱码问题\obj\Debug\07文件乱码问题.exe
+C:\Documents and Settings\steve\My Documents\Visual Studio 2008\Projects\Sln20130118\07文件乱码问题\obj\Debug\07文件乱码问题.pdb
+\\psf\Home\Documents\08 资料管理器,字符编码,大文件拷贝,拷贝加密,StreamReader,压缩流,序列化\BasicDay8\07文件乱码问题\bin\Debug\07文件乱码问题.exe
+\\psf\Home\Documents\08 资料管理器,字符编码,大文件拷贝,拷贝加密,StreamReader,压缩流,序列化\BasicDay8\07文件乱码问题\bin\Debug\07文件乱码问题.pdb
+\\psf\Home\Documents\08 资料管理器,字符编码,大文件拷贝,拷贝加密,StreamReader,压缩流,序列化\BasicDay8\07文件乱码问题\obj\Debug\07文件乱码问题.exe
+\\psf\Home\Documents\08 资料管理器,字符编码,大文件拷贝,拷贝加密,StreamReader,压缩流,序列化\BasicDay8\07文件乱码问题\obj\Debug\07文件乱码问题.pdb

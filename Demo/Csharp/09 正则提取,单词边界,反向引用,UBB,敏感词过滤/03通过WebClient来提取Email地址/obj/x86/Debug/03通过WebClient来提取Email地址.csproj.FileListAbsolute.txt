@@ -1,0 +1,10 @@
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130613\03通过WebClient来提取Email地址\bin\Debug\03通过WebClient来提取Email地址.exe
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130613\03通过WebClient来提取Email地址\bin\Debug\03通过WebClient来提取Email地址.pdb
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130613\03通过WebClient来提取Email地址\obj\x86\Debug\03通过WebClient来提取Email地址.exe
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130613\03通过WebClient来提取Email地址\obj\x86\Debug\03通过WebClient来提取Email地址.pdb
+C:\Users\Steve\documents\visual studio 2010\Projects\Sln20130613\03通过WebClient来提取Email地址\obj\x86\Debug\03通过WebClient来提取Email地址.csprojResolveAssemblyReference.cache
+\\psf\Home\Documents\09 正则提取,单词边界,反向引用,UBB,敏感词过滤\正则\03通过WebClient来提取Email地址\bin\Debug\03通过WebClient来提取Email地址.exe
+\\psf\Home\Documents\09 正则提取,单词边界,反向引用,UBB,敏感词过滤\正则\03通过WebClient来提取Email地址\bin\Debug\03通过WebClient来提取Email地址.pdb
+\\psf\Home\Documents\09 正则提取,单词边界,反向引用,UBB,敏感词过滤\正则\03通过WebClient来提取Email地址\obj\x86\Debug\03通过WebClient来提取Email地址.csprojResolveAssemblyReference.cache
+\\psf\Home\Documents\09 正则提取,单词边界,反向引用,UBB,敏感词过滤\正则\03通过WebClient来提取Email地址\obj\x86\Debug\03通过WebClient来提取Email地址.exe
+\\psf\Home\Documents\09 正则提取,单词边界,反向引用,UBB,敏感词过滤\正则\03通过WebClient来提取Email地址\obj\x86\Debug\03通过WebClient来提取Email地址.pdb

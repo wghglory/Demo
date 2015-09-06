@@ -1,0 +1,6 @@
+c:\users\wangg3\documents\visual studio 2010\Projects\BasicDay5\01判断是否为同一个对象\bin\Debug\01判断是否为同一个对象.exe
+c:\users\wangg3\documents\visual studio 2010\Projects\BasicDay5\01判断是否为同一个对象\bin\Debug\01判断是否为同一个对象.pdb
+c:\users\wangg3\documents\visual studio 2010\Projects\BasicDay5\01判断是否为同一个对象\obj\x86\Debug\01判断是否为同一个对象.exe
+c:\users\wangg3\documents\visual studio 2010\Projects\BasicDay5\01判断是否为同一个对象\obj\x86\Debug\01判断是否为同一个对象.pdb
+\\psf\Home\Documents\05 判断对象是否是同意对象,字符串的不可变性,字符串格式化,StringBuilder使用,垃圾回收,弱引用\BasicDay5\01判断是否为同一个对象\obj\x86\Debug\01判断是否为同一个对象.exe
+\\psf\Home\Documents\05 判断对象是否是同意对象,字符串的不可变性,字符串格式化,StringBuilder使用,垃圾回收,弱引用\BasicDay5\01判断是否为同一个对象\obj\x86\Debug\01判断是否为同一个对象.pdb

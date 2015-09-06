@@ -1,0 +1,6 @@
+c:\users\wangg3\documents\visual studio 2010\Projects\BasicDay3\01静态类和静态成员\bin\Debug\01静态类和静态成员.exe
+c:\users\wangg3\documents\visual studio 2010\Projects\BasicDay3\01静态类和静态成员\bin\Debug\01静态类和静态成员.pdb
+c:\users\wangg3\documents\visual studio 2010\Projects\BasicDay3\01静态类和静态成员\obj\x86\Debug\01静态类和静态成员.exe
+c:\users\wangg3\documents\visual studio 2010\Projects\BasicDay3\01静态类和静态成员\obj\x86\Debug\01静态类和静态成员.pdb
+\\psf\Home\Documents\03 静态成员,静态类,静态构造函数,多态,里氏转换,抽象类实现多态,值类型余引用类型,值类型与引用类型作为参数传递时的问题,引用传递ref\BasicDay3\01静态类和静态成员\obj\x86\Debug\01静态类和静态成员.exe
+\\psf\Home\Documents\03 静态成员,静态类,静态构造函数,多态,里氏转换,抽象类实现多态,值类型余引用类型,值类型与引用类型作为参数传递时的问题,引用传递ref\BasicDay3\01静态类和静态成员\obj\x86\Debug\01静态类和静态成员.pdb

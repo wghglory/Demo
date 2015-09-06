@@ -1,0 +1,17 @@
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130616\01xml读写操作\bin\Debug\01xml读写操作.exe
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130616\01xml读写操作\bin\Debug\01xml读写操作.pdb
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130616\01xml读写操作\obj\x86\Debug\_01xml读写操作.Form1.resources
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130616\01xml读写操作\obj\x86\Debug\_01xml读写操作.Properties.Resources.resources
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130616\01xml读写操作\obj\x86\Debug\01xml读写操作.csproj.GenerateResource.Cache
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130616\01xml读写操作\obj\x86\Debug\01xml读写操作.exe
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130616\01xml读写操作\obj\x86\Debug\01xml读写操作.pdb
+C:\Users\Steve\documents\visual studio 2010\Projects\Sln20130616\01xml读写操作\obj\x86\Debug\01xml读写操作.csprojResolveAssemblyReference.cache
+C:\Users\wangg3\Desktop\Sln20130616（全）\01xml读写操作\obj\x86\Debug\01xml读写操作.exe
+C:\Users\wangg3\Desktop\Sln20130616（全）\01xml读写操作\obj\x86\Debug\01xml读写操作.pdb
+C:\Users\wangg3\Desktop\xml,xpath\01xml读写操作\obj\x86\Debug\01xml读写操作.exe
+C:\Users\wangg3\Desktop\xml,xpath\01xml读写操作\obj\x86\Debug\01xml读写操作.pdb
+\\psf\Home\Documents\12 xml, xpath, 序列化，深拷贝浅拷贝\01xml读写操作\obj\x86\Debug\01xml读写操作.csprojResolveAssemblyReference.cache
+\\psf\Home\Documents\12 xml, xpath, 序列化，深拷贝浅拷贝\01xml读写操作\obj\x86\Debug\_01xml读写操作.Form1.resources
+\\psf\Home\Documents\12 xml, xpath, 序列化，深拷贝浅拷贝\01xml读写操作\obj\x86\Debug\_01xml读写操作.Properties.Resources.resources
+\\psf\Home\Documents\12 xml, xpath, 序列化，深拷贝浅拷贝\01xml读写操作\obj\x86\Debug\01xml读写操作.csproj.GenerateResource.Cache
+\\psf\Home\Documents\12 xml, xpath, 序列化，深拷贝浅拷贝\01xml读写操作\obj\x86\Debug\01xml读写操作.exe

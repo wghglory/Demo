@@ -1,0 +1,5 @@
+\\psf\Home\Documents\practice project\BasicDay3\04多态2通过抽象类实现多态\bin\Debug\04多态2通过抽象类实现多态.exe
+\\psf\Home\Documents\practice project\BasicDay3\04多态2通过抽象类实现多态\bin\Debug\04多态2通过抽象类实现多态.pdb
+\\psf\Home\Documents\practice project\BasicDay3\04多态2通过抽象类实现多态\obj\Debug\04多态2通过抽象类实现多态.csprojResolveAssemblyReference.cache
+\\psf\Home\Documents\practice project\BasicDay3\04多态2通过抽象类实现多态\obj\Debug\04多态2通过抽象类实现多态.exe
+\\psf\Home\Documents\practice project\BasicDay3\04多态2通过抽象类实现多态\obj\Debug\04多态2通过抽象类实现多态.pdb

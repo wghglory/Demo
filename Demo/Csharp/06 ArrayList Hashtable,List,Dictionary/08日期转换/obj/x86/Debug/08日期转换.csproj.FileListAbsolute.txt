@@ -1,0 +1,8 @@
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130607\08日期转换\bin\Debug\08日期转换.exe
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130607\08日期转换\bin\Debug\08日期转换.pdb
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130607\08日期转换\obj\x86\Debug\08日期转换.exe
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130607\08日期转换\obj\x86\Debug\08日期转换.pdb
+\\psf\Home\Documents\06 ArrayList Hashtable,泛型集合\BasicDay6\08日期转换\bin\Debug\08日期转换.exe
+\\psf\Home\Documents\06 ArrayList Hashtable,泛型集合\BasicDay6\08日期转换\bin\Debug\08日期转换.pdb
+\\psf\Home\Documents\06 ArrayList Hashtable,泛型集合\BasicDay6\08日期转换\obj\x86\Debug\08日期转换.exe
+\\psf\Home\Documents\06 ArrayList Hashtable,泛型集合\BasicDay6\08日期转换\obj\x86\Debug\08日期转换.pdb

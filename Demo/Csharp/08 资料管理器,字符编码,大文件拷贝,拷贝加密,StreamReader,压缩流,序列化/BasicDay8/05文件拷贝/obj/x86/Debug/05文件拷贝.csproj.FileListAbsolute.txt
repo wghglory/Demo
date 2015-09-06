@@ -1,0 +1,8 @@
+C:\Users\Steve\documents\visual studio 2010\Projects\Sln20130610\05文件拷贝\bin\Debug\05文件拷贝.exe
+C:\Users\Steve\documents\visual studio 2010\Projects\Sln20130610\05文件拷贝\bin\Debug\05文件拷贝.pdb
+C:\Users\Steve\documents\visual studio 2010\Projects\Sln20130610\05文件拷贝\obj\x86\Debug\05文件拷贝.exe
+C:\Users\Steve\documents\visual studio 2010\Projects\Sln20130610\05文件拷贝\obj\x86\Debug\05文件拷贝.pdb
+\\psf\Home\Documents\08 资料管理器,字符编码,大文件拷贝,拷贝加密,StreamReader,压缩流,序列化\BasicDay8\05文件拷贝\bin\Debug\05文件拷贝.exe
+\\psf\Home\Documents\08 资料管理器,字符编码,大文件拷贝,拷贝加密,StreamReader,压缩流,序列化\BasicDay8\05文件拷贝\bin\Debug\05文件拷贝.pdb
+\\psf\Home\Documents\08 资料管理器,字符编码,大文件拷贝,拷贝加密,StreamReader,压缩流,序列化\BasicDay8\05文件拷贝\obj\x86\Debug\05文件拷贝.exe
+\\psf\Home\Documents\08 资料管理器,字符编码,大文件拷贝,拷贝加密,StreamReader,压缩流,序列化\BasicDay8\05文件拷贝\obj\x86\Debug\05文件拷贝.pdb

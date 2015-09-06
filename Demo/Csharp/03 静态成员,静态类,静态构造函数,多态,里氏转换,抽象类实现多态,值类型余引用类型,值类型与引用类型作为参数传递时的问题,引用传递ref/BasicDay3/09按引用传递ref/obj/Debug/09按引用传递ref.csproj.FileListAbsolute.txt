@@ -1,0 +1,5 @@
+\\psf\Home\Documents\practice project\BasicDay3\09按引用传递ref\bin\Debug\09按引用传递ref.exe
+\\psf\Home\Documents\practice project\BasicDay3\09按引用传递ref\bin\Debug\09按引用传递ref.pdb
+\\psf\Home\Documents\practice project\BasicDay3\09按引用传递ref\obj\Debug\09按引用传递ref.csprojResolveAssemblyReference.cache
+\\psf\Home\Documents\practice project\BasicDay3\09按引用传递ref\obj\Debug\09按引用传递ref.exe
+\\psf\Home\Documents\practice project\BasicDay3\09按引用传递ref\obj\Debug\09按引用传递ref.pdb

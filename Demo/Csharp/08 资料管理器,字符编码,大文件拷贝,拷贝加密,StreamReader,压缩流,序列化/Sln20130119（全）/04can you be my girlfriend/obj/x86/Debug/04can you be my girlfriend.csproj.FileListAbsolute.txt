@@ -1,0 +1,15 @@
+C:\Users\Steve\documents\visual studio 2010\Projects\Sln20130611\04can you be my girlfriend\bin\Debug\04can you be my girlfriend.exe
+C:\Users\Steve\documents\visual studio 2010\Projects\Sln20130611\04can you be my girlfriend\bin\Debug\04can you be my girlfriend.pdb
+C:\Users\Steve\documents\visual studio 2010\Projects\Sln20130611\04can you be my girlfriend\obj\x86\Debug\_04can_you_be_my_girlfriend.Form1.resources
+C:\Users\Steve\documents\visual studio 2010\Projects\Sln20130611\04can you be my girlfriend\obj\x86\Debug\_04can_you_be_my_girlfriend.Properties.Resources.resources
+C:\Users\Steve\documents\visual studio 2010\Projects\Sln20130611\04can you be my girlfriend\obj\x86\Debug\04can you be my girlfriend.csproj.GenerateResource.Cache
+C:\Users\Steve\documents\visual studio 2010\Projects\Sln20130611\04can you be my girlfriend\obj\x86\Debug\04can you be my girlfriend.exe
+C:\Users\Steve\documents\visual studio 2010\Projects\Sln20130611\04can you be my girlfriend\obj\x86\Debug\04can you be my girlfriend.pdb
+\\psf\Home\Documents\09 正则表达式-.元字符.字符串提取.匹配\Sln20130119（全）\04can you be my girlfriend\bin\Debug\04can you be my girlfriend.exe
+\\psf\Home\Documents\09 正则表达式-.元字符.字符串提取.匹配\Sln20130119（全）\04can you be my girlfriend\bin\Debug\04can you be my girlfriend.pdb
+\\psf\Home\Documents\09 正则表达式-.元字符.字符串提取.匹配\Sln20130119（全）\04can you be my girlfriend\obj\x86\Debug\04can you be my girlfriend.csprojResolveAssemblyReference.cache
+\\psf\Home\Documents\09 正则表达式-.元字符.字符串提取.匹配\Sln20130119（全）\04can you be my girlfriend\obj\x86\Debug\_04can_you_be_my_girlfriend.Form1.resources
+\\psf\Home\Documents\09 正则表达式-.元字符.字符串提取.匹配\Sln20130119（全）\04can you be my girlfriend\obj\x86\Debug\_04can_you_be_my_girlfriend.Properties.Resources.resources
+\\psf\Home\Documents\09 正则表达式-.元字符.字符串提取.匹配\Sln20130119（全）\04can you be my girlfriend\obj\x86\Debug\04can you be my girlfriend.csproj.GenerateResource.Cache
+\\psf\Home\Documents\09 正则表达式-.元字符.字符串提取.匹配\Sln20130119（全）\04can you be my girlfriend\obj\x86\Debug\04can you be my girlfriend.exe
+\\psf\Home\Documents\09 正则表达式-.元字符.字符串提取.匹配\Sln20130119（全）\04can you be my girlfriend\obj\x86\Debug\04can you be my girlfriend.pdb

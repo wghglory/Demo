@@ -1,0 +1,8 @@
+C:\Users\Steve\documents\visual studio 2010\Projects\Sln20130610\08通过文件流操作文本文件\bin\Debug\08通过文件流操作文本文件.exe
+C:\Users\Steve\documents\visual studio 2010\Projects\Sln20130610\08通过文件流操作文本文件\bin\Debug\08通过文件流操作文本文件.pdb
+C:\Users\Steve\documents\visual studio 2010\Projects\Sln20130610\08通过文件流操作文本文件\obj\x86\Debug\08通过文件流操作文本文件.exe
+C:\Users\Steve\documents\visual studio 2010\Projects\Sln20130610\08通过文件流操作文本文件\obj\x86\Debug\08通过文件流操作文本文件.pdb
+\\psf\Home\Documents\08 资料管理器,字符编码,大文件拷贝,拷贝加密,StreamReader,压缩流,序列化\BasicDay8\08通过文件流操作文本文件\bin\Debug\08通过文件流操作文本文件.exe
+\\psf\Home\Documents\08 资料管理器,字符编码,大文件拷贝,拷贝加密,StreamReader,压缩流,序列化\BasicDay8\08通过文件流操作文本文件\bin\Debug\08通过文件流操作文本文件.pdb
+\\psf\Home\Documents\08 资料管理器,字符编码,大文件拷贝,拷贝加密,StreamReader,压缩流,序列化\BasicDay8\08通过文件流操作文本文件\obj\x86\Debug\08通过文件流操作文本文件.exe
+\\psf\Home\Documents\08 资料管理器,字符编码,大文件拷贝,拷贝加密,StreamReader,压缩流,序列化\BasicDay8\08通过文件流操作文本文件\obj\x86\Debug\08通过文件流操作文本文件.pdb

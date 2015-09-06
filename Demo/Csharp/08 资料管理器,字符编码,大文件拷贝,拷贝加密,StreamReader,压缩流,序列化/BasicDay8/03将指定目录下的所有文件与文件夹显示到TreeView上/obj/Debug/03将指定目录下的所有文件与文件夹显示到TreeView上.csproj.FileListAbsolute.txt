@@ -1,0 +1,16 @@
+C:\Documents and Settings\steve\My Documents\Visual Studio 2008\Projects\Sln20130118\03将指定目录下的所有文件与文件夹显示到TreeView上\bin\Debug\03将指定目录下的所有文件与文件夹显示到TreeView上.exe
+C:\Documents and Settings\steve\My Documents\Visual Studio 2008\Projects\Sln20130118\03将指定目录下的所有文件与文件夹显示到TreeView上\bin\Debug\03将指定目录下的所有文件与文件夹显示到TreeView上.pdb
+C:\Documents and Settings\steve\My Documents\Visual Studio 2008\Projects\Sln20130118\03将指定目录下的所有文件与文件夹显示到TreeView上\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\steve\My Documents\Visual Studio 2008\Projects\Sln20130118\03将指定目录下的所有文件与文件夹显示到TreeView上\obj\Debug\_03将指定目录下的所有文件与文件夹显示到TreeView上.Form1.resources
+C:\Documents and Settings\steve\My Documents\Visual Studio 2008\Projects\Sln20130118\03将指定目录下的所有文件与文件夹显示到TreeView上\obj\Debug\_03将指定目录下的所有文件与文件夹显示到TreeView上.Properties.Resources.resources
+C:\Documents and Settings\steve\My Documents\Visual Studio 2008\Projects\Sln20130118\03将指定目录下的所有文件与文件夹显示到TreeView上\obj\Debug\03将指定目录下的所有文件与文件夹显示到TreeView上.csproj.GenerateResource.Cache
+C:\Documents and Settings\steve\My Documents\Visual Studio 2008\Projects\Sln20130118\03将指定目录下的所有文件与文件夹显示到TreeView上\obj\Debug\03将指定目录下的所有文件与文件夹显示到TreeView上.exe
+C:\Documents and Settings\steve\My Documents\Visual Studio 2008\Projects\Sln20130118\03将指定目录下的所有文件与文件夹显示到TreeView上\obj\Debug\03将指定目录下的所有文件与文件夹显示到TreeView上.pdb
+\\psf\Home\Documents\08 资料管理器,字符编码,大文件拷贝,拷贝加密,StreamReader,压缩流,序列化\BasicDay8\03将指定目录下的所有文件与文件夹显示到TreeView上\bin\Debug\03将指定目录下的所有文件与文件夹显示到TreeView上.exe
+\\psf\Home\Documents\08 资料管理器,字符编码,大文件拷贝,拷贝加密,StreamReader,压缩流,序列化\BasicDay8\03将指定目录下的所有文件与文件夹显示到TreeView上\bin\Debug\03将指定目录下的所有文件与文件夹显示到TreeView上.pdb
+\\psf\Home\Documents\08 资料管理器,字符编码,大文件拷贝,拷贝加密,StreamReader,压缩流,序列化\BasicDay8\03将指定目录下的所有文件与文件夹显示到TreeView上\obj\Debug\03将指定目录下的所有文件与文件夹显示到TreeView上.csprojResolveAssemblyReference.cache
+\\psf\Home\Documents\08 资料管理器,字符编码,大文件拷贝,拷贝加密,StreamReader,压缩流,序列化\BasicDay8\03将指定目录下的所有文件与文件夹显示到TreeView上\obj\Debug\_03将指定目录下的所有文件与文件夹显示到TreeView上.Form1.resources
+\\psf\Home\Documents\08 资料管理器,字符编码,大文件拷贝,拷贝加密,StreamReader,压缩流,序列化\BasicDay8\03将指定目录下的所有文件与文件夹显示到TreeView上\obj\Debug\_03将指定目录下的所有文件与文件夹显示到TreeView上.Properties.Resources.resources
+\\psf\Home\Documents\08 资料管理器,字符编码,大文件拷贝,拷贝加密,StreamReader,压缩流,序列化\BasicDay8\03将指定目录下的所有文件与文件夹显示到TreeView上\obj\Debug\03将指定目录下的所有文件与文件夹显示到TreeView上.csproj.GenerateResource.Cache
+\\psf\Home\Documents\08 资料管理器,字符编码,大文件拷贝,拷贝加密,StreamReader,压缩流,序列化\BasicDay8\03将指定目录下的所有文件与文件夹显示到TreeView上\obj\Debug\03将指定目录下的所有文件与文件夹显示到TreeView上.exe
+\\psf\Home\Documents\08 资料管理器,字符编码,大文件拷贝,拷贝加密,StreamReader,压缩流,序列化\BasicDay8\03将指定目录下的所有文件与文件夹显示到TreeView上\obj\Debug\03将指定目录下的所有文件与文件夹显示到TreeView上.pdb

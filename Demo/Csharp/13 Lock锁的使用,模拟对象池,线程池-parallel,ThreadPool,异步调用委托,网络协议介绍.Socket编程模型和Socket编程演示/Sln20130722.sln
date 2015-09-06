@@ -1,0 +1,63 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01lock演示", "01lock演示\01lock演示.csproj", "{ACEEDF48-E39D-4EE9-B834-390F1D545D3D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02模拟连接池的使用", "02模拟连接池的使用\02模拟连接池的使用.csproj", "{5F2B7207-AB50-495E-B877-68D51EE68819}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03线程池", "03线程池\03线程池.csproj", "{DAE579C3-D992-4D8E-BACE-3D6DAE93A1C8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03异步调用委托", "03异步调用委托\03异步调用委托.csproj", "{859133CF-0E81-42D7-B6E3-08E804084840}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Socket编程", "Socket编程", "{3586C7CA-0E11-460B-8E0F-29BE48E72AD9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocketServer", "SocketServer\SocketServer.csproj", "{E7D29080-21A6-4239-8EAD-70687DCC1735}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocketClient", "SocketClient\SocketClient.csproj", "{670977B8-41AE-4376-8EC0-5294AD607342}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocketClientWinForm", "SocketClientWinForm\SocketClientWinForm.csproj", "{EBE42D0A-DBF5-49F4-B0CC-72DA3DCD84CC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ACEEDF48-E39D-4EE9-B834-390F1D545D3D}.Debug|x86.ActiveCfg = Debug|x86
+		{ACEEDF48-E39D-4EE9-B834-390F1D545D3D}.Debug|x86.Build.0 = Debug|x86
+		{ACEEDF48-E39D-4EE9-B834-390F1D545D3D}.Release|x86.ActiveCfg = Release|x86
+		{ACEEDF48-E39D-4EE9-B834-390F1D545D3D}.Release|x86.Build.0 = Release|x86
+		{5F2B7207-AB50-495E-B877-68D51EE68819}.Debug|x86.ActiveCfg = Debug|x86
+		{5F2B7207-AB50-495E-B877-68D51EE68819}.Debug|x86.Build.0 = Debug|x86
+		{5F2B7207-AB50-495E-B877-68D51EE68819}.Release|x86.ActiveCfg = Release|x86
+		{5F2B7207-AB50-495E-B877-68D51EE68819}.Release|x86.Build.0 = Release|x86
+		{DAE579C3-D992-4D8E-BACE-3D6DAE93A1C8}.Debug|x86.ActiveCfg = Debug|x86
+		{DAE579C3-D992-4D8E-BACE-3D6DAE93A1C8}.Debug|x86.Build.0 = Debug|x86
+		{DAE579C3-D992-4D8E-BACE-3D6DAE93A1C8}.Release|x86.ActiveCfg = Release|x86
+		{DAE579C3-D992-4D8E-BACE-3D6DAE93A1C8}.Release|x86.Build.0 = Release|x86
+		{859133CF-0E81-42D7-B6E3-08E804084840}.Debug|x86.ActiveCfg = Debug|x86
+		{859133CF-0E81-42D7-B6E3-08E804084840}.Debug|x86.Build.0 = Debug|x86
+		{859133CF-0E81-42D7-B6E3-08E804084840}.Release|x86.ActiveCfg = Release|x86
+		{859133CF-0E81-42D7-B6E3-08E804084840}.Release|x86.Build.0 = Release|x86
+		{E7D29080-21A6-4239-8EAD-70687DCC1735}.Debug|x86.ActiveCfg = Debug|x86
+		{E7D29080-21A6-4239-8EAD-70687DCC1735}.Debug|x86.Build.0 = Debug|x86
+		{E7D29080-21A6-4239-8EAD-70687DCC1735}.Release|x86.ActiveCfg = Release|x86
+		{E7D29080-21A6-4239-8EAD-70687DCC1735}.Release|x86.Build.0 = Release|x86
+		{670977B8-41AE-4376-8EC0-5294AD607342}.Debug|x86.ActiveCfg = Debug|x86
+		{670977B8-41AE-4376-8EC0-5294AD607342}.Debug|x86.Build.0 = Debug|x86
+		{670977B8-41AE-4376-8EC0-5294AD607342}.Release|x86.ActiveCfg = Release|x86
+		{670977B8-41AE-4376-8EC0-5294AD607342}.Release|x86.Build.0 = Release|x86
+		{EBE42D0A-DBF5-49F4-B0CC-72DA3DCD84CC}.Debug|x86.ActiveCfg = Debug|x86
+		{EBE42D0A-DBF5-49F4-B0CC-72DA3DCD84CC}.Debug|x86.Build.0 = Debug|x86
+		{EBE42D0A-DBF5-49F4-B0CC-72DA3DCD84CC}.Release|x86.ActiveCfg = Release|x86
+		{EBE42D0A-DBF5-49F4-B0CC-72DA3DCD84CC}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E7D29080-21A6-4239-8EAD-70687DCC1735} = {3586C7CA-0E11-460B-8E0F-29BE48E72AD9}
+		{670977B8-41AE-4376-8EC0-5294AD607342} = {3586C7CA-0E11-460B-8E0F-29BE48E72AD9}
+		{EBE42D0A-DBF5-49F4-B0CC-72DA3DCD84CC} = {3586C7CA-0E11-460B-8E0F-29BE48E72AD9}
+	EndGlobalSection
+EndGlobal

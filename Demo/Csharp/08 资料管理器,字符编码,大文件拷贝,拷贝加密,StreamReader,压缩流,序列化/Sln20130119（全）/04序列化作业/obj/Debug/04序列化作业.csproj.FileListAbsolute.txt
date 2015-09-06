@@ -1,0 +1,16 @@
+C:\Documents and Settings\steve\My Documents\Visual Studio 2008\Projects\Sln20130119\04序列化作业\bin\Debug\04序列化作业.exe
+C:\Documents and Settings\steve\My Documents\Visual Studio 2008\Projects\Sln20130119\04序列化作业\bin\Debug\04序列化作业.pdb
+C:\Documents and Settings\steve\My Documents\Visual Studio 2008\Projects\Sln20130119\04序列化作业\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\steve\My Documents\Visual Studio 2008\Projects\Sln20130119\04序列化作业\obj\Debug\_04序列化作业.Form1.resources
+C:\Documents and Settings\steve\My Documents\Visual Studio 2008\Projects\Sln20130119\04序列化作业\obj\Debug\_04序列化作业.Properties.Resources.resources
+C:\Documents and Settings\steve\My Documents\Visual Studio 2008\Projects\Sln20130119\04序列化作业\obj\Debug\04序列化作业.csproj.GenerateResource.Cache
+C:\Documents and Settings\steve\My Documents\Visual Studio 2008\Projects\Sln20130119\04序列化作业\obj\Debug\04序列化作业.exe
+C:\Documents and Settings\steve\My Documents\Visual Studio 2008\Projects\Sln20130119\04序列化作业\obj\Debug\04序列化作业.pdb
+\\psf\Home\Documents\09 正则表达式-.元字符.字符串提取.匹配\Sln20130119（全）\04序列化作业\bin\Debug\04序列化作业.exe
+\\psf\Home\Documents\09 正则表达式-.元字符.字符串提取.匹配\Sln20130119（全）\04序列化作业\bin\Debug\04序列化作业.pdb
+\\psf\Home\Documents\09 正则表达式-.元字符.字符串提取.匹配\Sln20130119（全）\04序列化作业\obj\Debug\04序列化作业.csprojResolveAssemblyReference.cache
+\\psf\Home\Documents\09 正则表达式-.元字符.字符串提取.匹配\Sln20130119（全）\04序列化作业\obj\Debug\_04序列化作业.Form1.resources
+\\psf\Home\Documents\09 正则表达式-.元字符.字符串提取.匹配\Sln20130119（全）\04序列化作业\obj\Debug\_04序列化作业.Properties.Resources.resources
+\\psf\Home\Documents\09 正则表达式-.元字符.字符串提取.匹配\Sln20130119（全）\04序列化作业\obj\Debug\04序列化作业.csproj.GenerateResource.Cache
+\\psf\Home\Documents\09 正则表达式-.元字符.字符串提取.匹配\Sln20130119（全）\04序列化作业\obj\Debug\04序列化作业.exe
+\\psf\Home\Documents\09 正则表达式-.元字符.字符串提取.匹配\Sln20130119（全）\04序列化作业\obj\Debug\04序列化作业.pdb

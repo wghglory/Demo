@@ -1,0 +1,8 @@
+C:\Users\Steve\documents\visual studio 2010\Projects\Sln20130610\10压缩\bin\Debug\10压缩.exe
+C:\Users\Steve\documents\visual studio 2010\Projects\Sln20130610\10压缩\bin\Debug\10压缩.pdb
+C:\Users\Steve\documents\visual studio 2010\Projects\Sln20130610\10压缩\obj\x86\Debug\10压缩.exe
+C:\Users\Steve\documents\visual studio 2010\Projects\Sln20130610\10压缩\obj\x86\Debug\10压缩.pdb
+\\psf\Home\Documents\08 资料管理器,字符编码,大文件拷贝,拷贝加密,StreamReader,压缩流,序列化\BasicDay8\10压缩\bin\Debug\10压缩.exe
+\\psf\Home\Documents\08 资料管理器,字符编码,大文件拷贝,拷贝加密,StreamReader,压缩流,序列化\BasicDay8\10压缩\bin\Debug\10压缩.pdb
+\\psf\Home\Documents\08 资料管理器,字符编码,大文件拷贝,拷贝加密,StreamReader,压缩流,序列化\BasicDay8\10压缩\obj\x86\Debug\10压缩.exe
+\\psf\Home\Documents\08 资料管理器,字符编码,大文件拷贝,拷贝加密,StreamReader,压缩流,序列化\BasicDay8\10压缩\obj\x86\Debug\10压缩.pdb

@@ -1,0 +1,9 @@
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130613\02贪婪模式\bin\Debug\02贪婪模式.exe
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130613\02贪婪模式\bin\Debug\02贪婪模式.pdb
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130613\02贪婪模式\obj\x86\Debug\02贪婪模式.exe
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130613\02贪婪模式\obj\x86\Debug\02贪婪模式.pdb
+\\psf\Home\Documents\09 正则提取,单词边界,反向引用,UBB,敏感词过滤\正则\02贪婪模式\obj\x86\Debug\02贪婪模式.exe
+\\psf\Home\Documents\09 正则提取,单词边界,反向引用,UBB,敏感词过滤\正则\02贪婪模式\obj\x86\Debug\02贪婪模式.pdb
+\\psf\Home\Documents\09 正则提取,单词边界,反向引用,UBB,敏感词过滤\正则\02贪婪模式\bin\Debug\02贪婪模式.exe
+\\psf\Home\Documents\09 正则提取,单词边界,反向引用,UBB,敏感词过滤\正则\02贪婪模式\bin\Debug\02贪婪模式.pdb
+\\psf\Home\Documents\09 正则提取,单词边界,反向引用,UBB,敏感词过滤\正则\02贪婪模式\obj\x86\Debug\02贪婪模式.csprojResolveAssemblyReference.cache

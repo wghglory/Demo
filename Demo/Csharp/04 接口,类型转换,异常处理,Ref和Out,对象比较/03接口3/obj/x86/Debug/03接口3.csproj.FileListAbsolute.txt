@@ -1,0 +1,4 @@
+c:\users\wangg3\documents\visual studio 2010\Projects\BasicDay4\03接口3\bin\Debug\03接口3.exe
+c:\users\wangg3\documents\visual studio 2010\Projects\BasicDay4\03接口3\bin\Debug\03接口3.pdb
+c:\users\wangg3\documents\visual studio 2010\Projects\BasicDay4\03接口3\obj\x86\Debug\03接口3.exe
+c:\users\wangg3\documents\visual studio 2010\Projects\BasicDay4\03接口3\obj\x86\Debug\03接口3.pdb

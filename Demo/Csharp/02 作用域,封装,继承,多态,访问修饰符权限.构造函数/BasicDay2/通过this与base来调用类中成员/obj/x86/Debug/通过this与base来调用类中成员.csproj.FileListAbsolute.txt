@@ -1,0 +1,8 @@
+c:\users\wangg3\documents\visual studio 2010\Projects\BasicDay2\通过this与base来调用类中成员\bin\Debug\通过this与base来调用类中成员.exe
+c:\users\wangg3\documents\visual studio 2010\Projects\BasicDay2\通过this与base来调用类中成员\bin\Debug\通过this与base来调用类中成员.pdb
+c:\users\wangg3\documents\visual studio 2010\Projects\BasicDay2\通过this与base来调用类中成员\obj\x86\Debug\通过this与base来调用类中成员.exe
+c:\users\wangg3\documents\visual studio 2010\Projects\BasicDay2\通过this与base来调用类中成员\obj\x86\Debug\通过this与base来调用类中成员.pdb
+\\psf\Home\Documents\02 作用域,封装,继承,多态,访问修饰符权限.构造函数\BasicDay2\通过this与base来调用类中成员\bin\Debug\通过this与base来调用类中成员.exe
+\\psf\Home\Documents\02 作用域,封装,继承,多态,访问修饰符权限.构造函数\BasicDay2\通过this与base来调用类中成员\bin\Debug\通过this与base来调用类中成员.pdb
+\\psf\Home\Documents\02 作用域,封装,继承,多态,访问修饰符权限.构造函数\BasicDay2\通过this与base来调用类中成员\obj\x86\Debug\通过this与base来调用类中成员.exe
+\\psf\Home\Documents\02 作用域,封装,继承,多态,访问修饰符权限.构造函数\BasicDay2\通过this与base来调用类中成员\obj\x86\Debug\通过this与base来调用类中成员.pdb

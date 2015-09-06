@@ -1,0 +1,4 @@
+\\psf\home\documents\visual studio 2013\Projects\AssemblyReflection\03Test01Reflect\bin\Debug\03Test01Reflect.exe
+\\psf\home\documents\visual studio 2013\Projects\AssemblyReflection\03Test01Reflect\bin\Debug\03Test01Reflect.pdb
+\\psf\home\documents\visual studio 2013\Projects\AssemblyReflection\03Test01Reflect\obj\Debug\03Test01Reflect.exe
+\\psf\home\documents\visual studio 2013\Projects\AssemblyReflection\03Test01Reflect\obj\Debug\03Test01Reflect.pdb

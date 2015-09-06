@@ -1,0 +1,4 @@
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130610\yplQ\bin\Debug\yplQ.exe
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130610\yplQ\bin\Debug\yplQ.pdb
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130610\yplQ\obj\x86\Debug\yplQ.exe
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130610\yplQ\obj\x86\Debug\yplQ.pdb

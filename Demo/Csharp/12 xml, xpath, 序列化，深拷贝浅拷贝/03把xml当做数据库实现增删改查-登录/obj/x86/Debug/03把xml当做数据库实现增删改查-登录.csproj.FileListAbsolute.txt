@@ -1,0 +1,7 @@
+C:\Users\Steve\documents\visual studio 2010\Projects\Sln20130618\03把xml当做数据库实现增删改查-登录\bin\Debug\03把xml当做数据库实现增删改查-登录.exe
+C:\Users\Steve\documents\visual studio 2010\Projects\Sln20130618\03把xml当做数据库实现增删改查-登录\bin\Debug\03把xml当做数据库实现增删改查-登录.pdb
+C:\Users\Steve\documents\visual studio 2010\Projects\Sln20130618\03把xml当做数据库实现增删改查-登录\obj\x86\Debug\_03把xml当做数据库实现增删改查_登录.Form1.resources
+C:\Users\Steve\documents\visual studio 2010\Projects\Sln20130618\03把xml当做数据库实现增删改查-登录\obj\x86\Debug\_03把xml当做数据库实现增删改查_登录.Properties.Resources.resources
+C:\Users\Steve\documents\visual studio 2010\Projects\Sln20130618\03把xml当做数据库实现增删改查-登录\obj\x86\Debug\03把xml当做数据库实现增删改查-登录.csproj.GenerateResource.Cache
+C:\Users\Steve\documents\visual studio 2010\Projects\Sln20130618\03把xml当做数据库实现增删改查-登录\obj\x86\Debug\03把xml当做数据库实现增删改查-登录.exe
+C:\Users\Steve\documents\visual studio 2010\Projects\Sln20130618\03把xml当做数据库实现增删改查-登录\obj\x86\Debug\03把xml当做数据库实现增删改查-登录.pdb

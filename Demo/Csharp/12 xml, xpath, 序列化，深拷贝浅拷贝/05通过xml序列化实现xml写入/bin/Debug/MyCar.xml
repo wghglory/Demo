@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<Car xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Brand>兰博基尼</Brand>
+  <Number>京A888888</Number>
+  <PaiLiang>600</PaiLiang>
+</Car>

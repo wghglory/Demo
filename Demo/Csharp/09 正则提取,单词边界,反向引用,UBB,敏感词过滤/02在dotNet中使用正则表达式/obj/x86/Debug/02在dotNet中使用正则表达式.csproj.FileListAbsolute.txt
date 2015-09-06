@@ -1,0 +1,10 @@
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130611\02在dotNet中使用正则表达式\bin\Debug\02在dotNet中使用正则表达式.exe
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130611\02在dotNet中使用正则表达式\bin\Debug\02在dotNet中使用正则表达式.pdb
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130611\02在dotNet中使用正则表达式\obj\x86\Debug\02在dotNet中使用正则表达式.exe
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130611\02在dotNet中使用正则表达式\obj\x86\Debug\02在dotNet中使用正则表达式.pdb
+C:\Users\Steve\documents\visual studio 2010\Projects\Sln20130611\02在dotNet中使用正则表达式\obj\x86\Debug\02在dotNet中使用正则表达式.csprojResolveAssemblyReference.cache
+\\psf\Home\Documents\09 正则表达式-.元字符.字符串提取.匹配\Sln20130119（全）\02在dotNet中使用正则表达式\bin\Debug\02在dotNet中使用正则表达式.exe
+\\psf\Home\Documents\09 正则表达式-.元字符.字符串提取.匹配\Sln20130119（全）\02在dotNet中使用正则表达式\bin\Debug\02在dotNet中使用正则表达式.pdb
+\\psf\Home\Documents\09 正则表达式-.元字符.字符串提取.匹配\Sln20130119（全）\02在dotNet中使用正则表达式\obj\x86\Debug\02在dotNet中使用正则表达式.csprojResolveAssemblyReference.cache
+\\psf\Home\Documents\09 正则表达式-.元字符.字符串提取.匹配\Sln20130119（全）\02在dotNet中使用正则表达式\obj\x86\Debug\02在dotNet中使用正则表达式.exe
+\\psf\Home\Documents\09 正则表达式-.元字符.字符串提取.匹配\Sln20130119（全）\02在dotNet中使用正则表达式\obj\x86\Debug\02在dotNet中使用正则表达式.pdb

@@ -1,0 +1,7 @@
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130615\MyNotepadd.ToUpperAddon\bin\Debug\MyNotepadd.ToUpperAddon.dll
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130615\MyNotepadd.ToUpperAddon\bin\Debug\MyNotepadd.ToUpperAddon.pdb
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130615\MyNotepadd.ToUpperAddon\bin\Debug\MyNotepad.ExtInterface.dll
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130615\MyNotepadd.ToUpperAddon\bin\Debug\MyNotepad.ExtInterface.pdb
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130615\MyNotepadd.ToUpperAddon\obj\Debug\MyNotepadd.ToUpperAddon.csprojResolveAssemblyReference.cache
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130615\MyNotepadd.ToUpperAddon\obj\Debug\MyNotepadd.ToUpperAddon.dll
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130615\MyNotepadd.ToUpperAddon\obj\Debug\MyNotepadd.ToUpperAddon.pdb

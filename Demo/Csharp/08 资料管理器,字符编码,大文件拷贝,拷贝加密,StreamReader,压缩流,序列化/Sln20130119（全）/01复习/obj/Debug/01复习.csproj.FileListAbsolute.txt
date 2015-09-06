@@ -1,0 +1,12 @@
+C:\Documents and Settings\steve\My Documents\Visual Studio 2008\Projects\Sln20130119\01复习\bin\Debug\01复习.exe
+C:\Documents and Settings\steve\My Documents\Visual Studio 2008\Projects\Sln20130119\01复习\bin\Debug\01复习.pdb
+C:\Documents and Settings\steve\My Documents\Visual Studio 2008\Projects\Sln20130119\01复习\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\steve\My Documents\Visual Studio 2008\Projects\Sln20130119\01复习\obj\Debug\01复习.exe
+C:\Documents and Settings\steve\My Documents\Visual Studio 2008\Projects\Sln20130119\01复习\obj\Debug\01复习.pdb
+\\psf\Home\Documents\工作\黑马7\09----2013.06.11---基础加强--正则表达式-.元字符.字符串提取.匹配\This Teacher\Net基础加强\Sln20130119（全）\01复习\obj\Debug\01复习.exe
+\\psf\Home\Documents\工作\黑马7\09----2013.06.11---基础加强--正则表达式-.元字符.字符串提取.匹配\This Teacher\Net基础加强\Sln20130119（全）\01复习\obj\Debug\01复习.pdb
+\\psf\Home\Documents\09 正则表达式-.元字符.字符串提取.匹配\Sln20130119（全）\01复习\obj\Debug\01复习.exe
+\\psf\Home\Documents\09 正则表达式-.元字符.字符串提取.匹配\Sln20130119（全）\01复习\obj\Debug\01复习.pdb
+\\psf\Home\Documents\09 正则表达式-.元字符.字符串提取.匹配\Sln20130119（全）\01复习\bin\Debug\01复习.exe
+\\psf\Home\Documents\09 正则表达式-.元字符.字符串提取.匹配\Sln20130119（全）\01复习\bin\Debug\01复习.pdb
+\\psf\Home\Documents\09 正则表达式-.元字符.字符串提取.匹配\Sln20130119（全）\01复习\obj\Debug\01复习.csprojResolveAssemblyReference.cache

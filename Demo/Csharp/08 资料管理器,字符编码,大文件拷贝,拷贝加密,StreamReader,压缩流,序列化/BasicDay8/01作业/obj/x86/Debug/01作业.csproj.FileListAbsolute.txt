@@ -1,0 +1,10 @@
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130610\01作业\bin\Debug\01作业.exe
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130610\01作业\bin\Debug\01作业.pdb
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130610\01作业\obj\x86\Debug\01作业.exe
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130610\01作业\obj\x86\Debug\01作业.pdb
+\\psf\Home\Documents\工作\黑马7\08----2013.06.10---基础加强--资料管理器,字符编码,大文件拷贝,拷贝加密,StreamReader,压缩流,序列化\This Teacher\08_201306010Net基础加强\Sln20130610（全）\01作业\obj\x86\Debug\01作业.exe
+\\psf\Home\Documents\工作\黑马7\08----2013.06.10---基础加强--资料管理器,字符编码,大文件拷贝,拷贝加密,StreamReader,压缩流,序列化\This Teacher\08_201306010Net基础加强\Sln20130610（全）\01作业\obj\x86\Debug\01作业.pdb
+\\psf\Home\Documents\08 资料管理器,字符编码,大文件拷贝,拷贝加密,StreamReader,压缩流,序列化\BasicDay8\01作业\bin\Debug\01作业.exe
+\\psf\Home\Documents\08 资料管理器,字符编码,大文件拷贝,拷贝加密,StreamReader,压缩流,序列化\BasicDay8\01作业\bin\Debug\01作业.pdb
+\\psf\Home\Documents\08 资料管理器,字符编码,大文件拷贝,拷贝加密,StreamReader,压缩流,序列化\BasicDay8\01作业\obj\x86\Debug\01作业.exe
+\\psf\Home\Documents\08 资料管理器,字符编码,大文件拷贝,拷贝加密,StreamReader,压缩流,序列化\BasicDay8\01作业\obj\x86\Debug\01作业.pdb

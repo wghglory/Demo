@@ -1,0 +1,10 @@
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130722\01lock演示\bin\Debug\01lock演示.exe
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130722\01lock演示\bin\Debug\01lock演示.pdb
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130722\01lock演示\obj\x86\Debug\01lock演示.exe
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130722\01lock演示\obj\x86\Debug\01lock演示.pdb
+\\psf\Home\Desktop\Code\01lock演示\obj\x86\Debug\01lock演示.exe
+\\psf\Home\Desktop\Code\01lock演示\obj\x86\Debug\01lock演示.pdb
+C:\Users\wangg3\Desktop\Code\Code\01lock演示\obj\x86\Debug\01lock演示.exe
+C:\Users\wangg3\Desktop\Code\Code\01lock演示\obj\x86\Debug\01lock演示.pdb
+C:\Users\wangg3\Desktop\Code\Code\01lock演示\bin\Debug\01lock演示.exe
+C:\Users\wangg3\Desktop\Code\Code\01lock演示\bin\Debug\01lock演示.pdb

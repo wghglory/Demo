@@ -1,0 +1,9 @@
+c:\users\wangg3\documents\visual studio 2010\Projects\BasicDay11\07模拟事件\bin\Debug\07模拟事件.exe
+c:\users\wangg3\documents\visual studio 2010\Projects\BasicDay11\07模拟事件\bin\Debug\07模拟事件.pdb
+c:\users\wangg3\documents\visual studio 2010\Projects\BasicDay11\07模拟事件\obj\x86\Debug\07模拟事件.exe
+c:\users\wangg3\documents\visual studio 2010\Projects\BasicDay11\07模拟事件\obj\x86\Debug\07模拟事件.pdb
+\\psf\Home\Documents\BasicDay11\07模拟事件\bin\Debug\07模拟事件.exe
+\\psf\Home\Documents\BasicDay11\07模拟事件\bin\Debug\07模拟事件.pdb
+\\psf\Home\Documents\BasicDay11\07模拟事件\obj\x86\Debug\07模拟事件.csprojResolveAssemblyReference.cache
+\\psf\Home\Documents\BasicDay11\07模拟事件\obj\x86\Debug\07模拟事件.exe
+\\psf\Home\Documents\BasicDay11\07模拟事件\obj\x86\Debug\07模拟事件.pdb

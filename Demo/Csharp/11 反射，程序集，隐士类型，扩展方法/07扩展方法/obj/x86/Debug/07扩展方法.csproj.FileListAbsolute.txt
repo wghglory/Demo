@@ -1,0 +1,4 @@
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130615\07扩展方法\bin\Debug\07扩展方法.exe
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130615\07扩展方法\bin\Debug\07扩展方法.pdb
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130615\07扩展方法\obj\x86\Debug\07扩展方法.exe
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130615\07扩展方法\obj\x86\Debug\07扩展方法.pdb

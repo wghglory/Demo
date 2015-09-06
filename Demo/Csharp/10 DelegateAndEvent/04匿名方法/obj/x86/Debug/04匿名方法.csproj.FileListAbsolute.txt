@@ -1,0 +1,4 @@
+c:\users\wangg3\documents\visual studio 2010\Projects\BasicDay11\04匿名方法\bin\Debug\04匿名方法.exe
+c:\users\wangg3\documents\visual studio 2010\Projects\BasicDay11\04匿名方法\bin\Debug\04匿名方法.pdb
+c:\users\wangg3\documents\visual studio 2010\Projects\BasicDay11\04匿名方法\obj\x86\Debug\04匿名方法.exe
+c:\users\wangg3\documents\visual studio 2010\Projects\BasicDay11\04匿名方法\obj\x86\Debug\04匿名方法.pdb

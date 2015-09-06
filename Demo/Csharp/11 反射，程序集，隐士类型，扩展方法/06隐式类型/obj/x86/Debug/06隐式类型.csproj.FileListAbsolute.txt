@@ -1,0 +1,4 @@
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130615\06隐式类型\bin\Debug\06隐式类型.exe
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130615\06隐式类型\bin\Debug\06隐式类型.pdb
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130615\06隐式类型\obj\x86\Debug\06隐式类型.exe
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130615\06隐式类型\obj\x86\Debug\06隐式类型.pdb

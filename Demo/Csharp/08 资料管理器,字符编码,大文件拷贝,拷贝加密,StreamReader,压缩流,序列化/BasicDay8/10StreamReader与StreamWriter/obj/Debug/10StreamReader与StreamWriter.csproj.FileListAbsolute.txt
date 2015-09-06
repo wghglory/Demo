@@ -1,0 +1,9 @@
+C:\Documents and Settings\steve\My Documents\Visual Studio 2008\Projects\Sln20130118\10StreamReader与StreamWriter\bin\Debug\10StreamReader与StreamWriter.exe
+C:\Documents and Settings\steve\My Documents\Visual Studio 2008\Projects\Sln20130118\10StreamReader与StreamWriter\bin\Debug\10StreamReader与StreamWriter.pdb
+C:\Documents and Settings\steve\My Documents\Visual Studio 2008\Projects\Sln20130118\10StreamReader与StreamWriter\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\steve\My Documents\Visual Studio 2008\Projects\Sln20130118\10StreamReader与StreamWriter\obj\Debug\10StreamReader与StreamWriter.exe
+C:\Documents and Settings\steve\My Documents\Visual Studio 2008\Projects\Sln20130118\10StreamReader与StreamWriter\obj\Debug\10StreamReader与StreamWriter.pdb
+\\psf\Home\Documents\08 资料管理器,字符编码,大文件拷贝,拷贝加密,StreamReader,压缩流,序列化\BasicDay8\10StreamReader与StreamWriter\bin\Debug\10StreamReader与StreamWriter.exe
+\\psf\Home\Documents\08 资料管理器,字符编码,大文件拷贝,拷贝加密,StreamReader,压缩流,序列化\BasicDay8\10StreamReader与StreamWriter\bin\Debug\10StreamReader与StreamWriter.pdb
+\\psf\Home\Documents\08 资料管理器,字符编码,大文件拷贝,拷贝加密,StreamReader,压缩流,序列化\BasicDay8\10StreamReader与StreamWriter\obj\Debug\10StreamReader与StreamWriter.exe
+\\psf\Home\Documents\08 资料管理器,字符编码,大文件拷贝,拷贝加密,StreamReader,压缩流,序列化\BasicDay8\10StreamReader与StreamWriter\obj\Debug\10StreamReader与StreamWriter.pdb

@@ -1,0 +1,10 @@
+C:\Documents and Settings\steve\My Documents\Visual Studio 2008\Projects\Sln20130119\02对象序列化\bin\Debug\02对象序列化.exe
+C:\Documents and Settings\steve\My Documents\Visual Studio 2008\Projects\Sln20130119\02对象序列化\bin\Debug\02对象序列化.pdb
+C:\Documents and Settings\steve\My Documents\Visual Studio 2008\Projects\Sln20130119\02对象序列化\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\steve\My Documents\Visual Studio 2008\Projects\Sln20130119\02对象序列化\obj\Debug\02对象序列化.exe
+C:\Documents and Settings\steve\My Documents\Visual Studio 2008\Projects\Sln20130119\02对象序列化\obj\Debug\02对象序列化.pdb
+\\psf\Home\Documents\09 正则表达式-.元字符.字符串提取.匹配\Sln20130119（全）\02对象序列化\bin\Debug\02对象序列化.exe
+\\psf\Home\Documents\09 正则表达式-.元字符.字符串提取.匹配\Sln20130119（全）\02对象序列化\bin\Debug\02对象序列化.pdb
+\\psf\Home\Documents\09 正则表达式-.元字符.字符串提取.匹配\Sln20130119（全）\02对象序列化\obj\Debug\02对象序列化.csprojResolveAssemblyReference.cache
+\\psf\Home\Documents\09 正则表达式-.元字符.字符串提取.匹配\Sln20130119（全）\02对象序列化\obj\Debug\02对象序列化.exe
+\\psf\Home\Documents\09 正则表达式-.元字符.字符串提取.匹配\Sln20130119（全）\02对象序列化\obj\Debug\02对象序列化.pdb

@@ -1,0 +1,6 @@
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130620\01作业\bin\Debug\01作业.exe
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130620\01作业\bin\Debug\01作业.pdb
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130620\01作业\obj\x86\Debug\01作业.exe
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130620\01作业\obj\x86\Debug\01作业.pdb
+\\psf\Home\Documents\工作\黑马7\15----2013.06.20---数据库--数据库介绍,主键,外键,启动数据库,数据库身份验证方式,建表,分离数据库\This Teacher\Net基础加强+数据库Ado.net\Sln20130620（全）\01作业\obj\x86\Debug\01作业.exe
+\\psf\Home\Documents\工作\黑马7\15----2013.06.20---数据库--数据库介绍,主键,外键,启动数据库,数据库身份验证方式,建表,分离数据库\This Teacher\Net基础加强+数据库Ado.net\Sln20130620（全）\01作业\obj\x86\Debug\01作业.pdb

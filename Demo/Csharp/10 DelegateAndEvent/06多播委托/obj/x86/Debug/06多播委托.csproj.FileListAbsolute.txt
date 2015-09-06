@@ -1,0 +1,4 @@
+c:\users\wangg3\documents\visual studio 2010\Projects\BasicDay11\06多播委托\bin\Debug\06多播委托.exe
+c:\users\wangg3\documents\visual studio 2010\Projects\BasicDay11\06多播委托\bin\Debug\06多播委托.pdb
+c:\users\wangg3\documents\visual studio 2010\Projects\BasicDay11\06多播委托\obj\x86\Debug\06多播委托.exe
+c:\users\wangg3\documents\visual studio 2010\Projects\BasicDay11\06多播委托\obj\x86\Debug\06多播委托.pdb

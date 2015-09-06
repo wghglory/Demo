@@ -1,0 +1,4 @@
+c:\users\wangg3\documents\visual studio 2010\Projects\BasicDay11\02邮箱用户名替换星\bin\Debug\02邮箱用户名替换星.exe
+c:\users\wangg3\documents\visual studio 2010\Projects\BasicDay11\02邮箱用户名替换星\bin\Debug\02邮箱用户名替换星.pdb
+c:\users\wangg3\documents\visual studio 2010\Projects\BasicDay11\02邮箱用户名替换星\obj\x86\Debug\02邮箱用户名替换星.exe
+c:\users\wangg3\documents\visual studio 2010\Projects\BasicDay11\02邮箱用户名替换星\obj\x86\Debug\02邮箱用户名替换星.pdb

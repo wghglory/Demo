@@ -1,0 +1,5 @@
+\\psf\Home\Documents\12 xml, xpath, 序列化，深拷贝浅拷贝\02xpath演示\bin\Debug\02xpath演示.exe
+\\psf\Home\Documents\12 xml, xpath, 序列化，深拷贝浅拷贝\02xpath演示\bin\Debug\02xpath演示.pdb
+\\psf\Home\Documents\12 xml, xpath, 序列化，深拷贝浅拷贝\02xpath演示\obj\x86\Debug\03xpath演示.csprojResolveAssemblyReference.cache
+\\psf\Home\Documents\12 xml, xpath, 序列化，深拷贝浅拷贝\02xpath演示\obj\x86\Debug\02xpath演示.exe
+\\psf\Home\Documents\12 xml, xpath, 序列化，深拷贝浅拷贝\02xpath演示\obj\x86\Debug\02xpath演示.pdb

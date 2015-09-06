@@ -1,0 +1,9 @@
+C:\Users\Steve\Documents\Visual Studio 2008\Projects\Sln20130608\07foreach循环3\bin\Debug\07foreach循环3.exe
+C:\Users\Steve\Documents\Visual Studio 2008\Projects\Sln20130608\07foreach循环3\bin\Debug\07foreach循环3.pdb
+C:\Users\Steve\Documents\Visual Studio 2008\Projects\Sln20130608\07foreach循环3\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Steve\Documents\Visual Studio 2008\Projects\Sln20130608\07foreach循环3\obj\Debug\07foreach循环3.exe
+C:\Users\Steve\Documents\Visual Studio 2008\Projects\Sln20130608\07foreach循环3\obj\Debug\07foreach循环3.pdb
+\\psf\Home\Documents\07 box or unbox,自定义泛型,Foreach循环,枚举器,Foreach迭代,Path Class File Operation,TreeView Employ\BasicDay7\07foreach循环3\obj\Debug\07foreach循环3.exe
+\\psf\Home\Documents\07 box or unbox,自定义泛型,Foreach循环,枚举器,Foreach迭代,Path Class File Operation,TreeView Employ\BasicDay7\07foreach循环3\bin\Debug\07foreach循环3.exe
+\\psf\Home\Documents\07 box or unbox,自定义泛型,Foreach循环,枚举器,Foreach迭代,Path Class File Operation,TreeView Employ\BasicDay7\07foreach循环3\bin\Debug\07foreach循环3.pdb
+\\psf\Home\Documents\07 box or unbox,自定义泛型,Foreach循环,枚举器,Foreach迭代,Path Class File Operation,TreeView Employ\BasicDay7\07foreach循环3\obj\Debug\07foreach循环3.pdb

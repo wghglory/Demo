@@ -1,0 +1,9 @@
+\\psf\Home\Documents\Visual Studio 2013\Projects\AssemblyReflection\04Test01Reflect\bin\Debug\04Test01Reflect.exe
+\\psf\Home\Documents\Visual Studio 2013\Projects\AssemblyReflection\04Test01Reflect\bin\Debug\04Test01Reflect.pdb
+\\psf\Home\Documents\Visual Studio 2013\Projects\AssemblyReflection\04Test01Reflect\obj\Debug\04反射动态加载程序集01.csprojResolveAssemblyReference.cache
+\\psf\Home\Documents\Visual Studio 2013\Projects\AssemblyReflection\04Test01Reflect\obj\Debug\04Test01Reflect.exe
+\\psf\Home\Documents\Visual Studio 2013\Projects\AssemblyReflection\04Test01Reflect\obj\Debug\04Test01Reflect.pdb
+\\psf\Home\Documents\工作\Csharp代码\AssemblyReflection\04Test01Reflect\obj\Debug\04Test01Reflect.exe
+\\psf\Home\Documents\工作\Csharp代码\AssemblyReflection\04Test01Reflect\obj\Debug\04Test01Reflect.pdb
+\\psf\Home\Documents\工作\Csharp代码\反射，程序集，隐士类型，扩展方法\04Test01Reflect\obj\Debug\04Test01Reflect.exe
+\\psf\Home\Documents\工作\Csharp代码\反射，程序集，隐士类型，扩展方法\04Test01Reflect\obj\Debug\04Test01Reflect.pdb

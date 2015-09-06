@@ -1,0 +1,4 @@
+\\psf\Home\Documents\practice project\BasicDay3\CalculatorDLL\bin\Debug\CalculatorDLL.dll
+\\psf\Home\Documents\practice project\BasicDay3\CalculatorDLL\bin\Debug\CalculatorDLL.pdb
+\\psf\Home\Documents\practice project\BasicDay3\CalculatorDLL\obj\Debug\CalculatorDLL.dll
+\\psf\Home\Documents\practice project\BasicDay3\CalculatorDLL\obj\Debug\CalculatorDLL.pdb

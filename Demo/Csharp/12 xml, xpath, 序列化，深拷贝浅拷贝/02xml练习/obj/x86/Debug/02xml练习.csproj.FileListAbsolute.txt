@@ -1,0 +1,5 @@
+C:\Users\Steve\documents\visual studio 2010\Projects\Sln20130616\02xml练习\bin\Debug\02xml练习.exe
+C:\Users\Steve\documents\visual studio 2010\Projects\Sln20130616\02xml练习\bin\Debug\02xml练习.pdb
+C:\Users\Steve\documents\visual studio 2010\Projects\Sln20130616\02xml练习\obj\x86\Debug\02xml练习.exe
+C:\Users\Steve\documents\visual studio 2010\Projects\Sln20130616\02xml练习\obj\x86\Debug\02xml练习.pdb
+\\psf\Home\Documents\12 xml, xpath, 序列化，深拷贝浅拷贝\02xml练习\obj\x86\Debug\02xml练习.exe

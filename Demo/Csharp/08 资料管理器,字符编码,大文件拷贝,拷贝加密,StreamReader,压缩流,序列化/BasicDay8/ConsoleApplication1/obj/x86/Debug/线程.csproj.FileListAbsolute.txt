@@ -1,0 +1,4 @@
+\\psf\Home\Documents\08 资料管理器,字符编码,大文件拷贝,拷贝加密,StreamReader,压缩流,序列化\BasicDay8\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+\\psf\Home\Documents\08 资料管理器,字符编码,大文件拷贝,拷贝加密,StreamReader,压缩流,序列化\BasicDay8\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+\\psf\Home\Documents\08 资料管理器,字符编码,大文件拷贝,拷贝加密,StreamReader,压缩流,序列化\BasicDay8\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.exe
+\\psf\Home\Documents\08 资料管理器,字符编码,大文件拷贝,拷贝加密,StreamReader,压缩流,序列化\BasicDay8\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.pdb

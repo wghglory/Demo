@@ -1,0 +1,9 @@
+C:\Users\Steve\documents\visual studio 2010\Projects\Sln20130611\03nizhongjianglema\bin\Debug\03nizhongjianglema.exe
+C:\Users\Steve\documents\visual studio 2010\Projects\Sln20130611\03nizhongjianglema\bin\Debug\03nizhongjianglema.pdb
+C:\Users\Steve\documents\visual studio 2010\Projects\Sln20130611\03nizhongjianglema\obj\x86\Debug\03nizhongjianglema.exe
+C:\Users\Steve\documents\visual studio 2010\Projects\Sln20130611\03nizhongjianglema\obj\x86\Debug\03nizhongjianglema.pdb
+\\psf\Home\Documents\09 正则表达式-.元字符.字符串提取.匹配\Sln20130119（全）\03nizhongjianglema\bin\Debug\03nizhongjianglema.exe
+\\psf\Home\Documents\09 正则表达式-.元字符.字符串提取.匹配\Sln20130119（全）\03nizhongjianglema\bin\Debug\03nizhongjianglema.pdb
+\\psf\Home\Documents\09 正则表达式-.元字符.字符串提取.匹配\Sln20130119（全）\03nizhongjianglema\obj\x86\Debug\03nizhongjianglema.csprojResolveAssemblyReference.cache
+\\psf\Home\Documents\09 正则表达式-.元字符.字符串提取.匹配\Sln20130119（全）\03nizhongjianglema\obj\x86\Debug\03nizhongjianglema.exe
+\\psf\Home\Documents\09 正则表达式-.元字符.字符串提取.匹配\Sln20130119（全）\03nizhongjianglema\obj\x86\Debug\03nizhongjianglema.pdb

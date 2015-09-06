@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List>
+  <Person id="1">
+    <Name>黄林</Name>
+    <Age>19</Age>
+    <Email>hl@yahoo.com</Email>
+  </Person>
+  <Person id="2">
+    <Name>许正龙</Name>
+    <Age>29</Age>
+    <Email>xzl@yahoo.com</Email>
+  </Person>
+  <Person id="3">
+    <Name>何红卫</Name>
+    <Age>39</Age>
+    <Email>hhw@yahoo.com</Email>
+  </Person>
+  <Person id="4">
+    <Name>杨硕</Name>
+    <Age>9</Age>
+    <Email>ys@yahoo.com</Email>
+  </Person>
+</List>

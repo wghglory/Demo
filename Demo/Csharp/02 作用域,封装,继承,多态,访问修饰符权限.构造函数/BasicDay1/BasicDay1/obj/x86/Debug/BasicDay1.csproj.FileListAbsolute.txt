@@ -1,0 +1,11 @@
+c:\users\wangg3\documents\visual studio 2010\Projects\BasicDay1\BasicDay1\bin\Debug\BasicDay1.exe
+c:\users\wangg3\documents\visual studio 2010\Projects\BasicDay1\BasicDay1\bin\Debug\BasicDay1.pdb
+c:\users\wangg3\documents\visual studio 2010\Projects\BasicDay1\BasicDay1\obj\x86\Debug\BasicDay1.exe
+c:\users\wangg3\documents\visual studio 2010\Projects\BasicDay1\BasicDay1\obj\x86\Debug\BasicDay1.pdb
+\\psf\Home\Documents\02 作用域,封装,继承,多态,访问修饰符权限.构造函数\BasicDay1\BasicDay1\obj\x86\Debug\BasicDay1.exe
+\\psf\Home\Documents\02 作用域,封装,继承,多态,访问修饰符权限.构造函数\BasicDay1\BasicDay1\obj\x86\Debug\BasicDay1.pdb
+\\psf\Home\Documents\02 作用域,封装,继承,多态,访问修饰符权限.构造函数\BasicDay1\BasicDay1\bin\Debug\BasicDay1.exe
+\\psf\Home\Documents\02 作用域,封装,继承,多态,访问修饰符权限.构造函数\BasicDay1\BasicDay1\bin\Debug\BasicDay1.pdb
+\\psf\Home\Documents\02 作用域,封装,继承,多态,访问修饰符权限.构造函数\BasicDay1\BasicDay1\obj\x86\Debug\BasicDay1.csprojResolveAssemblyReference.cache
+\\psf\Home\Documents\工作\MyCode\Csharp代码\02 作用域,封装,继承,多态,访问修饰符权限.构造函数\02 作用域,封装,继承,多态,访问修饰符权限.构造函数\BasicDay1\BasicDay1\obj\x86\Debug\BasicDay1.exe
+\\psf\Home\Documents\工作\MyCode\Csharp代码\02 作用域,封装,继承,多态,访问修饰符权限.构造函数\02 作用域,封装,继承,多态,访问修饰符权限.构造函数\BasicDay1\BasicDay1\obj\x86\Debug\BasicDay1.pdb

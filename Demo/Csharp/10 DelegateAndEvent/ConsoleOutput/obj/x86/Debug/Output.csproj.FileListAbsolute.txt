@@ -1,0 +1,7 @@
+c:\users\wangg3\documents\visual studio 2010\Projects\BasicDay11\ConsoleOutput\bin\Debug\ConsoleOutput.exe
+c:\users\wangg3\documents\visual studio 2010\Projects\BasicDay11\ConsoleOutput\bin\Debug\ConsoleOutput.pdb
+c:\users\wangg3\documents\visual studio 2010\Projects\BasicDay11\ConsoleOutput\bin\Debug\委托.dll
+c:\users\wangg3\documents\visual studio 2010\Projects\BasicDay11\ConsoleOutput\bin\Debug\委托.pdb
+c:\users\wangg3\documents\visual studio 2010\Projects\BasicDay11\ConsoleOutput\obj\x86\Debug\Output.csprojResolveAssemblyReference.cache
+c:\users\wangg3\documents\visual studio 2010\Projects\BasicDay11\ConsoleOutput\obj\x86\Debug\ConsoleOutput.exe
+c:\users\wangg3\documents\visual studio 2010\Projects\BasicDay11\ConsoleOutput\obj\x86\Debug\ConsoleOutput.pdb

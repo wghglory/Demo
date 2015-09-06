@@ -1,0 +1,14 @@
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130722\SocketClientWinForm\bin\Debug\SocketClientWinForm.exe
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130722\SocketClientWinForm\bin\Debug\SocketClientWinForm.pdb
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130722\SocketClientWinForm\obj\x86\Debug\SocketClientWinForm.Form1.resources
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130722\SocketClientWinForm\obj\x86\Debug\SocketClientWinForm.Properties.Resources.resources
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130722\SocketClientWinForm\obj\x86\Debug\SocketClientWinForm.csproj.GenerateResource.Cache
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130722\SocketClientWinForm\obj\x86\Debug\SocketClientWinForm.exe
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130722\SocketClientWinForm\obj\x86\Debug\SocketClientWinForm.pdb
+C:\Users\wangg3\Desktop\Code\Code\SocketClientWinForm\bin\Debug\SocketClientWinForm.exe
+C:\Users\wangg3\Desktop\Code\Code\SocketClientWinForm\bin\Debug\SocketClientWinForm.pdb
+C:\Users\wangg3\Desktop\Code\Code\SocketClientWinForm\obj\x86\Debug\SocketClientWinForm.Form1.resources
+C:\Users\wangg3\Desktop\Code\Code\SocketClientWinForm\obj\x86\Debug\SocketClientWinForm.Properties.Resources.resources
+C:\Users\wangg3\Desktop\Code\Code\SocketClientWinForm\obj\x86\Debug\SocketClientWinForm.csproj.GenerateResource.Cache
+C:\Users\wangg3\Desktop\Code\Code\SocketClientWinForm\obj\x86\Debug\SocketClientWinForm.exe
+C:\Users\wangg3\Desktop\Code\Code\SocketClientWinForm\obj\x86\Debug\SocketClientWinForm.pdb

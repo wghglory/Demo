@@ -1,0 +1,14 @@
+C:\Documents and Settings\steve\My Documents\Visual Studio 2008\Projects\Sln20130118\01Directory类型\bin\Debug\01Directory类型.exe
+C:\Documents and Settings\steve\My Documents\Visual Studio 2008\Projects\Sln20130118\01Directory类型\bin\Debug\01Directory类型.pdb
+C:\Documents and Settings\steve\My Documents\Visual Studio 2008\Projects\Sln20130118\01Directory类型\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\steve\My Documents\Visual Studio 2008\Projects\Sln20130118\01Directory类型\obj\Debug\01Directory类型.exe
+C:\Documents and Settings\steve\My Documents\Visual Studio 2008\Projects\Sln20130118\01Directory类型\obj\Debug\01Directory类型.pdb
+\\psf\Home\Documents\工作\黑马7\08----2013.06.10---基础加强--资料管理器,字符编码,大文件拷贝,拷贝加密,StreamReader,压缩流,序列化\This Teacher\Net基础加强\Sln20130118（全）\01Directory类型\obj\Debug\01Directory类型.exe
+\\psf\Home\Documents\工作\黑马7\08----2013.06.10---基础加强--资料管理器,字符编码,大文件拷贝,拷贝加密,StreamReader,压缩流,序列化\This Teacher\Net基础加强\Sln20130118（全）\01Directory类型\obj\Debug\01Directory类型.pdb
+\\psf\Home\Documents\工作\黑马7\08----2013.06.10---基础加强--资料管理器,字符编码,大文件拷贝,拷贝加密,StreamReader,压缩流,序列化\This Teacher\08_201306010Net基础加强\Sln20130610（全）\01Directory类型\obj\Debug\01Directory类型.exe
+\\psf\Home\Documents\工作\黑马7\08----2013.06.10---基础加强--资料管理器,字符编码,大文件拷贝,拷贝加密,StreamReader,压缩流,序列化\This Teacher\08_201306010Net基础加强\Sln20130610（全）\01Directory类型\obj\Debug\01Directory类型.pdb
+\\psf\Home\Documents\08 资料管理器,字符编码,大文件拷贝,拷贝加密,StreamReader,压缩流,序列化\BasicDay8\01Directory类型\obj\Debug\01Directory类型.exe
+\\psf\Home\Documents\08 资料管理器,字符编码,大文件拷贝,拷贝加密,StreamReader,压缩流,序列化\BasicDay8\01Directory类型\obj\Debug\01Directory类型.pdb
+\\psf\Home\Documents\08 资料管理器,字符编码,大文件拷贝,拷贝加密,StreamReader,压缩流,序列化\BasicDay8\01Directory类型\bin\Debug\01Directory类型.exe
+\\psf\Home\Documents\08 资料管理器,字符编码,大文件拷贝,拷贝加密,StreamReader,压缩流,序列化\BasicDay8\01Directory类型\bin\Debug\01Directory类型.pdb
+\\psf\Home\Documents\08 资料管理器,字符编码,大文件拷贝,拷贝加密,StreamReader,压缩流,序列化\BasicDay8\01Directory类型\obj\Debug\01Directory类型.csprojResolveAssemblyReference.cache

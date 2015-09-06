@@ -1,0 +1,8 @@
+C:\Users\Steve\documents\visual studio 2010\Projects\Sln20130613\06抓取职位信息\bin\Debug\06抓取职位信息.exe
+C:\Users\Steve\documents\visual studio 2010\Projects\Sln20130613\06抓取职位信息\bin\Debug\06抓取职位信息.pdb
+C:\Users\Steve\documents\visual studio 2010\Projects\Sln20130613\06抓取职位信息\obj\x86\Debug\06抓取职位信息.exe
+C:\Users\Steve\documents\visual studio 2010\Projects\Sln20130613\06抓取职位信息\obj\x86\Debug\06抓取职位信息.pdb
+\\psf\Home\Documents\09 正则提取,单词边界,反向引用,UBB,敏感词过滤\正则\06抓取职位信息\bin\Debug\06抓取职位信息.exe
+\\psf\Home\Documents\09 正则提取,单词边界,反向引用,UBB,敏感词过滤\正则\06抓取职位信息\bin\Debug\06抓取职位信息.pdb
+\\psf\Home\Documents\09 正则提取,单词边界,反向引用,UBB,敏感词过滤\正则\06抓取职位信息\obj\x86\Debug\06抓取职位信息.exe
+\\psf\Home\Documents\09 正则提取,单词边界,反向引用,UBB,敏感词过滤\正则\06抓取职位信息\obj\x86\Debug\06抓取职位信息.pdb

@@ -1,0 +1,9 @@
+C:\Users\Steve\documents\visual studio 2010\Projects\Sln20130618\05通过xml序列化实现xml写入\bin\Debug\05通过xml序列化实现xml写入.exe
+C:\Users\Steve\documents\visual studio 2010\Projects\Sln20130618\05通过xml序列化实现xml写入\bin\Debug\05通过xml序列化实现xml写入.pdb
+C:\Users\Steve\documents\visual studio 2010\Projects\Sln20130618\05通过xml序列化实现xml写入\obj\x86\Debug\05通过xml序列化实现xml写入.exe
+C:\Users\Steve\documents\visual studio 2010\Projects\Sln20130618\05通过xml序列化实现xml写入\obj\x86\Debug\05通过xml序列化实现xml写入.pdb
+\\psf\Home\Documents\12 xml, xpath, 序列化，深拷贝浅拷贝\05通过xml序列化实现xml写入\bin\Debug\05通过xml序列化实现xml写入.exe
+\\psf\Home\Documents\12 xml, xpath, 序列化，深拷贝浅拷贝\05通过xml序列化实现xml写入\bin\Debug\05通过xml序列化实现xml写入.pdb
+\\psf\Home\Documents\12 xml, xpath, 序列化，深拷贝浅拷贝\05通过xml序列化实现xml写入\obj\x86\Debug\05通过xml序列化实现xml写入.csprojResolveAssemblyReference.cache
+\\psf\Home\Documents\12 xml, xpath, 序列化，深拷贝浅拷贝\05通过xml序列化实现xml写入\obj\x86\Debug\05通过xml序列化实现xml写入.exe
+\\psf\Home\Documents\12 xml, xpath, 序列化，深拷贝浅拷贝\05通过xml序列化实现xml写入\obj\x86\Debug\05通过xml序列化实现xml写入.pdb

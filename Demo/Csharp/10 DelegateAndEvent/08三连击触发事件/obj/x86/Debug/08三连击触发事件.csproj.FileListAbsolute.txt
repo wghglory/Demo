@@ -1,0 +1,17 @@
+c:\users\wangg3\documents\visual studio 2010\Projects\BasicDay11\08三连击触发事件\bin\Debug\08三连击触发事件.exe
+c:\users\wangg3\documents\visual studio 2010\Projects\BasicDay11\08三连击触发事件\bin\Debug\08三连击触发事件.pdb
+c:\users\wangg3\documents\visual studio 2010\Projects\BasicDay11\08三连击触发事件\obj\x86\Debug\_08三连击触发事件.Form1.resources
+c:\users\wangg3\documents\visual studio 2010\Projects\BasicDay11\08三连击触发事件\obj\x86\Debug\_08三连击触发事件.Properties.Resources.resources
+c:\users\wangg3\documents\visual studio 2010\Projects\BasicDay11\08三连击触发事件\obj\x86\Debug\08三连击触发事件.csproj.GenerateResource.Cache
+c:\users\wangg3\documents\visual studio 2010\Projects\BasicDay11\08三连击触发事件\obj\x86\Debug\08三连击触发事件.exe
+c:\users\wangg3\documents\visual studio 2010\Projects\BasicDay11\08三连击触发事件\obj\x86\Debug\08三连击触发事件.pdb
+c:\users\wangg3\documents\visual studio 2010\Projects\BasicDay11\08三连击触发事件\obj\x86\Debug\_08三连击触发事件.UserControlDelegateButton.resources
+c:\users\wangg3\documents\visual studio 2010\Projects\BasicDay11\08三连击触发事件\obj\x86\Debug\_08三连击触发事件.UserControlEvent.resources
+\\psf\Home\Documents\BasicDay11\08三连击触发事件\obj\x86\Debug\08三连击触发事件.exe
+\\psf\Home\Documents\BasicDay11\08三连击触发事件\obj\x86\Debug\08三连击触发事件.pdb
+\\psf\Home\Documents\工作\BasicDay11\08三连击触发事件\obj\x86\Debug\08三连击触发事件.exe
+\\psf\Home\Documents\工作\BasicDay11\08三连击触发事件\obj\x86\Debug\08三连击触发事件.pdb
+\\psf\Home\Documents\工作\DelegateAndEvent\08三连击触发事件\obj\x86\Debug\08三连击触发事件.exe
+\\psf\Home\Documents\工作\DelegateAndEvent\08三连击触发事件\obj\x86\Debug\08三连击触发事件.pdb
+\\psf\Home\Documents\工作\Csharp代码\DelegateAndEvent\08三连击触发事件\obj\x86\Debug\08三连击触发事件.exe
+\\psf\Home\Documents\工作\Csharp代码\DelegateAndEvent\08三连击触发事件\obj\x86\Debug\08三连击触发事件.pdb

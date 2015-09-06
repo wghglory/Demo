@@ -1,0 +1,15 @@
+c:\users\wangg3\documents\visual studio 2010\Projects\BasicDay2\StoneZizzorsCloth\bin\Debug\StoneZizzorsCloth.exe
+c:\users\wangg3\documents\visual studio 2010\Projects\BasicDay2\StoneZizzorsCloth\bin\Debug\StoneZizzorsCloth.pdb
+c:\users\wangg3\documents\visual studio 2010\Projects\BasicDay2\StoneZizzorsCloth\obj\x86\Debug\StoneZizzorsCloth.Form1.resources
+c:\users\wangg3\documents\visual studio 2010\Projects\BasicDay2\StoneZizzorsCloth\obj\x86\Debug\StoneZizzorsCloth.Properties.Resources.resources
+c:\users\wangg3\documents\visual studio 2010\Projects\BasicDay2\StoneZizzorsCloth\obj\x86\Debug\StoneZizzorsCloth.csproj.GenerateResource.Cache
+c:\users\wangg3\documents\visual studio 2010\Projects\BasicDay2\StoneZizzorsCloth\obj\x86\Debug\StoneZizzorsCloth.exe
+c:\users\wangg3\documents\visual studio 2010\Projects\BasicDay2\StoneZizzorsCloth\obj\x86\Debug\StoneZizzorsCloth.pdb
+\\psf\Home\Documents\02 作用域,封装,继承,多态,访问修饰符权限.构造函数\BasicDay2\StoneZizzorsCloth\bin\Debug\StoneZizzorsCloth.exe
+\\psf\Home\Documents\02 作用域,封装,继承,多态,访问修饰符权限.构造函数\BasicDay2\StoneZizzorsCloth\bin\Debug\StoneZizzorsCloth.pdb
+\\psf\Home\Documents\02 作用域,封装,继承,多态,访问修饰符权限.构造函数\BasicDay2\StoneZizzorsCloth\obj\x86\Debug\StoneZizzorsCloth.csprojResolveAssemblyReference.cache
+\\psf\Home\Documents\02 作用域,封装,继承,多态,访问修饰符权限.构造函数\BasicDay2\StoneZizzorsCloth\obj\x86\Debug\StoneZizzorsCloth.Form1.resources
+\\psf\Home\Documents\02 作用域,封装,继承,多态,访问修饰符权限.构造函数\BasicDay2\StoneZizzorsCloth\obj\x86\Debug\StoneZizzorsCloth.Properties.Resources.resources
+\\psf\Home\Documents\02 作用域,封装,继承,多态,访问修饰符权限.构造函数\BasicDay2\StoneZizzorsCloth\obj\x86\Debug\StoneZizzorsCloth.csproj.GenerateResource.Cache
+\\psf\Home\Documents\02 作用域,封装,继承,多态,访问修饰符权限.构造函数\BasicDay2\StoneZizzorsCloth\obj\x86\Debug\StoneZizzorsCloth.exe
+\\psf\Home\Documents\02 作用域,封装,继承,多态,访问修饰符权限.构造函数\BasicDay2\StoneZizzorsCloth\obj\x86\Debug\StoneZizzorsCloth.pdb

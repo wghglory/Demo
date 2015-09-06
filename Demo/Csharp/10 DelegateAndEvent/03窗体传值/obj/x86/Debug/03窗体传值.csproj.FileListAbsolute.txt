@@ -1,0 +1,8 @@
+c:\users\wangg3\documents\visual studio 2010\Projects\BasicDay11\03窗体传值\bin\Debug\03窗体传值.exe
+c:\users\wangg3\documents\visual studio 2010\Projects\BasicDay11\03窗体传值\bin\Debug\03窗体传值.pdb
+c:\users\wangg3\documents\visual studio 2010\Projects\BasicDay11\03窗体传值\obj\x86\Debug\_03窗体传值.Form1.resources
+c:\users\wangg3\documents\visual studio 2010\Projects\BasicDay11\03窗体传值\obj\x86\Debug\_03窗体传值.Properties.Resources.resources
+c:\users\wangg3\documents\visual studio 2010\Projects\BasicDay11\03窗体传值\obj\x86\Debug\03窗体传值.csproj.GenerateResource.Cache
+c:\users\wangg3\documents\visual studio 2010\Projects\BasicDay11\03窗体传值\obj\x86\Debug\03窗体传值.exe
+c:\users\wangg3\documents\visual studio 2010\Projects\BasicDay11\03窗体传值\obj\x86\Debug\03窗体传值.pdb
+c:\users\wangg3\documents\visual studio 2010\Projects\BasicDay11\03窗体传值\obj\x86\Debug\_03窗体传值.Form2.resources

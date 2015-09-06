@@ -1,0 +1,5 @@
+\\psf\Home\Documents\practice project\BasicDay3\08值类型与引用类型\bin\Debug\08值类型与引用类型.exe
+\\psf\Home\Documents\practice project\BasicDay3\08值类型与引用类型\bin\Debug\08值类型与引用类型.pdb
+\\psf\Home\Documents\practice project\BasicDay3\08值类型与引用类型\obj\Debug\08值类型与引用类型.csprojResolveAssemblyReference.cache
+\\psf\Home\Documents\practice project\BasicDay3\08值类型与引用类型\obj\Debug\08值类型与引用类型.exe
+\\psf\Home\Documents\practice project\BasicDay3\08值类型与引用类型\obj\Debug\08值类型与引用类型.pdb

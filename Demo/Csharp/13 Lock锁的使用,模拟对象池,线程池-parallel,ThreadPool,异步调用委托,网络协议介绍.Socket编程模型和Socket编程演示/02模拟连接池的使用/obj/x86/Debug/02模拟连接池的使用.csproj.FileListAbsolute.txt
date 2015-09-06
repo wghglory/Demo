@@ -1,0 +1,10 @@
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130722\02模拟连接池的使用\bin\Debug\02模拟连接池的使用.exe
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130722\02模拟连接池的使用\bin\Debug\02模拟连接池的使用.pdb
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130722\02模拟连接池的使用\obj\x86\Debug\02模拟连接池的使用.exe
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130722\02模拟连接池的使用\obj\x86\Debug\02模拟连接池的使用.pdb
+\\psf\Home\Desktop\Code\02模拟连接池的使用\obj\x86\Debug\02模拟连接池的使用.exe
+\\psf\Home\Desktop\Code\02模拟连接池的使用\obj\x86\Debug\02模拟连接池的使用.pdb
+C:\Users\wangg3\Desktop\Code\Code\02模拟连接池的使用\obj\x86\Debug\02模拟连接池的使用.exe
+C:\Users\wangg3\Desktop\Code\Code\02模拟连接池的使用\obj\x86\Debug\02模拟连接池的使用.pdb
+C:\Users\wangg3\Desktop\Code\Code\02模拟连接池的使用\bin\Debug\02模拟连接池的使用.exe
+C:\Users\wangg3\Desktop\Code\Code\02模拟连接池的使用\bin\Debug\02模拟连接池的使用.pdb

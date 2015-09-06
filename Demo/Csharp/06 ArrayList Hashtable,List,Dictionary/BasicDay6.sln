@@ -1,0 +1,70 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01ArrayList演示", "01ArrayList演示\01ArrayList演示.csproj", "{DAB974FC-425E-401E-81AB-0147AD096C66}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02ArrayList的Sort排序方法2", "02ArrayList的Sort排序方法2\02ArrayList的Sort排序方法2.csproj", "{EA803ABA-5477-4067-BDB0-184180902157}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03Hashtable集合演示", "03Hashtable集合演示\03Hashtable集合演示.csproj", "{C74CE69A-40BB-437E-8EB8-CA4EE4F3E943}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04集合练习", "04集合练习\04集合练习.csproj", "{FF455F19-7289-46F3-8C33-0BAFAB6059C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05List集合与Dictionary集合", "05List集合与Dictionary集合\05List集合与Dictionary集合.csproj", "{89D4E4F6-C274-458C-8514-42696BE5F625}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06泛型集合练习", "06泛型集合练习\06泛型集合练习.csproj", "{7B9A1B4C-3BCC-4D6D-9E86-FE097C89AC77}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07简体繁体转换", "07简体繁体转换\07简体繁体转换.csproj", "{22C04A45-3665-4F98-B8E9-F6CD4E129921}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08日期转换", "08日期转换\08日期转换.csproj", "{072FC7D3-B292-4077-9B68-52C8E8BD0331}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02使用List的Sort排序方法", "02使用List的Sort排序方法\02使用List的Sort排序方法.csproj", "{25619B3F-E705-404A-8B3F-F2A95CABB128}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DAB974FC-425E-401E-81AB-0147AD096C66}.Debug|x86.ActiveCfg = Debug|x86
+		{DAB974FC-425E-401E-81AB-0147AD096C66}.Debug|x86.Build.0 = Debug|x86
+		{DAB974FC-425E-401E-81AB-0147AD096C66}.Release|x86.ActiveCfg = Release|x86
+		{DAB974FC-425E-401E-81AB-0147AD096C66}.Release|x86.Build.0 = Release|x86
+		{EA803ABA-5477-4067-BDB0-184180902157}.Debug|x86.ActiveCfg = Debug|x86
+		{EA803ABA-5477-4067-BDB0-184180902157}.Debug|x86.Build.0 = Debug|x86
+		{EA803ABA-5477-4067-BDB0-184180902157}.Release|x86.ActiveCfg = Release|x86
+		{EA803ABA-5477-4067-BDB0-184180902157}.Release|x86.Build.0 = Release|x86
+		{C74CE69A-40BB-437E-8EB8-CA4EE4F3E943}.Debug|x86.ActiveCfg = Debug|x86
+		{C74CE69A-40BB-437E-8EB8-CA4EE4F3E943}.Debug|x86.Build.0 = Debug|x86
+		{C74CE69A-40BB-437E-8EB8-CA4EE4F3E943}.Release|x86.ActiveCfg = Release|x86
+		{C74CE69A-40BB-437E-8EB8-CA4EE4F3E943}.Release|x86.Build.0 = Release|x86
+		{FF455F19-7289-46F3-8C33-0BAFAB6059C4}.Debug|x86.ActiveCfg = Debug|x86
+		{FF455F19-7289-46F3-8C33-0BAFAB6059C4}.Debug|x86.Build.0 = Debug|x86
+		{FF455F19-7289-46F3-8C33-0BAFAB6059C4}.Release|x86.ActiveCfg = Release|x86
+		{FF455F19-7289-46F3-8C33-0BAFAB6059C4}.Release|x86.Build.0 = Release|x86
+		{89D4E4F6-C274-458C-8514-42696BE5F625}.Debug|x86.ActiveCfg = Debug|x86
+		{89D4E4F6-C274-458C-8514-42696BE5F625}.Debug|x86.Build.0 = Debug|x86
+		{89D4E4F6-C274-458C-8514-42696BE5F625}.Release|x86.ActiveCfg = Release|x86
+		{89D4E4F6-C274-458C-8514-42696BE5F625}.Release|x86.Build.0 = Release|x86
+		{7B9A1B4C-3BCC-4D6D-9E86-FE097C89AC77}.Debug|x86.ActiveCfg = Debug|x86
+		{7B9A1B4C-3BCC-4D6D-9E86-FE097C89AC77}.Debug|x86.Build.0 = Debug|x86
+		{7B9A1B4C-3BCC-4D6D-9E86-FE097C89AC77}.Release|x86.ActiveCfg = Release|x86
+		{7B9A1B4C-3BCC-4D6D-9E86-FE097C89AC77}.Release|x86.Build.0 = Release|x86
+		{22C04A45-3665-4F98-B8E9-F6CD4E129921}.Debug|x86.ActiveCfg = Debug|x86
+		{22C04A45-3665-4F98-B8E9-F6CD4E129921}.Debug|x86.Build.0 = Debug|x86
+		{22C04A45-3665-4F98-B8E9-F6CD4E129921}.Release|x86.ActiveCfg = Release|x86
+		{22C04A45-3665-4F98-B8E9-F6CD4E129921}.Release|x86.Build.0 = Release|x86
+		{072FC7D3-B292-4077-9B68-52C8E8BD0331}.Debug|x86.ActiveCfg = Debug|x86
+		{072FC7D3-B292-4077-9B68-52C8E8BD0331}.Debug|x86.Build.0 = Debug|x86
+		{072FC7D3-B292-4077-9B68-52C8E8BD0331}.Release|x86.ActiveCfg = Release|x86
+		{072FC7D3-B292-4077-9B68-52C8E8BD0331}.Release|x86.Build.0 = Release|x86
+		{25619B3F-E705-404A-8B3F-F2A95CABB128}.Debug|x86.ActiveCfg = Debug|x86
+		{25619B3F-E705-404A-8B3F-F2A95CABB128}.Debug|x86.Build.0 = Debug|x86
+		{25619B3F-E705-404A-8B3F-F2A95CABB128}.Release|x86.ActiveCfg = Release|x86
+		{25619B3F-E705-404A-8B3F-F2A95CABB128}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,16 @@
+C:\Documents and Settings\steve\My Documents\Visual Studio 2008\Projects\Sln20130118\02TreeView的使用方式\bin\Debug\02TreeView的使用方式.exe
+C:\Documents and Settings\steve\My Documents\Visual Studio 2008\Projects\Sln20130118\02TreeView的使用方式\bin\Debug\02TreeView的使用方式.pdb
+C:\Documents and Settings\steve\My Documents\Visual Studio 2008\Projects\Sln20130118\02TreeView的使用方式\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\steve\My Documents\Visual Studio 2008\Projects\Sln20130118\02TreeView的使用方式\obj\Debug\_02TreeView的使用方式.Form1.resources
+C:\Documents and Settings\steve\My Documents\Visual Studio 2008\Projects\Sln20130118\02TreeView的使用方式\obj\Debug\_02TreeView的使用方式.Properties.Resources.resources
+C:\Documents and Settings\steve\My Documents\Visual Studio 2008\Projects\Sln20130118\02TreeView的使用方式\obj\Debug\02TreeView的使用方式.csproj.GenerateResource.Cache
+C:\Documents and Settings\steve\My Documents\Visual Studio 2008\Projects\Sln20130118\02TreeView的使用方式\obj\Debug\02TreeView的使用方式.exe
+C:\Documents and Settings\steve\My Documents\Visual Studio 2008\Projects\Sln20130118\02TreeView的使用方式\obj\Debug\02TreeView的使用方式.pdb
+\\psf\Home\Documents\08 资料管理器,字符编码,大文件拷贝,拷贝加密,StreamReader,压缩流,序列化\BasicDay8\02TreeView的使用方式\bin\Debug\02TreeView的使用方式.exe
+\\psf\Home\Documents\08 资料管理器,字符编码,大文件拷贝,拷贝加密,StreamReader,压缩流,序列化\BasicDay8\02TreeView的使用方式\bin\Debug\02TreeView的使用方式.pdb
+\\psf\Home\Documents\08 资料管理器,字符编码,大文件拷贝,拷贝加密,StreamReader,压缩流,序列化\BasicDay8\02TreeView的使用方式\obj\Debug\02TreeView的使用方式.csprojResolveAssemblyReference.cache
+\\psf\Home\Documents\08 资料管理器,字符编码,大文件拷贝,拷贝加密,StreamReader,压缩流,序列化\BasicDay8\02TreeView的使用方式\obj\Debug\_02TreeView的使用方式.Form1.resources
+\\psf\Home\Documents\08 资料管理器,字符编码,大文件拷贝,拷贝加密,StreamReader,压缩流,序列化\BasicDay8\02TreeView的使用方式\obj\Debug\_02TreeView的使用方式.Properties.Resources.resources
+\\psf\Home\Documents\08 资料管理器,字符编码,大文件拷贝,拷贝加密,StreamReader,压缩流,序列化\BasicDay8\02TreeView的使用方式\obj\Debug\02TreeView的使用方式.csproj.GenerateResource.Cache
+\\psf\Home\Documents\08 资料管理器,字符编码,大文件拷贝,拷贝加密,StreamReader,压缩流,序列化\BasicDay8\02TreeView的使用方式\obj\Debug\02TreeView的使用方式.exe
+\\psf\Home\Documents\08 资料管理器,字符编码,大文件拷贝,拷贝加密,StreamReader,压缩流,序列化\BasicDay8\02TreeView的使用方式\obj\Debug\02TreeView的使用方式.pdb

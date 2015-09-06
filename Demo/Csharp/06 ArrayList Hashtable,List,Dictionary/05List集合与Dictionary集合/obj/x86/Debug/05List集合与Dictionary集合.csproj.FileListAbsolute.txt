@@ -1,0 +1,8 @@
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130607\05List集合与Dictionary集合\bin\Debug\05List集合与Dictionary集合.exe
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130607\05List集合与Dictionary集合\bin\Debug\05List集合与Dictionary集合.pdb
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130607\05List集合与Dictionary集合\obj\x86\Debug\05List集合与Dictionary集合.exe
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130607\05List集合与Dictionary集合\obj\x86\Debug\05List集合与Dictionary集合.pdb
+\\psf\Home\Documents\06 ArrayList Hashtable,泛型集合\BasicDay6\05List集合与Dictionary集合\bin\Debug\05List集合与Dictionary集合.exe
+\\psf\Home\Documents\06 ArrayList Hashtable,泛型集合\BasicDay6\05List集合与Dictionary集合\bin\Debug\05List集合与Dictionary集合.pdb
+\\psf\Home\Documents\06 ArrayList Hashtable,泛型集合\BasicDay6\05List集合与Dictionary集合\obj\x86\Debug\05List集合与Dictionary集合.exe
+\\psf\Home\Documents\06 ArrayList Hashtable,泛型集合\BasicDay6\05List集合与Dictionary集合\obj\x86\Debug\05List集合与Dictionary集合.pdb

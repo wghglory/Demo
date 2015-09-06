@@ -1,0 +1,6 @@
+C:\Users\wangg3\Desktop\Sln20130618（全）\01作业\obj\x86\Debug\01作业.exe
+C:\Users\wangg3\Desktop\Sln20130618（全）\01作业\obj\x86\Debug\01作业.pdb
+C:\Users\wangg3\Desktop\xml, xpath, 序列化，深拷贝浅拷贝\01作业\obj\x86\Debug\01作业.exe
+C:\Users\wangg3\Desktop\xml, xpath, 序列化，深拷贝浅拷贝\01作业\obj\x86\Debug\01作业.pdb
+\\psf\Home\Documents\12 xml, xpath, 序列化，深拷贝浅拷贝\01作业\obj\x86\Debug\01作业.exe
+\\psf\Home\Documents\12 xml, xpath, 序列化，深拷贝浅拷贝\01作业\obj\x86\Debug\01作业.pdb

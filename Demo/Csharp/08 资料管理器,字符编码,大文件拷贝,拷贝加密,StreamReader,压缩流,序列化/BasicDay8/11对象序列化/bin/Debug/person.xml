@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<ArrayOfPerson xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Person>
+    <Name>黄林</Name>
+    <Age>19</Age>
+    <Email>huanglin@yahoo.com</Email>
+  </Person>
+  <Person>
+    <Name>杨硕</Name>
+    <Age>20</Age>
+    <Email>ys@yahoo.com</Email>
+  </Person>
+  <Person>
+    <Name>何红卫</Name>
+    <Age>21</Age>
+    <Email>hhw@yahoo.com</Email>
+  </Person>
+</ArrayOfPerson>

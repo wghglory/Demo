@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01判断是否为同一个对象", "01判断是否为同一个对象\01判断是否为同一个对象.csproj", "{6FB70D73-564F-4A55-9311-B477A63CD26F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02字符串的特性1-不可变性", "02字符串的特性1-不可变性\02字符串的特性1-不可变性.csproj", "{98973DA0-10D5-497B-B0D5-F336A8534570}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03字符串的格式化", "03字符串的格式化\03字符串的格式化.csproj", "{7CFAD995-EDF2-4C89-B462-6A8231DCD2E0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04字符串常用方法", "04字符串常用方法\04字符串常用方法.csproj", "{F9835882-EFF6-4E44-82AD-F9EC4A4F6704}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05字符串练习", "05字符串练习\05字符串练习.csproj", "{B1202AC8-709F-4E82-AEC3-9E75003FB1BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06StringBuilder类的使用", "06StringBuilder类的使用\06StringBuilder类的使用.csproj", "{ECA21899-B375-459E-9C43-D95E92CFF870}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07垃圾回收", "07垃圾回收\07垃圾回收.csproj", "{34055050-2D65-47A4-BFB6-16A8C586D6F5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6FB70D73-564F-4A55-9311-B477A63CD26F}.Debug|x86.ActiveCfg = Debug|x86
+		{6FB70D73-564F-4A55-9311-B477A63CD26F}.Debug|x86.Build.0 = Debug|x86
+		{6FB70D73-564F-4A55-9311-B477A63CD26F}.Release|x86.ActiveCfg = Release|x86
+		{6FB70D73-564F-4A55-9311-B477A63CD26F}.Release|x86.Build.0 = Release|x86
+		{98973DA0-10D5-497B-B0D5-F336A8534570}.Debug|x86.ActiveCfg = Debug|x86
+		{98973DA0-10D5-497B-B0D5-F336A8534570}.Debug|x86.Build.0 = Debug|x86
+		{98973DA0-10D5-497B-B0D5-F336A8534570}.Release|x86.ActiveCfg = Release|x86
+		{98973DA0-10D5-497B-B0D5-F336A8534570}.Release|x86.Build.0 = Release|x86
+		{7CFAD995-EDF2-4C89-B462-6A8231DCD2E0}.Debug|x86.ActiveCfg = Debug|x86
+		{7CFAD995-EDF2-4C89-B462-6A8231DCD2E0}.Debug|x86.Build.0 = Debug|x86
+		{7CFAD995-EDF2-4C89-B462-6A8231DCD2E0}.Release|x86.ActiveCfg = Release|x86
+		{7CFAD995-EDF2-4C89-B462-6A8231DCD2E0}.Release|x86.Build.0 = Release|x86
+		{F9835882-EFF6-4E44-82AD-F9EC4A4F6704}.Debug|x86.ActiveCfg = Debug|x86
+		{F9835882-EFF6-4E44-82AD-F9EC4A4F6704}.Debug|x86.Build.0 = Debug|x86
+		{F9835882-EFF6-4E44-82AD-F9EC4A4F6704}.Release|x86.ActiveCfg = Release|x86
+		{F9835882-EFF6-4E44-82AD-F9EC4A4F6704}.Release|x86.Build.0 = Release|x86
+		{B1202AC8-709F-4E82-AEC3-9E75003FB1BB}.Debug|x86.ActiveCfg = Debug|x86
+		{B1202AC8-709F-4E82-AEC3-9E75003FB1BB}.Debug|x86.Build.0 = Debug|x86
+		{B1202AC8-709F-4E82-AEC3-9E75003FB1BB}.Release|x86.ActiveCfg = Release|x86
+		{B1202AC8-709F-4E82-AEC3-9E75003FB1BB}.Release|x86.Build.0 = Release|x86
+		{ECA21899-B375-459E-9C43-D95E92CFF870}.Debug|x86.ActiveCfg = Debug|x86
+		{ECA21899-B375-459E-9C43-D95E92CFF870}.Debug|x86.Build.0 = Debug|x86
+		{ECA21899-B375-459E-9C43-D95E92CFF870}.Release|x86.ActiveCfg = Release|x86
+		{ECA21899-B375-459E-9C43-D95E92CFF870}.Release|x86.Build.0 = Release|x86
+		{34055050-2D65-47A4-BFB6-16A8C586D6F5}.Debug|x86.ActiveCfg = Debug|x86
+		{34055050-2D65-47A4-BFB6-16A8C586D6F5}.Debug|x86.Build.0 = Debug|x86
+		{34055050-2D65-47A4-BFB6-16A8C586D6F5}.Release|x86.ActiveCfg = Release|x86
+		{34055050-2D65-47A4-BFB6-16A8C586D6F5}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

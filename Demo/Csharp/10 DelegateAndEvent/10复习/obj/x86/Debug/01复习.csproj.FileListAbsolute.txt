@@ -1,0 +1,4 @@
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130615\01复习\bin\Debug\01复习.exe
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130615\01复习\bin\Debug\01复习.pdb
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130615\01复习\obj\x86\Debug\01复习.exe
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130615\01复习\obj\x86\Debug\01复习.pdb

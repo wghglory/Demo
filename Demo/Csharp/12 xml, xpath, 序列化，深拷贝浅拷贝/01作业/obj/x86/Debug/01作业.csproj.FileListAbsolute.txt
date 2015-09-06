@@ -1,0 +1,14 @@
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130618\01作业\bin\Debug\01作业.exe
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130618\01作业\bin\Debug\01作业.pdb
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130618\01作业\obj\x86\Debug\_01作业.Form1.resources
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130618\01作业\obj\x86\Debug\_01作业.Properties.Resources.resources
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130618\01作业\obj\x86\Debug\01作业.csproj.GenerateResource.Cache
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130618\01作业\obj\x86\Debug\01作业.exe
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130618\01作业\obj\x86\Debug\01作业.pdb
+C:\Users\wangg3\Desktop\Sln20130618（全）\01作业\obj\x86\Debug\01作业.exe
+C:\Users\wangg3\Desktop\Sln20130618（全）\01作业\obj\x86\Debug\01作业.pdb
+\\psf\Home\Documents\12 xml, xpath, 序列化，深拷贝浅拷贝\01作业\obj\x86\Debug\01作业.csprojResolveAssemblyReference.cache
+\\psf\Home\Documents\12 xml, xpath, 序列化，深拷贝浅拷贝\01作业\obj\x86\Debug\_01作业.Form1.resources
+\\psf\Home\Documents\12 xml, xpath, 序列化，深拷贝浅拷贝\01作业\obj\x86\Debug\_01作业.Properties.Resources.resources
+\\psf\Home\Documents\12 xml, xpath, 序列化，深拷贝浅拷贝\01作业\obj\x86\Debug\01作业.csproj.GenerateResource.Cache
+\\psf\Home\Documents\12 xml, xpath, 序列化，深拷贝浅拷贝\01作业\obj\x86\Debug\01作业.exe

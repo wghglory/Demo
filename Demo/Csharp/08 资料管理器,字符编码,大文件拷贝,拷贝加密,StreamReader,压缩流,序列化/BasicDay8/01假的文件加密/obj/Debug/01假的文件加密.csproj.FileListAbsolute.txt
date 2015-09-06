@@ -1,0 +1,15 @@
+C:\Documents and Settings\steve\My Documents\Visual Studio 2008\Projects\Sln20130118\01假的文件加密\bin\Debug\01假的文件加密.exe
+C:\Documents and Settings\steve\My Documents\Visual Studio 2008\Projects\Sln20130118\01假的文件加密\bin\Debug\01假的文件加密.pdb
+C:\Documents and Settings\steve\My Documents\Visual Studio 2008\Projects\Sln20130118\01假的文件加密\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\steve\My Documents\Visual Studio 2008\Projects\Sln20130118\01假的文件加密\obj\Debug\_01假的文件加密.Form1.resources
+C:\Documents and Settings\steve\My Documents\Visual Studio 2008\Projects\Sln20130118\01假的文件加密\obj\Debug\_01假的文件加密.Properties.Resources.resources
+C:\Documents and Settings\steve\My Documents\Visual Studio 2008\Projects\Sln20130118\01假的文件加密\obj\Debug\01假的文件加密.csproj.GenerateResource.Cache
+C:\Documents and Settings\steve\My Documents\Visual Studio 2008\Projects\Sln20130118\01假的文件加密\obj\Debug\01假的文件加密.exe
+C:\Documents and Settings\steve\My Documents\Visual Studio 2008\Projects\Sln20130118\01假的文件加密\obj\Debug\01假的文件加密.pdb
+\\psf\Home\Documents\08 资料管理器,字符编码,大文件拷贝,拷贝加密,StreamReader,压缩流,序列化\BasicDay8\01假的文件加密\bin\Debug\01假的文件加密.exe
+\\psf\Home\Documents\08 资料管理器,字符编码,大文件拷贝,拷贝加密,StreamReader,压缩流,序列化\BasicDay8\01假的文件加密\bin\Debug\01假的文件加密.pdb
+\\psf\Home\Documents\08 资料管理器,字符编码,大文件拷贝,拷贝加密,StreamReader,压缩流,序列化\BasicDay8\01假的文件加密\obj\Debug\_01假的文件加密.Form1.resources
+\\psf\Home\Documents\08 资料管理器,字符编码,大文件拷贝,拷贝加密,StreamReader,压缩流,序列化\BasicDay8\01假的文件加密\obj\Debug\_01假的文件加密.Properties.Resources.resources
+\\psf\Home\Documents\08 资料管理器,字符编码,大文件拷贝,拷贝加密,StreamReader,压缩流,序列化\BasicDay8\01假的文件加密\obj\Debug\01假的文件加密.csproj.GenerateResource.Cache
+\\psf\Home\Documents\08 资料管理器,字符编码,大文件拷贝,拷贝加密,StreamReader,压缩流,序列化\BasicDay8\01假的文件加密\obj\Debug\01假的文件加密.exe
+\\psf\Home\Documents\08 资料管理器,字符编码,大文件拷贝,拷贝加密,StreamReader,压缩流,序列化\BasicDay8\01假的文件加密\obj\Debug\01假的文件加密.pdb

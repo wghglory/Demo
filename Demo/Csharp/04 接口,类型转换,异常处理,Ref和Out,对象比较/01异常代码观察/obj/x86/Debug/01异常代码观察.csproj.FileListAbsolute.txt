@@ -1,0 +1,4 @@
+c:\users\wangg3\documents\visual studio 2010\Projects\BasicDay4\01异常代码观察\bin\Debug\01异常代码观察.exe
+c:\users\wangg3\documents\visual studio 2010\Projects\BasicDay4\01异常代码观察\bin\Debug\01异常代码观察.pdb
+c:\users\wangg3\documents\visual studio 2010\Projects\BasicDay4\01异常代码观察\obj\x86\Debug\01异常代码观察.exe
+c:\users\wangg3\documents\visual studio 2010\Projects\BasicDay4\01异常代码观察\obj\x86\Debug\01异常代码观察.pdb

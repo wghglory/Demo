@@ -1,0 +1,3 @@
+c:\users\wangg3\documents\visual studio 2010\Projects\BasicDay2\Calculator\obj\x86\Debug\NewCalculator.Form1.resources
+c:\users\wangg3\documents\visual studio 2010\Projects\BasicDay2\Calculator\obj\x86\Debug\Calculator.Properties.Resources.resources
+c:\users\wangg3\documents\visual studio 2010\Projects\BasicDay2\Calculator\obj\x86\Debug\NewCalculator.csproj.GenerateResource.Cache

@@ -1,0 +1,5 @@
+\\psf\Home\Documents\practice project\BasicDay3\05抽象类实现多态案例\bin\Debug\05抽象类实现多态案例.exe
+\\psf\Home\Documents\practice project\BasicDay3\05抽象类实现多态案例\bin\Debug\05抽象类实现多态案例.pdb
+\\psf\Home\Documents\practice project\BasicDay3\05抽象类实现多态案例\obj\Debug\05抽象类实现多态案例.csprojResolveAssemblyReference.cache
+\\psf\Home\Documents\practice project\BasicDay3\05抽象类实现多态案例\obj\Debug\05抽象类实现多态案例.exe
+\\psf\Home\Documents\practice project\BasicDay3\05抽象类实现多态案例\obj\Debug\05抽象类实现多态案例.pdb

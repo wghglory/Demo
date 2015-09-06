@@ -1,0 +1,15 @@
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130610\03资料管理器\bin\Debug\03资料管理器.exe
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130610\03资料管理器\bin\Debug\03资料管理器.pdb
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130610\03资料管理器\obj\x86\Debug\_03资料管理器.Form1.resources
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130610\03资料管理器\obj\x86\Debug\_03资料管理器.Properties.Resources.resources
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130610\03资料管理器\obj\x86\Debug\03资料管理器.csproj.GenerateResource.Cache
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130610\03资料管理器\obj\x86\Debug\03资料管理器.exe
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130610\03资料管理器\obj\x86\Debug\03资料管理器.pdb
+\\psf\Home\Documents\08 资料管理器,字符编码,大文件拷贝,拷贝加密,StreamReader,压缩流,序列化\BasicDay8\03资料管理器\bin\Debug\03资料管理器.exe
+\\psf\Home\Documents\08 资料管理器,字符编码,大文件拷贝,拷贝加密,StreamReader,压缩流,序列化\BasicDay8\03资料管理器\bin\Debug\03资料管理器.pdb
+\\psf\Home\Documents\08 资料管理器,字符编码,大文件拷贝,拷贝加密,StreamReader,压缩流,序列化\BasicDay8\03资料管理器\obj\x86\Debug\03资料管理器.csprojResolveAssemblyReference.cache
+\\psf\Home\Documents\08 资料管理器,字符编码,大文件拷贝,拷贝加密,StreamReader,压缩流,序列化\BasicDay8\03资料管理器\obj\x86\Debug\_03资料管理器.Form1.resources
+\\psf\Home\Documents\08 资料管理器,字符编码,大文件拷贝,拷贝加密,StreamReader,压缩流,序列化\BasicDay8\03资料管理器\obj\x86\Debug\_03资料管理器.Properties.Resources.resources
+\\psf\Home\Documents\08 资料管理器,字符编码,大文件拷贝,拷贝加密,StreamReader,压缩流,序列化\BasicDay8\03资料管理器\obj\x86\Debug\03资料管理器.csproj.GenerateResource.Cache
+\\psf\Home\Documents\08 资料管理器,字符编码,大文件拷贝,拷贝加密,StreamReader,压缩流,序列化\BasicDay8\03资料管理器\obj\x86\Debug\03资料管理器.exe
+\\psf\Home\Documents\08 资料管理器,字符编码,大文件拷贝,拷贝加密,StreamReader,压缩流,序列化\BasicDay8\03资料管理器\obj\x86\Debug\03资料管理器.pdb

@@ -1,0 +1,4 @@
+c:\users\wangg3\documents\visual studio 2010\Projects\BasicDay4\06接口之间的继承\bin\Debug\06接口之间的继承.exe
+c:\users\wangg3\documents\visual studio 2010\Projects\BasicDay4\06接口之间的继承\bin\Debug\06接口之间的继承.pdb
+c:\users\wangg3\documents\visual studio 2010\Projects\BasicDay4\06接口之间的继承\obj\x86\Debug\06接口之间的继承.exe
+c:\users\wangg3\documents\visual studio 2010\Projects\BasicDay4\06接口之间的继承\obj\x86\Debug\06接口之间的继承.pdb

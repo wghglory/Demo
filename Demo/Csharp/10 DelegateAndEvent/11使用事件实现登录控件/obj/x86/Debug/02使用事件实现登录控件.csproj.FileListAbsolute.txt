@@ -1,0 +1,8 @@
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130615\02使用事件实现登录控件\bin\Debug\02使用事件实现登录控件.exe
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130615\02使用事件实现登录控件\bin\Debug\02使用事件实现登录控件.pdb
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130615\02使用事件实现登录控件\obj\x86\Debug\_02使用事件实现登录控件.Properties.Resources.resources
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130615\02使用事件实现登录控件\obj\x86\Debug\02使用事件实现登录控件.csproj.GenerateResource.Cache
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130615\02使用事件实现登录控件\obj\x86\Debug\02使用事件实现登录控件.exe
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130615\02使用事件实现登录控件\obj\x86\Debug\02使用事件实现登录控件.pdb
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130615\02使用事件实现登录控件\obj\x86\Debug\_02使用事件实现登录控件.Form1.resources
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130615\02使用事件实现登录控件\obj\x86\Debug\_02使用事件实现登录控件.UCLogin.resources

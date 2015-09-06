@@ -1,0 +1,4 @@
+c:\users\wangg3\documents\visual studio 2010\Projects\BasicDay5\02字符串的特性1-不可变性\bin\Debug\02字符串的特性1-不可变性.exe
+c:\users\wangg3\documents\visual studio 2010\Projects\BasicDay5\02字符串的特性1-不可变性\bin\Debug\02字符串的特性1-不可变性.pdb
+c:\users\wangg3\documents\visual studio 2010\Projects\BasicDay5\02字符串的特性1-不可变性\obj\x86\Debug\02字符串的特性1-不可变性.exe
+c:\users\wangg3\documents\visual studio 2010\Projects\BasicDay5\02字符串的特性1-不可变性\obj\x86\Debug\02字符串的特性1-不可变性.pdb

@@ -1,0 +1,11 @@
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130615\MyNotepad\bin\Debug\MyNotepad.exe
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130615\MyNotepad\bin\Debug\MyNotepad.pdb
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130615\MyNotepad\obj\x86\Debug\MyNotepad.Form1.resources
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130615\MyNotepad\obj\x86\Debug\MyNotepad.Properties.Resources.resources
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130615\MyNotepad\obj\x86\Debug\MyNotepad.csproj.GenerateResource.Cache
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130615\MyNotepad\obj\x86\Debug\MyNotepad.exe
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130615\MyNotepad\obj\x86\Debug\MyNotepad.pdb
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130615\MyNotepad\bin\Debug\MyNotepad.ExtInterface.dll
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130615\MyNotepad\bin\Debug\MyNotepad.ExtInterface.pdb
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130615\MyNotepad\obj\x86\Debug\MyNotepad.csprojResolveAssemblyReference.cache
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130615\MyNotepad\bin\Debug\MyNotepad.XML

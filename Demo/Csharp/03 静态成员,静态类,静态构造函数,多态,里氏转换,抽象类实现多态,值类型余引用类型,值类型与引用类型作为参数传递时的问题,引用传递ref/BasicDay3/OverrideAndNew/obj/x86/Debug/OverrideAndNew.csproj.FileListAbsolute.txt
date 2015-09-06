@@ -1,0 +1,8 @@
+c:\users\wangg3\documents\visual studio 2010\Projects\BasicDay3\OverrideAndNew\bin\Debug\OverrideAndNew.exe
+c:\users\wangg3\documents\visual studio 2010\Projects\BasicDay3\OverrideAndNew\bin\Debug\OverrideAndNew.pdb
+c:\users\wangg3\documents\visual studio 2010\Projects\BasicDay3\OverrideAndNew\obj\x86\Debug\OverrideAndNew.exe
+c:\users\wangg3\documents\visual studio 2010\Projects\BasicDay3\OverrideAndNew\obj\x86\Debug\OverrideAndNew.pdb
+\\psf\Home\Documents\practice project\03----2013.06.01---基础加强--静态成员,静态类,静态构造函数,多态,里氏转换,抽象类实现多态,值类型余引用类型,值类型与引用类型作为参数传递时的问题,引用传递ref\BasicDay3\OverrideAndNew\obj\x86\Debug\OverrideAndNew.exe
+\\psf\Home\Documents\practice project\03----2013.06.01---基础加强--静态成员,静态类,静态构造函数,多态,里氏转换,抽象类实现多态,值类型余引用类型,值类型与引用类型作为参数传递时的问题,引用传递ref\BasicDay3\OverrideAndNew\obj\x86\Debug\OverrideAndNew.pdb
+\\psf\Home\Documents\practice project\BasicDay3\OverrideAndNew\obj\x86\Debug\OverrideAndNew.exe
+\\psf\Home\Documents\practice project\BasicDay3\OverrideAndNew\obj\x86\Debug\OverrideAndNew.pdb

@@ -1,0 +1,4 @@
+\\psf\Home\Documents\12 xml, xpath, 序列化，深拷贝浅拷贝\06自己实现序列化\bin\Debug\06自己实现序列化.exe
+\\psf\Home\Documents\12 xml, xpath, 序列化，深拷贝浅拷贝\06自己实现序列化\bin\Debug\06自己实现序列化.pdb
+\\psf\Home\Documents\12 xml, xpath, 序列化，深拷贝浅拷贝\06自己实现序列化\obj\x86\Debug\06自己实现序列化.exe
+\\psf\Home\Documents\12 xml, xpath, 序列化，深拷贝浅拷贝\06自己实现序列化\obj\x86\Debug\06自己实现序列化.pdb

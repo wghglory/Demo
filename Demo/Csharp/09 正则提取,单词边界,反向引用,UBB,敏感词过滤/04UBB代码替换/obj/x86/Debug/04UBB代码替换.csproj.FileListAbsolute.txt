@@ -1,0 +1,15 @@
+C:\Users\Steve\documents\visual studio 2010\Projects\Sln20130613\04UBB代码替换\bin\Debug\04UBB代码替换.exe
+C:\Users\Steve\documents\visual studio 2010\Projects\Sln20130613\04UBB代码替换\bin\Debug\04UBB代码替换.pdb
+C:\Users\Steve\documents\visual studio 2010\Projects\Sln20130613\04UBB代码替换\obj\x86\Debug\_04UBB代码替换.Form1.resources
+C:\Users\Steve\documents\visual studio 2010\Projects\Sln20130613\04UBB代码替换\obj\x86\Debug\_04UBB代码替换.Properties.Resources.resources
+C:\Users\Steve\documents\visual studio 2010\Projects\Sln20130613\04UBB代码替换\obj\x86\Debug\04UBB代码替换.csproj.GenerateResource.Cache
+C:\Users\Steve\documents\visual studio 2010\Projects\Sln20130613\04UBB代码替换\obj\x86\Debug\04UBB代码替换.exe
+C:\Users\Steve\documents\visual studio 2010\Projects\Sln20130613\04UBB代码替换\obj\x86\Debug\04UBB代码替换.pdb
+\\psf\Home\Documents\09 正则提取,单词边界,反向引用,UBB,敏感词过滤\正则\04UBB代码替换\bin\Debug\04UBB代码替换.exe
+\\psf\Home\Documents\09 正则提取,单词边界,反向引用,UBB,敏感词过滤\正则\04UBB代码替换\bin\Debug\04UBB代码替换.pdb
+\\psf\Home\Documents\09 正则提取,单词边界,反向引用,UBB,敏感词过滤\正则\04UBB代码替换\obj\x86\Debug\04UBB代码替换.csprojResolveAssemblyReference.cache
+\\psf\Home\Documents\09 正则提取,单词边界,反向引用,UBB,敏感词过滤\正则\04UBB代码替换\obj\x86\Debug\_04UBB代码替换.Form1.resources
+\\psf\Home\Documents\09 正则提取,单词边界,反向引用,UBB,敏感词过滤\正则\04UBB代码替换\obj\x86\Debug\_04UBB代码替换.Properties.Resources.resources
+\\psf\Home\Documents\09 正则提取,单词边界,反向引用,UBB,敏感词过滤\正则\04UBB代码替换\obj\x86\Debug\04UBB代码替换.csproj.GenerateResource.Cache
+\\psf\Home\Documents\09 正则提取,单词边界,反向引用,UBB,敏感词过滤\正则\04UBB代码替换\obj\x86\Debug\04UBB代码替换.exe
+\\psf\Home\Documents\09 正则提取,单词边界,反向引用,UBB,敏感词过滤\正则\04UBB代码替换\obj\x86\Debug\04UBB代码替换.pdb

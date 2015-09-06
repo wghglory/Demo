@@ -1,0 +1,8 @@
+c:\users\wangg3\documents\visual studio 2010\Projects\BasicDay2\Inheritance\bin\Debug\Inheritance.exe
+c:\users\wangg3\documents\visual studio 2010\Projects\BasicDay2\Inheritance\bin\Debug\Inheritance.pdb
+c:\users\wangg3\documents\visual studio 2010\Projects\BasicDay2\Inheritance\obj\x86\Debug\Inheritance.exe
+c:\users\wangg3\documents\visual studio 2010\Projects\BasicDay2\Inheritance\obj\x86\Debug\Inheritance.pdb
+\\psf\Home\Documents\02 作用域,封装,继承,多态,访问修饰符权限.构造函数\BasicDay2\Inheritance\bin\Debug\Inheritance.exe
+\\psf\Home\Documents\02 作用域,封装,继承,多态,访问修饰符权限.构造函数\BasicDay2\Inheritance\bin\Debug\Inheritance.pdb
+\\psf\Home\Documents\02 作用域,封装,继承,多态,访问修饰符权限.构造函数\BasicDay2\Inheritance\obj\x86\Debug\Inheritance.exe
+\\psf\Home\Documents\02 作用域,封装,继承,多态,访问修饰符权限.构造函数\BasicDay2\Inheritance\obj\x86\Debug\Inheritance.pdb

@@ -1,0 +1,8 @@
+C:\Users\Steve\documents\visual studio 2010\Projects\Sln20130610\07判断文件编码\bin\Debug\07判断文件编码.exe
+C:\Users\Steve\documents\visual studio 2010\Projects\Sln20130610\07判断文件编码\bin\Debug\07判断文件编码.pdb
+C:\Users\Steve\documents\visual studio 2010\Projects\Sln20130610\07判断文件编码\obj\x86\Debug\07判断文件编码.exe
+C:\Users\Steve\documents\visual studio 2010\Projects\Sln20130610\07判断文件编码\obj\x86\Debug\07判断文件编码.pdb
+\\psf\Home\Documents\08 资料管理器,字符编码,大文件拷贝,拷贝加密,StreamReader,压缩流,序列化\BasicDay8\07判断文件编码\bin\Debug\07判断文件编码.exe
+\\psf\Home\Documents\08 资料管理器,字符编码,大文件拷贝,拷贝加密,StreamReader,压缩流,序列化\BasicDay8\07判断文件编码\bin\Debug\07判断文件编码.pdb
+\\psf\Home\Documents\08 资料管理器,字符编码,大文件拷贝,拷贝加密,StreamReader,压缩流,序列化\BasicDay8\07判断文件编码\obj\x86\Debug\07判断文件编码.exe
+\\psf\Home\Documents\08 资料管理器,字符编码,大文件拷贝,拷贝加密,StreamReader,压缩流,序列化\BasicDay8\07判断文件编码\obj\x86\Debug\07判断文件编码.pdb

@@ -1,0 +1,4 @@
+c:\users\wangg3\documents\visual studio 2010\Projects\BasicDay4\07接口练习\bin\Debug\07接口练习.exe
+c:\users\wangg3\documents\visual studio 2010\Projects\BasicDay4\07接口练习\bin\Debug\07接口练习.pdb
+c:\users\wangg3\documents\visual studio 2010\Projects\BasicDay4\07接口练习\obj\x86\Debug\07接口练习.exe
+c:\users\wangg3\documents\visual studio 2010\Projects\BasicDay4\07接口练习\obj\x86\Debug\07接口练习.pdb

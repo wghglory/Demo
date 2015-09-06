@@ -1,0 +1,4 @@
+\\psf\Home\Documents\09 正则提取,单词边界,反向引用,UBB,敏感词过滤\正则\02在dotNet中使用正则表达式\bin\Debug\02在dotNet中使用正则表达式.exe
+\\psf\Home\Documents\09 正则提取,单词边界,反向引用,UBB,敏感词过滤\正则\02在dotNet中使用正则表达式\bin\Debug\02在dotNet中使用正则表达式.pdb
+\\psf\Home\Documents\09 正则提取,单词边界,反向引用,UBB,敏感词过滤\正则\02在dotNet中使用正则表达式\obj\x86\Debug\02在dotNet中使用正则表达式.exe
+\\psf\Home\Documents\09 正则提取,单词边界,反向引用,UBB,敏感词过滤\正则\02在dotNet中使用正则表达式\obj\x86\Debug\02在dotNet中使用正则表达式.pdb
