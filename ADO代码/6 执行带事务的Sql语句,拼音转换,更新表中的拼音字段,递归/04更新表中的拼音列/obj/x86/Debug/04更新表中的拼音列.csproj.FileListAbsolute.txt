@@ -1,0 +1,14 @@
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130715\04更新表中的拼音列\bin\Debug\04更新表中的拼音列.exe.config
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130715\04更新表中的拼音列\bin\Debug\04更新表中的拼音列.exe
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130715\04更新表中的拼音列\bin\Debug\04更新表中的拼音列.pdb
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130715\04更新表中的拼音列\bin\Debug\ChnCharInfo.dll
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130715\04更新表中的拼音列\bin\Debug\ChnCharInfo.xml
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130715\04更新表中的拼音列\bin\Debug\zh-CN\ChnCharInfo.resources.dll
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130715\04更新表中的拼音列\obj\x86\Debug\_04更新表中的拼音列.Form1.resources
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130715\04更新表中的拼音列\obj\x86\Debug\_04更新表中的拼音列.Properties.Resources.resources
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130715\04更新表中的拼音列\obj\x86\Debug\04更新表中的拼音列.csproj.GenerateResource.Cache
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130715\04更新表中的拼音列\obj\x86\Debug\04更新表中的拼音列.exe
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130715\04更新表中的拼音列\obj\x86\Debug\04更新表中的拼音列.pdb
+\\psf\Home\Documents\工作\黑马7\33----2013.07.15---Excle导入导出,执行带事务的Sql语句,拼音转换,更新表中的拼音字段,递归,三层实现年龄自增长和登录\This Teacher\Code\Sln20130715（全）\04更新表中的拼音列\bin\Debug\04更新表中的拼音列.exe.config
+\\psf\Home\Documents\工作\黑马7\33----2013.07.15---Excle导入导出,执行带事务的Sql语句,拼音转换,更新表中的拼音字段,递归,三层实现年龄自增长和登录\This Teacher\Code\Sln20130715（全）\04更新表中的拼音列\obj\x86\Debug\04更新表中的拼音列.exe
+\\psf\Home\Documents\工作\黑马7\33----2013.07.15---Excle导入导出,执行带事务的Sql语句,拼音转换,更新表中的拼音字段,递归,三层实现年龄自增长和登录\This Teacher\Code\Sln20130715（全）\04更新表中的拼音列\obj\x86\Debug\04更新表中的拼音列.pdb

@@ -1,0 +1,4 @@
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130628\02SqlParameter构造函数的一个问题\bin\Debug\02SqlParameter构造函数的一个问题.exe
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130628\02SqlParameter构造函数的一个问题\bin\Debug\02SqlParameter构造函数的一个问题.pdb
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130628\02SqlParameter构造函数的一个问题\obj\x86\Debug\02SqlParameter构造函数的一个问题.exe
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130628\02SqlParameter构造函数的一个问题\obj\x86\Debug\02SqlParameter构造函数的一个问题.pdb

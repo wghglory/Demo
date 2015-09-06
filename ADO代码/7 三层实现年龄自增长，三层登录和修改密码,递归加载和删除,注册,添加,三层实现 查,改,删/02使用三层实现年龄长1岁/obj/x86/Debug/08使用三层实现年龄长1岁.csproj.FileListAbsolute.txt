@@ -1,0 +1,11 @@
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130715\08使用三层实现年龄长1岁\obj\x86\Debug\_08使用三层实现年龄长1岁.Properties.Resources.resources
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130715\08使用三层实现年龄长1岁\obj\x86\Debug\_08使用三层实现年龄长1岁.UI.Form1.resources
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130715\08使用三层实现年龄长1岁\obj\x86\Debug\08使用三层实现年龄长1岁.csproj.GenerateResource.Cache
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130715\08使用三层实现年龄长1岁\bin\Debug\08使用三层实现年龄长1岁.exe.config
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130715\08使用三层实现年龄长1岁\bin\Debug\08使用三层实现年龄长1岁.exe
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130715\08使用三层实现年龄长1岁\bin\Debug\08使用三层实现年龄长1岁.pdb
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130715\08使用三层实现年龄长1岁\obj\x86\Debug\08使用三层实现年龄长1岁.exe
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130715\08使用三层实现年龄长1岁\obj\x86\Debug\08使用三层实现年龄长1岁.pdb
+\\psf\Home\Documents\工作\MyCode\ADO代码\6 执行带事务的Sql语句,拼音转换,更新表中的拼音字段,递归,三层实现年龄自增长和登录\08使用三层实现年龄长1岁\bin\Debug\08使用三层实现年龄长1岁.exe.config
+\\psf\Home\Documents\工作\MyCode\ADO代码\6 执行带事务的Sql语句,拼音转换,更新表中的拼音字段,递归,三层实现年龄自增长和登录\08使用三层实现年龄长1岁\obj\x86\Debug\08使用三层实现年龄长1岁.exe
+\\psf\Home\Documents\工作\MyCode\ADO代码\6 执行带事务的Sql语句,拼音转换,更新表中的拼音字段,递归,三层实现年龄自增长和登录\08使用三层实现年龄长1岁\obj\x86\Debug\08使用三层实现年龄长1岁.pdb

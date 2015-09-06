@@ -1,0 +1,8 @@
+C:\Users\Steve\documents\visual studio 2010\Projects\Sln20130627\05资料管理器\bin\Debug\05资料管理器.exe.config
+C:\Users\Steve\documents\visual studio 2010\Projects\Sln20130627\05资料管理器\bin\Debug\05资料管理器.exe
+C:\Users\Steve\documents\visual studio 2010\Projects\Sln20130627\05资料管理器\bin\Debug\05资料管理器.pdb
+C:\Users\Steve\documents\visual studio 2010\Projects\Sln20130627\05资料管理器\obj\x86\Debug\_05资料管理器.Form1.resources
+C:\Users\Steve\documents\visual studio 2010\Projects\Sln20130627\05资料管理器\obj\x86\Debug\_05资料管理器.Properties.Resources.resources
+C:\Users\Steve\documents\visual studio 2010\Projects\Sln20130627\05资料管理器\obj\x86\Debug\05资料管理器.csproj.GenerateResource.Cache
+C:\Users\Steve\documents\visual studio 2010\Projects\Sln20130627\05资料管理器\obj\x86\Debug\05资料管理器.exe
+C:\Users\Steve\documents\visual studio 2010\Projects\Sln20130627\05资料管理器\obj\x86\Debug\05资料管理器.pdb

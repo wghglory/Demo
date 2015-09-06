@@ -1,0 +1,14 @@
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130718\Scripts.DAL\bin\Debug\Scripts.DAL.dll
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130718\Scripts.DAL\bin\Debug\Scripts.DAL.pdb
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130718\Scripts.DAL\obj\Debug\Scripts.DAL.dll
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130718\Scripts.DAL\obj\Debug\Scripts.DAL.pdb
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130718\Scripts.DAL\bin\Debug\Scripts.Model.dll
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130718\Scripts.DAL\bin\Debug\Scripts.Model.pdb
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130718\Scripts.DAL\obj\Debug\Scripts.DAL.csprojResolveAssemblyReference.cache
+C:\Users\Steve\Desktop\Sln20130718（全）\Scripts.DAL\bin\Debug\Scripts.DAL.dll
+C:\Users\Steve\Desktop\Sln20130718（全）\Scripts.DAL\bin\Debug\Scripts.DAL.pdb
+C:\Users\Steve\Desktop\Sln20130718（全）\Scripts.DAL\bin\Debug\Scripts.Model.dll
+C:\Users\Steve\Desktop\Sln20130718（全）\Scripts.DAL\bin\Debug\Scripts.Model.pdb
+C:\Users\Steve\Desktop\Sln20130718（全）\Scripts.DAL\obj\Debug\Scripts.DAL.csprojResolveAssemblyReference.cache
+C:\Users\Steve\Desktop\Sln20130718（全）\Scripts.DAL\obj\Debug\Scripts.DAL.dll
+C:\Users\Steve\Desktop\Sln20130718（全）\Scripts.DAL\obj\Debug\Scripts.DAL.pdb

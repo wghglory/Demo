@@ -1,0 +1,15 @@
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130715\03把给定的汉字转换为拼音\bin\Debug\03把给定的汉字转换为拼音.exe
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130715\03把给定的汉字转换为拼音\bin\Debug\03把给定的汉字转换为拼音.pdb
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130715\03把给定的汉字转换为拼音\bin\Debug\ChnCharInfo.dll
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130715\03把给定的汉字转换为拼音\bin\Debug\ChnCharInfo.xml
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130715\03把给定的汉字转换为拼音\bin\Debug\zh-CN\ChnCharInfo.resources.dll
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130715\03把给定的汉字转换为拼音\obj\x86\Debug\03把给定的汉字转换为拼音.csprojResolveAssemblyReference.cache
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130715\03把给定的汉字转换为拼音\obj\x86\Debug\_03把给定的汉字转换为拼音.Form1.resources
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130715\03把给定的汉字转换为拼音\obj\x86\Debug\_03把给定的汉字转换为拼音.Properties.Resources.resources
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130715\03把给定的汉字转换为拼音\obj\x86\Debug\03把给定的汉字转换为拼音.csproj.GenerateResource.Cache
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130715\03把给定的汉字转换为拼音\obj\x86\Debug\03把给定的汉字转换为拼音.exe
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130715\03把给定的汉字转换为拼音\obj\x86\Debug\03把给定的汉字转换为拼音.pdb
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130715\03把给定的汉字转换为拼音\bin\Debug\ChineseConverter.dll
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130715\03把给定的汉字转换为拼音\bin\Debug\ChineseConverter.xml
+\\psf\Home\Documents\工作\黑马7\33----2013.07.15---Excle导入导出,执行带事务的Sql语句,拼音转换,更新表中的拼音字段,递归,三层实现年龄自增长和登录\This Teacher\Code\Sln20130715（全）\03把给定的汉字转换为拼音\obj\x86\Debug\03把给定的汉字转换为拼音.exe
+\\psf\Home\Documents\工作\黑马7\33----2013.07.15---Excle导入导出,执行带事务的Sql语句,拼音转换,更新表中的拼音字段,递归,三层实现年龄自增长和登录\This Teacher\Code\Sln20130715（全）\03把给定的汉字转换为拼音\obj\x86\Debug\03把给定的汉字转换为拼音.pdb

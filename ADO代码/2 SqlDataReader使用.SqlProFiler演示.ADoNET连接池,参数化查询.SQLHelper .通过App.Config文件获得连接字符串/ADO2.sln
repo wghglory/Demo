@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01对TblStudent表实现增删查改", "01对TblStudent表实现增删查改\01对TblStudent表实现增删查改.csproj", "{D9EED7AE-3E7B-4B58-B293-E5D5618211D9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02Command对象StatementCompleted事件", "02Command对象StatementCompleted事件\02Command对象StatementCompleted事件.csproj", "{4679C8C6-D682-4640-8219-58BAAD9684BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03登录", "03登录\03登录.csproj", "{FEDFC0FB-6301-43ED-B19A-E2937F6C80E0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02登录验证用户名是否存在以及密码是否正确", "02登录验证用户名是否存在以及密码是否正确\02登录验证用户名是否存在以及密码是否正确.csproj", "{5AC37394-B4FA-4935-9365-30AFD3CC2179}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04Ado.net连接池", "04Ado.net连接池\04Ado.net连接池.csproj", "{2CAEC08F-F0C7-476D-BA04-FEDF50C5A024}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05数据导入导出到文本文件", "05数据导入导出到文本文件\05数据导入导出到文本文件.csproj", "{11AE5DD8-7721-409C-9AAC-0D94496C162C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06自己封装一个SqlHelper", "06自己封装一个SqlHelper\06自己封装一个SqlHelper.csproj", "{5F03898D-85B7-4CFD-A9EC-C90F22FE2554}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D9EED7AE-3E7B-4B58-B293-E5D5618211D9}.Debug|x86.ActiveCfg = Debug|x86
+		{D9EED7AE-3E7B-4B58-B293-E5D5618211D9}.Debug|x86.Build.0 = Debug|x86
+		{D9EED7AE-3E7B-4B58-B293-E5D5618211D9}.Release|x86.ActiveCfg = Release|x86
+		{D9EED7AE-3E7B-4B58-B293-E5D5618211D9}.Release|x86.Build.0 = Release|x86
+		{4679C8C6-D682-4640-8219-58BAAD9684BA}.Debug|x86.ActiveCfg = Debug|x86
+		{4679C8C6-D682-4640-8219-58BAAD9684BA}.Debug|x86.Build.0 = Debug|x86
+		{4679C8C6-D682-4640-8219-58BAAD9684BA}.Release|x86.ActiveCfg = Release|x86
+		{4679C8C6-D682-4640-8219-58BAAD9684BA}.Release|x86.Build.0 = Release|x86
+		{FEDFC0FB-6301-43ED-B19A-E2937F6C80E0}.Debug|x86.ActiveCfg = Debug|x86
+		{FEDFC0FB-6301-43ED-B19A-E2937F6C80E0}.Debug|x86.Build.0 = Debug|x86
+		{FEDFC0FB-6301-43ED-B19A-E2937F6C80E0}.Release|x86.ActiveCfg = Release|x86
+		{FEDFC0FB-6301-43ED-B19A-E2937F6C80E0}.Release|x86.Build.0 = Release|x86
+		{5AC37394-B4FA-4935-9365-30AFD3CC2179}.Debug|x86.ActiveCfg = Debug|x86
+		{5AC37394-B4FA-4935-9365-30AFD3CC2179}.Debug|x86.Build.0 = Debug|x86
+		{5AC37394-B4FA-4935-9365-30AFD3CC2179}.Release|x86.ActiveCfg = Release|x86
+		{5AC37394-B4FA-4935-9365-30AFD3CC2179}.Release|x86.Build.0 = Release|x86
+		{2CAEC08F-F0C7-476D-BA04-FEDF50C5A024}.Debug|x86.ActiveCfg = Debug|x86
+		{2CAEC08F-F0C7-476D-BA04-FEDF50C5A024}.Debug|x86.Build.0 = Debug|x86
+		{2CAEC08F-F0C7-476D-BA04-FEDF50C5A024}.Release|x86.ActiveCfg = Release|x86
+		{2CAEC08F-F0C7-476D-BA04-FEDF50C5A024}.Release|x86.Build.0 = Release|x86
+		{11AE5DD8-7721-409C-9AAC-0D94496C162C}.Debug|x86.ActiveCfg = Debug|x86
+		{11AE5DD8-7721-409C-9AAC-0D94496C162C}.Debug|x86.Build.0 = Debug|x86
+		{11AE5DD8-7721-409C-9AAC-0D94496C162C}.Release|x86.ActiveCfg = Release|x86
+		{11AE5DD8-7721-409C-9AAC-0D94496C162C}.Release|x86.Build.0 = Release|x86
+		{5F03898D-85B7-4CFD-A9EC-C90F22FE2554}.Debug|x86.ActiveCfg = Debug|x86
+		{5F03898D-85B7-4CFD-A9EC-C90F22FE2554}.Debug|x86.Build.0 = Debug|x86
+		{5F03898D-85B7-4CFD-A9EC-C90F22FE2554}.Release|x86.ActiveCfg = Release|x86
+		{5F03898D-85B7-4CFD-A9EC-C90F22FE2554}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

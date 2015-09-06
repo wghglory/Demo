@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01Ado.net入门", "01Ado.net入门\01Ado.net入门.csproj", "{67BEEC04-F0BE-411E-B185-E0F78CB22EAA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02ConnectionStringBuilder类演示", "02ConnectionStringBuilder类演示\02ConnectionStringBuilder类演示.csproj", "{5DB3F23D-B75C-4CDB-B19C-874C7885CC6D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03连接数据库实现增删改和简单查询", "03连接数据库实现增删改和简单查询\03连接数据库实现增删改和简单查询.csproj", "{76737AE4-72B5-4D02-8FDD-1EAABE85EED2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04操作班级表", "04操作班级表\04操作班级表.csproj", "{FC7EDB05-D235-446B-B9B2-D522A6F08B48}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05查询表中的所有记录", "05查询表中的所有记录\05查询表中的所有记录.csproj", "{C6016CA9-4790-40F1-9C20-825F3CCE2925}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06把表中的数据绑定到一个控件上", "06把表中的数据绑定到一个控件上\06把表中的数据绑定到一个控件上.csproj", "{C050D0F1-0B7E-4E91-8436-7A045C76DBD2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07学生表的增删查改", "07学生表的增删查改\07学生表的增删查改.csproj", "{B3FE7915-563D-4090-A4BB-3BB910B53B71}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{67BEEC04-F0BE-411E-B185-E0F78CB22EAA}.Debug|x86.ActiveCfg = Debug|x86
+		{67BEEC04-F0BE-411E-B185-E0F78CB22EAA}.Debug|x86.Build.0 = Debug|x86
+		{67BEEC04-F0BE-411E-B185-E0F78CB22EAA}.Release|x86.ActiveCfg = Release|x86
+		{67BEEC04-F0BE-411E-B185-E0F78CB22EAA}.Release|x86.Build.0 = Release|x86
+		{5DB3F23D-B75C-4CDB-B19C-874C7885CC6D}.Debug|x86.ActiveCfg = Debug|x86
+		{5DB3F23D-B75C-4CDB-B19C-874C7885CC6D}.Debug|x86.Build.0 = Debug|x86
+		{5DB3F23D-B75C-4CDB-B19C-874C7885CC6D}.Release|x86.ActiveCfg = Release|x86
+		{5DB3F23D-B75C-4CDB-B19C-874C7885CC6D}.Release|x86.Build.0 = Release|x86
+		{76737AE4-72B5-4D02-8FDD-1EAABE85EED2}.Debug|x86.ActiveCfg = Debug|x86
+		{76737AE4-72B5-4D02-8FDD-1EAABE85EED2}.Debug|x86.Build.0 = Debug|x86
+		{76737AE4-72B5-4D02-8FDD-1EAABE85EED2}.Release|x86.ActiveCfg = Release|x86
+		{76737AE4-72B5-4D02-8FDD-1EAABE85EED2}.Release|x86.Build.0 = Release|x86
+		{FC7EDB05-D235-446B-B9B2-D522A6F08B48}.Debug|x86.ActiveCfg = Debug|x86
+		{FC7EDB05-D235-446B-B9B2-D522A6F08B48}.Debug|x86.Build.0 = Debug|x86
+		{FC7EDB05-D235-446B-B9B2-D522A6F08B48}.Release|x86.ActiveCfg = Release|x86
+		{FC7EDB05-D235-446B-B9B2-D522A6F08B48}.Release|x86.Build.0 = Release|x86
+		{C6016CA9-4790-40F1-9C20-825F3CCE2925}.Debug|x86.ActiveCfg = Debug|x86
+		{C6016CA9-4790-40F1-9C20-825F3CCE2925}.Debug|x86.Build.0 = Debug|x86
+		{C6016CA9-4790-40F1-9C20-825F3CCE2925}.Release|x86.ActiveCfg = Release|x86
+		{C6016CA9-4790-40F1-9C20-825F3CCE2925}.Release|x86.Build.0 = Release|x86
+		{C050D0F1-0B7E-4E91-8436-7A045C76DBD2}.Debug|x86.ActiveCfg = Debug|x86
+		{C050D0F1-0B7E-4E91-8436-7A045C76DBD2}.Debug|x86.Build.0 = Debug|x86
+		{C050D0F1-0B7E-4E91-8436-7A045C76DBD2}.Release|x86.ActiveCfg = Release|x86
+		{C050D0F1-0B7E-4E91-8436-7A045C76DBD2}.Release|x86.Build.0 = Release|x86
+		{B3FE7915-563D-4090-A4BB-3BB910B53B71}.Debug|x86.ActiveCfg = Debug|x86
+		{B3FE7915-563D-4090-A4BB-3BB910B53B71}.Debug|x86.Build.0 = Debug|x86
+		{B3FE7915-563D-4090-A4BB-3BB910B53B71}.Release|x86.ActiveCfg = Release|x86
+		{B3FE7915-563D-4090-A4BB-3BB910B53B71}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

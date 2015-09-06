@@ -1,0 +1,11 @@
+1.注册
+2.确定Sql语句。
+注册
+insert into T_Seats(CC_LoginId,CC_LoginPassword,CC_UserName) output inserted.CC_Autoid values(@loginId,@pwd,@name)
+
+验证用户名是否存在
+select count(*) from T_Seats where cc_loginId=@loginid
+
+3.编写数据访问层的方法
+4.编写业务逻辑层。
+

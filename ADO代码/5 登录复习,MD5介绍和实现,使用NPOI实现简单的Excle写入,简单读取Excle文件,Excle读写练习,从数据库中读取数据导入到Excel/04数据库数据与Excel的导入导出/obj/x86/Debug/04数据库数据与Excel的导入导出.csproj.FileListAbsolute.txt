@@ -1,0 +1,10 @@
+c:\users\steve\documents\visual studio 2010\Projects\Solution1\04数据库数据与Excel的导入导出\bin\Debug\04数据库数据与Excel的导入导出.exe.config
+c:\users\steve\documents\visual studio 2010\Projects\Solution1\04数据库数据与Excel的导入导出\bin\Debug\04数据库数据与Excel的导入导出.exe
+c:\users\steve\documents\visual studio 2010\Projects\Solution1\04数据库数据与Excel的导入导出\bin\Debug\04数据库数据与Excel的导入导出.pdb
+c:\users\steve\documents\visual studio 2010\Projects\Solution1\04数据库数据与Excel的导入导出\obj\x86\Debug\_04数据库数据与Excel的导入导出.Form1.resources
+c:\users\steve\documents\visual studio 2010\Projects\Solution1\04数据库数据与Excel的导入导出\obj\x86\Debug\_04数据库数据与Excel的导入导出.Properties.Resources.resources
+c:\users\steve\documents\visual studio 2010\Projects\Solution1\04数据库数据与Excel的导入导出\obj\x86\Debug\04数据库数据与Excel的导入导出.csproj.GenerateResource.Cache
+c:\users\steve\documents\visual studio 2010\Projects\Solution1\04数据库数据与Excel的导入导出\obj\x86\Debug\04数据库数据与Excel的导入导出.exe
+c:\users\steve\documents\visual studio 2010\Projects\Solution1\04数据库数据与Excel的导入导出\obj\x86\Debug\04数据库数据与Excel的导入导出.pdb
+c:\users\steve\documents\visual studio 2010\Projects\Solution1\04数据库数据与Excel的导入导出\bin\Debug\Ionic.Zip.dll
+c:\users\steve\documents\visual studio 2010\Projects\Solution1\04数据库数据与Excel的导入导出\bin\Debug\NPOI.dll

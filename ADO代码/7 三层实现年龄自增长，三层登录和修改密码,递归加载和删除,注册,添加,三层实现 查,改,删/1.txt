@@ -1,0 +1,31 @@
+1.做什么？
+2.Sql
+select cc_autoId,cc_loginPassword,cc_username from T_Seats where CC_LoginId=@uid
+3.编写数据访问层
+返回值是一个Model参数是一个loginId
+4.编写业务逻辑层。
+枚举 方法(loginid,pwd)
+{
+}
+=====================================
+1.修改密码（1>校验两次输入密码是否一致2>校验旧密码是否正确3>修改密码）
+
+2.
+select count(*) from T_Seats where cc_autoId=@autoid and cc_loginPassword=@oldPwd
+
+update T_Seats set cc_loginPassword=@pwd where cc_autoId=@autoid
+
+3.根据sql语句编写数据访问层
+
+4.编写业务逻辑层方法。
+参数：4个。旧密码，新密码1，新密码2，autoid
+返回值？
+两次输入新密码不一致
+旧密码不正确
+修改成功
+异常
+
+
+
+
+

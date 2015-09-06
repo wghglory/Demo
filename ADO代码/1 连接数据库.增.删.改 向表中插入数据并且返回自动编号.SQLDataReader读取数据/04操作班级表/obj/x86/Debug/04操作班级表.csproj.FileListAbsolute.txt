@@ -1,0 +1,7 @@
+C:\Users\Steve\documents\visual studio 2010\Projects\Sln20130624\04操作班级表\bin\Debug\04操作班级表.exe
+C:\Users\Steve\documents\visual studio 2010\Projects\Sln20130624\04操作班级表\bin\Debug\04操作班级表.pdb
+C:\Users\Steve\documents\visual studio 2010\Projects\Sln20130624\04操作班级表\obj\x86\Debug\_04操作班级表.Form1.resources
+C:\Users\Steve\documents\visual studio 2010\Projects\Sln20130624\04操作班级表\obj\x86\Debug\_04操作班级表.Properties.Resources.resources
+C:\Users\Steve\documents\visual studio 2010\Projects\Sln20130624\04操作班级表\obj\x86\Debug\04操作班级表.csproj.GenerateResource.Cache
+C:\Users\Steve\documents\visual studio 2010\Projects\Sln20130624\04操作班级表\obj\x86\Debug\04操作班级表.exe
+C:\Users\Steve\documents\visual studio 2010\Projects\Sln20130624\04操作班级表\obj\x86\Debug\04操作班级表.pdb

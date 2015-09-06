@@ -1,0 +1,9 @@
+c:\users\steve\documents\visual studio 2010\Projects\Solution1\03NPOI操作Excel\bin\Debug\03NPOI操作Excel.exe
+c:\users\steve\documents\visual studio 2010\Projects\Solution1\03NPOI操作Excel\bin\Debug\03NPOI操作Excel.pdb
+c:\users\steve\documents\visual studio 2010\Projects\Solution1\03NPOI操作Excel\bin\Debug\Ionic.Zip.dll
+c:\users\steve\documents\visual studio 2010\Projects\Solution1\03NPOI操作Excel\bin\Debug\NPOI.dll
+c:\users\steve\documents\visual studio 2010\Projects\Solution1\03NPOI操作Excel\obj\x86\Debug\_03NPOI操作Excel.Form1.resources
+c:\users\steve\documents\visual studio 2010\Projects\Solution1\03NPOI操作Excel\obj\x86\Debug\_03NPOI操作Excel.Properties.Resources.resources
+c:\users\steve\documents\visual studio 2010\Projects\Solution1\03NPOI操作Excel\obj\x86\Debug\03NPOI操作Excel.csproj.GenerateResource.Cache
+c:\users\steve\documents\visual studio 2010\Projects\Solution1\03NPOI操作Excel\obj\x86\Debug\03NPOI操作Excel.exe
+c:\users\steve\documents\visual studio 2010\Projects\Solution1\03NPOI操作Excel\obj\x86\Debug\03NPOI操作Excel.pdb

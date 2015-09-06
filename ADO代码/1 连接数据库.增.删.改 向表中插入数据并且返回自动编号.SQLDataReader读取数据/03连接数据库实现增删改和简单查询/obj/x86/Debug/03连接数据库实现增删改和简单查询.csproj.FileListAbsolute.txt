@@ -1,0 +1,7 @@
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130624\03连接数据库实现增删改和简单查询\bin\Debug\03连接数据库实现增删改和简单查询.exe
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130624\03连接数据库实现增删改和简单查询\bin\Debug\03连接数据库实现增删改和简单查询.pdb
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130624\03连接数据库实现增删改和简单查询\obj\x86\Debug\_03连接数据库实现增删改和简单查询.Form1.resources
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130624\03连接数据库实现增删改和简单查询\obj\x86\Debug\_03连接数据库实现增删改和简单查询.Properties.Resources.resources
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130624\03连接数据库实现增删改和简单查询\obj\x86\Debug\03连接数据库实现增删改和简单查询.csproj.GenerateResource.Cache
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130624\03连接数据库实现增删改和简单查询\obj\x86\Debug\03连接数据库实现增删改和简单查询.exe
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130624\03连接数据库实现增删改和简单查询\obj\x86\Debug\03连接数据库实现增删改和简单查询.pdb

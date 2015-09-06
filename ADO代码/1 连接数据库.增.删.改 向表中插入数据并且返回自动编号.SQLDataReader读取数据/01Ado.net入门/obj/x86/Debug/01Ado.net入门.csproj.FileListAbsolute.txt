@@ -1,0 +1,8 @@
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130624\01Ado.net入门\bin\Debug\01Ado.net入门.exe
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130624\01Ado.net入门\bin\Debug\01Ado.net入门.pdb
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130624\01Ado.net入门\obj\x86\Debug\01Ado.net入门.exe
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130624\01Ado.net入门\obj\x86\Debug\01Ado.net入门.pdb
+\\psf\Home\Documents\工作\黑马7\18----2013.06.24---ADO.NET-- 连接数据库.增.删.改 向表中插入数据并且返回自动编号.SQLDataReader读取数据\This Teacher\Net数据库Ado.net\Sln20130624（全）\01Ado.net入门\obj\x86\Debug\01Ado.net入门.exe
+\\psf\Home\Documents\工作\黑马7\18----2013.06.24---ADO.NET-- 连接数据库.增.删.改 向表中插入数据并且返回自动编号.SQLDataReader读取数据\This Teacher\Net数据库Ado.net\Sln20130624（全）\01Ado.net入门\obj\x86\Debug\01Ado.net入门.pdb
+\\psf\Home\Documents\工作\黑马7\18----2013.06.24---ADO.NET-- 连接数据库.增.删.改 向表中插入数据并且返回自动编号.SQLDataReader读取数据\This Teacher\Net数据库Ado.net\ADO1\01Ado.net入门\obj\x86\Debug\01Ado.net入门.exe
+\\psf\Home\Documents\工作\黑马7\18----2013.06.24---ADO.NET-- 连接数据库.增.删.改 向表中插入数据并且返回自动编号.SQLDataReader读取数据\This Teacher\Net数据库Ado.net\ADO1\01Ado.net入门\obj\x86\Debug\01Ado.net入门.pdb

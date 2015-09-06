@@ -1,0 +1,4 @@
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130715\05递归\bin\Debug\05递归.exe
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130715\05递归\bin\Debug\05递归.pdb
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130715\05递归\obj\x86\Debug\05递归.exe
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130715\05递归\obj\x86\Debug\05递归.pdb

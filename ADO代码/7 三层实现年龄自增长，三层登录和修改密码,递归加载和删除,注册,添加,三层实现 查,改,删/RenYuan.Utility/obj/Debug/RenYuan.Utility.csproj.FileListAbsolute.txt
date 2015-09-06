@@ -1,0 +1,4 @@
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130716\RenYuan.Utility\bin\Debug\RenYuan.Utility.dll
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130716\RenYuan.Utility\bin\Debug\RenYuan.Utility.pdb
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130716\RenYuan.Utility\obj\Debug\RenYuan.Utility.dll
+c:\users\steve\documents\visual studio 2010\Projects\Sln20130716\RenYuan.Utility\obj\Debug\RenYuan.Utility.pdb

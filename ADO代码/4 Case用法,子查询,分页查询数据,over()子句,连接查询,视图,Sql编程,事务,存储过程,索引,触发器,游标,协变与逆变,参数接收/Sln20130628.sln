@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01通过存储过程实现增删改查", "01通过存储过程实现增删改查\01通过存储过程实现增删改查.csproj", "{E1FE2A83-8F53-4294-97C9-7A3DA18CD9BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02SqlParameter构造函数的一个问题", "02SqlParameter构造函数的一个问题\02SqlParameter构造函数的一个问题.csproj", "{5B061BD2-8AB3-44B0-873A-9BDC531F6982}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03DataTable与DataSet", "03DataTable与DataSet\03DataTable与DataSet.csproj", "{BC53DEF0-E22F-4348-9E3E-5738C17AE94F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04DataTable与DataSet", "04DataTable与DataSet\04DataTable与DataSet.csproj", "{46832A5A-25F7-4827-BD57-68B834497068}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05逆变与协变", "05逆变与协变\05逆变与协变.csproj", "{9C414C91-CBC1-4E68-BE34-9480DF39B813}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E1FE2A83-8F53-4294-97C9-7A3DA18CD9BB}.Debug|x86.ActiveCfg = Debug|x86
+		{E1FE2A83-8F53-4294-97C9-7A3DA18CD9BB}.Debug|x86.Build.0 = Debug|x86
+		{E1FE2A83-8F53-4294-97C9-7A3DA18CD9BB}.Release|x86.ActiveCfg = Release|x86
+		{E1FE2A83-8F53-4294-97C9-7A3DA18CD9BB}.Release|x86.Build.0 = Release|x86
+		{5B061BD2-8AB3-44B0-873A-9BDC531F6982}.Debug|x86.ActiveCfg = Debug|x86
+		{5B061BD2-8AB3-44B0-873A-9BDC531F6982}.Debug|x86.Build.0 = Debug|x86
+		{5B061BD2-8AB3-44B0-873A-9BDC531F6982}.Release|x86.ActiveCfg = Release|x86
+		{5B061BD2-8AB3-44B0-873A-9BDC531F6982}.Release|x86.Build.0 = Release|x86
+		{BC53DEF0-E22F-4348-9E3E-5738C17AE94F}.Debug|x86.ActiveCfg = Debug|x86
+		{BC53DEF0-E22F-4348-9E3E-5738C17AE94F}.Debug|x86.Build.0 = Debug|x86
+		{BC53DEF0-E22F-4348-9E3E-5738C17AE94F}.Release|x86.ActiveCfg = Release|x86
+		{BC53DEF0-E22F-4348-9E3E-5738C17AE94F}.Release|x86.Build.0 = Release|x86
+		{46832A5A-25F7-4827-BD57-68B834497068}.Debug|x86.ActiveCfg = Debug|x86
+		{46832A5A-25F7-4827-BD57-68B834497068}.Debug|x86.Build.0 = Debug|x86
+		{46832A5A-25F7-4827-BD57-68B834497068}.Release|x86.ActiveCfg = Release|x86
+		{46832A5A-25F7-4827-BD57-68B834497068}.Release|x86.Build.0 = Release|x86
+		{9C414C91-CBC1-4E68-BE34-9480DF39B813}.Debug|x86.ActiveCfg = Debug|x86
+		{9C414C91-CBC1-4E68-BE34-9480DF39B813}.Debug|x86.Build.0 = Debug|x86
+		{9C414C91-CBC1-4E68-BE34-9480DF39B813}.Release|x86.ActiveCfg = Release|x86
+		{9C414C91-CBC1-4E68-BE34-9480DF39B813}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
