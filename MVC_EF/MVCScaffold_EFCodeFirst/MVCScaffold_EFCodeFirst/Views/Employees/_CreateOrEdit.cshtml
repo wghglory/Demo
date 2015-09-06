@@ -1,0 +1,23 @@
+@model MVCScaffold_EFCodeFirst.Models.Employee
+
+@* This partial view defines form fields that will appear when creating and editing entities *@
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.EmployeeName)
+</div>
+<div class="editor-field">
+    @Html.EditorFor(model => model.EmployeeName)
+    @Html.ValidationMessageFor(model => model.EmployeeName)
+</div>
+
+<div class="editor-label">
+    City
+</div>
+<div class="editor-field">
+    @Html.DropDownListFor(model => model.CityId, ((IEnumerable<MVCScaffold_EFCodeFirst.Models.City>)ViewBag.PossibleCities).Select(option => new SelectListItem {
+    Text = Html.DisplayTextFor(_ => option.CityName).ToString(), 
+        Value = option.CityId.ToString(),
+        Selected = (Model != null) && (option.CityId == Model.CityId)
+    }), "Choose...")
+    @Html.ValidationMessageFor(model => model.CityId)
+</div>

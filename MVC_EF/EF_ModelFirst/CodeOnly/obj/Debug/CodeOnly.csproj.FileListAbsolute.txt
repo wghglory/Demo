@@ -1,0 +1,13 @@
+\\psf\home\documents\visual studio 2013\Projects\EF_ModelFirst\CodeOnly\bin\Debug\CodeOnly.exe.config
+\\psf\home\documents\visual studio 2013\Projects\EF_ModelFirst\CodeOnly\bin\Debug\CodeOnly.exe
+\\psf\home\documents\visual studio 2013\Projects\EF_ModelFirst\CodeOnly\bin\Debug\CodeOnly.pdb
+\\psf\home\documents\visual studio 2013\Projects\EF_ModelFirst\CodeOnly\bin\Debug\EntityFramework.dll
+\\psf\home\documents\visual studio 2013\Projects\EF_ModelFirst\CodeOnly\bin\Debug\EntityFramework.xml
+\\psf\home\documents\visual studio 2013\Projects\EF_ModelFirst\CodeOnly\obj\Debug\CodeOnly.csprojResolveAssemblyReference.cache
+\\psf\home\documents\visual studio 2013\Projects\EF_ModelFirst\CodeOnly\obj\Debug\CodeOnly.exe
+\\psf\home\documents\visual studio 2013\Projects\EF_ModelFirst\CodeOnly\obj\Debug\CodeOnly.pdb
+\\psf\home\documents\visual studio 2013\Projects\EF_ModelFirst\CodeOnly\bin\Debug\EntityFramework.SqlServer.dll
+\\psf\home\documents\visual studio 2013\Projects\EF_ModelFirst\CodeOnly\bin\Debug\EntityFramework.SqlServer.xml
+\\psf\Home\Documents\工作\MyCode\EF_ModelFirst\CodeOnly\bin\Debug\CodeOnly.exe.config
+\\psf\Home\Documents\工作\MyCode\EF_ModelFirst\CodeOnly\obj\Debug\CodeOnly.exe
+\\psf\Home\Documents\工作\MyCode\EF_ModelFirst\CodeOnly\obj\Debug\CodeOnly.pdb

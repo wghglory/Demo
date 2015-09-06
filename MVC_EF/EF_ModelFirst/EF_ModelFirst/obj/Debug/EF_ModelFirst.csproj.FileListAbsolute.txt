@@ -1,0 +1,20 @@
+\\psf\home\documents\visual studio 2013\Projects\EF_ModelFirst\EF_ModelFirst\bin\Debug\EF_ModelFirst.exe.config
+\\psf\home\documents\visual studio 2013\Projects\EF_ModelFirst\EF_ModelFirst\bin\Debug\EF_ModelFirst.exe
+\\psf\home\documents\visual studio 2013\Projects\EF_ModelFirst\EF_ModelFirst\bin\Debug\EF_ModelFirst.pdb
+\\psf\home\documents\visual studio 2013\Projects\EF_ModelFirst\EF_ModelFirst\obj\Debug\EF_ModelFirst.csprojResolveAssemblyReference.cache
+\\psf\home\documents\visual studio 2013\Projects\EF_ModelFirst\EF_ModelFirst\obj\Debug\EF_ModelFirst.exe
+\\psf\home\documents\visual studio 2013\Projects\EF_ModelFirst\EF_ModelFirst\obj\Debug\EF_ModelFirst.pdb
+\\psf\home\documents\visual studio 2013\Projects\EF_ModelFirst\EF_ModelFirst\bin\Debug\EntityFramework.dll
+\\psf\home\documents\visual studio 2013\Projects\EF_ModelFirst\EF_ModelFirst\bin\Debug\EntityFramework.SqlServer.dll
+\\psf\home\documents\visual studio 2013\Projects\EF_ModelFirst\EF_ModelFirst\bin\Debug\EntityFramework.xml
+\\psf\home\documents\visual studio 2013\Projects\EF_ModelFirst\EF_ModelFirst\bin\Debug\EntityFramework.SqlServer.xml
+\\psf\Home\Documents\工作\MyCode\EF_ModelFirst\EF_ModelFirst\bin\Debug\EF_ModelFirst.exe.config
+\\psf\Home\Documents\工作\MyCode\EF_ModelFirst\EF_ModelFirst\obj\Debug\EF_ModelFirst.exe
+\\psf\Home\Documents\工作\MyCode\EF_ModelFirst\EF_ModelFirst\obj\Debug\EF_ModelFirst.pdb
+\\psf\Home\Documents\工作\MyCode\EF_ModelFirst\EF_ModelFirst\bin\Debug\EF_ModelFirst.exe
+\\psf\Home\Documents\工作\MyCode\EF_ModelFirst\EF_ModelFirst\bin\Debug\EF_ModelFirst.pdb
+\\psf\Home\Documents\工作\MyCode\EF_ModelFirst\EF_ModelFirst\bin\Debug\EntityFramework.dll
+\\psf\Home\Documents\工作\MyCode\EF_ModelFirst\EF_ModelFirst\bin\Debug\EntityFramework.SqlServer.dll
+\\psf\Home\Documents\工作\MyCode\EF_ModelFirst\EF_ModelFirst\bin\Debug\EntityFramework.xml
+\\psf\Home\Documents\工作\MyCode\EF_ModelFirst\EF_ModelFirst\bin\Debug\EntityFramework.SqlServer.xml
+\\psf\Home\Documents\工作\MyCode\EF_ModelFirst\EF_ModelFirst\obj\Debug\EF_ModelFirst.csprojResolveAssemblyReference.cache

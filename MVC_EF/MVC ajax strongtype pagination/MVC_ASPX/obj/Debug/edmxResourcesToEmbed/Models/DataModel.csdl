@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="EFModelFirstModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Class">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="32" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Student" Relationship="Self.StudentClass" FromRole="Class" ToRole="Student" />
+  </EntityType>
+  <EntityType Name="Department">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="32" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="R_Department_User" Relationship="Self.FK_DepartmentR_Department_User" FromRole="Department" ToRole="R_Department_User" />
+  </EntityType>
+  <EntityType Name="Order">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="OrderTime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UserId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="User" Relationship="Self.FK_UserOrder" FromRole="Order" ToRole="User" />
+  </EntityType>
+  <EntityType Name="R_Department_User">
+    <Key>
+      <PropertyRef Name="R_Department_UserId" />
+    </Key>
+    <Property Name="R_Department_UserId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="Int32" Nullable="false" />
+    <Property Name="DepartmentId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Department" Relationship="Self.FK_DepartmentR_Department_User" FromRole="R_Department_User" ToRole="Department" />
+    <NavigationProperty Name="User" Relationship="Self.FK_UserR_Department_User" FromRole="R_Department_User" ToRole="User" />
+  </EntityType>
+  <EntityType Name="Student">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="32" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Age" Type="Int32" />
+    <Property Name="Gender" Type="Boolean" />
+    <NavigationProperty Name="Class" Relationship="Self.StudentClass" FromRole="Student" ToRole="Class" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="32" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Address" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Phone" Type="String" MaxLength="16" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Order" Relationship="Self.FK_UserOrder" FromRole="User" ToRole="Order" />
+    <NavigationProperty Name="R_Department_User" Relationship="Self.FK_UserR_Department_User" FromRole="User" ToRole="R_Department_User" />
+    <Property Name="Age" Type="Int32" />
+  </EntityType>
+  <Association Name="FK_DepartmentR_Department_User">
+    <End Role="Department" Type="Self.Department" Multiplicity="1" />
+    <End Role="R_Department_User" Type="Self.R_Department_User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Department">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="R_Department_User">
+        <PropertyRef Name="DepartmentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserOrder">
+    <End Role="User" Type="Self.User" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Order" Type="Self.Order" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Order">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserR_Department_User">
+    <End Role="User" Type="Self.User" Multiplicity="1" />
+    <End Role="R_Department_User" Type="Self.R_Department_User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="R_Department_User">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="StudentClass">
+    <End Role="Class" Type="Self.Class" Multiplicity="*" />
+    <End Role="Student" Type="Self.Student" Multiplicity="*" />
+  </Association>
+  <EntityContainer Name="EFModelFirstEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Class" EntityType="Self.Class" />
+    <EntitySet Name="Department" EntityType="Self.Department" />
+    <EntitySet Name="Order" EntityType="Self.Order" />
+    <EntitySet Name="R_Department_User" EntityType="Self.R_Department_User" />
+    <EntitySet Name="Student" EntityType="Self.Student" />
+    <EntitySet Name="User" EntityType="Self.User" />
+    <AssociationSet Name="FK_DepartmentR_Department_User" Association="Self.FK_DepartmentR_Department_User">
+      <End Role="Department" EntitySet="Department" />
+      <End Role="R_Department_User" EntitySet="R_Department_User" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserOrder" Association="Self.FK_UserOrder">
+      <End Role="User" EntitySet="User" />
+      <End Role="Order" EntitySet="Order" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserR_Department_User" Association="Self.FK_UserR_Department_User">
+      <End Role="User" EntitySet="User" />
+      <End Role="R_Department_User" EntitySet="R_Department_User" />
+    </AssociationSet>
+    <AssociationSet Name="StudentClass" Association="Self.StudentClass">
+      <End Role="Class" EntitySet="Class" />
+      <End Role="Student" EntitySet="Student" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

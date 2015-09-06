@@ -1,0 +1,9 @@
+http://www.cnblogs.com/iflytek/archive/2013/04/08/3008283.html
+
+1. install-package MvcScaffolding
+2. 在右上方的搜索栏里输入”sql server”，方便的找到EntityFramework.SqlServerCompact，注意看它的说明：允许SQL Server Compact 4.0被EntityFramework使用
+3. create city and employee class in model folder
+4. 开始使用脚手架生成咯，我们选择生成包括Repository文件，这样就可以华丽丽的show一下仓储模式, nuget控制台输入 Scaffold Controller City -Repository
+Scaffold Controller Employee -Repository
+5. 需要注意的是：比如新增员工时，要选择城市，代码从
+“Text = Html.DisplayTextFor(_ => option).ToString(),”改为“Text = Html.DisplayTextFor(_ => option.CityName).ToString(), ”即可，类似的地方一样加一下就能正常显示城市名称。

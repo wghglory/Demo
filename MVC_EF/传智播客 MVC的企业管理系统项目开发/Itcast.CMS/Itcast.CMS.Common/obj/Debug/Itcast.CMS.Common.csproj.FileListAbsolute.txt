@@ -1,0 +1,10 @@
+D:\Asp.net备课\传智播客备课\企业管理\Itcast.CMS\Itcast.CMS.Common\bin\Debug\Itcast.CMS.Common.dll
+D:\Asp.net备课\传智播客备课\企业管理\Itcast.CMS\Itcast.CMS.Common\bin\Debug\Itcast.CMS.Common.pdb
+D:\Asp.net备课\传智播客备课\企业管理\Itcast.CMS\Itcast.CMS.Common\obj\Debug\Itcast.CMS.Common.dll
+D:\Asp.net备课\传智播客备课\企业管理\Itcast.CMS\Itcast.CMS.Common\obj\Debug\Itcast.CMS.Common.pdb
+D:\Asp.net备课\传智播客备课\企业管理\Itcast.CMS\Itcast.CMS.Common\obj\Debug\Itcast.CMS.Common.csprojResolveAssemblyReference.cache
+\\psf\Home\Documents\工作\视频\公开课\已看\传智播客 MVC的企业管理系统项目开发\完整版代码\Itcast.CMS\Itcast.CMS.Common\bin\Debug\Itcast.CMS.Common.dll
+\\psf\Home\Documents\工作\视频\公开课\已看\传智播客 MVC的企业管理系统项目开发\完整版代码\Itcast.CMS\Itcast.CMS.Common\bin\Debug\Itcast.CMS.Common.pdb
+\\psf\Home\Documents\工作\视频\公开课\已看\传智播客 MVC的企业管理系统项目开发\完整版代码\Itcast.CMS\Itcast.CMS.Common\obj\Debug\Itcast.CMS.Common.csprojResolveAssemblyReference.cache
+\\psf\Home\Documents\工作\视频\公开课\已看\传智播客 MVC的企业管理系统项目开发\完整版代码\Itcast.CMS\Itcast.CMS.Common\obj\Debug\Itcast.CMS.Common.dll
+\\psf\Home\Documents\工作\视频\公开课\已看\传智播客 MVC的企业管理系统项目开发\完整版代码\Itcast.CMS\Itcast.CMS.Common\obj\Debug\Itcast.CMS.Common.pdb

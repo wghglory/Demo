@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="DataModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+  <EntityContainer Name="DataModelContainer" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="User" EntityType="DataModel.User" />
+    <EntitySet Name="Order" EntityType="DataModel.Order" />
+    <EntitySet Name="Department" EntityType="DataModel.Department" />
+    <EntitySet Name="R_Department_User" EntityType="DataModel.R_Department_User" />
+    <EntitySet Name="Student" EntityType="DataModel.Student" />
+    <EntitySet Name="Class" EntityType="DataModel.Class" />
+    <AssociationSet Name="UserOrder" Association="DataModel.UserOrder">
+      <End Role="User" EntitySet="User" />
+      <End Role="Order" EntitySet="Order" />
+    </AssociationSet>
+    <AssociationSet Name="UserR_Department_User" Association="DataModel.UserR_Department_User">
+      <End Role="User" EntitySet="User" />
+      <End Role="R_Department_User" EntitySet="R_Department_User" />
+    </AssociationSet>
+    <AssociationSet Name="DepartmentR_Department_User" Association="DataModel.DepartmentR_Department_User">
+      <End Role="Department" EntitySet="Department" />
+      <End Role="R_Department_User" EntitySet="R_Department_User" />
+    </AssociationSet>
+    <AssociationSet Name="StudentClass" Association="DataModel.StudentClass">
+      <End Role="Student" EntitySet="Student" />
+      <End Role="Class" EntitySet="Class" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" annotation:StoreGeneratedPattern="None" MaxLength="32" />
+    <Property Name="Address" Type="String" Nullable="false" MaxLength="256" />
+    <Property Name="Phone" Type="String" Nullable="false" MaxLength="16" />
+    <NavigationProperty Name="Order" Relationship="DataModel.UserOrder" FromRole="User" ToRole="Order" />
+    <NavigationProperty Name="R_Department_User" Relationship="DataModel.UserR_Department_User" FromRole="User" ToRole="R_Department_User" />
+  </EntityType>
+  <EntityType Name="Order">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="OrderTime" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="User" Relationship="DataModel.UserOrder" FromRole="Order" ToRole="User" />
+    <Property Name="UserId" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Department">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="32" />
+    <NavigationProperty Name="R_Department_User" Relationship="DataModel.DepartmentR_Department_User" FromRole="Department" ToRole="R_Department_User" />
+  </EntityType>
+  <EntityType Name="R_Department_User">
+    <Key>
+      <PropertyRef Name="R_Department_UserId" />
+    </Key>
+    <Property Name="R_Department_UserId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="User" Relationship="DataModel.UserR_Department_User" FromRole="R_Department_User" ToRole="User" />
+    <Property Name="UserId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Department" Relationship="DataModel.DepartmentR_Department_User" FromRole="R_Department_User" ToRole="Department" />
+    <Property Name="DepartmentId" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Student">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="32" />
+    <NavigationProperty Name="Class" Relationship="DataModel.StudentClass" FromRole="Student" ToRole="Class" />
+  </EntityType>
+  <EntityType Name="Class">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="32" />
+    <NavigationProperty Name="Student" Relationship="DataModel.StudentClass" FromRole="Class" ToRole="Student" />
+  </EntityType>
+  <Association Name="UserOrder">
+    <End Type="DataModel.User" Role="User" Multiplicity="1" />
+    <End Type="DataModel.Order" Role="Order" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Order">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="UserR_Department_User">
+    <End Type="DataModel.User" Role="User" Multiplicity="1" />
+    <End Type="DataModel.R_Department_User" Role="R_Department_User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="R_Department_User">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="DepartmentR_Department_User">
+    <End Type="DataModel.Department" Role="Department" Multiplicity="1" />
+    <End Type="DataModel.R_Department_User" Role="R_Department_User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Department">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="R_Department_User">
+        <PropertyRef Name="DepartmentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="StudentClass">
+    <End Type="DataModel.Student" Role="Student" Multiplicity="*" />
+    <End Type="DataModel.Class" Role="Class" Multiplicity="*" />
+  </Association>
+</Schema>
