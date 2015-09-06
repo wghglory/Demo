@@ -1,0 +1,14 @@
+﻿@{
+    ViewBag.Title = "RoleManage";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+@section Scripts{
+     <script type="text/javascript">
+         var RoleListUrl = '@Url.Content("~/Admin/Role/GetRoleList")';
+         var AddUrl = '@Url.Content("~/Admin/Role/Add")';
+         var UpdateUrl = '@Url.Content("~/Admin/Role/Update")';
+         var RemoveUrl = '@Url.Content("~/Admin/Role/Remove")';
+         var ValidateInputUrl = '@Url.Content("~/Admin/Role/ValidateInput")';
+     </script>
+    <script src="@Url.Content("~/Scripts/ext-js/RoleManage.js")" type="text/javascript"></script>
+} 

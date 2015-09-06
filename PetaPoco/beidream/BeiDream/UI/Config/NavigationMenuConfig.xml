@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<NavigationMenuConfig>
+<NavigationMenus>
+  <NavigationMenu id="1" text="系统管理" url="" leaf="true">
+    <NavigationMenuArrays>
+      <NavigationMenuArray id="1" text="用户管理" url="/Admin/Home/IndexTab" leaf="false"/>
+      <NavigationMenuArray id="2" text="角色管理" url="/Admin/Home/IndexTab" leaf="false"/>
+    </NavigationMenuArrays>
+  </NavigationMenu>
+  <NavigationMenu id="2" text="系统管理2" url="" leaf="true">
+    <NavigationMenuArrays>
+      <NavigationMenuArray id="1" text="用户管理" url="/Admin/Home/IndexTab" leaf="false"/>
+      <NavigationMenuArray id="2" text="角色管理" url="/Admin/Home/IndexTab" leaf="false"/>
+    </NavigationMenuArrays>
+  </NavigationMenu>
+</NavigationMenus>
+</NavigationMenuConfig>

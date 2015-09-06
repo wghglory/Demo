@@ -1,0 +1,27 @@
+﻿@{
+    ViewBag.Title = "新增人员";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@section Header{
+<script type="text/javascript" src="../../Scripts/biz/person_add.js"></script>
+}
+<div class='span9 main'>
+    <ul class="breadcrumb">
+      <li><a href="/Person/Index/">人员管理</a><span class="divider">/</span></li>
+      <li class="active">人员新增</li>
+    </ul>
+    <table class="table table-bordered">
+    <tr>
+        <td style="width:100px">姓名</td>
+        <td><input type="text" data-bind="value:PersonName" /></td>
+    </tr>
+    <tr>
+        <td style="width:100px">年龄</td>
+        <td><input type="text" data-bind="value:PersonAge" /></td>
+    </tr>
+    </table>
+    <p class="text-center">
+        <input type="button" class="btn btn-primary" data-bind="click:$root.Commit" value="提交"/>&nbsp;&nbsp;
+        <input type="button" class="btn btn-primary" data-bind="click:$root.back" value="返回"/> 
+    </p>
+</div>
